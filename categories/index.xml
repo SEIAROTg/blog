@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on SEIAROTg&#39;s blog</title>
+    <link>https://seiarotg.me/categories/</link>
+    <description>Recent content in Categories on SEIAROTg&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 03 Aug 2019 12:03:18 +0800</lastBuildDate>
+    
+	<atom:link href="https://seiarotg.me/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Tech</title>
+      <link>https://seiarotg.me/categories/tech/</link>
+      <pubDate>Sat, 03 Aug 2019 12:03:18 +0800</pubDate>
+      
+      <guid>https://seiarotg.me/categories/tech/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Life</title>
+      <link>https://seiarotg.me/categories/life/</link>
+      <pubDate>Tue, 30 Jul 2019 17:25:14 +0800</pubDate>
+      
+      <guid>https://seiarotg.me/categories/life/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
