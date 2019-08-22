@@ -3,26 +3,57 @@
   
   <url>
     <loc>https://seiarotg.me/categories/</loc>
-    <lastmod>2019-08-11T21:05:10+08:00</lastmod>
+    <lastmod>2019-08-21T14:51:07+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://seiarotg.me/categories/life/</loc>
+    <lastmod>2019-08-21T14:51:07+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://seiarotg.me/post/</loc>
-    <lastmod>2019-08-11T21:05:10+08:00</lastmod>
+    <lastmod>2019-08-21T14:51:07+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://seiarotg.me/</loc>
-    <lastmod>2019-08-11T21:05:10+08:00</lastmod>
+    <lastmod>2019-08-21T14:51:07+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://seiarotg.me/tags/</loc>
-    <lastmod>2019-08-11T21:05:10+08:00</lastmod>
+    <lastmod>2019-08-21T14:51:07+08:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://seiarotg.me/tags/uk/</loc>
+    <lastmod>2019-08-21T14:51:07+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://seiarotg.me/tags/mobile/</loc>
+    <lastmod>2019-08-21T14:51:07+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://seiarotg.me/tags/money-saving/</loc>
+    <lastmod>2019-08-21T14:51:07+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://seiarotg.me/post/uk-mobile-service-providers/</loc>
+    <lastmod>2019-08-21T14:51:07+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
@@ -95,12 +126,6 @@
   </url>
   
   <url>
-    <loc>https://seiarotg.me/categories/life/</loc>
-    <lastmod>2019-07-30T17:25:14+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://seiarotg.me/tags/london/</loc>
     <lastmod>2019-07-30T17:25:14+08:00</lastmod>
     <priority>0</priority>
@@ -108,12 +133,6 @@
   
   <url>
     <loc>https://seiarotg.me/tags/ningbo/</loc>
-    <lastmod>2019-07-30T17:25:14+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://seiarotg.me/tags/uk/</loc>
     <lastmod>2019-07-30T17:25:14+08:00</lastmod>
     <priority>0</priority>
   </url>
