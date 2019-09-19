@@ -6,10 +6,19 @@
     <description>Recent content in Posts on SEIAROTg&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 24 Aug 2019 22:18:10 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 19 Sep 2019 11:38:02 +0800</lastBuildDate>
     
 	<atom:link href="https://seiarotg.me/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>只读挂载 FileVault 卷</title>
+      <link>https://seiarotg.me/post/mount-file-vault-volume-readonly/</link>
+      <pubDate>Thu, 19 Sep 2019 11:38:02 +0800</pubDate>
+      
+      <guid>https://seiarotg.me/post/mount-file-vault-volume-readonly/</guid>
+      <description>只读挂载和锁上 FileVault 卷 背景 我有块硬盘需要定期冷备份 这块硬盘启用了 FileVault 为了避免不小心弄错备份方向损失数据，需要将源硬盘只读挂载 Disk Utility 的图形界面不能做到</description>
+    </item>
     
     <item>
       <title>今日坑 20190824</title>
