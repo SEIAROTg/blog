@@ -6,10 +6,19 @@
     <description>Recent content in Tags on SEIAROTg&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 19 Sep 2019 11:38:02 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 05 Nov 2019 23:25:51 +0000</lastBuildDate>
     
 	<atom:link href="https://seiarotg.me/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>summary</title>
+      <link>https://seiarotg.me/tags/summary/</link>
+      <pubDate>Tue, 05 Nov 2019 23:25:51 +0000</pubDate>
+      
+      <guid>https://seiarotg.me/tags/summary/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>mac</title>
@@ -30,15 +39,6 @@
     </item>
     
     <item>
-      <title>UK</title>
-      <link>https://seiarotg.me/tags/uk/</link>
-      <pubDate>Wed, 21 Aug 2019 14:51:07 +0800</pubDate>
-      
-      <guid>https://seiarotg.me/tags/uk/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>mobile</title>
       <link>https://seiarotg.me/tags/mobile/</link>
       <pubDate>Wed, 21 Aug 2019 14:51:07 +0800</pubDate>
@@ -53,6 +53,15 @@
       <pubDate>Wed, 21 Aug 2019 14:51:07 +0800</pubDate>
       
       <guid>https://seiarotg.me/tags/money-saving/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>uk</title>
+      <link>https://seiarotg.me/tags/uk/</link>
+      <pubDate>Wed, 21 Aug 2019 14:51:07 +0800</pubDate>
+      
+      <guid>https://seiarotg.me/tags/uk/</guid>
       <description></description>
     </item>
     
