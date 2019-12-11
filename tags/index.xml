@@ -6,17 +6,35 @@
     <description>Recent content in Tags on SEIAROTg&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 16 Nov 2019 21:53:16 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 01 Dec 2019 20:04:40 +0000</lastBuildDate>
     
 	<atom:link href="https://seiarotg.me/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>london</title>
+      <title>summary</title>
+      <link>https://seiarotg.me/tags/summary/</link>
+      <pubDate>Sun, 01 Dec 2019 20:04:40 +0000</pubDate>
+      
+      <guid>https://seiarotg.me/tags/summary/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>London</title>
       <link>https://seiarotg.me/tags/london/</link>
       <pubDate>Sat, 16 Nov 2019 21:53:16 +0000</pubDate>
       
       <guid>https://seiarotg.me/tags/london/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>UK</title>
+      <link>https://seiarotg.me/tags/uk/</link>
+      <pubDate>Sat, 16 Nov 2019 21:53:16 +0000</pubDate>
+      
+      <guid>https://seiarotg.me/tags/uk/</guid>
       <description></description>
     </item>
     
@@ -35,24 +53,6 @@
       <pubDate>Sat, 16 Nov 2019 21:53:16 +0000</pubDate>
       
       <guid>https://seiarotg.me/tags/tube/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>uk</title>
-      <link>https://seiarotg.me/tags/uk/</link>
-      <pubDate>Sat, 16 Nov 2019 21:53:16 +0000</pubDate>
-      
-      <guid>https://seiarotg.me/tags/uk/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>summary</title>
-      <link>https://seiarotg.me/tags/summary/</link>
-      <pubDate>Tue, 05 Nov 2019 23:25:51 +0000</pubDate>
-      
-      <guid>https://seiarotg.me/tags/summary/</guid>
       <description></description>
     </item>
     
