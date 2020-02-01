@@ -6,10 +6,19 @@
     <description>Recent content on SEIAROTg&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 01 Dec 2019 20:04:40 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 26 Jan 2020 00:00:06 +0000</lastBuildDate>
     
 	<atom:link href="https://seiarotg.me/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>TfL API 折腾记</title>
+      <link>https://seiarotg.me/post/tfl-api-experience/</link>
+      <pubDate>Sun, 26 Jan 2020 00:00:06 +0000</pubDate>
+      
+      <guid>https://seiarotg.me/post/tfl-api-experience/</guid>
+      <description>近日折腾了 TfL API，特将经验总结如下。 没有卵用的 API Key 文档称调用 API 需要提供 Key，然而实际上并不需要。只是如果您不提供 Key 就会出现 Throttl</description>
+    </item>
     
     <item>
       <title>十一月总结</title>
