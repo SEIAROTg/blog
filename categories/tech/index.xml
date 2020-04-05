@@ -6,10 +6,19 @@
     <description>Recent content in Tech on SEIAROTg&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 26 Jan 2020 00:00:06 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 06 Apr 2020 00:08:14 +0100</lastBuildDate>
     
 	<atom:link href="https://seiarotg.me/categories/tech/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>给 Surface 3 安装 ChromeOS</title>
+      <link>https://seiarotg.me/post/chromeos-on-surface3/</link>
+      <pubDate>Mon, 06 Apr 2020 00:08:14 +0100</pubDate>
+      
+      <guid>https://seiarotg.me/post/chromeos-on-surface3/</guid>
+      <description>今天我翻出了藏在抽屉里的一台 2015 年购入的 Surface 3（没有 Pro）打算用来看片。上面的 Windows 10 实在是卡，于是尝试安装 ChromeOS。 背景 由于桌面空间限制</description>
+    </item>
     
     <item>
       <title>TfL API 折腾记</title>

@@ -6,10 +6,28 @@
     <description>Recent content in Tags on SEIAROTg&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 21 Feb 2020 22:55:30 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 06 Apr 2020 00:08:14 +0100</lastBuildDate>
     
 	<atom:link href="https://seiarotg.me/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>chromeos</title>
+      <link>https://seiarotg.me/tags/chromeos/</link>
+      <pubDate>Mon, 06 Apr 2020 00:08:14 +0100</pubDate>
+      
+      <guid>https://seiarotg.me/tags/chromeos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>device</title>
+      <link>https://seiarotg.me/tags/device/</link>
+      <pubDate>Mon, 06 Apr 2020 00:08:14 +0100</pubDate>
+      
+      <guid>https://seiarotg.me/tags/device/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>home</title>
@@ -30,6 +48,15 @@
     </item>
     
     <item>
+      <title>UK</title>
+      <link>https://seiarotg.me/tags/uk/</link>
+      <pubDate>Sun, 26 Jan 2020 00:00:06 +0000</pubDate>
+      
+      <guid>https://seiarotg.me/tags/uk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>travel</title>
       <link>https://seiarotg.me/tags/travel/</link>
       <pubDate>Sun, 26 Jan 2020 00:00:06 +0000</pubDate>
@@ -44,15 +71,6 @@
       <pubDate>Sun, 26 Jan 2020 00:00:06 +0000</pubDate>
       
       <guid>https://seiarotg.me/tags/tube/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>uk</title>
-      <link>https://seiarotg.me/tags/uk/</link>
-      <pubDate>Sun, 26 Jan 2020 00:00:06 +0000</pubDate>
-      
-      <guid>https://seiarotg.me/tags/uk/</guid>
       <description></description>
     </item>
     
@@ -125,15 +143,6 @@
       <pubDate>Sun, 11 Aug 2019 21:05:10 +0800</pubDate>
       
       <guid>https://seiarotg.me/tags/printer/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>device</title>
-      <link>https://seiarotg.me/tags/device/</link>
-      <pubDate>Thu, 01 Aug 2019 14:04:11 +0800</pubDate>
-      
-      <guid>https://seiarotg.me/tags/device/</guid>
       <description></description>
     </item>
     
