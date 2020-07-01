@@ -1,15 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>UK on SEIAROTg&#39;s blog</title>
+    <title>uk on SEIAROTg&#39;s blog</title>
     <link>https://seiarotg.me/tags/uk/</link>
-    <description>Recent content in UK on SEIAROTg&#39;s blog</description>
+    <description>Recent content in uk on SEIAROTg&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 26 Jan 2020 00:00:06 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 01 Jul 2020 00:25:39 +0100</lastBuildDate>
     
 	<atom:link href="https://seiarotg.me/tags/uk/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>准确计算英国 PAYE 每月扣税数额</title>
+      <link>https://seiarotg.me/post/uk-paye-calculation/</link>
+      <pubDate>Wed, 01 Jul 2020 00:25:39 +0100</pubDate>
+      
+      <guid>https://seiarotg.me/post/uk-paye-calculation/</guid>
+      <description>背景 您可能会发现虽然每月的税前收入完全一致，扣除的 Income Tax 却有一些偏差。您可能遇到更换工作、工资调整等却不知如何验证工资条上的扣除。 网上有许多的</description>
+    </item>
     
     <item>
       <title>TfL API 折腾记</title>
