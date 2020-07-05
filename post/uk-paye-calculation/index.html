@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="SEIAROTg" /><meta name="description" content="背景 您可能会发现虽然每月的税前收入完全一致，扣除的 Income Tax 却有一些偏差。您可能遇到更换工作、工资调整等却不知如何验证工资条上的扣除。 网上有许多的" />
+<meta name="author" content="SEIAROTg" /><meta name="description" content="背景 您可能会发现虽然每月的税前收入完全一致，扣除的 Income Tax 却有一些偏差。您可能遇到更换工作、工资调整、奖金发放、股票交付等，每月实际发放工资数额" />
 
 
 
@@ -39,25 +39,25 @@
 
 
 <meta property="og:title" content="准确计算英国 PAYE 每月扣税数额" />
-<meta property="og:description" content="背景 您可能会发现虽然每月的税前收入完全一致，扣除的 Income Tax 却有一些偏差。您可能遇到更换工作、工资调整等却不知如何验证工资条上的扣除。 网上有许多的" />
+<meta property="og:description" content="背景 您可能会发现虽然每月的税前收入完全一致，扣除的 Income Tax 却有一些偏差。您可能遇到更换工作、工资调整、奖金发放、股票交付等，每月实际发放工资数额" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://seiarotg.me/post/uk-paye-calculation/" />
 <meta property="article:published_time" content="2020-07-01T00:25:39+01:00" />
 <meta property="article:modified_time" content="2020-07-01T00:25:39+01:00" />
 <meta itemprop="name" content="准确计算英国 PAYE 每月扣税数额">
-<meta itemprop="description" content="背景 您可能会发现虽然每月的税前收入完全一致，扣除的 Income Tax 却有一些偏差。您可能遇到更换工作、工资调整等却不知如何验证工资条上的扣除。 网上有许多的">
+<meta itemprop="description" content="背景 您可能会发现虽然每月的税前收入完全一致，扣除的 Income Tax 却有一些偏差。您可能遇到更换工作、工资调整、奖金发放、股票交付等，每月实际发放工资数额">
 
 
 <meta itemprop="datePublished" content="2020-07-01T00:25:39&#43;01:00" />
 <meta itemprop="dateModified" content="2020-07-01T00:25:39&#43;01:00" />
-<meta itemprop="wordCount" content="9672">
+<meta itemprop="wordCount" content="9799">
 
 
 
 <meta itemprop="keywords" content="uk,money," />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="准确计算英国 PAYE 每月扣税数额"/>
-<meta name="twitter:description" content="背景 您可能会发现虽然每月的税前收入完全一致，扣除的 Income Tax 却有一些偏差。您可能遇到更换工作、工资调整等却不知如何验证工资条上的扣除。 网上有许多的"/>
+<meta name="twitter:description" content="背景 您可能会发现虽然每月的税前收入完全一致，扣除的 Income Tax 却有一些偏差。您可能遇到更换工作、工资调整、奖金发放、股票交付等，每月实际发放工资数额"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -160,11 +160,11 @@
 
 <h1 id="背景">背景</h1>
 
-<p>您可能会发现虽然每月的税前收入完全一致，扣除的 Income Tax 却有一些偏差。您可能遇到更换工作、工资调整等却不知如何验证工资条上的扣除。</p>
+<p>您可能会发现虽然每月的税前收入完全一致，扣除的 Income Tax 却有一些偏差。您可能遇到更换工作、工资调整、奖金发放、股票交付等，每月实际发放工资数额变化多端，不明如何验证工资条上的扣除，不知下月税后收入几何。</p>
 
-<p>网上有许多的 Income Tax / National Insurance 计算器，比如 <a href="https://www.moneysavingexpert.com/tax-calculator/">MSE 的这个</a>、<a href="https://www.gov.uk/estimate-income-tax">gov.uk 的这个</a>、<a href="https://www.which.co.uk/money/tax/tax-calculators/income-tax-calculator-ad9xh2l9wxxr">which.co.uk 的这个</a>，以及一些较为复杂的比如 <a href="https://listentotaxman.com/">listentotaxman.com</a>、<a href="https://www.thesalarycalculator.co.uk/salary.php">thesalarycalculator.co.uk</a> 等。它们能根据年收入和周收入分别计算出应缴的 Income Tax 和 Nation Insurance，部分可以处理 Student Loan，偏门 Tax Code，Pension，Tax Relief 等，但很少有见能精确算出每月实际扣税的工具。</p>
+<p>网上有许多的 Income Tax / National Insurance 计算器，比如 <a href="https://www.moneysavingexpert.com/tax-calculator/">MSE 的这个</a>、<a href="https://www.gov.uk/estimate-income-tax">gov.uk 的这个</a>、<a href="https://www.which.co.uk/money/tax/tax-calculators/income-tax-calculator-ad9xh2l9wxxr">which.co.uk 的这个</a>，以及一些较为复杂的比如 <a href="https://listentotaxman.com/">listentotaxman.com</a>、<a href="https://www.thesalarycalculator.co.uk/salary.php">thesalarycalculator.co.uk</a> 等。它们能根据年收入大致给出 Income Tax 和 Nation Insurance 的计算，部分可以处理 Student Loan，偏门 Tax Code，Pension，Tax Relief 等，但很少有见能精确算出<strong>每月</strong>实际扣税的工具。</p>
 
-<p>本文讨论如何精确计算 PAYE 系统实际扣除的 Income Tax 和 National Insurance 数额。本文讨论因收入数额和产生时间导致的复杂情况，不讨论税收居民身份、多份工作等因素来的复杂问题，不讨论 employer contribution。</p>
+<p>本文讨论如何精确计算 PAYE 系统实际扣除的 Income Tax 和 National Insurance 数额。本文讨论因收入数额和产生时间导致的复杂情况，不讨论税收居民身份、多份工作等因素来的复杂问题，不讨论 employer contribution，不讨论 Income 和 National Insurance 之外的扣除。</p>
 
 <p>本文讨论的是 2020 年 6 月的情况。</p>
 
@@ -288,7 +288,7 @@
 
 <ul>
 <li>Income Tax 分为 basic rate、higher rate 和 additional rate 三档征收</li>
-<li>大部分人员享受 Personal allowance，即事实上低于 basic rate 的一档</li>
+<li>大部分人员享受 personal allowance，即事实上低于 basic rate 的一档</li>
 <li>Personal allowance 可随收入增加而缩减</li>
 <li>应缴 Income Tax 的计算方法</li>
 <li>一些其他东西</li>
@@ -364,7 +364,7 @@
 
 <p><em><a href="http://www.legislation.gov.uk/ukpga/2003/1/contents">Income Tax (Earnings and Pensions) Act 2003</a></em> 16 (4) 说了：<em>言之有理即可</em> 。</p>
 
-<p>这里有一个小瑕疵，据 <em>Income Tax Act 2007</em> 35 (3) 规定，部分没收后的剩余 personal allowance 应当向上取整。这也就是我们日常生活中常见的另一种表述方式“年收入超过 £100,000 部分，每超过 £2 没收 £1 的 personal allowance”。但考虑这一点将导致计算结果不再连续，算计器的模型不再适用，所以我们在上面的实现中忽略了这个小误差。看到这里，读者也许会问，本文的目的不是探究如何“精确计算”吗？这部分误差并不小于 1p，为什么可以忽略呢？下面我们将会解答这个问题。</p>
+<p>这里有一个小瑕疵，据 <em>Income Tax Act 2007</em> 35 (3) 规定，部分没收后的剩余 personal allowance 应当向上取整。这也就是我们日常生活中常见的另一种表述方式“年收入超过 £100,000 部分，每超过 £2 没收 £1 的 personal allowance”。但考虑这一点将导致计算结果不再连续，算计器的模型不再适用，所以我们在上面的实现中忽略了这个小误差。看到这里，读者也许会问，本文的目的不是探究如何“精确计算”吗？这部分误差并不小于 1p，为什么可以忽略呢？下面我们将会解释这个问题。</p>
 
 <h1 id="实扣-income-tax">实扣 Income Tax</h1>
 
@@ -376,10 +376,10 @@
 <thead>
 <tr>
 <th align="right">Income</th>
-<th align="right">listentotaxman</th>
+<th align="right">listen to taxman</th>
 <th align="right">gov.uk</th>
 <th align="right">MSE</th>
-<th align="right">我们和 which.co.uk</th>
+<th align="right">我们和 which</th>
 </tr>
 </thead>
 
@@ -441,7 +441,7 @@
 </div>
 <p>该版本计算结果与 listentotaxman、MSE 保持了一致。可是，为什么是 £12,509 呢？</p>
 
-<p>有人认为这是因为 tax code 是 PAYE 决定 personal allowance 的唯一依据，而 tax code 的编码方式决定了 personal allowance 的最后一位会被擦除，如默认 12,009 的 personal allowance 对应 tax code 1200L，这样 HMRC 看不出最后一位是多少，于是本着不多扣的原则当成最大的 9（由于上面提到的舍入规则，personal allowance 理论值必然为整数）。</p>
+<p>有人认为这是因为 tax code 是 PAYE 决定 personal allowance 的唯一依据，而 tax code 的编码方式决定了 personal allowance 的最后一位会被擦除，如默认 12,500 的 personal allowance 对应 tax code 1250L，这样 HMRC 看不出最后一位是多少，于是本着不多扣的原则当成最大的 9（由于上面提到的舍入规则，personal allowance 理论值必然为整数）。</p>
 
 <h2 id="手动计算表">手动计算表</h2>
 
@@ -734,8 +734,10 @@
 <ul>
 <li>除了 tax year，还存在 tax month 和 tax week。一个 tax year 严格有 12 个 tax month 和 53 个 tax week。</li>
 <li>Monthly PAYE 实际采用的 personal allowance £12,509.16 大于法律规定的 £12,500。</li>
+<li>Income Tax 在定义上取决于一个 tax year 的总收入，而 National Insurance 取决于一个发薪周期内的收入。这决定了 Income Tax 的计算是 cumulative 的，而 National Insurance 的不是。</li>
 <li>在总收入不变的情况下，领取收入的节奏和时机可能影响 PAYE 实际扣除的 Income Tax 和 National Insurance 的数额。</li>
-<li>Income Tax 的计算是 cumulative 的，而 National Insurance 的不是。因此同一笔钱集中发放和分散发放会带来不同的影响。</li>
+<li>应缴 Income Tax 与实扣 Income Tax 的区别主要体现在实际采用 personal allowance 的区别上。</li>
+<li>应缴 National Insurance 与实扣 National Insurance 的区别主要体现在舍入规则和（当发薪周期不规整时）实际采用的 threshold 和 limit 的数值上。</li>
 <li>实扣 National Insurance 有不止一种计算方式，可能产生不同的计算结果。</li>
 </ul>
 
