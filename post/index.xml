@@ -6,10 +6,19 @@
     <description>Recent content in Posts on SEIAROTg&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 01 Jul 2020 00:25:39 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 28 Sep 2020 21:43:19 +0100</lastBuildDate>
     
 	<atom:link href="https://seiarotg.me/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Royal Mail 的时效</title>
+      <link>https://seiarotg.me/post/royal-mail-slo/</link>
+      <pubDate>Mon, 28 Sep 2020 21:43:19 +0100</pubDate>
+      
+      <guid>https://seiarotg.me/post/royal-mail-slo/</guid>
+      <description>最近一家有钱的大厂给我寄了一封 second class 并告诉我大约三四个工作日送达，然而实际花费八个工作日（含周六不含周日，含投递日不含寄出日）。这么慢是应该的</description>
+    </item>
     
     <item>
       <title>准确计算英国 PAYE 每月扣税数额</title>
