@@ -6,10 +6,19 @@
     <description>Recent content in Tech on SEIAROTg&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 06 Apr 2020 00:08:14 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 04 Oct 2020 14:40:34 +0100</lastBuildDate>
     
 	<atom:link href="https://seiarotg.me/categories/tech/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>macOS 锁定 BSSID</title>
+      <link>https://seiarotg.me/post/macos-lock-bssid/</link>
+      <pubDate>Sun, 04 Oct 2020 14:40:34 +0100</pubDate>
+      
+      <guid>https://seiarotg.me/post/macos-lock-bssid/</guid>
+      <description>搬家到了一处便宜的地方以至于没有网络供应需要仰仗 BTWi-fi。而居民区中的 BTWi-fi 主要来自于邻居门家中品牌各异的无线路由器。这些热点的 ESSID 都叫“B</description>
+    </item>
     
     <item>
       <title>给 Surface 3 安装 ChromeOS</title>
