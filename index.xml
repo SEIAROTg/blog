@@ -6,10 +6,19 @@
     <description>Recent content on SEIAROTg&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 29 Oct 2020 00:05:48 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 11 Jan 2021 21:20:13 +0000</lastBuildDate>
     
 	<atom:link href="https://seiarotg.me/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>玩耍 Intel®️ AMT</title>
+      <link>https://seiarotg.me/post/play-with-intel-amt/</link>
+      <pubDate>Mon, 11 Jan 2021 21:20:13 +0000</pubDate>
+      
+      <guid>https://seiarotg.me/post/play-with-intel-amt/</guid>
+      <description>背景 去年捡了一台便宜服务器。由于便宜啥都没有，没有 DRAC、iLO 什么的，甚至没有 IPMI。但是作为一台正规的 Intel 平台服务器，CPU 自带了 Active Management</description>
+    </item>
     
     <item>
       <title>我对纯文本复式簿记的理解</title>
