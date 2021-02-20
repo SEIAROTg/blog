@@ -6,10 +6,19 @@
     <description>Recent content on SEIAROTg&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 11 Jan 2021 21:20:13 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 20 Feb 2021 15:24:31 +0000</lastBuildDate>
     
 	<atom:link href="https://seiarotg.me/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>读取 Smart Meter 数据</title>
+      <link>https://seiarotg.me/post/retrieve-smart-meter-readings/</link>
+      <pubDate>Sat, 20 Feb 2021 15:24:31 +0000</pubDate>
+      
+      <guid>https://seiarotg.me/post/retrieve-smart-meter-readings/</guid>
+      <description>背景 近日安装了 Smart Meter。 安装完毕后师傅发放了一部小屏幕，可远程观看读数。该设备开设了「当前读数」、「今日耗电」、「今日费用」、「每小时耗</description>
+    </item>
     
     <item>
       <title>玩耍 Intel®️ AMT</title>
