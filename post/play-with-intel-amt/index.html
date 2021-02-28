@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.56.0 with even 4.0.0" />
+<meta name="generator" content="Hugo 0.81.0 with even 4.0.0" />
 
 
 <link rel="canonical" href="https://seiarotg.me/post/play-with-intel-amt/" />
@@ -41,21 +41,15 @@
 <meta property="og:title" content="玩耍 Intel®️ AMT" />
 <meta property="og:description" content="背景 去年捡了一台便宜服务器。由于便宜啥都没有，没有 DRAC、iLO 什么的，甚至没有 IPMI。但是作为一台正规的 Intel 平台服务器，CPU 自带了 Active Management" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://seiarotg.me/post/play-with-intel-amt/" />
-<meta property="article:published_time" content="2021-01-11T21:20:13+00:00" />
-<meta property="article:modified_time" content="2021-01-11T21:20:13+00:00" />
+<meta property="og:url" content="https://seiarotg.me/post/play-with-intel-amt/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-01-11T21:20:13&#43;00:00" />
+<meta property="article:modified_time" content="2021-01-11T21:20:13&#43;00:00" />
+
 <meta itemprop="name" content="玩耍 Intel®️ AMT">
-<meta itemprop="description" content="背景 去年捡了一台便宜服务器。由于便宜啥都没有，没有 DRAC、iLO 什么的，甚至没有 IPMI。但是作为一台正规的 Intel 平台服务器，CPU 自带了 Active Management">
-
-
-<meta itemprop="datePublished" content="2021-01-11T21:20:13&#43;00:00" />
+<meta itemprop="description" content="背景 去年捡了一台便宜服务器。由于便宜啥都没有，没有 DRAC、iLO 什么的，甚至没有 IPMI。但是作为一台正规的 Intel 平台服务器，CPU 自带了 Active Management"><meta itemprop="datePublished" content="2021-01-11T21:20:13&#43;00:00" />
 <meta itemprop="dateModified" content="2021-01-11T21:20:13&#43;00:00" />
-<meta itemprop="wordCount" content="939">
-
-
-
-<meta itemprop="keywords" content="device,server," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="wordCount" content="1049">
+<meta itemprop="keywords" content="device,server," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="玩耍 Intel®️ AMT"/>
 <meta name="twitter:description" content="背景 去年捡了一台便宜服务器。由于便宜啥都没有，没有 DRAC、iLO 什么的，甚至没有 IPMI。但是作为一台正规的 Intel 平台服务器，CPU 自带了 Active Management"/>
 
@@ -134,60 +128,33 @@
     <div class="post-toc" id="post-toc">
   <h2 class="post-toc-title">Contents</h2>
   <div class="post-toc-content always-active">
-    <nav id="TableOfContents">
-<ul>
-<li><a href="#背景">背景</a></li>
-<li><a href="#初始化">初始化</a></li>
-<li><a href="#用">用</a></li>
-<li><a href="#装系统">装系统</a></li>
-</ul>
-</nav>
+    <nav id="TableOfContents"></nav>
   </div>
 </div>
     <div class="post-content">
-      
-
-<h1 id="背景">背景</h1>
-
+      <h1 id="背景">背景</h1>
 <p>去年捡了一台便宜服务器。由于便宜啥都没有，没有 DRAC、iLO 什么的，甚至没有 IPMI。但是作为一台正规的 Intel 平台服务器，CPU 自带了 Active Management Technology 可以用。</p>
-
 <h1 id="初始化">初始化</h1>
-
 <p>首先要 KVM 进去设置一下。</p>
-
 <p>找一个显示器一个键盘插上开机。注意一定要给显示器通电，不然用不了。我就在这一步卡了好久。</p>
-
 <p>进 BIOS &gt; Advanced &gt; AMT Configuration 把想开的东西开起来。</p>
-
 <p>重启 Ctrl + P 进 MEBx（Management Engine BIOS Extension），主要也就是设个密码。默认密码 admin 输入后即提示修改。需要注意这里有隐藏要求：8-32 个字符，需包含数字、大写字母、小写字母、除空格和下划线外的 ASCII 符号（<a href="https://www.intel.com/content/dam/support/us/en/documents/motherboards/desktop/sb/intel_mebx_user_guide_for_7series.pdf">古老的 C216 手册</a> 3.3）。不符合要求的密码会提示设置失败而不告知任何原因。我在这里也卡了许久。</p>
-
 <p>然后重启，据说就可以用了。</p>
-
 <h1 id="用">用</h1>
-
 <p>那么怎么用呢？</p>
-
 <p>搜索得知 AMT 的提供<a href="https://software.intel.com/sites/manageability/AMT_Implementation_and_Reference_Guide/default.htm?turl=WordDocuments%2Fmanageabilityports.htm">一堆服务</a>。那么就先从 HTTPS (TCP 16993) 开始好了。首先找到服务器 IP，发现它从 DHCP 领了两个连号 IP，其中一个是能正常连上现有系统的，于是猜测另一个是 AMT 弄出来的，结果猜错了连不上。（依然不知道那个 IP 是怎么来的）</p>
-
 <p>于是尝试正常 IP，发现也不行。后研究表明不安装证书时 HTTPS 不会启动。于是使用 HTTP (TCP 16992) 顺利连上并登录。</p>
-
 <p>然而进去以后好像只能看看系统信息、关关机、重重启、设设置。这也太没用了吧！</p>
-
 <p>上网转一转，看人家的高级用法都需要高级小软件，似乎都是 Windows 专供。好在有个叫 <a href="https://www.meshcommander.com/meshcommander">MeshCommander</a> 的客户端提供了跨平台的 Node.js 版本。<code>npm install meshcommander</code> 安装后 <code>node_modules/meshcommander</code> 即可使用。</p>
-
 <p>连上以后左边会慢慢多出各种功能，比如除了关机重启之外我们现在还能远程<strong>开机</strong>了。还可以远程桌面或者安装个证书啥的。</p>
-
 <h1 id="装系统">装系统</h1>
-
 <p>那么既然可以远程桌面，那么来装个系统看看。</p>
-
 <p>找了个 ISO，在 IDER 中远程挂载成 CDROM，重启到 CDROM。缓慢安装，找不到网卡驱动，选择驱动，又选一遍驱动，磁盘分区失败……总之各种诡异的错误。</p>
-
 <p>重试了一遍还是一样，但是感觉有点不对——怎么这么卡。</p>
-
 <p><a href="https://github.com/Ylianst/MeshCentral/issues/951">这里</a>说是 IDER 会转发每个磁盘请求，那么搞不好就是一大堆小包，自然卡死。里头建议说可以用比如 <a href="https://netboot.xyz/">netboot.xyz</a> 之类的工具来两步 boot，启动一个小系统然后用科学的协议挂 ISO 或者把 ISO 上传过去什么的。</p>
-
 <p>然而折腾了一会并没有成功，弄了个U盘过去插上果然快多了，各种错误也不见了。看来之前的错误可能只是某些操作过于缓慢于是超时失败了。在家里弄个U盘还是可以接受的，比起抱着显示器过去蹲地上干活可好多了。</p>
+<h1 id="黑屏">黑屏</h1>
+<p>装好系统以后我就切换到 ssh 来玩耍了。最近弄坏了 networking.service 需要用 AMT 登录却看不到东西了。研究发现是没差显示器导致核显关闭啥都不输出了。<a href="https://www.reddit.com/r/homelab/comments/i08xnl/headless_mode_with_intel_vpro_amt_nuc9vxqnx/">这则 reddit post</a> 指出可以购买假冒显示器插在机器上激活显卡。或者按照<a href="https://serverfault.com/questions/534939/linux-kernel-option-to-force-video-card-to-stay-on">这则 serverfault 答案</a>上说的安排 <code>nomodeset</code> kernel option。</p>
 
     </div>
 

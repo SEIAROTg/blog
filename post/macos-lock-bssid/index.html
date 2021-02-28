@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.56.0 with even 4.0.0" />
+<meta name="generator" content="Hugo 0.81.0 with even 4.0.0" />
 
 
 <link rel="canonical" href="https://seiarotg.me/post/macos-lock-bssid/" />
@@ -41,21 +41,15 @@
 <meta property="og:title" content="macOS 指定 BSSID" />
 <meta property="og:description" content="搬家到了一处便宜的地方以至于没有网络供应需要仰仗 BTWi-fi。而居民区中的 BTWi-fi 主要来自于邻居门家中品牌各异的无线路由器。这些热点的 ESSID 都叫“B" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://seiarotg.me/post/macos-lock-bssid/" />
-<meta property="article:published_time" content="2020-10-04T14:40:34+01:00" />
-<meta property="article:modified_time" content="2020-10-04T14:40:34+01:00" />
+<meta property="og:url" content="https://seiarotg.me/post/macos-lock-bssid/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2020-10-04T14:40:34&#43;01:00" />
+<meta property="article:modified_time" content="2020-10-04T14:40:34&#43;01:00" />
+
 <meta itemprop="name" content="macOS 指定 BSSID">
-<meta itemprop="description" content="搬家到了一处便宜的地方以至于没有网络供应需要仰仗 BTWi-fi。而居民区中的 BTWi-fi 主要来自于邻居门家中品牌各异的无线路由器。这些热点的 ESSID 都叫“B">
-
-
-<meta itemprop="datePublished" content="2020-10-04T14:40:34&#43;01:00" />
+<meta itemprop="description" content="搬家到了一处便宜的地方以至于没有网络供应需要仰仗 BTWi-fi。而居民区中的 BTWi-fi 主要来自于邻居门家中品牌各异的无线路由器。这些热点的 ESSID 都叫“B"><meta itemprop="datePublished" content="2020-10-04T14:40:34&#43;01:00" />
 <meta itemprop="dateModified" content="2020-10-04T14:40:34&#43;01:00" />
-<meta itemprop="wordCount" content="561">
-
-
-
-<meta itemprop="keywords" content="mac," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="wordCount" content="538">
+<meta itemprop="keywords" content="mac," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="macOS 指定 BSSID"/>
 <meta name="twitter:description" content="搬家到了一处便宜的地方以至于没有网络供应需要仰仗 BTWi-fi。而居民区中的 BTWi-fi 主要来自于邻居门家中品牌各异的无线路由器。这些热点的 ESSID 都叫“B"/>
 
@@ -134,43 +128,38 @@
     <div class="post-toc" id="post-toc">
   <h2 class="post-toc-title">Contents</h2>
   <div class="post-toc-content always-active">
-    
+    <nav id="TableOfContents"></nav>
   </div>
 </div>
     <div class="post-content">
       <p>搬家到了一处便宜的地方以至于没有网络供应需要仰仗 BTWi-fi。而居民区中的 BTWi-fi 主要来自于邻居门家中品牌各异的无线路由器。这些热点的 ESSID 都叫“BTWi-fi”于是一不留神就会漂到卡的要死的邻居家去，怎么办呢？</p>
-
-<p><img src="../../2020/10/wifi-hotspot-list.png" alt="wifi-hotspot-list" /></p>
-
-<p><center>这个地方的无线环境（WiFi Explorer）</center></p>
-
+<p><img src="../../2020/10/wifi-hotspot-list.png" alt="wifi-hotspot-list"></p>
+<!-- raw HTML omitted -->
 <p>由图可知所有的 5G BTWi-fi 都挤在 channel 36 而 2.4G 分布在 1、6、11 上。其中标有 Good 的这个 2.4G 热点经测试效果较好。</p>
-
 <p>这个<a href="https://apple.stackexchange.com/questions/6958/can-i-connect-to-a-specific-access-point-by-bssid">远古时代的提问</a>下有人提到了 <code>/System/Library/PrivateFrameworks/Apple80211.framework/Versions/A/Resources/airport</code> 这个工具，但是据回答者说这东西从 10.6 开始就不管用了。经测试，果然在 10.14 上已经没有 BSSID 这个参数了。</p>
-
 <p>找了一圈发现了 <a href="https://github.com/braineo/airport-bssid">braineo/airport-bssid</a> 这个工具可用。作者没有提供 binary 于是自行编译，得到如下错误：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
+<pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
 </span><span class="lnt">6
-</span></pre></td>
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">/tmp/airport-bssid/Sources/bssid/utils.swift:8:21: error: &#39;requestAlwaysAuthorization()&#39; is unavailable
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">/tmp/airport-bssid/Sources/bssid/utils.swift:8:21: error: &#39;requestAlwaysAuthorization()&#39; is unavailable
     locationManager.requestAlwaysAuthorization()
                     ^~~~~~~~~~~~~~~~~~~~~~~~~~
 CoreLocation.CLLocationManager:56:15: note: &#39;requestAlwaysAuthorization()&#39; has been explicitly marked unavailable here
     open func requestAlwaysAuthorization()
-              ^</pre></td></tr></table>
+              ^
+</code></pre></td></tr></table>
 </div>
-</div>
-<p>看了一眼代码里面明明有 availability guard，怎么就不行呢？</p>
+</div><p>看了一眼代码里面明明有 availability guard，怎么就不行呢？</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-swift" data-lang="swift"><span class="lnt">1
+<pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -179,28 +168,26 @@ CoreLocation.CLLocationManager:56:15: note: &#39;requestAlwaysAuthorization()&#3
 <pre class="chroma"><code class="language-swift" data-lang="swift"><span class="k">if</span> <span class="cp">#available</span><span class="p">(</span><span class="cp">macOS</span> <span class="mf">10.15</span><span class="p">,</span> <span class="o">*</span><span class="p">)</span> <span class="p">{</span>
   <span class="n">locationManager</span><span class="p">.</span><span class="n">requestAlwaysAuthorization</span><span class="p">()</span>
   <span class="n">locationManager</span><span class="p">.</span><span class="n">startUpdatingLocation</span><span class="p">()</span>
-<span class="p">}</span></code></pre></td></tr></table>
+<span class="p">}</span>
+</code></pre></td></tr></table>
 </div>
-</div>
-<p>据猜测写了 guard 只能够让新版编译出来的 binary 拿到旧版跑，并不能在旧版上编译。我也没有找到编译时的 guard。反正是自己用，索性删掉好了。</p>
-
+</div><p>据猜测写了 guard 只能够让新版编译出来的 binary 拿到旧版跑，并不能在旧版上编译。我也没有找到编译时的 guard。反正是自己用，索性删掉好了。</p>
 <p>于是试用：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
+<pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
-</span></pre></td>
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">&gt; bssid connect aa:bb:cc:dd:ee:ff
-require a BSSID or pass a SSID by --ssid</pre></td></tr></table>
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">&gt; bssid connect aa:bb:cc:dd:ee:ff
+require a BSSID or pass a SSID by --ssid
+</code></pre></td></tr></table>
 </div>
-</div>
-<p>诶我不是写了 BSSID 吗？</p>
-
+</div><p>诶我不是写了 BSSID 吗？</p>
 <p>看一眼代码</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-swift" data-lang="swift"><span class="lnt">1
+<pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -217,13 +204,11 @@ require a BSSID or pass a SSID by --ssid</pre></td></tr></table>
 <span class="k">if</span> <span class="p">(</span><span class="n">requestSSID</span><span class="p">.</span><span class="bp">isEmpty</span> <span class="o">&amp;&amp;</span> <span class="n">requestSSID</span><span class="p">.</span><span class="bp">isEmpty</span><span class="p">)</span> <span class="p">{</span>
   <span class="bp">print</span><span class="p">(</span><span class="s">&#34;require a BSSID or pass a SSID by --ssid&#34;</span><span class="p">)</span>
   <span class="k">return</span>
-<span class="p">}</span></code></pre></td></tr></table>
+<span class="p">}</span>
+</code></pre></td></tr></table>
 </div>
-</div>
-<p>👉 <code>requestSSID.isEmpty &amp;&amp; requestSSID.isEmpty</code></p>
-
+</div><p>👉 <code>requestSSID.isEmpty &amp;&amp; requestSSID.isEmpty</code></p>
 <p>改正，于是好使了。</p>
-
 <p>至此，我们成功连接到了标有 Good 的热点，获得了勉强能用的无线网络接入。注意这并不能防止我们漂到同一个 ESSID 下的不同 BSSID 去，但在漂走以后可以主动申请回来。</p>
 
     </div>

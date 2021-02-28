@@ -16,14 +16,14 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="SEIAROTg" /><meta name="description" content="我的 MacBook Air 使用至今已有五年之久，最近还出现了“删除文件后可用空间不增加”的故障。于是趁 618 之际我买了一堆配件，组了个 Hackintosh。 配置 经" />
+<meta name="author" content="SEIAROTg" /><meta name="description" content="我的 MacBook Air 使用至今已有五年之久，最近还出现了“删除文件后可用空间不增加”的故障。于是趁 618 之际我买了一堆配件，组了个 Hackintosh。 [2021-01] 我重" />
 
 
 
 
 
 
-<meta name="generator" content="Hugo 0.56.0 with even 4.0.0" />
+<meta name="generator" content="Hugo 0.81.0 with even 4.0.0" />
 
 
 <link rel="canonical" href="https://seiarotg.me/post/build-hackintosh/" />
@@ -39,25 +39,19 @@
 
 
 <meta property="og:title" content="装一台迷你黑苹果" />
-<meta property="og:description" content="我的 MacBook Air 使用至今已有五年之久，最近还出现了“删除文件后可用空间不增加”的故障。于是趁 618 之际我买了一堆配件，组了个 Hackintosh。 配置 经" />
+<meta property="og:description" content="我的 MacBook Air 使用至今已有五年之久，最近还出现了“删除文件后可用空间不增加”的故障。于是趁 618 之际我买了一堆配件，组了个 Hackintosh。 [2021-01] 我重" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://seiarotg.me/post/build-hackintosh/" />
-<meta property="article:published_time" content="2019-08-01T14:04:11+08:00" />
-<meta property="article:modified_time" content="2019-08-01T14:04:11+08:00" />
+<meta property="og:url" content="https://seiarotg.me/post/build-hackintosh/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2019-08-01T14:04:11&#43;08:00" />
+<meta property="article:modified_time" content="2019-08-01T14:04:11&#43;08:00" />
+
 <meta itemprop="name" content="装一台迷你黑苹果">
-<meta itemprop="description" content="我的 MacBook Air 使用至今已有五年之久，最近还出现了“删除文件后可用空间不增加”的故障。于是趁 618 之际我买了一堆配件，组了个 Hackintosh。 配置 经">
-
-
-<meta itemprop="datePublished" content="2019-08-01T14:04:11&#43;08:00" />
+<meta itemprop="description" content="我的 MacBook Air 使用至今已有五年之久，最近还出现了“删除文件后可用空间不增加”的故障。于是趁 618 之际我买了一堆配件，组了个 Hackintosh。 [2021-01] 我重"><meta itemprop="datePublished" content="2019-08-01T14:04:11&#43;08:00" />
 <meta itemprop="dateModified" content="2019-08-01T14:04:11&#43;08:00" />
-<meta itemprop="wordCount" content="1208">
-
-
-
-<meta itemprop="keywords" content="hackintosh,mac,device,shopping," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="wordCount" content="1229">
+<meta itemprop="keywords" content="hackintosh,mac,device,shopping," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="装一台迷你黑苹果"/>
-<meta name="twitter:description" content="我的 MacBook Air 使用至今已有五年之久，最近还出现了“删除文件后可用空间不增加”的故障。于是趁 618 之际我买了一堆配件，组了个 Hackintosh。 配置 经"/>
+<meta name="twitter:description" content="我的 MacBook Air 使用至今已有五年之久，最近还出现了“删除文件后可用空间不增加”的故障。于是趁 618 之际我买了一堆配件，组了个 Hackintosh。 [2021-01] 我重"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -135,140 +129,100 @@
   <h2 class="post-toc-title">Contents</h2>
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
-<ul>
-<li><a href="#配置">配置</a></li>
-<li><a href="#组装">组装</a></li>
-<li><a href="#系统安装">系统安装</a>
-<ul>
-<li><a href="#坑-1-970-evo-plus">坑 1：970 EVO Plus</a></li>
-<li><a href="#坑-2-filevault">坑 2：FileVault</a></li>
-<li><a href="#坑-3-usb-扩展">坑 3：USB 扩展</a></li>
-<li><a href="#坑-4-风扇和变频">坑 4：风扇和变频</a></li>
-<li><a href="#坑-5-3-5mm-音频口">坑 5：3.5mm 音频口</a></li>
-</ul></li>
-<li><a href="#技术总结">技术总结</a></li>
-<li><a href="#遗留问题">遗留问题</a></li>
-</ul>
+  <ul>
+    <li><a href="#坑-1970-evo-plus">坑 1：970 EVO Plus</a></li>
+    <li><a href="#坑-2filevault">坑 2：FileVault</a></li>
+    <li><a href="#坑-3usb-扩展">坑 3：USB 扩展</a></li>
+    <li><a href="#坑-4风扇和变频">坑 4：风扇和变频</a></li>
+    <li><a href="#坑-535mm-音频口">坑 5：3.5mm 音频口</a></li>
+  </ul>
 </nav>
   </div>
 </div>
     <div class="post-content">
-      
-
-<p>我的 MacBook Air 使用至今已有五年之久，最近还出现了“删除文件后可用空间不增加”的故障。于是趁 618 之际我买了一堆配件，组了个 Hackintosh。</p>
-
+      <p>我的 MacBook Air 使用至今已有五年之久，最近还出现了“删除文件后可用空间不增加”的故障。于是趁 618 之际我买了一堆配件，组了个 Hackintosh。</p>
+<blockquote>
+<p>[2021-01] 我重做了 EFI 并更新到了 Big Sur，请看<a href="../upgrade-my-hackintosh/">这里</a>。</p>
+</blockquote>
 <h1 id="配置">配置</h1>
-
 <p>经过一番搜索，我看上了 DeskMini 310 这款准系统。它使用 Mini-STX 规格的 H310 主板，比 Mini-ITX 小一圈，比 NUC 大一圈，可以上标压 CPU。总价是近似配置 Mac Mini 的 ⅓。</p>
-
 <table>
 <thead>
 <tr>
 <th>配件</th>
-<th align="right">价格</th>
+<th style="text-align:right">价格</th>
 <th>来源</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td>AsRock DeskMini 310/COM 准系统</td>
-<td align="right">¥989.00</td>
+<td style="text-align:right">¥989.00</td>
 <td>京东自营</td>
 </tr>
-
 <tr>
 <td>Intel i7-8700 ES (QNLW) CPU</td>
-<td align="right">¥1220.00</td>
+<td style="text-align:right">¥1220.00</td>
 <td>淘宝</td>
 </tr>
-
 <tr>
 <td>SAMSUNG 970 EVO Plus 500G SSD</td>
-<td align="right">¥739.00</td>
+<td style="text-align:right">¥739.00</td>
 <td>京东自营</td>
 </tr>
-
 <tr>
 <td>ADATA DDR4 2666 16GB SO-DIMM 内存 * 2</td>
-<td align="right">¥958.00</td>
+<td style="text-align:right">¥958.00</td>
 <td>京东自营</td>
 </tr>
-
 <tr>
 <td>BCM94360CS2 + 转接卡 + 天线</td>
-<td align="right">¥128.00</td>
+<td style="text-align:right">¥128.00</td>
 <td>淘宝</td>
 </tr>
-
 <tr>
 <td>ID-COOLING IS40x 散热器</td>
-<td align="right">¥87.00</td>
+<td style="text-align:right">¥87.00</td>
 <td>天猫旗舰店</td>
 </tr>
-
 <tr>
 <td>主板 9pin 转双 USB2.0 扩展线 30cm</td>
-<td align="right">¥5.50</td>
+<td style="text-align:right">¥5.50</td>
 <td>淘宝</td>
 </tr>
-
 <tr>
 <td>合计</td>
-<td align="right">¥4126.50</td>
+<td style="text-align:right">¥4126.50</td>
 <td></td>
 </tr>
 </tbody>
 </table>
-
 <h1 id="组装">组装</h1>
-
 <ul>
 <li>BCM94360CS2 带上转接卡有相当的厚度，以至于上面的 SSD 装不平要翘起来，只能用 M.2 螺丝勉强固定。</li>
 <li>IS40x 安装需要注意方向。面向沿主板滑轨方向如铁丝部分在左右，主板可能滑不回去。</li>
 <li>我买的 USB 扩展线又硬又长，很难塞进去固定好又不挡住主板滑回去的路。我最后打了个结并用几根棉线牵引才勉强装好。后果是如果要拆主板必须先拆 USB 扩展口然后装回去的时候还要煎熬一次。</li>
 </ul>
-
 <h1 id="系统安装">系统安装</h1>
-
 <p>DeskMini 310 的黑苹果方案网上一大堆，随便找一个烧进 U 盘即可安装。除双屏因手上暂无第二个屏没法测试，其他均完美。安装过程中遇到的问题罗列如下：</p>
-
-<h2 id="坑-1-970-evo-plus">坑 1：970 EVO Plus</h2>
-
+<h2 id="坑-1970-evo-plus">坑 1：970 EVO Plus</h2>
 <p>起初我从 U 盘启动一切顺利格盘点安装然后重启，clover 上也顺利地出现了硬盘上的启动项。但一旦从这里启动很快就会黑屏重启，且屏幕上不打印任何日志。</p>
-
 <p>反复尝试未果后我打算放弃，于是淘宝上找了一家专业安装黑苹果的。人家说 970 EVO Plus 要加钱，原因让我问别家。于是换一家问，答 970 EVO Plus 需要更新固件才能装。遂装了个 Windows，使用 Samsung Magician 更新固件。</p>
-
 <p>很快，更新就失败了，没有错误信息。反复重试未果。<strong>吃饭</strong>的时候想到会不会是固件下载失败，于是换了个网络环境，好了。</p>
-
-<h2 id="坑-2-filevault">坑 2：FileVault</h2>
-
+<h2 id="坑-2filevault">坑 2：FileVault</h2>
 <p>系统很快就装好了。下软件装软件。重启后哎呀 clover 里怎么没东西了？！</p>
-
 <p>以为是 <a href="https://www.oneperiodic.com/products/handsoff/">Hands Off!</a> 和黑果不兼容，重置 EFI 无果，搜寻方案无果。</p>
-
 <p>又是<strong>吃饭</strong>的时候想到可能是 FileVault 导致的，搜索后很快发现需要安装一些额外的 kext 并取消隐藏 Preboot 分区。</p>
-
-<h2 id="坑-3-usb-扩展">坑 3：USB 扩展</h2>
-
+<h2 id="坑-3usb-扩展">坑 3：USB 扩展</h2>
 <p>修好 FileVault 后发现 USB 扩展口有电没信号。经查发现需要安装<a href="https://www.chenweikang.top/?p=613">额外的 kext</a>。</p>
-
-<h2 id="坑-4-风扇和变频">坑 4：风扇和变频</h2>
-
+<h2 id="坑-4风扇和变频">坑 4：风扇和变频</h2>
 <p>使用一段时间后发现风扇声好大，于是去 BIOS 里调成静音模式。又用了一阵子发现转速上不来。经查找资料，按照<a href="https://www.chenweikang.top/?p=613">这个</a>的指示配置了 HWP，但是 Intel® Power Gadget 显示主频居高不下。又看了 Intel 的<a href="https://www.intel.com/content/dam/www/public/us/en/documents/manuals/64-ia-32-architectures-software-developer-vol-3b-part-2-manual.pdf">这个文档</a>，按照其中 HWP_REQUEST 的 spec 配置，解决了风扇和变频的问题。</p>
-
 <p>VirtualSMC 似乎还存在一些问题导致我的 iStat Menus 无法显示风扇转速并少显示一个核心的温度。Macs Fan Control 则可以看到风扇转速。</p>
-
-<h2 id="坑-5-3-5mm-音频口">坑 5：3.5mm 音频口</h2>
-
+<h2 id="坑-535mm-音频口">坑 5：3.5mm 音频口</h2>
 <p>DeskMini 310/COM 前面板共有两个 3.5mm 音频口。根据说明书，上面那个口只有 Mic-In 所以耳机插上去没有声。</p>
-
 <h1 id="技术总结">技术总结</h1>
-
 <p>吃饭有利于解决问题。</p>
-
 <h1 id="遗留问题">遗留问题</h1>
-
 <ul>
 <li><a href="https://www.v2ex.com/t/581900">据说</a> DeskMini 310 的电源有问题，拔掉 220V 那头会弄坏主板，拔掉 19V 那头则没有事。</li>
 <li>休眠唤醒后经常会没声，需要重新加载 <code>/System/Library/Extensions/AppleHDA.kext</code>。</li>

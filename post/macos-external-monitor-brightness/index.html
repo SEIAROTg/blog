@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.56.0 with even 4.0.0" />
+<meta name="generator" content="Hugo 0.81.0 with even 4.0.0" />
 
 
 <link rel="canonical" href="https://seiarotg.me/post/macos-external-monitor-brightness/" />
@@ -41,21 +41,15 @@
 <meta property="og:title" content="macOS 软件调节外接显示器亮度" />
 <meta property="og:description" content="如果您也和我一样在显示器附近安装了窗户，您可能需要经常调节显示器的亮度。用爪子靠近显示器设置开关非常不方便，也非常慢。 经过一番搜索后我发现了" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://seiarotg.me/post/macos-external-monitor-brightness/" />
-<meta property="article:published_time" content="2019-08-03T12:03:18+08:00" />
-<meta property="article:modified_time" content="2019-08-03T12:03:18+08:00" />
+<meta property="og:url" content="https://seiarotg.me/post/macos-external-monitor-brightness/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2019-08-03T12:03:18&#43;08:00" />
+<meta property="article:modified_time" content="2019-08-03T12:03:18&#43;08:00" />
+
 <meta itemprop="name" content="macOS 软件调节外接显示器亮度">
-<meta itemprop="description" content="如果您也和我一样在显示器附近安装了窗户，您可能需要经常调节显示器的亮度。用爪子靠近显示器设置开关非常不方便，也非常慢。 经过一番搜索后我发现了">
-
-
-<meta itemprop="datePublished" content="2019-08-03T12:03:18&#43;08:00" />
+<meta itemprop="description" content="如果您也和我一样在显示器附近安装了窗户，您可能需要经常调节显示器的亮度。用爪子靠近显示器设置开关非常不方便，也非常慢。 经过一番搜索后我发现了"><meta itemprop="datePublished" content="2019-08-03T12:03:18&#43;08:00" />
 <meta itemprop="dateModified" content="2019-08-03T12:03:18&#43;08:00" />
-<meta itemprop="wordCount" content="479">
-
-
-
-<meta itemprop="keywords" content="mac," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="wordCount" content="391">
+<meta itemprop="keywords" content="mac," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="macOS 软件调节外接显示器亮度"/>
 <meta name="twitter:description" content="如果您也和我一样在显示器附近安装了窗户，您可能需要经常调节显示器的亮度。用爪子靠近显示器设置开关非常不方便，也非常慢。 经过一番搜索后我发现了"/>
 
@@ -135,73 +129,54 @@
   <h2 class="post-toc-title">Contents</h2>
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
-<ul>
-<li><a href="#示例">示例</a>
-<ul>
-<li><a href="#基本操作">基本操作</a></li>
-<li><a href="#高级操作">高级操作</a></li>
-<li><a href="#其他操作">其他操作</a></li>
-</ul></li>
-<li><a href="#实际使用">实际使用</a></li>
-</ul>
+  <ul>
+    <li><a href="#基本操作">基本操作</a></li>
+    <li><a href="#高级操作">高级操作</a></li>
+    <li><a href="#其他操作">其他操作</a></li>
+  </ul>
 </nav>
   </div>
 </div>
     <div class="post-content">
-      
-
-<p>如果您也和我一样在显示器附近安装了窗户，您可能需要经常调节显示器的亮度。用爪子靠近显示器设置开关非常不方便，也非常慢。</p>
-
+      <p>如果您也和我一样在显示器附近安装了窗户，您可能需要经常调节显示器的亮度。用爪子靠近显示器设置开关非常不方便，也非常慢。</p>
 <p>经过一番搜索后我发现了<a href="https://github.com/kfix/ddcctl">这个叫 ddcctl 的项目</a>。它提供了一个命令行小工具来控制外接显示器的亮度、对比度等参数。</p>
-
 <h1 id="示例">示例</h1>
-
 <h2 id="基本操作">基本操作</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-sh" data-lang="sh"><span class="lnt">1
+<pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-sh" data-lang="sh">ddcctl -d <span class="m">1</span> -b <span class="m">100</span> <span class="c1"># 将 1 号显示器的亮度调整到 100</span>
 ddcctl -d <span class="m">1</span> -c <span class="m">50</span>  <span class="c1"># 将 1 号显示器的对比度调整到 50</span>
-ddcctl -d <span class="m">1</span> -rbc   <span class="c1"># 重置 1 号显示器的亮度和对比度</span></code></pre></td></tr></table>
+ddcctl -d <span class="m">1</span> -rbc   <span class="c1"># 重置 1 号显示器的亮度和对比度</span>
+</code></pre></td></tr></table>
 </div>
-</div>
-<div class="admonition success"><p class="admonition-title">已测试</p>
-  
-<p>这几个功能在我用 DisplayPort 线连接的 DELL P2414 / P2417 上工作良好。</p>
-
-</div>
-
+</div><!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
 <h2 id="高级操作">高级操作</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-sh" data-lang="sh"><span class="lnt">1
+<pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-sh" data-lang="sh">ddcctl -d <span class="m">1</span> -b ?   <span class="c1"># 查看 1 号显示器当前的亮度设置</span>
-ddcctl -d <span class="m">1</span> -b <span class="m">10</span>+ <span class="c1"># 将 1 号显示器当前亮度调高 10</span>
-ddcctl -d <span class="m">1</span> -b <span class="m">10</span>- <span class="c1"># 将 1 号显示器当前亮度调低 10</span></code></pre></td></tr></table>
+ddcctl -d <span class="m">1</span> -b 10+ <span class="c1"># 将 1 号显示器当前亮度调高 10</span>
+ddcctl -d <span class="m">1</span> -b 10- <span class="c1"># 将 1 号显示器当前亮度调低 10</span>
+</code></pre></td></tr></table>
 </div>
-</div>
-<div class="admonition danger"><p class="admonition-title">警告</p>
-  
-<p>这几个功能在我用 DisplayPort 线连接的 DELL P2414 / P2417 上必然导致系统卡死<u><b>不得不强制关机</b></u>。请务必在先保存好所有工作再进行测试。勿谓言之不预也。</p>
-
-</div>
-
+</div><!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
 <h2 id="其他操作">其他操作</h2>
-
 <p>此外，这个工具还能控制显示器输入源、喇叭等设置。由于我的显示器只有一个输入也没有喇叭，未作测试。具体参数可键入 <code>ddcctl</code> 查看。</p>
-
 <h1 id="实际使用">实际使用</h1>
-
 <p>可以给 <code>ddcctl -d 1 -b 10+</code> 和 <code>ddcctl -d 1 -b 10-</code> 各绑定一个快捷键。</p>
-
 <p>由于用不了这俩命令，我使用了空调遥控器模式：将亮度设置存放在一个文件中，需要变更时修改文件并用 <code>ddcctl -d 1 -b $(cat ~/.brightness)</code> 向显示器同步。</p>
 
     </div>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on SEIAROTg&#39;s blog</title>
@@ -6,10 +6,15 @@
     <description>Recent content in Posts on SEIAROTg&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 20 Feb 2021 15:24:31 +0000</lastBuildDate>
-    
-	<atom:link href="https://seiarotg.me/post/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Sun, 28 Feb 2021 20:14:31 +0000</lastBuildDate><atom:link href="https://seiarotg.me/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>重做我的黑果</title>
+      <link>https://seiarotg.me/post/upgrade-my-hackintosh/</link>
+      <pubDate>Sun, 28 Feb 2021 20:14:31 +0000</pubDate>
+      
+      <guid>https://seiarotg.me/post/upgrade-my-hackintosh/</guid>
+      <description>背景 一年半前我装了一台迷你黑苹果使用至今，由于拿的现成 EFI 不敢随便升级一直卡在 Mojave。现计划升级到 Big Sur，顺便解决一下偶尔毫无征兆地重</description>
+    </item>
     
     <item>
       <title>读取 Smart Meter 数据</title>
@@ -134,7 +139,7 @@
       <pubDate>Sat, 24 Aug 2019 22:18:10 +0800</pubDate>
       
       <guid>https://seiarotg.me/post/misc-20190824/</guid>
-      <description>今天遇到了几个小坑，特此记录。 npm 装啥都不行 环境：npm@6.9.0、node@12.6.0 (homebrew) 问题：无论用 npm 安装什么，是否忽略 package-</description>
+      <description>今天遇到了几个小坑，特此记录。 npm 装啥都不行 **环境：**npm@6.9.0、node@12.6.0 (homebrew) **问题：**无论用 npm 安装什么，是否忽略</description>
     </item>
     
     <item>
@@ -170,7 +175,7 @@
       <pubDate>Thu, 01 Aug 2019 14:04:11 +0800</pubDate>
       
       <guid>https://seiarotg.me/post/build-hackintosh/</guid>
-      <description>我的 MacBook Air 使用至今已有五年之久，最近还出现了“删除文件后可用空间不增加”的故障。于是趁 618 之际我买了一堆配件，组了个 Hackintosh。 配置 经</description>
+      <description>我的 MacBook Air 使用至今已有五年之久，最近还出现了“删除文件后可用空间不增加”的故障。于是趁 618 之际我买了一堆配件，组了个 Hackintosh。 [2021-01] 我重</description>
     </item>
     
     <item>
