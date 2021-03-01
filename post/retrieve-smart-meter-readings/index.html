@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.81.0 with even 4.0.0" />
+<meta name="generator" content="Hugo 0.56.0 with even 4.0.0" />
 
 
 <link rel="canonical" href="https://seiarotg.me/post/retrieve-smart-meter-readings/" />
@@ -41,15 +41,21 @@
 <meta property="og:title" content="读取 Smart Meter 数据" />
 <meta property="og:description" content="背景 近日安装了 Smart Meter。 安装完毕后师傅发放了一部小屏幕，可远程观看读数。该设备开设了「当前读数」、「今日耗电」、「今日费用」、「每小时耗" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://seiarotg.me/post/retrieve-smart-meter-readings/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2021-02-20T15:24:31&#43;00:00" />
-<meta property="article:modified_time" content="2021-02-20T15:24:31&#43;00:00" />
-
+<meta property="og:url" content="https://seiarotg.me/post/retrieve-smart-meter-readings/" />
+<meta property="article:published_time" content="2021-02-20T15:24:31+00:00" />
+<meta property="article:modified_time" content="2021-02-20T15:24:31+00:00" />
 <meta itemprop="name" content="读取 Smart Meter 数据">
-<meta itemprop="description" content="背景 近日安装了 Smart Meter。 安装完毕后师傅发放了一部小屏幕，可远程观看读数。该设备开设了「当前读数」、「今日耗电」、「今日费用」、「每小时耗"><meta itemprop="datePublished" content="2021-02-20T15:24:31&#43;00:00" />
+<meta itemprop="description" content="背景 近日安装了 Smart Meter。 安装完毕后师傅发放了一部小屏幕，可远程观看读数。该设备开设了「当前读数」、「今日耗电」、「今日费用」、「每小时耗">
+
+
+<meta itemprop="datePublished" content="2021-02-20T15:24:31&#43;00:00" />
 <meta itemprop="dateModified" content="2021-02-20T15:24:31&#43;00:00" />
 <meta itemprop="wordCount" content="2544">
-<meta itemprop="keywords" content="uk,mac,device,home," /><meta name="twitter:card" content="summary"/>
+
+
+
+<meta itemprop="keywords" content="uk,mac,device,home," />
+<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="读取 Smart Meter 数据"/>
 <meta name="twitter:description" content="背景 近日安装了 Smart Meter。 安装完毕后师傅发放了一部小屏幕，可远程观看读数。该设备开设了「当前读数」、「今日耗电」、「今日费用」、「每小时耗"/>
 
@@ -129,37 +135,70 @@
   <h2 class="post-toc-title">Contents</h2>
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
-  <ul>
-    <li><a href="#电表">电表</a></li>
-    <li><a href="#小屏幕">小屏幕</a></li>
-  </ul>
+<ul>
+<li><a href="#背景">背景</a></li>
+<li><a href="#搜集信息">搜集信息</a>
+<ul>
+<li><a href="#电表">电表</a></li>
+<li><a href="#小屏幕">小屏幕</a></li>
+</ul></li>
+<li><a href="#glow-api">Glow API</a></li>
+<li><a href="#其他方案">其他方案</a></li>
+<li><a href="#截获-cad-向-glowmarkt-上传的数据">截获 CAD 向 Glowmarkt 上传的数据</a></li>
+<li><a href="#思考">思考</a></li>
+</ul>
 </nav>
   </div>
 </div>
     <div class="post-content">
-      <h1 id="背景">背景</h1>
+      
+
+<h1 id="背景">背景</h1>
+
 <p>近日安装了 Smart Meter。</p>
+
 <p>安装完毕后师傅发放了一部小屏幕，可远程观看读数。该设备开设了「当前读数」、「今日耗电」、「今日费用」、「每小时耗电柱状图」、「每日耗电柱状图」等板块，但是我们希望能够获得更长时间段的完整的历史读数并自行处理，以便更好地了解和优化家中的用电情况。</p>
+
 <p>本文讨论英国用于电力和燃气的 Smart Meter，其他国家/地区或其他 Smart Meter 情况可能有所不同。</p>
+
 <p>如果您也想要安装 Smart Meter，可联系您的 Energy Supplier 上门安装，通常是免费的。</p>
+
 <h1 id="搜集信息">搜集信息</h1>
+
 <h2 id="电表">电表</h2>
+
 <p>观察 Smart Meter，发现上面还加装了另一款设备，该设备上写有「SKU1 Cellular」和「ZigBee Certified product」，猜测该设备可能用于上报读数。</p>
+
 <p>该设备左上角标有「WNC UBC-TN6」似乎是型号，搜索后除了 WNC 是制造商的名称外未获得有效信息。后在图片搜索中发现了一张 <a href="https://www.smartdcc.co.uk/media/2966/comms-hub-sbch-wnc-datasheet.pdf">datasheet</a>。其中指出，该设备叫做 Communications Hub，支持 2G / 3G 以及 ZigBee，背面有一个支持 ICHIS 的数据接口。</p>
+
 <p>经搜索，发现英国的 Smart Meter 存在 SMETS1 和 SMETS2 两款标准。由于我是最近安装，应该是 SMETS2。</p>
+
 <h2 id="小屏幕">小屏幕</h2>
+
 <p>安装师傅将小屏幕移交给我时嘱咐过，该设备无需一直连接电源。于是我猜测该设备内置电池，遂询问该设备是否支持电池供电，得到了师傅的肯定。然而插电许久后拔掉电源，设备就黑了。经开盖检查，发现该设备颅内有可安装干电池的电池仓，确实支持电池供电。</p>
+
 <p>小屏幕电源线看似一体实则可以靠大力拔出，拔出后发现是 USB Micro-B 接口。经测试可用普通 USB 电源和线缆供电。</p>
+
 <p>搜索得知该小屏幕叫做 IHD（In-Home Display)。</p>
+
 <p>浏览小屏幕的设置项，发现其支持 Wi-Fi，ZigBee，其中还有一个叫 Glowmarkt 的页面，进入需要登录，而登录凭据的文本框是锁死的。似乎是管理系统。</p>
+
 <p>搜索 Glowmarkt，找到了<a href="https://shop.glowmarkt.com/products/display-and-cad-combined-for-smart-meter-customers?variant=31079504248910">这个页面</a>，上面在售卖同款 IHD，售价 £64.99。上面指出这款设备不止是个 IHD，还是个 CAD（Consumer Access Device），还出现了「Real time electricity and gas monitoring through our Bright app or via APIs」、「Applications and SDK available」等喜人的字样。</p>
+
 <h1 id="glow-api">Glow API</h1>
+
 <p>既然有 API 我们就来试试看呗。</p>
+
 <p><a href="https://bitbucket.org/ijosh/brightglowmarkt/src/master/Bright_smartmetertutorial.pdf">Glowmarkt Energy Data Tutorial</a> 最后一页链接了几个 Swagger 文档。和想象的不大一样的是，这个 API 是由公网上的服务器提供的而不是 CAD 提供的。经测试，给 CAD 断网数据就看不到了。</p>
+
 <p>而且看起来这个东西的野心不止于电表读数，有一堆各种各样的资源和一套用户系统。似乎有些复杂。</p>
+
 <h1 id="其他方案">其他方案</h1>
+
 <p>那么能不能不去 Glow 的服务器绕一圈呢？</p>
+
 <p>现在我们知道数据的走向是：</p>
+
 <ul>
 <li>Smart Meter ==(screen)==&gt; Optical Sensor</li>
 <li>Smart Meter ==(ICHIS)==&gt; Communications Hub</li>
@@ -168,73 +207,81 @@
 <li>IHD / CAD ==(screen)==&gt; Optical Sensor</li>
 <li>IHD / CAD ==(Wi-Fi / Internet)==&gt; Glowmarkt ==&gt; API Server ==&gt; API Client</li>
 </ul>
+
 <p>逐个考虑在各个环节读取的可能性：</p>
+
 <ul>
 <li>安装摄像头从电表屏幕上读取
+
 <ul>
 <li>我的电表不在家里，给摄像头持续供电有困难。</li>
 <li>我的电表处于封闭房间内，通常无照明，获得清晰图像有困难。</li>
 <li>我的电表处于公共区域，取得安装摄像头的授权有困难。</li>
 <li>读数的自动识别存在一定的工程难度。</li>
 <li>费电。</li>
-</ul>
-</li>
+</ul></li>
 <li>从 ICHIS 上读取数据
+
 <ul>
 <li>不熟悉协议，需要学习。</li>
 <li>需要改动电表上的有线连接，存在法律风险。</li>
 <li>电表和 Communications Hub 均非我所有，弄坏了要赔。</li>
 <li>操作不当可能导致计费出错、供电中断、邻居停电、电器损坏、我被电死、发生火灾等不良影响。</li>
-</ul>
-</li>
+</ul></li>
 <li>从 Communications Hub 到 DCC 的通信中截获数据
+
 <ul>
 <li>不熟悉协议，需要学习。</li>
 <li>需要采购专门的无线设备，需要缴费。</li>
 <li>由于 Energy Supplier 通常不需要实时数据，这条路上的数据可能较为稀疏（如每天报告一次）。</li>
 <li>截获 3G 数据好像不那么容易。</li>
 <li>存在相当的工程难度。</li>
-</ul>
-</li>
+</ul></li>
 <li>找 DCC / Energy Supplier 要数据
+
 <ul>
 <li>没有听说有该项业务。</li>
 <li>还不如用 Glow API。</li>
-</ul>
-</li>
+</ul></li>
 <li>通过 ZigBee 从 Communications Hub 读取数据
+
 <ul>
 <li>不熟悉协议，需要学习。</li>
 <li>需要采购专门的无线设备，需要缴费。</li>
 <li>听说有加密，需要相关批准方可加入 HAN（Home Area Network）。</li>
 <li>存在相当的工程难度。</li>
-</ul>
-</li>
+</ul></li>
 <li>安装摄像头从 IHD 上读取数据
+
 <ul>
 <li>读数的自动识别存在一定的工程难度。</li>
 <li>一旦 IHD 屏幕熄灭或进入其他页面，需要手动恢复。</li>
 <li>费电。</li>
-</ul>
-</li>
+</ul></li>
 <li>截获 CAD 向 Glowmarkt 上传的数据
+
 <ul>
 <li>这个好诶</li>
+</ul></li>
 </ul>
-</li>
-</ul>
+
 <h1 id="截获-cad-向-glowmarkt-上传的数据">截获 CAD 向 Glowmarkt 上传的数据</h1>
+
 <p>我们来看看 CAD 到底上传了些啥。</p>
+
 <p>在路由上 <code>tcpdump</code> 后观察到：</p>
+
 <ul>
 <li>时不时会发出 NTP 请求。走时准确很重要。</li>
 <li>时不时会主动和 <code>154.51.148.12:443</code> 和 <code>149.11.44.36:443</code> 通过 TLS 1.2 讲点悄悄话，报文都不长。</li>
 </ul>
+
 <p>看起来像是通过 HTTPS 报告数据。不知道怎么往里面装证书，看起来难办了。</p>
+
 <p>不过先看看这俩 IP 是啥。筛选出 DNS 包，发现是 <code>cc.28.e2.4c11ae.cad.sensornet.info</code>。上去瞧一瞧：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre class="chroma"><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -249,9 +296,9 @@
 </span><span class="lnt">13
 </span><span class="lnt">14
 </span><span class="lnt">15
-</span></code></pre></td>
+</span></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">➜  ~ curl https://cc.28.e2.4c11ae.cad.sensornet.info
+<pre class="chroma">➜  ~ curl https://cc.28.e2.4c11ae.cad.sensornet.info
 curl: (60) SSL certificate problem: self signed certificate
 More details here: https://curl.haxx.se/docs/sslcerts.html
 
@@ -265,30 +312,42 @@ If this HTTPS server uses a certificate signed by a CA represented in
  not match the domain name in the URL).
 If you&#39;d like to turn off curl&#39;s verification of the certificate, use
  the -k (or --insecure) option.
-HTTPS-proxy has similar options --proxy-cacert and --proxy-insecure.
-</code></pre></td></tr></table>
+HTTPS-proxy has similar options --proxy-cacert and --proxy-insecure.</pre></td></tr></table>
 </div>
-</div><p>还是尊贵的自签证书，十年有效期，下个月到期。既然是自签证书，估计 CA 都写死在设备里了（也可能是十年前没钱买证书）。</p>
-<!-- raw HTML omitted -->
+</div>
+<p>还是尊贵的自签证书，十年有效期，下个月到期。既然是自签证书，估计 CA 都写死在设备里了（也可能是十年前没钱买证书）。</p>
+
+<p><center><img src="../../../2021/02/sensornet-certificate.png" alt="sensornet-certificate" /></center></p>
+
 <p>强行打开发现是个 OpenResty 的欢迎页面，没什么东西。</p>
-<!-- raw HTML omitted -->
+
+<p><center><img src="../../../2021/02/sensornet-openresty.png" alt="sensornet-openresty" /></center></p>
+
 <p>那么这个奇怪的域名又是什么呢，发现他们有自己的 NS 服务器，<code>dns1.sensornet.info</code> - <code>dns9.sensornet.info</code>。随便试了几个发现 <code>*.cad.sensornet.info</code> 解析出来都是这俩 IP，也不知道前面那坨有啥用。</p>
+
 <p>还是想试试看能不能偷看到传输的内容，于是打开 <code>sslsplit</code> 。由于懒得配路由，直接从本机分享一个 Wi-Fi 热点给 CAD。macOS 上没有 <code>iptables</code>，转发可用 <code>pfctl</code> 做，规则如下：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">rdr pass on bridge100 proto tcp from ${CAD_IP} to any port 443 -&gt; 127.0.0.1 port 8443
-</code></pre></td></tr></table>
+<pre class="chroma">rdr pass on bridge100 proto tcp from ${CAD_IP} to any port 443 -&gt; 127.0.0.1 port 8443</pre></td></tr></table>
 </div>
-</div><p>然后就成功了……</p>
-<p><img src="../../../2021/02/cad-protocol-wireshark.png" alt="cad-protocol-wireshark"></p>
+</div>
+<p>然后就成功了……</p>
+
+<p><img src="../../../2021/02/cad-protocol-wireshark.png" alt="cad-protocol-wireshark" /></p>
+
 <p><a href="https://shop.glowmarkt.com/products/display-and-cad-combined-for-smart-meter-customers">销售这款 IHD / CAD 的页面上</a>写道「using the latest SSL technology for secure Internet communications.」。嗯，真安全。</p>
+
 <p>这个协议也十分的简单。CAD 每隔几秒就向 <code>https://cc.28.e2.4c11ae.cad.sensornet.info/zb02</code> POST 一个 json 对象，里面有电表读数 Energy Supplier 名称等信息，HTTP Header 中有设备序列号等信息。服务器收到后回复「200」。嗯，就是 HTTP Body 里有「200」三个字。</p>
+
 <p>那么事情就简单了，我们只需要自己搞个假服务器随便挂个证书实现这个简单协议然后在路由器上把域名解析过去即可断开 CAD 的互联网连接。</p>
+
 <p>当然，为了走时准确，我们也可以给它提供 NTP 服务。据观察，该设备喜欢用 <code>0.pool.ntp.org</code> - <code>3.pool.ntp.org</code>。我们可以将他它们解析到本地 NTP 服务。或者粗暴一些将所有域名都解析到假服务器，并在上面同时提供 HTTPS 和 NTP 服务。或者，更简单一些，直接丢弃报文中的时间而用收到报文时的系统时间替代。</p>
+
 <h1 id="思考">思考</h1>
+
 <ul>
 <li><a href="https://bitbucket.org/ijosh/brightglowmarkt/src/master/Bright_smartmetertutorial.pdf">Glowmarkt Energy Data Tutorial</a> 中将 octopus energy 列为 Glow 的一种 End User Applications。是 octopus 开发了一款前端 app 还是他们用的这个不可靠不安全的数据来对峰谷电用户计费呢？</li>
 </ul>

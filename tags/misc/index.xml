@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>misc on SEIAROTg&#39;s blog</title>
@@ -6,14 +6,18 @@
     <description>Recent content in misc on SEIAROTg&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 24 Aug 2019 22:18:10 +0800</lastBuildDate><atom:link href="https://seiarotg.me/tags/misc/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 24 Aug 2019 22:18:10 +0800</lastBuildDate>
+    
+	<atom:link href="https://seiarotg.me/tags/misc/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>今日坑 20190824</title>
       <link>https://seiarotg.me/post/misc-20190824/</link>
       <pubDate>Sat, 24 Aug 2019 22:18:10 +0800</pubDate>
       
       <guid>https://seiarotg.me/post/misc-20190824/</guid>
-      <description>今天遇到了几个小坑，特此记录。 npm 装啥都不行 **环境：**npm@6.9.0、node@12.6.0 (homebrew) **问题：**无论用 npm 安装什么，是否忽略</description>
+      <description>今天遇到了几个小坑，特此记录。 npm 装啥都不行 环境：npm@6.9.0、node@12.6.0 (homebrew) 问题：无论用 npm 安装什么，是否忽略 package-</description>
     </item>
     
   </channel>

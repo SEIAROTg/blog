@@ -16,14 +16,14 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="SEIAROTg" /><meta name="description" content="今天遇到了几个小坑，特此记录。 npm 装啥都不行 **环境：**npm@6.9.0、node@12.6.0 (homebrew) **问题：**无论用 npm 安装什么，是否忽略" />
+<meta name="author" content="SEIAROTg" /><meta name="description" content="今天遇到了几个小坑，特此记录。 npm 装啥都不行 环境：npm@6.9.0、node@12.6.0 (homebrew) 问题：无论用 npm 安装什么，是否忽略 package-" />
 
 
 
 
 
 
-<meta name="generator" content="Hugo 0.81.0 with even 4.0.0" />
+<meta name="generator" content="Hugo 0.56.0 with even 4.0.0" />
 
 
 <link rel="canonical" href="https://seiarotg.me/post/misc-20190824/" />
@@ -39,19 +39,25 @@
 
 
 <meta property="og:title" content="今日坑 20190824" />
-<meta property="og:description" content="今天遇到了几个小坑，特此记录。 npm 装啥都不行 **环境：**npm@6.9.0、node@12.6.0 (homebrew) **问题：**无论用 npm 安装什么，是否忽略" />
+<meta property="og:description" content="今天遇到了几个小坑，特此记录。 npm 装啥都不行 环境：npm@6.9.0、node@12.6.0 (homebrew) 问题：无论用 npm 安装什么，是否忽略 package-" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://seiarotg.me/post/misc-20190824/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2019-08-24T22:18:10&#43;08:00" />
-<meta property="article:modified_time" content="2019-08-24T22:18:10&#43;08:00" />
-
+<meta property="og:url" content="https://seiarotg.me/post/misc-20190824/" />
+<meta property="article:published_time" content="2019-08-24T22:18:10+08:00" />
+<meta property="article:modified_time" content="2019-08-24T22:18:10+08:00" />
 <meta itemprop="name" content="今日坑 20190824">
-<meta itemprop="description" content="今天遇到了几个小坑，特此记录。 npm 装啥都不行 **环境：**npm@6.9.0、node@12.6.0 (homebrew) **问题：**无论用 npm 安装什么，是否忽略"><meta itemprop="datePublished" content="2019-08-24T22:18:10&#43;08:00" />
+<meta itemprop="description" content="今天遇到了几个小坑，特此记录。 npm 装啥都不行 环境：npm@6.9.0、node@12.6.0 (homebrew) 问题：无论用 npm 安装什么，是否忽略 package-">
+
+
+<meta itemprop="datePublished" content="2019-08-24T22:18:10&#43;08:00" />
 <meta itemprop="dateModified" content="2019-08-24T22:18:10&#43;08:00" />
-<meta itemprop="wordCount" content="473">
-<meta itemprop="keywords" content="misc," /><meta name="twitter:card" content="summary"/>
+<meta itemprop="wordCount" content="425">
+
+
+
+<meta itemprop="keywords" content="misc," />
+<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="今日坑 20190824"/>
-<meta name="twitter:description" content="今天遇到了几个小坑，特此记录。 npm 装啥都不行 **环境：**npm@6.9.0、node@12.6.0 (homebrew) **问题：**无论用 npm 安装什么，是否忽略"/>
+<meta name="twitter:description" content="今天遇到了几个小坑，特此记录。 npm 装啥都不行 环境：npm@6.9.0、node@12.6.0 (homebrew) 问题：无论用 npm 安装什么，是否忽略 package-"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -128,39 +134,62 @@
     <div class="post-toc" id="post-toc">
   <h2 class="post-toc-title">Contents</h2>
   <div class="post-toc-content always-active">
-    <nav id="TableOfContents"></nav>
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#npm-装啥都不行">npm 装啥都不行</a></li>
+<li><a href="#新装-mariadb-无法-root-空密码登录">新装 MariaDB 无法 root 空密码登录</a></li>
+<li><a href="#mariadb-无法建表">MariaDB 无法建表</a></li>
+</ul>
+</nav>
   </div>
 </div>
     <div class="post-content">
-      <p>今天遇到了几个小坑，特此记录。</p>
+      
+
+<p>今天遇到了几个小坑，特此记录。</p>
+
 <h1 id="npm-装啥都不行">npm 装啥都不行</h1>
-<p>**环境：**<a href="mailto:npm@6.9.0">npm@6.9.0</a>、node@12.6.0 (homebrew)</p>
-<p>**问题：**无论用 npm 安装什么，是否忽略 <code>package-lock</code>，是否 <code>-g</code>，安装 <code>package.json</code> 还是指定包，都报错如下：</p>
+
+<p><strong>环境：</strong>npm@6.9.0、node@12.6.0 (homebrew)</p>
+
+<p><strong>问题：</strong>无论用 npm 安装什么，是否忽略 <code>package-lock</code>，是否 <code>-g</code>，安装 <code>package.json</code> 还是指定包，都报错如下：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre class="chroma"><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
-</span></code></pre></td>
+</span></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">error cb() never called!
+<pre class="chroma">error cb() never called!
 error This is an error with npm itself. Please report this error at:
-error &lt;https://npm.community&gt;
-</code></pre></td></tr></table>
+error &lt;https://npm.community&gt;</pre></td></tr></table>
 </div>
-</div><p>这个错误信息非常的笼统，啥都体现不出来。</p>
-<p>**原因：**不小心设置了不通的 <code>https_proxy</code>。</p>
-<p>**解决：**修正 <code>https_proxy</code>。</p>
+</div>
+<p>这个错误信息非常的笼统，啥都体现不出来。</p>
+
+<p><strong>原因：</strong>不小心设置了不通的 <code>https_proxy</code>。</p>
+
+<p><strong>解决：</strong>修正 <code>https_proxy</code>。</p>
+
 <h1 id="新装-mariadb-无法-root-空密码登录">新装 MariaDB 无法 root 空密码登录</h1>
-<p>**环境：**<a href="mailto:mariadb@10.4.6">mariadb@10.4.6</a> (homebrew)</p>
-<p>**问题：**MariaDB 装好以后按照 <code>brew info mariadb</code> 里写的，和原来一样用 <code>mysql -uroot</code> 失败，报 Access denied。</p>
-<p>**原因：**根据<a href="https://mariadb.com/kb/en/library/authentication-plugin-unix-socket/">这个文档</a>，MariaDB 从 10.4.3 开始默认使用 <code>auth_socket.so</code> 插件而不是密码来鉴权。</p>
-<p>**解决：**用 sudo 登录然后给数据库的 root 设密码。</p>
+
+<p><strong>环境：</strong>mariadb@10.4.6 (homebrew)</p>
+
+<p><strong>问题：</strong>MariaDB 装好以后按照 <code>brew info mariadb</code> 里写的，和原来一样用 <code>mysql -uroot</code> 失败，报 Access denied。</p>
+
+<p><strong>原因：</strong>根据<a href="https://mariadb.com/kb/en/library/authentication-plugin-unix-socket/">这个文档</a>，MariaDB 从 10.4.3 开始默认使用 <code>auth_socket.so</code> 插件而不是密码来鉴权。</p>
+
+<p><strong>解决：</strong>用 sudo 登录然后给数据库的 root 设密码。</p>
+
 <h1 id="mariadb-无法建表">MariaDB 无法建表</h1>
-<p>**环境：**<a href="mailto:mariadb@10.4.6">mariadb@10.4.6</a> (homebrew)</p>
-<p>**问题：**执行 <code>CREATE TABLE foo</code> 失败，报错 <code>Can't create database 'foo' (errno: 2 &quot;No such file or directory&quot;)</code>。</p>
-<p>**原因：**同时用 <code>mysql.server start</code> 和 <code>brew services start maridb</code> 开了两套 MariaDB。且 <code>mysql.server</code> 似乎失去了之前开的进程的 pid。</p>
-<p>**解决：**杀掉进程，重启服务。</p>
+
+<p><strong>环境：</strong>mariadb@10.4.6 (homebrew)</p>
+
+<p><strong>问题：</strong>执行 <code>CREATE TABLE foo</code> 失败，报错 <code>Can't create database 'foo' (errno: 2 &quot;No such file or directory&quot;)</code>。</p>
+
+<p><strong>原因：</strong>同时用 <code>mysql.server start</code> 和 <code>brew services start maridb</code> 开了两套 MariaDB。且 <code>mysql.server</code> 似乎失去了之前开的进程的 pid。</p>
+
+<p><strong>解决：</strong>杀掉进程，重启服务。</p>
 
     </div>
 
