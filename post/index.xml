@@ -6,10 +6,19 @@
     <description>Recent content in Posts on SEIAROTg&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 28 Feb 2021 20:14:31 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 28 Dec 2021 21:27:06 +0000</lastBuildDate>
     
 	<atom:link href="https://seiarotg.me/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>podman-compose 折腾记</title>
+      <link>https://seiarotg.me/post/podman-compose-pits/</link>
+      <pubDate>Tue, 28 Dec 2021 21:27:06 +0000</pubDate>
+      
+      <guid>https://seiarotg.me/post/podman-compose-pits/</guid>
+      <description>背景 我有一个非常简单的需求：在一个容器里起一个 wireguard client，并将其直接接入上游网络（不要 NAT）。 不想看过程可以直接看总结。 折腾 在容器里起</description>
+    </item>
     
     <item>
       <title>重做我的黑果</title>

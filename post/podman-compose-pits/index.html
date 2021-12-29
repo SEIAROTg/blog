@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>podman-compose 折腾记 - SEIAROTg&#39;s blog</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="SEIAROTg" /><meta name="description" content="背景 我有一个非常简单的需求：在一个容器里起一个 wireguard client，并将其直接接入上游网络（不要 NAT）。 不想看过程可以直接看总结。 折腾 在容器里起" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.56.0 with even 4.0.0" />
+
+
+<link rel="canonical" href="https://seiarotg.me/post/podman-compose-pits/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+<link href="/dist/even.c2a46f00.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="podman-compose 折腾记" />
+<meta property="og:description" content="背景 我有一个非常简单的需求：在一个容器里起一个 wireguard client，并将其直接接入上游网络（不要 NAT）。 不想看过程可以直接看总结。 折腾 在容器里起" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://seiarotg.me/post/podman-compose-pits/" />
+<meta property="article:published_time" content="2021-12-28T21:27:06+00:00" />
+<meta property="article:modified_time" content="2021-12-28T21:27:06+00:00" />
+<meta itemprop="name" content="podman-compose 折腾记">
+<meta itemprop="description" content="背景 我有一个非常简单的需求：在一个容器里起一个 wireguard client，并将其直接接入上游网络（不要 NAT）。 不想看过程可以直接看总结。 折腾 在容器里起">
+
+
+<meta itemprop="datePublished" content="2021-12-28T21:27:06&#43;00:00" />
+<meta itemprop="dateModified" content="2021-12-28T21:27:06&#43;00:00" />
+<meta itemprop="wordCount" content="1834">
+
+
+
+<meta itemprop="keywords" content="docker,podman,wireguard," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="podman-compose 折腾记"/>
+<meta name="twitter:description" content="背景 我有一个非常简单的需求：在一个容器里起一个 wireguard client，并将其直接接入上游网络（不要 NAT）。 不想看过程可以直接看总结。 折腾 在容器里起"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">SEIAROTg</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">SEIAROTg</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">podman-compose 折腾记</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2021-12-28 </span>
+        <div class="post-category">
+            <a href="/categories/tech/"> Tech </a>
+            </div>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#背景">背景</a></li>
+<li><a href="#折腾">折腾</a>
+<ul>
+<li><a href="#在容器里起-wireguard">在容器里起 wireguard</a></li>
+<li><a href="#podman-compose-cap-add-不好使">podman-compose：<code>cap_add</code> 不好使</a></li>
+<li><a href="#podman-compose-podman-network-exists-不存在">podman-compose：<code>podman network exists</code> 不存在</a></li>
+<li><a href="#podman-compose-不支持-macvlan">podman-compose 不支持 macvlan</a></li>
+<li><a href="#network-create-only-supports-the-bridge-driver">network create only supports the bridge driver</a></li>
+<li><a href="#cannot-set-network-aliases-for-network-because-dns-is-disabled-invalid-argument">cannot set network aliases for network &ldquo;&hellip;&rdquo; because dns is disabled: invalid argument</a></li>
+<li><a href="#总结">总结</a></li>
+</ul></li>
+</ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      
+
+<h1 id="背景">背景</h1>
+
+<p>我有一个非常简单的需求：在一个容器里起一个 wireguard client，并将其直接接入上游网络（不要 NAT）。</p>
+
+<p>不想看过程可以直接看<a href="#总结">总结</a>。</p>
+
+<h1 id="折腾">折腾</h1>
+
+<h2 id="在容器里起-wireguard">在容器里起 wireguard</h2>
+
+<p>首先搜索 prior art，发现 <a href="https://hub.docker.com/r/linuxserver/wireguard">https://hub.docker.com/r/linuxserver/wireguard</a>。试了一下发现不好：</p>
+
+<ul>
+<li>这货是基于 <code>ghcr.io/linuxserver/baseimage-ubuntu:bionic</code> 的，巨大。</li>
+<li>已经巨大了，它还安装 <code>build-essential</code> 等一堆东西。用完还不删。</li>
+<li>它需要 <code>SYS_MODULE</code> 以及 <code>-v /lib/modules:/lib/modules</code> 较为恐怖。我已配备新款内核自带有关模块。</li>
+<li>它需要就地编译 wireguard，需要内核头文件。我用的正规系统它却找不到相关包裹。</li>
+<li><code>wg-quick</code> 走到 <code>net.ipv4.conf.all.src_valid_mark=1</code> 那步的时候由于没有权限会失败（尽管有关 sysctl 已经满足）。</li>
+<li>自带了一个我不要的 <code>coredns</code>。</li>
+</ul>
+
+<p>于是研究了一下，发现这事在配备新款内核的 host 上其实很简单：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-dockerfile" data-lang="dockerfile"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-dockerfile" data-lang="dockerfile"><span class="k">FROM</span><span class="s"> alpine:3</span><span class="err">
+</span><span class="err">
+</span><span class="err"></span><span class="k">RUN</span> apk update<span class="err">
+</span><span class="err"></span><span class="k">RUN</span> apk add --no-cache wireguard-tools<span class="err">
+</span><span class="err"></span><span class="k">RUN</span> sed -E -i <span class="s1">&#39;s/^(\s*)(.*sysctl -q net.ipv4.conf.all.src_valid_mark=1)/\1# \2/&#39;</span> /usr/bin/wg-quick</code></pre></td></tr></table>
+</div>
+</div>
+<p>build 完 image 总共 16 MB，而 <code>linuxserver/wireguard</code> 有 400 MB+。</p>
+
+<p>然后带上 <code>--cap-add=NET_ADMIN --sysctl=net.ipv4.conf.all.src_valid_mark=1</code> 起起来，发现好用。ping 不好使，可以加 <code>--cap-add=NET_RAW</code> 解决。</p>
+
+<h2 id="podman-compose-cap-add-不好使">podman-compose：<code>cap_add</code> 不好使</h2>
+
+<p>发现好用后很快写了一个 <code>docker-compose.yaml</code> 用 <code>podman-compose</code> 起，发现不好。<code>wg-quick</code> 在创建 <code>link</code> 的时候会坏：<code>RTNETLINK answers: **Operation not permitted**</code>。</p>
+
+<p>怎么会这样呢？？？</p>
+
+<p>搜索了一番发现 <a href="https://github.com/containers/podman-compose/issues/239">podman-compose #239</a>，表示 cap_add / cap_drop 根本不管用。作者给出了相关代码的链接（由于没有锚定到相关 commit 现已刻舟求剑），原来 <code>podman-compose</code> 其实是个单文件 python 脚本，把 <code>docker-compose.yaml</code> 翻译成命令行。</p>
+
+<p>于是打算去打 log 看看发生了什么，一看发现相关代码不存在。再一看发现 <code>podman-compose</code> 在 2019-09-03 和 2021-11-14 之间都没往 <a href="https://pypi.org/project/podman-compose/#history">PyPI</a> 上 release 过。<code>pip3 install --upgrade podman-compose</code> 解决。</p>
+
+<h2 id="podman-compose-podman-network-exists-不存在">podman-compose：<code>podman network exists</code> 不存在</h2>
+
+<p>升级完以后 <code>podman-compose</code> 开始调用 <code>podman network exists</code>。然而好像没有这个命令。<code>apt upgrade</code> 一下发现已经是最新版本 <code>3.0.1</code>。于是 blame 发现 <code>podman-compose</code> 从 1.0.2 开始才用上这个东西，遂回滚至 0.1.10。然而回滚后 <code>podman-compose</code> 并没有用上什么替代品，而是根本就不创建网络了。原来创建网络上个月才被 <code>podman-compose</code> 支持。</p>
+
+<p>于是尝试往前滚 <code>podman</code>。<code>debian/stable</code> 里最新的是 3.0.1，于是上 <code>debian/unstable</code>，升级到 3.4.3，解决。</p>
+
+<h2 id="podman-compose-不支持-macvlan">podman-compose 不支持 macvlan</h2>
+
+<p>升级完 podman 后 podman-compose 不报错了，但是起来的容器获得的还是一个 bridge network。从标准输出看根本没有 macvlan。</p>
+
+<p>怎么办呢？</p>
+
+<p>据了解，podman 对 docker-compose 的支持分两支：</p>
+
+<ul>
+<li>podman-compose：将 docker-compose.yaml 翻译为 podman 命令。</li>
+<li>podman system service：提供与 docker 兼容的 RESTful service，可配合 docker-compose 使用。</li>
+</ul>
+
+<p>于是安排后者。</p>
+
+<h2 id="network-create-only-supports-the-bridge-driver">network create only supports the bridge driver</h2>
+
+<p>用上 podman system service 后 <code>docker-compose</code> 报 <code>ERROR: network create only supports the bridge driver</code>。至少比 <code>podman-compose</code> 不报错偷偷偷懒强了。</p>
+
+<p>搜一下， <a href="https://lists.podman.io/archives/list/podman@lists.podman.io/thread/QDQCQKBHN66FJLD7BWLR7KAYJJAY5VKI/">发现 rootless 不支持 macvlan</a>。于是加 sudo，然而还是不管用。</p>
+
+<p>在 GitHub 上搜索未发现该报错信息。于是试图了解一下 podman system service 是个啥。</p>
+
+<p>首先代码都在 <a href="https://github.com/containers/podman">containers/podman</a> 这个仓库里。观察根目录，猜测 cli 相关代码应当在 <code>/cmd</code> 中，于是可以依次发现：</p>
+
+<ul>
+<li><code>/cmd/podman/system/service.go</code></li>
+<li><code>/cmd/podman/system/service_abi.go</code></li>
+<li><code>/pkg/api/server/server.go</code></li>
+<li><code>/pkg/api/server/register_networks.go</code></li>
+<li><code>/pkg/api/handlers/compat/networks.go</code></li>
+</ul>
+
+<p>诶好像到这该干的都干了，没人打印这个错误信息啊。不过有了先前的经验，容易猜测可能又是版本问题。确实，这个报错信息在 2021-09-15 的 <a href="https://github.com/containers/podman/commit/85e8fbf7f33717ef6a0d6cf9e2143b52c874c2de#diff-9aa4fe021c4b1f0c935eae328956fe72eb4750c5395b634f70082dd58ee94587"><code>85e8fbf</code></a> 中被移除了，而这个版本至今未被包含在任何 release 中。</p>
+
+<p>于是从 HEAD 编译一个，解决。</p>
+
+<h2 id="cannot-set-network-aliases-for-network-because-dns-is-disabled-invalid-argument">cannot set network aliases for network &ldquo;&hellip;&rdquo; because dns is disabled: invalid argument</h2>
+
+<p>用上来自 HEAD 的 podman，再来。这次报错：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">container create: cannot set network aliases for network &#34;...&#34; because dns is disabled: invalid argument</pre></td></tr></table>
+</div>
+</div>
+<p>好在现在我们站在他头上，可以轻松搜索到它来自 <code>/libpod/runtime_ctr.go</code> 或 <code>/lib/networking_linux.go</code>。可以发现 dns enablement 是 network 本身的属性，而 alias 是 network 在一个 service 里的别名。</p>
+
+<p>尝试在 <code>docker-compose.yaml</code> 里放置 <code>aliases: []</code>，无果。似乎是 docker-compose 会主动加一个 alias。那我们把 dns 打开吧。观察 compose 的 <a href="https://github.com/compose-spec/compose-spec/blob/master/spec.md">spec</a> 然而根本没有这个选项。</p>
+
+<p>那我们暂时不用 compose 配网，手动 create network（带 dns）然后用 compose 起 service，期待后续版本能添加相关支持。这次报：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">compose.cli.main.main: Network &#34;...&#34; needs to be recreated - option &#34;parent&#34; has changed</pre></td></tr></table>
+</div>
+</div>
+<p>诶明明我已经设置了 parent 了呀。</p>
+
+<p><code>podman network inspect</code> 可以观察到 <code>&quot;master&quot;: &quot;eth0&quot;</code>，显然 podman 是理解相关配置的。再看 <code>curl -H &quot;Content-Type: application/json&quot; --unix-socket /var/run/docker.sock http://localhost/v1.40/networks/... | jq</code>，网卡不见了……似乎是 <code>/pkg/api/handlers/compat/networks.go</code> 里没有做相关转换。</p>
+
+<p>这下需要改代码了，累了，算了。既然这事没法 rootless 就先用 docker 好了。</p>
+
+<h2 id="总结">总结</h2>
+
+<ul>
+<li>在配备新版内核的宿主机里起 wireguard 容器十分简单，alpine 里直接 <code>apk add wireguard-tools</code> 即可。</li>
+<li>podman-compose 19-21 之间有两年半时间没发布 PyPI 更新。遇到问题先更新一下。</li>
+<li>podman-compose 目前还不支持很多东西。</li>
+<li>podman-compose 可以用 podman system service 和 docker-compose 替代。由于这个 service 无需长期运行，我们可以写一个脚本来启动 service 并运行 docker-compose。</li>
+<li>无论是 podman-compose 还是 podman system service，目前的 HEAD 版本都不能很好的支持 macvlan / ipvlan。</li>
+<li>GitHub 搜索不覆盖历史版本。搜不到可能是代码被改了。</li>
+<li>纯的 rootless 容器不支持 macvlan / ipvlan。<code>lxc-user-nic</code> 也许可以解决这个问题但那就不全是 rootless 了。</li>
+</ul>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">SEIAROTg</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+        2021-12-28
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/docker/">docker</a>
+          <a href="/tags/podman/">podman</a>
+          <a href="/tags/wireguard/">wireguard</a>
+          </div>
+      <nav class="post-nav">
+        
+        <a class="next" href="/post/upgrade-my-hackintosh/">
+            <span class="next-text nav-default">重做我的黑果</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+  
+  
+
+  
+    <script src="https://utteranc.es/client.js"
+            repo="SEIAROTg/blog"
+            issue-term="pathname"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://github.com/utterance">comments powered by utterances.</a></noscript>
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="https://github.com/SEIAROTg" class="iconfont icon-github" title="github"></a>
+  <a href="https://seiarotg.me/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2019 - 
+    2021
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">SEIAROTg</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/dist/even.26188efa.min.js"></script>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-144939789-1', 'auto');
+	ga('set', 'anonymizeIp', true);
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+
+
+
+
+</body>
+</html>

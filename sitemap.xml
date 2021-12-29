@@ -3,31 +3,56 @@
   
   <url>
     <loc>https://seiarotg.me/categories/</loc>
-    <lastmod>2021-02-28T20:14:31+00:00</lastmod>
+    <lastmod>2021-12-28T21:27:06+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://seiarotg.me/post/</loc>
-    <lastmod>2021-02-28T20:14:31+00:00</lastmod>
+    <lastmod>2021-12-28T21:27:06+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://seiarotg.me/</loc>
-    <lastmod>2021-02-28T20:14:31+00:00</lastmod>
+    <lastmod>2021-12-28T21:27:06+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://seiarotg.me/tags/</loc>
-    <lastmod>2021-02-28T20:14:31+00:00</lastmod>
+    <lastmod>2021-12-28T21:27:06+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://seiarotg.me/categories/tech/</loc>
-    <lastmod>2021-02-28T20:14:31+00:00</lastmod>
+    <lastmod>2021-12-28T21:27:06+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://seiarotg.me/tags/docker/</loc>
+    <lastmod>2021-12-28T21:27:06+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://seiarotg.me/tags/podman/</loc>
+    <lastmod>2021-12-28T21:27:06+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://seiarotg.me/post/podman-compose-pits/</loc>
+    <lastmod>2021-12-28T21:27:06+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://seiarotg.me/tags/wireguard/</loc>
+    <lastmod>2021-12-28T21:27:06+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -57,13 +82,13 @@
   </url>
   
   <url>
-    <loc>https://seiarotg.me/tags/home/</loc>
+    <loc>https://seiarotg.me/tags/uk/</loc>
     <lastmod>2021-02-20T15:24:31+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://seiarotg.me/tags/uk/</loc>
+    <loc>https://seiarotg.me/tags/home/</loc>
     <lastmod>2021-02-20T15:24:31+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -167,16 +192,16 @@
   </url>
   
   <url>
+    <loc>https://seiarotg.me/tags/london/</loc>
+    <lastmod>2020-01-26T00:00:06+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://seiarotg.me/post/tfl-api-experience/</loc>
     <lastmod>2020-01-26T00:00:06+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://seiarotg.me/tags/london/</loc>
-    <lastmod>2020-01-26T00:00:06+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
