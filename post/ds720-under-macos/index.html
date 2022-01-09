@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>在 macOS 下科学地使用 Brother DS-720D 便携式扫描仪 - SEIAROTg&#39;s blog</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="SEIAROTg" /><meta name="description" content="背景 本文开坑于 2019 年 8 月。🐦了两年半。 2018 年年底，因为特别心水能自动把纸吃进去的结构，在 ebay 上以低廉的价钱拍了一台二手 Brother DS-620D。收到货一看" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.56.0 with even 4.0.0" />
+
+
+<link rel="canonical" href="https://seiarotg.me/post/ds720-under-macos/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+<link href="/dist/even.c2a46f00.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="在 macOS 下科学地使用 Brother DS-720D 便携式扫描仪" />
+<meta property="og:description" content="背景 本文开坑于 2019 年 8 月。🐦了两年半。 2018 年年底，因为特别心水能自动把纸吃进去的结构，在 ebay 上以低廉的价钱拍了一台二手 Brother DS-620D。收到货一看" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://seiarotg.me/post/ds720-under-macos/" />
+<meta property="article:published_time" content="2022-01-09T17:09:58+08:00" />
+<meta property="article:modified_time" content="2022-01-09T17:09:58+08:00" />
+<meta itemprop="name" content="在 macOS 下科学地使用 Brother DS-720D 便携式扫描仪">
+<meta itemprop="description" content="背景 本文开坑于 2019 年 8 月。🐦了两年半。 2018 年年底，因为特别心水能自动把纸吃进去的结构，在 ebay 上以低廉的价钱拍了一台二手 Brother DS-620D。收到货一看">
+
+
+<meta itemprop="datePublished" content="2022-01-09T17:09:58&#43;08:00" />
+<meta itemprop="dateModified" content="2022-01-09T17:09:58&#43;08:00" />
+<meta itemprop="wordCount" content="2726">
+
+
+
+<meta itemprop="keywords" content="mac,device,gadgets," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="在 macOS 下科学地使用 Brother DS-720D 便携式扫描仪"/>
+<meta name="twitter:description" content="背景 本文开坑于 2019 年 8 月。🐦了两年半。 2018 年年底，因为特别心水能自动把纸吃进去的结构，在 ebay 上以低廉的价钱拍了一台二手 Brother DS-620D。收到货一看"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">SEIAROTg</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">SEIAROTg</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">在 macOS 下科学地使用 Brother DS-720D 便携式扫描仪</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2022-01-09 </span>
+        <div class="post-category">
+            <a href="/categories/tech/"> Tech </a>
+            </div>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#背景">背景</a></li>
+<li><a href="#驱动和配套软件安装">驱动和配套软件安装</a></li>
+<li><a href="#问题">问题</a></li>
+<li><a href="#尝试-用-raspberry-pi-将扫描仪转换到标准协议">尝试：用 Raspberry Pi 将扫描仪转换到标准协议</a></li>
+<li><a href="#尝试-twain-协议">尝试：TWAIN 协议</a></li>
+<li><a href="#尝试-wireshark-抓-usb">尝试：Wireshark 抓 USB</a></li>
+<li><a href="#尝试-直接和驱动联系">尝试：直接和驱动联系</a></li>
+</ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      
+
+<h1 id="背景">背景</h1>
+
+<p>本文开坑于 2019 年 8 月。🐦了两年半。</p>
+
+<p>2018 年年底，因为特别心水能自动把纸吃进去的结构，在 ebay 上以低廉的价钱拍了一台二手 Brother DS-620D。收到货一看，卖的这么便宜果然有问题，货不对板啊，实际上给我寄过来的居然是一台更高级的 DS-720D。怎么办呢？当然是开心地收下了。</p>
+
+<p>这台便携扫描仪长这样：</p>
+
+<p><img src="../../2022/01/brother-ds720d.png" alt="Brother DS-720D" /></p>
+
+<p>它能够将送到嘴边的纸张自动吃进去拉出来并顺便生成双面彩色图像。由于对纸张长度几乎没有限制，十分适合扫描购物小票等长条形文档。</p>
+
+<p>该型号现已停产，但同系列仍有新款在售产品。本文的精神可能也适用于这些产品。</p>
+
+<h1 id="驱动和配套软件安装">驱动和配套软件安装</h1>
+
+<p>在 Brother 的网站上很容易找到相关软件：<a href="https://www.brother.com/support/ds-720d/downloads">https://www.brother.com/support/ds-720d/downloads</a>。安装完后会得到内核扩展一枚和叫作 DSmobileCapture 的小软件。我们掏出一张尚未使用的厕纸，揉一揉，塞进去，实施彩色扫描，得到如下画面：</p>
+
+<p><img src="../../2022/01/dsmobilecapture-screenshot.png" alt="DSmobileCapture screenshot" /></p>
+
+<h1 id="问题">问题</h1>
+
+<p>看起来这个东西就好用了，但还是有些问题。</p>
+
+<p>这个 DSmobileCapture 似乎是 macOS 上唯一能够调用该扫描仪的软件。系统自带的 Image Capture 和常见扫描软件完全不显示该扫描仪。这使得它很难被集成到我们的工作流当中。</p>
+
+<p>这个软件还有一些不符合我使用习惯的设计。其流程为连续扫描多张文件设计，如果您只需要扫描单张，则在扫描完成后需要点击取消以停止继续扫描。同时无论您需要扫描几张，必须先将第一张纸喂进去才能点击开始。</p>
+
+<h1 id="尝试-用-raspberry-pi-将扫描仪转换到标准协议">尝试：用 Raspberry Pi 将扫描仪转换到标准协议</h1>
+
+<p>一个简单的思路是，既然该扫描仪提供了 linux 驱动，我们可以将其接在一台 Raspberry Pi 上，提供标准的网络扫描仪协议，便可在 macOS 上编程控制。</p>
+
+<p>系统都刷好了，我突然意识到所谓的 linux 驱动并没有 ARM 版本，Raspberry Pi 无法使用。也没有代码可以自行编译。</p>
+
+<p>当然理论上我们还是可以安排一台 x86 机器或虚拟机干这个事情，但是我不喜欢这么做。</p>
+
+<h1 id="尝试-twain-协议">尝试：TWAIN 协议</h1>
+
+<p>观察驱动安装产生的文件，我们可以从多个地方观察到 TWAIN 这个词。比如：</p>
+
+<ul>
+<li><code>/Library/Image Capture/TWAIN Data Sources/DS-720.ds</code> 的路径</li>
+<li><code>/Applications/DSmobileCapture.app/Contents/MacOS/AvCaptureTool_lng.plist</code>  的内容</li>
+<li><code>/Applications/DSmobileCapture.app/Contents/MacOS/DSmobileCapture</code> 的符号们</li>
+</ul>
+
+<p>那么 TWAIN 是什么呢？搜索得知是某通用扫描仪协议。<a href="https://discussions.apple.com/thread/250805179">据说</a> macOS 从某版本起偷偷去掉了相关支持，所以大家都找不到这个设备了。</p>
+
+<p>诶那没支持了 DSmobileCapture 是怎么工作的呢？通过观察和学习，我们攒出了如下代码，其中 twain.h 可从<a href="https://twain.org/wp-content/uploads/2021/11/twain.h">其寒酸的官网</a>取得。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-cpp" data-lang="cpp"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span><span class="lnt">63
+</span><span class="lnt">64
+</span><span class="lnt">65
+</span><span class="lnt">66
+</span><span class="lnt">67
+</span><span class="lnt">68
+</span><span class="lnt">69
+</span><span class="lnt">70
+</span><span class="lnt">71
+</span><span class="lnt">72
+</span><span class="lnt">73
+</span><span class="lnt">74
+</span><span class="lnt">75
+</span><span class="lnt">76
+</span><span class="lnt">77
+</span><span class="lnt">78
+</span><span class="lnt">79
+</span><span class="lnt">80
+</span><span class="lnt">81
+</span><span class="lnt">82
+</span><span class="lnt">83
+</span><span class="lnt">84
+</span><span class="lnt">85
+</span><span class="lnt">86
+</span><span class="lnt">87
+</span><span class="lnt">88
+</span><span class="lnt">89
+</span><span class="lnt">90
+</span><span class="lnt">91
+</span><span class="lnt">92
+</span><span class="lnt">93
+</span><span class="lnt">94
+</span><span class="lnt">95
+</span><span class="lnt">96
+</span><span class="lnt">97
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-cpp" data-lang="cpp"><span class="cp">#include</span> <span class="cpf">&lt;condition_variable&gt;</span><span class="cp">
+</span><span class="cp">#include</span> <span class="cpf">&lt;fstream&gt;</span><span class="cp">
+</span><span class="cp">#include</span> <span class="cpf">&lt;mutex&gt;</span><span class="cp">
+</span><span class="cp">#include</span> <span class="cpf">&#34;twain.h&#34;</span><span class="cp">
+</span><span class="cp"></span>
+<span class="n">TW_IDENTITY</span> <span class="n">app_identity</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="p">.</span><span class="n">Id</span> <span class="o">=</span> <span class="mh">0x0</span><span class="p">,</span>
+    <span class="p">.</span><span class="n">Version</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="p">.</span><span class="n">MajorNum</span> <span class="o">=</span> <span class="mh">0x1</span><span class="p">,</span>
+        <span class="p">.</span><span class="n">MinorNum</span> <span class="o">=</span> <span class="mh">0x0</span><span class="p">,</span>
+        <span class="p">.</span><span class="n">Language</span> <span class="o">=</span> <span class="mh">0xd</span><span class="p">,</span>
+        <span class="p">.</span><span class="n">Country</span> <span class="o">=</span> <span class="mh">0x1</span><span class="p">,</span>
+        <span class="p">.</span><span class="n">Info</span> <span class="o">=</span> <span class="s">&#34;1.0&#34;</span><span class="p">,</span>
+    <span class="p">},</span>
+    <span class="p">.</span><span class="n">ProtocolMajor</span> <span class="o">=</span> <span class="mh">0x1</span><span class="p">,</span>
+    <span class="p">.</span><span class="n">ProtocolMinor</span> <span class="o">=</span> <span class="mh">0x9</span><span class="p">,</span>
+    <span class="p">.</span><span class="n">SupportedGroups</span> <span class="o">=</span> <span class="mh">0x3</span><span class="p">,</span>
+    <span class="p">.</span><span class="n">Manufacturer</span> <span class="o">=</span> <span class="s">&#34;&#34;</span><span class="p">,</span>
+    <span class="p">.</span><span class="n">ProductFamily</span> <span class="o">=</span> <span class="s">&#34;&#34;</span><span class="p">,</span>
+    <span class="p">.</span><span class="n">ProductName</span> <span class="o">=</span> <span class="s">&#34;&#34;</span><span class="p">,</span>
+<span class="p">};</span>
+
+<span class="n">TW_IDENTITY</span> <span class="n">ds_identity</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="p">.</span><span class="n">Id</span> <span class="o">=</span> <span class="mh">0x0</span><span class="p">,</span>
+    <span class="p">.</span><span class="n">ProductName</span> <span class="o">=</span> <span class="s">&#34;&#34;</span><span class="p">,</span>
+<span class="p">};</span>
+
+<span class="kt">bool</span> <span class="n">ready</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+<span class="n">std</span><span class="o">::</span><span class="n">mutex</span> <span class="n">mutex</span><span class="p">;</span>
+<span class="n">std</span><span class="o">::</span><span class="n">condition_variable</span> <span class="n">cv</span><span class="p">;</span>
+
+<span class="kt">void</span> <span class="nf">save_image</span><span class="p">(</span><span class="kt">char</span> <span class="o">**</span><span class="n">handle</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">HLock</span><span class="p">(</span><span class="n">handle</span><span class="p">);</span>
+    <span class="kt">unsigned</span> <span class="n">size</span> <span class="o">=</span> <span class="n">GetHandleSize</span><span class="p">(</span><span class="n">handle</span><span class="p">);</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">ofstream</span> <span class="n">f</span><span class="p">(</span><span class="s">&#34;foo.tiff&#34;</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">ios</span><span class="o">::</span><span class="n">binary</span><span class="p">);</span>
+    <span class="n">f</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="o">*</span><span class="n">handle</span><span class="p">,</span> <span class="n">size</span><span class="p">);</span>
+    <span class="n">HUnlock</span><span class="p">(</span><span class="n">handle</span><span class="p">);</span>
+    <span class="n">DisposeHandle</span><span class="p">(</span><span class="n">handle</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="n">TW_UINT16</span> <span class="nf">TWAIN_callback</span><span class="p">(</span><span class="n">pTW_IDENTITY</span> <span class="n">pOrigin</span><span class="p">,</span> <span class="n">pTW_IDENTITY</span> <span class="n">pDest</span><span class="p">,</span> <span class="n">TW_UINT32</span> <span class="n">DG</span><span class="p">,</span> <span class="n">TW_UINT16</span> <span class="n">DAT</span><span class="p">,</span> <span class="n">TW_UINT16</span> <span class="n">MSG</span><span class="p">,</span> <span class="n">TW_MEMREF</span> <span class="n">pData</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">MSG</span> <span class="o">==</span> <span class="n">MSG_XFERREADY</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">std</span><span class="o">::</span><span class="n">lock_guard</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">mutex</span><span class="o">&gt;</span> <span class="n">guard</span><span class="p">(</span><span class="n">mutex</span><span class="p">);</span>
+        <span class="n">ready</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+        <span class="n">cv</span><span class="p">.</span><span class="n">notify_one</span><span class="p">();</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">MSG</span> <span class="o">==</span> <span class="n">MSG_CLOSEDSREQ</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">printf</span><span class="p">(</span><span class="s">&#34;close req</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="n">TWRC_SUCCESS</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">TW_UINT16</span> <span class="n">ret</span><span class="p">;</span>
+    <span class="c1">// open dsm
+</span><span class="c1"></span>    <span class="n">ret</span> <span class="o">=</span> <span class="n">DSM_Entry</span><span class="p">(</span><span class="o">&amp;</span><span class="n">app_identity</span><span class="p">,</span> <span class="k">nullptr</span><span class="p">,</span> <span class="n">DG_CONTROL</span><span class="p">,</span> <span class="n">DAT_PARENT</span><span class="p">,</span> <span class="n">MSG_OPENDSM</span><span class="p">,</span> <span class="k">nullptr</span><span class="p">);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">ret</span> <span class="o">!=</span> <span class="n">TWRC_SUCCESS</span><span class="p">)</span> <span class="k">return</span> <span class="n">ret</span><span class="p">;</span>
+    <span class="c1">// register callback
+</span><span class="c1"></span>    <span class="n">TW_CALLBACK</span> <span class="n">callback</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="p">.</span><span class="n">CallBackProc</span> <span class="o">=</span> <span class="p">(</span><span class="n">TW_MEMREF</span><span class="p">)</span><span class="n">TWAIN_callback</span><span class="p">,</span>
+        <span class="p">.</span><span class="n">RefCon</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="p">.</span><span class="n">Message</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="p">};</span>
+    <span class="n">ret</span> <span class="o">=</span> <span class="n">DSM_Entry</span><span class="p">(</span><span class="o">&amp;</span><span class="n">app_identity</span><span class="p">,</span> <span class="k">nullptr</span><span class="p">,</span> <span class="n">DG_CONTROL</span><span class="p">,</span> <span class="n">DAT_CALLBACK</span><span class="p">,</span> <span class="n">MSG_REGISTER_CALLBACK</span><span class="p">,</span> <span class="p">(</span><span class="n">TW_MEMREF</span><span class="p">)</span><span class="o">&amp;</span><span class="n">callback</span><span class="p">);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">ret</span> <span class="o">!=</span> <span class="n">TWRC_SUCCESS</span><span class="p">)</span> <span class="k">return</span> <span class="n">ret</span><span class="p">;</span>
+    <span class="c1">// open ds
+</span><span class="c1"></span>    <span class="n">ret</span> <span class="o">=</span> <span class="n">DSM_Entry</span><span class="p">(</span><span class="o">&amp;</span><span class="n">app_identity</span><span class="p">,</span> <span class="k">nullptr</span><span class="p">,</span> <span class="n">DG_CONTROL</span><span class="p">,</span> <span class="n">DAT_IDENTITY</span><span class="p">,</span> <span class="n">MSG_OPENDS</span><span class="p">,</span> <span class="p">(</span><span class="n">TW_MEMREF</span><span class="p">)</span><span class="o">&amp;</span><span class="n">ds_identity</span><span class="p">);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">ret</span> <span class="o">!=</span> <span class="n">TWRC_SUCCESS</span><span class="p">)</span> <span class="k">return</span> <span class="n">ret</span><span class="p">;</span>
+    <span class="c1">// enable ds
+</span><span class="c1"></span>    <span class="n">TW_USERINTERFACE</span> <span class="n">ui</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="p">.</span><span class="n">ShowUI</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="p">.</span><span class="n">ModalUI</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="p">.</span><span class="n">hParent</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="p">};</span>
+    <span class="n">ret</span> <span class="o">=</span> <span class="n">DSM_Entry</span><span class="p">(</span><span class="o">&amp;</span><span class="n">app_identity</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">ds_identity</span><span class="p">,</span> <span class="n">DG_CONTROL</span><span class="p">,</span> <span class="n">DAT_USERINTERFACE</span><span class="p">,</span> <span class="n">MSG_ENABLEDS</span><span class="p">,</span> <span class="p">(</span><span class="n">TW_MEMREF</span><span class="p">)</span><span class="o">&amp;</span><span class="n">ui</span><span class="p">);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">ret</span> <span class="o">!=</span> <span class="n">TWRC_SUCCESS</span><span class="p">)</span> <span class="k">return</span> <span class="n">ret</span><span class="p">;</span>
+    <span class="c1">// wait for transfer
+</span><span class="c1"></span>    <span class="p">{</span>
+        <span class="n">std</span><span class="o">::</span><span class="n">unique_lock</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">mutex</span><span class="o">&gt;</span> <span class="n">lk</span><span class="p">(</span><span class="n">mutex</span><span class="p">);</span>
+        <span class="n">cv</span><span class="p">.</span><span class="n">wait</span><span class="p">(</span><span class="n">lk</span><span class="p">,</span> <span class="p">[]{</span> <span class="k">return</span> <span class="n">ready</span><span class="p">;</span> <span class="p">});</span>
+    <span class="p">}</span>
+    <span class="c1">// transfer
+</span><span class="c1"></span>    <span class="n">TW_PENDINGXFERS</span> <span class="n">pendings</span><span class="p">;</span>
+    <span class="k">do</span> <span class="p">{</span>
+        <span class="kt">char</span> <span class="o">**</span><span class="n">picHandle</span> <span class="o">=</span> <span class="k">nullptr</span><span class="p">;</span>
+        <span class="n">ret</span> <span class="o">=</span> <span class="n">DSM_Entry</span><span class="p">(</span><span class="o">&amp;</span><span class="n">app_identity</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">ds_identity</span><span class="p">,</span> <span class="n">DG_IMAGE</span><span class="p">,</span> <span class="n">DAT_IMAGENATIVEXFER</span><span class="p">,</span> <span class="n">MSG_GET</span><span class="p">,</span> <span class="p">(</span><span class="n">TW_MEMREF</span><span class="p">)</span><span class="o">&amp;</span><span class="n">picHandle</span><span class="p">);</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">ret</span> <span class="o">!=</span> <span class="n">TWRC_XFERDONE</span><span class="p">)</span> <span class="k">return</span> <span class="n">ret</span><span class="p">;</span>
+        <span class="n">save_image</span><span class="p">(</span><span class="n">picHandle</span><span class="p">);</span>
+        <span class="n">ret</span> <span class="o">=</span> <span class="n">DSM_Entry</span><span class="p">(</span><span class="o">&amp;</span><span class="n">app_identity</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">ds_identity</span><span class="p">,</span> <span class="n">DG_CONTROL</span><span class="p">,</span> <span class="n">DAT_PENDINGXFERS</span><span class="p">,</span> <span class="n">MSG_ENDXFER</span><span class="p">,</span> <span class="p">(</span><span class="n">TW_MEMREF</span><span class="p">)</span><span class="o">&amp;</span><span class="n">pendings</span><span class="p">);</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">ret</span> <span class="o">!=</span> <span class="n">TWRC_SUCCESS</span><span class="p">)</span> <span class="k">return</span> <span class="n">ret</span><span class="p">;</span>
+    <span class="p">}</span> <span class="k">while</span> <span class="p">(</span><span class="n">pendings</span><span class="p">.</span><span class="n">Count</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">);</span>
+    <span class="c1">// disable ds
+</span><span class="c1"></span>    <span class="n">ret</span> <span class="o">=</span> <span class="n">DSM_Entry</span><span class="p">(</span><span class="o">&amp;</span><span class="n">app_identity</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">ds_identity</span><span class="p">,</span> <span class="n">DG_CONTROL</span><span class="p">,</span> <span class="n">DAT_USERINTERFACE</span><span class="p">,</span> <span class="n">MSG_DISABLEDS</span><span class="p">,</span> <span class="p">(</span><span class="n">TW_MEMREF</span><span class="p">)</span><span class="o">&amp;</span><span class="n">ui</span><span class="p">);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">ret</span> <span class="o">!=</span> <span class="n">TWRC_SUCCESS</span><span class="p">)</span> <span class="k">return</span> <span class="n">ret</span><span class="p">;</span>
+    <span class="c1">// close ds
+</span><span class="c1"></span>    <span class="n">ret</span> <span class="o">=</span> <span class="n">DSM_Entry</span><span class="p">(</span><span class="o">&amp;</span><span class="n">app_identity</span><span class="p">,</span> <span class="k">nullptr</span><span class="p">,</span> <span class="n">DG_CONTROL</span><span class="p">,</span> <span class="n">DAT_IDENTITY</span><span class="p">,</span> <span class="n">MSG_OPENDS</span><span class="p">,</span> <span class="p">(</span><span class="n">TW_MEMREF</span><span class="p">)</span><span class="o">&amp;</span><span class="n">ds_identity</span><span class="p">);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">ret</span> <span class="o">!=</span> <span class="n">TWRC_SUCCESS</span><span class="p">)</span> <span class="k">return</span> <span class="n">ret</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+<p>编译，运行：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh"><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh">g++ -oscan -std<span class="o">=</span>c++11 -framework Carbon -framework TWAIN scan.cpp
+./scan</code></pre></td></tr></table>
+</div>
+</div>
+<p>扫出东西来了耶！</p>
+
+<p>不过还是有一些小问题：</p>
+
+<ul>
+<li>这个东西不支持调各种参数或多台扫描设备（多花点时间可以解决）</li>
+<li>这个东西是用了 deprecated Carbon API，说不定哪天就没了。但是驱动那头用了有关 API 我们也没有办法。</li>
+</ul>
+
+<p>还有一个大问题：这个东西居然还会出窗口！扫完了还要点取消！还是要先把纸放进去！程序控制流还会被这个窗口抢走！</p>
+
+<p><img src="../../2022/01/twain-ds-window.png" alt="TWAIN scan screenshot" /></p>
+
+<p>原来之前我们在 DSmobileCapture 里看到的这个窗口不是它自己出的，而是 TWAIN Data Source 那头出的！</p>
+
+<h1 id="尝试-wireshark-抓-usb">尝试：Wireshark 抓 USB</h1>
+
+<p>听说 Wireshark 可以抓 USB，于是试试看。</p>
+
+<p>首先在较新的 macOS 下抓 USB 需要关闭 SIP。</p>
+
+<p>抓完以后发现一大堆眯眯小的帧。看不懂。放弃。（然后把 SIP 开回来）</p>
+
+<h1 id="尝试-直接和驱动联系">尝试：直接和驱动联系</h1>
+
+<p>既然 TWAIN Data Source 会出窗口，很难想象这是内核扩展的一部分，那么这个 Data Source 是个怎样的存在呢？我们能不能仿制一个呢？</p>
+
+<p>容易发现有这样一个文件 <code>/Library/Image Capture/TWAIN Data Sources/DS-720D.ds/DS-720D</code>，<code>file</code> 告诉我们它看起来像是 dylib。观察发现它确实提供了 <code>DS_Entry</code> 函数。</p>
+
+<p>随意观察几个函数，可以发现很多地方都用到了 <code>printDebugLog</code> 打印了一些有用的信息，可是我们却什么都没有看到。猜测是 debug level 不够高。那么怎么调高呢？猜测可能来自环境变量，配置文件或是硬编码常量。</p>
+
+<p>先尝试最简单的，在 <code>/Library/Image Capture/TWAIN Data Sources/DS-720D.ds</code> 里 <code>grep -ir debug *</code>，一下就发现了 <code>Versions/A/avscan.plist</code> 这个文件，进去把 <code>DebugLevel</code> 改成一个大数，即可看到调试信息。关键过程大概分几步</p>
+
+<ol>
+<li>InitializeDriver</li>
+<li>InitializeScanner</li>
+<li>StartScanJob</li>
+<li>GetADFStatus（检查是否有纸）</li>
+<li>SetScanParameter</li>
+<li>TuneScanLength</li>
+<li>SetGammaTable</li>
+<li>StartScan</li>
+<li>ReadScanEx</li>
+<li>StopScan</li>
+<li>EndScanJob</li>
+</ol>
+
+<p>观察它们的实现，发现其实都是调用的 <code>/Library/Image Capture/TWAIN Data Sources/DS-720D.ds/Resources/DS-720D.dylib</code> 里面的接口。那么事情就简单了，我们只要猜对接口定义，依葫芦画瓢进行同样的调用即可。</p>
+
+<p>其中最复杂的问题是 <code>SetScanParameter</code> 涉及到一个巨大的结构体，猜起来比较困难，但是好在这个 dylib 也提供了翔实的调试信息，只需 <code>mkdir -p /tmp/DrvLog &amp;&amp; echo &quot;DebugLevel 1000&quot; &gt; /tmp/DrvLog/Debug.conf</code> 即可在 <code>/tmp/DrvLog</code> 中看到很多重要文件。</p>
+
+<p>在这个结构体中还有一些数值意义不明，不过经过一番搜索，GitHub 上似乎有<a href="https://github.com/wpmyj/Test/blob/4f1776d185f034dac03bba9afe94c42ef962461d/Test/UDS%20Scanner/src/Scanner_G6X00.cpp">一个用了同样结构体的项目</a>。尽管它并没有给出结构体和枚举类型的定义，我们还是可以从枚举类型值的名称和相关注释窥见个中含义。</p>
+
+<p>最后，我们猜出了相关函数、结构体和枚举类型的大致定义。其中有六个字节和部分枚举值猜不出来，但既然没有观察到它们被使用，那也无伤大雅。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-cpp" data-lang="cpp"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span><span class="lnt">63
+</span><span class="lnt">64
+</span><span class="lnt">65
+</span><span class="lnt">66
+</span><span class="lnt">67
+</span><span class="lnt">68
+</span><span class="lnt">69
+</span><span class="lnt">70
+</span><span class="lnt">71
+</span><span class="lnt">72
+</span><span class="lnt">73
+</span><span class="lnt">74
+</span><span class="lnt">75
+</span><span class="lnt">76
+</span><span class="lnt">77
+</span><span class="lnt">78
+</span><span class="lnt">79
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-cpp" data-lang="cpp"><span class="k">enum</span> <span class="n">ScanMode</span> <span class="p">{</span>
+    <span class="c1">// SMO_LINEART,
+</span><span class="c1"></span>    <span class="c1">// SMO_HALFTONE,
+</span><span class="c1"></span>    <span class="n">SMO_GRAY</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span>
+    <span class="n">SMO_COLOR</span> <span class="o">=</span> <span class="mi">4</span><span class="p">,</span>
+<span class="p">};</span>
+
+<span class="k">enum</span> <span class="n">ScanMethod</span> <span class="p">{</span>
+    <span class="n">SME_ADFFRONT</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="c1">// SME_ADFREAR,
+</span><span class="c1"></span>    <span class="n">SME_DUPLEX</span> <span class="o">=</span> <span class="mi">4</span><span class="p">,</span>
+<span class="p">};</span>
+
+<span class="c1">// size = 69
+</span><span class="c1"></span><span class="cp">#pragma pack(push, 1)
+</span><span class="cp"></span><span class="k">struct</span> <span class="n">ScanParameter</span> <span class="p">{</span>
+    <span class="n">uint16_t</span> <span class="n">Left</span><span class="p">;</span> <span class="c1">// 0
+</span><span class="c1"></span>    <span class="n">uint16_t</span> <span class="n">Top</span><span class="p">;</span> <span class="c1">// 2
+</span><span class="c1"></span>    <span class="n">uint16_t</span> <span class="n">Width</span><span class="p">;</span> <span class="c1">// 4
+</span><span class="c1"></span>    <span class="n">uint16_t</span> <span class="n">Length</span><span class="p">;</span> <span class="c1">// 6
+</span><span class="c1"></span>    <span class="n">uint16_t</span> <span class="n">PixelNum</span><span class="p">;</span> <span class="c1">// 8
+</span><span class="c1"></span>    <span class="n">uint16_t</span> <span class="n">LineNum</span><span class="p">;</span> <span class="c1">// 10
+</span><span class="c1"></span>    <span class="n">uint8_t</span> <span class="n">ScanMode</span><span class="p">;</span> <span class="c1">// 12
+</span><span class="c1"></span>    <span class="n">uint8_t</span> <span class="n">ScanMethod</span><span class="p">;</span> <span class="c1">// 13
+</span><span class="c1"></span>    <span class="n">uint8_t</span> <span class="n">BitPerPixel</span><span class="p">;</span> <span class="c1">// 14
+</span><span class="c1"></span>    <span class="n">uint8_t</span> <span class="n">ScanSpeed</span><span class="p">;</span> <span class="c1">// 15
+</span><span class="c1"></span>    <span class="n">uint8_t</span> <span class="n">Contrast</span><span class="p">;</span> <span class="c1">// 16
+</span><span class="c1"></span>    <span class="n">uint8_t</span> <span class="n">Brightness</span><span class="p">;</span> <span class="c1">// 17
+</span><span class="c1"></span>    <span class="n">uint8_t</span> <span class="n">HTPatternNo</span><span class="p">;</span> <span class="c1">// 18
+</span><span class="c1"></span>    <span class="n">uint8_t</span> <span class="n">Highlight</span><span class="p">;</span> <span class="c1">// 19
+</span><span class="c1"></span>    <span class="n">uint8_t</span> <span class="n">Shadow</span><span class="p">;</span> <span class="c1">// 20
+</span><span class="c1"></span>    <span class="n">uint8_t</span> <span class="n">ColorFilter</span><span class="p">;</span> <span class="c1">// 21
+</span><span class="c1"></span>    <span class="n">uint8_t</span> <span class="n">Invert</span><span class="p">;</span> <span class="c1">// 22
+</span><span class="c1"></span>    <span class="n">uint8_t</span> <span class="n">IntelligentMultiFeedStyle</span><span class="p">;</span> <span class="c1">// 23
+</span><span class="c1"></span>    <span class="n">uint16_t</span> <span class="n">ExtScanParam</span><span class="p">;</span> <span class="c1">// 24
+</span><span class="c1"></span>    <span class="n">uint16_t</span> <span class="n">RExposure</span><span class="p">;</span> <span class="c1">// 26
+</span><span class="c1"></span>    <span class="n">uint16_t</span> <span class="n">GExposure</span><span class="p">;</span> <span class="c1">// 28
+</span><span class="c1"></span>    <span class="n">uint16_t</span> <span class="n">BExposure</span><span class="p">;</span> <span class="c1">// 30
+</span><span class="c1"></span>    <span class="n">uint16_t</span> <span class="n">XRes</span><span class="p">;</span> <span class="c1">// 32
+</span><span class="c1"></span>    <span class="n">uint16_t</span> <span class="n">YRes</span><span class="p">;</span> <span class="c1">// 35
+</span><span class="c1"></span>    <span class="n">uint16_t</span> <span class="n">RGain</span><span class="p">;</span> <span class="c1">// 36
+</span><span class="c1"></span>    <span class="n">uint16_t</span> <span class="n">GGain</span><span class="p">;</span> <span class="c1">// 38
+</span><span class="c1"></span>    <span class="n">uint16_t</span> <span class="n">BGain</span><span class="p">;</span> <span class="c1">// 40
+</span><span class="c1"></span>    <span class="n">uint16_t</span> <span class="n">lensPosition</span><span class="p">;</span> <span class="c1">// 42
+</span><span class="c1"></span>    <span class="n">uint8_t</span> <span class="n">byBackgroundLines</span><span class="p">;</span> <span class="c1">// 44
+</span><span class="c1"></span>    <span class="n">uint8_t</span> <span class="n">byPagesThisJob</span><span class="p">;</span> <span class="c1">// 45
+</span><span class="c1"></span>    <span class="n">uint8_t</span> <span class="n">CompressionArgument</span><span class="p">;</span> <span class="c1">// 46
+</span><span class="c1"></span>    <span class="n">uint16_t</span> <span class="n">HiWordLength</span><span class="p">;</span> <span class="c1">// 47
+</span><span class="c1"></span>    <span class="n">uint16_t</span> <span class="n">HiWordLineNum</span><span class="p">;</span> <span class="c1">// 49
+</span><span class="c1"></span>    <span class="n">uint8_t</span> <span class="n">UltraSonicIntension</span><span class="p">;</span> <span class="c1">// 51
+</span><span class="c1"></span>    <span class="n">uint32_t</span> <span class="n">ExtScanParam2</span><span class="p">;</span> <span class="c1">// 52
+</span><span class="c1"></span>    <span class="n">uint8_t</span> <span class="n">unknown0</span><span class="p">[</span><span class="mi">6</span><span class="p">];</span>
+    <span class="n">uint8_t</span> <span class="n">EnableBatchScan</span><span class="p">;</span> <span class="c1">// 62
+</span><span class="c1"></span>    <span class="n">uint16_t</span> <span class="n">wPaperLength</span><span class="p">;</span> <span class="c1">// 63
+</span><span class="c1"></span>    <span class="n">uint16_t</span> <span class="n">ExtIndex</span><span class="p">;</span> <span class="c1">// 65
+</span><span class="c1"></span>    <span class="n">uint16_t</span> <span class="n">ExtSize</span><span class="p">;</span> <span class="c1">// 67
+</span><span class="c1"></span><span class="p">};</span>
+
+<span class="k">struct</span> <span class="n">IOStatus</span> <span class="p">{</span>
+    <span class="kt">void</span> <span class="o">*</span><span class="n">buffer</span><span class="p">;</span>
+    <span class="n">uint32_t</span> <span class="n">requestBytes</span><span class="p">;</span>
+    <span class="n">uint32_t</span> <span class="n">readLines</span><span class="p">;</span>
+    <span class="n">uint32_t</span> <span class="n">readBytes</span><span class="p">;</span>
+<span class="p">};</span>
+<span class="cp">#pragma pack(pop)
+</span><span class="cp"></span>
+<span class="kt">int</span> <span class="p">(</span><span class="o">*</span><span class="n">InitializeDriver</span><span class="p">)();</span>
+<span class="kt">int</span> <span class="p">(</span><span class="o">*</span><span class="n">TerminateDriver</span><span class="p">)();</span>
+<span class="kt">int</span> <span class="p">(</span><span class="o">*</span><span class="n">InitializeScanner</span><span class="p">)();</span>
+<span class="kt">int</span> <span class="p">(</span><span class="o">*</span><span class="n">GetADFStatus</span><span class="p">)(</span><span class="n">uint8_t</span> <span class="o">*</span><span class="n">status</span><span class="p">);</span>
+<span class="kt">int</span> <span class="p">(</span><span class="o">*</span><span class="n">SetScanParameter</span><span class="p">)(</span><span class="n">ScanParameter</span> <span class="o">*</span><span class="n">param</span><span class="p">);</span>
+<span class="kt">int</span> <span class="p">(</span><span class="o">*</span><span class="n">SetGammaTable</span><span class="p">)(</span><span class="n">uint8_t</span> <span class="o">*</span><span class="n">table</span><span class="p">,</span> <span class="n">uint8_t</span> <span class="n">color</span><span class="p">,</span> <span class="n">uint16_t</span> <span class="n">size</span><span class="p">);</span>
+<span class="kt">int</span> <span class="p">(</span><span class="o">*</span><span class="n">TuneScanLength</span><span class="p">)(</span><span class="n">uint16_t</span> <span class="n">direction</span><span class="p">,</span> <span class="n">uint16_t</span> <span class="n">line</span><span class="p">,</span> <span class="n">uint8_t</span> <span class="n">portion</span><span class="p">);</span>
+<span class="kt">int</span> <span class="p">(</span><span class="o">*</span><span class="n">ReadScanEx</span><span class="p">)(</span><span class="n">IOStatus</span> <span class="o">*</span><span class="n">io_status</span><span class="p">);</span>
+<span class="kt">int</span> <span class="p">(</span><span class="o">*</span><span class="n">StopScan</span><span class="p">)();</span>
+<span class="kt">int</span> <span class="p">(</span><span class="o">*</span><span class="n">StartScan</span><span class="p">)();</span>
+<span class="kt">int</span> <span class="p">(</span><span class="o">*</span><span class="n">EndScanJob</span><span class="p">)();</span>
+<span class="kt">int</span> <span class="p">(</span><span class="o">*</span><span class="n">StartScanJob</span><span class="p">)();</span>
+<span class="kt">int</span> <span class="p">(</span><span class="o">*</span><span class="n">DoCancel</span><span class="p">)();</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+<p>然后依次调用相关函数就可以开心的扫描啦。讨厌的窗口也不见啦。</p>
+
+<p><code>SetScanParameter</code>, <code>TuneScanLength</code>, <code>StartScanJob</code>, <code>EndScanJob</code> 不调用似乎也没事。<code>TerminateDriver</code> 不调用可能出现 Segmentation Fault。</p>
+
+<p>最后我们会通过 <code>ReadScanEx</code> 得到一坨数据。并没有什么文件头看不出类型。用十六进制编辑器查看可以观察到其中数据有一定重复性，那么猜测是裸像素点。试着转换一下，成功：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">math</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span>
+
+<span class="n">BYTES_PER_PIXEL</span> <span class="o">=</span> <span class="mi">3</span>  <span class="c1"># RGB</span>
+
+<span class="n">raw_file</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">output_file</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+<span class="n">line_width</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span>
+
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">raw_file</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+<span class="n">pixels</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="nb">tuple</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">:</span><span class="n">i</span><span class="o">+</span><span class="n">BYTES_PER_PIXEL</span><span class="p">])</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">),</span> <span class="n">BYTES_PER_PIXEL</span><span class="p">)</span>
+<span class="p">]</span>
+
+<span class="n">im</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="s2">&#34;RGB&#34;</span><span class="p">,</span> <span class="p">(</span><span class="n">line_width</span><span class="p">,</span> <span class="n">math</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">pixels</span><span class="p">)</span> <span class="o">/</span> <span class="n">line_width</span><span class="p">)))</span>
+<span class="n">im</span><span class="o">.</span><span class="n">putdata</span><span class="p">(</span><span class="n">pixels</span><span class="p">)</span>
+<span class="n">im</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">output_file</span><span class="p">)</span></code></pre></td></tr></table>
+</div>
+</div>
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">SEIAROTg</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+        2022-01-09
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/mac/">mac</a>
+          <a href="/tags/device/">device</a>
+          <a href="/tags/gadgets/">gadgets</a>
+          </div>
+      <nav class="post-nav">
+        
+        <a class="next" href="/post/podman-compose-pits/">
+            <span class="next-text nav-default">podman-compose 折腾记</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+  
+  
+
+  
+    <script src="https://utteranc.es/client.js"
+            repo="SEIAROTg/blog"
+            issue-term="pathname"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://github.com/utterance">comments powered by utterances.</a></noscript>
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="https://github.com/SEIAROTg" class="iconfont icon-github" title="github"></a>
+  <a href="https://seiarotg.me/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2019 - 
+    2022
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">SEIAROTg</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/dist/even.26188efa.min.js"></script>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-144939789-1', 'auto');
+	ga('set', 'anonymizeIp', true);
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+
+
+
+
+</body>
+</html>

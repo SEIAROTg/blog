@@ -3,32 +3,57 @@
   
   <url>
     <loc>https://seiarotg.me/categories/</loc>
-    <lastmod>2021-12-28T21:27:06+00:00</lastmod>
+    <lastmod>2022-01-09T17:09:58+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://seiarotg.me/post/</loc>
-    <lastmod>2021-12-28T21:27:06+00:00</lastmod>
+    <lastmod>2022-01-09T17:09:58+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://seiarotg.me/</loc>
-    <lastmod>2021-12-28T21:27:06+00:00</lastmod>
+    <lastmod>2022-01-09T17:09:58+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://seiarotg.me/tags/</loc>
-    <lastmod>2021-12-28T21:27:06+00:00</lastmod>
+    <lastmod>2022-01-09T17:09:58+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://seiarotg.me/categories/tech/</loc>
-    <lastmod>2021-12-28T21:27:06+00:00</lastmod>
+    <lastmod>2022-01-09T17:09:58+08:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://seiarotg.me/tags/device/</loc>
+    <lastmod>2022-01-09T17:09:58+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://seiarotg.me/tags/gadgets/</loc>
+    <lastmod>2022-01-09T17:09:58+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://seiarotg.me/tags/mac/</loc>
+    <lastmod>2022-01-09T17:09:58+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://seiarotg.me/post/ds720-under-macos/</loc>
+    <lastmod>2022-01-09T17:09:58+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
@@ -57,19 +82,7 @@
   </url>
   
   <url>
-    <loc>https://seiarotg.me/tags/device/</loc>
-    <lastmod>2021-02-28T20:14:31+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://seiarotg.me/tags/hackintosh/</loc>
-    <lastmod>2021-02-28T20:14:31+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://seiarotg.me/tags/mac/</loc>
     <lastmod>2021-02-28T20:14:31+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -82,13 +95,13 @@
   </url>
   
   <url>
-    <loc>https://seiarotg.me/tags/uk/</loc>
+    <loc>https://seiarotg.me/tags/home/</loc>
     <lastmod>2021-02-20T15:24:31+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://seiarotg.me/tags/home/</loc>
+    <loc>https://seiarotg.me/tags/uk/</loc>
     <lastmod>2021-02-20T15:24:31+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -192,16 +205,16 @@
   </url>
   
   <url>
-    <loc>https://seiarotg.me/tags/london/</loc>
-    <lastmod>2020-01-26T00:00:06+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://seiarotg.me/post/tfl-api-experience/</loc>
     <lastmod>2020-01-26T00:00:06+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://seiarotg.me/tags/london/</loc>
+    <lastmod>2020-01-26T00:00:06+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -280,12 +293,6 @@
     <lastmod>2019-08-21T14:51:07+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://seiarotg.me/tags/gadgets/</loc>
-    <lastmod>2019-08-11T21:05:10+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
