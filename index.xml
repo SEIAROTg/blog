@@ -6,10 +6,25 @@
     <description>Recent content on SEIAROTg&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 09 Jan 2022 17:09:58 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 02 May 2022 15:06:35 +0100</lastBuildDate>
     
 	<atom:link href="https://seiarotg.me/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Install NixOS on OVH VPS</title>
+      <link>https://seiarotg.me/post/install-nixos-on-ovh-vps/</link>
+      <pubDate>Mon, 02 May 2022 15:06:35 +0100</pubDate>
+      
+      <guid>https://seiarotg.me/post/install-nixos-on-ovh-vps/</guid>
+      <description>Backup your data.
+ Reboot into rescue mode with the control panel.
+ Connect to KVM with the control panel.
+You can also SSH into the host with login credentials from KVM.
+ Download NixOS image.
+Likely you won&amp;rsquo;t have enough disk space in rescue mode so use ramfs.
+1 2 3 4  mkdir /mnt/ramdisk mount -t ramfs ramfs /mnt/ramdisk cd /mnt/ramdisk wget https://channels.nixos.org/nixos-21.11/latest-nixos-minimal-x86_64-linux.iso   Load image with qemu.</description>
+    </item>
     
     <item>
       <title>在 macOS 下科学地使用 Brother DS-720D 便携式扫描仪</title>

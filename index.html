@@ -45,7 +45,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://seiarotg.me/" />
 
-<meta property="og:updated_time" content="2022-01-09T17:09:58+08:00" />
+<meta property="og:updated_time" content="2022-05-02T15:06:35+01:00" />
 <meta itemprop="name" content="SEIAROTg&#39;s blog">
 <meta itemprop="description" content="SEIAROTg&#39;s blog">
 
@@ -112,6 +112,33 @@
       <div class="content-wrapper">
         <div id="content" class="content">
           <section id="posts" class="posts">
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/install-nixos-on-ovh-vps/">Install NixOS on OVH VPS</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2022-05-02 </span>
+      <div class="post-category">
+          <a href="/categories/tech/"> Tech </a>
+          </div>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      Backup your data.
+ Reboot into rescue mode with the control panel.
+ Connect to KVM with the control panel.
+You can also SSH into the host with login credentials from KVM.
+ Download NixOS image.
+Likely you won&rsquo;t have enough disk space in rescue mode so use ramfs.
+1 2 3 4  mkdir /mnt/ramdisk mount -t ramfs ramfs /mnt/ramdisk cd /mnt/ramdisk wget https://channels.nixos.org/nixos-21.11/latest-nixos-minimal-x86_64-linux.iso   Load image with qemu.
+    </div>
+    <div class="read-more">
+      <a href="/post/install-nixos-on-ovh-vps/" class="read-more-link">Read more..</a>
+    </div>
+  </div>
+</article>
+
     <article class="post">
   <header class="post-header">
     <h1 class="post-title"><a class="post-link" href="/post/ds720-under-macos/">在 macOS 下科学地使用 Brother DS-720D 便携式扫描仪</a></h1>
@@ -192,27 +219,6 @@
     </div>
     <div class="read-more">
       <a href="/post/retrieve-smart-meter-readings/" class="read-more-link">Read more..</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/play-with-intel-amt/">玩耍 Intel®️ AMT</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2021-01-11 </span>
-      <div class="post-category">
-          <a href="/categories/tech/"> Tech </a>
-          </div>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      背景 去年捡了一台便宜服务器。由于便宜啥都没有，没有 DRAC、iLO 什么的，甚至没有 IPMI。但是作为一台正规的 Intel 平台服务器，CPU 自带了 Active Management
-    </div>
-    <div class="read-more">
-      <a href="/post/play-with-intel-amt/" class="read-more-link">Read more..</a>
     </div>
   </div>
 </article>
