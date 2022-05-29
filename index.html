@@ -45,7 +45,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://seiarotg.me/" />
 
-<meta property="og:updated_time" content="2022-05-02T15:06:35+01:00" />
+<meta property="og:updated_time" content="2022-05-29T13:24:16+01:00" />
 <meta itemprop="name" content="SEIAROTg&#39;s blog">
 <meta itemprop="description" content="SEIAROTg&#39;s blog">
 
@@ -112,6 +112,30 @@
       <div class="content-wrapper">
         <div id="content" class="content">
           <section id="posts" class="posts">
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/oyster-card-checksum/">Oyster card checksum</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2022-05-29 </span>
+      <div class="post-category">
+          <a href="/categories/notes/"> notes </a>
+          </div>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      Oyster card is a payment card issued by Transport for London for public transport within its network. Every Oyster card has a unique number on its back.
+The number is in the format of 10 digits, followed by a checksum of 2 digits, both of which may include leading zeros, for example, 0000000000 00.
+With some experiments, I found the checksum can be calculated with the following formula:
+1 2 3 4 5 6 7 8 9 10 11  def checksum(number: int) -&gt; int: return ( + number * 0x10 + number // 0x1 * 3 - number // 0x10 * 3 + number // 0x100 * 3 - number // 0x1000 * 3 + number // 0x10000 * 3 - number // 0x100000 * 3 + number // 0x1000000 * 3 - number // 0x10000000 * 3) % 100  
+    </div>
+    <div class="read-more">
+      <a href="/post/oyster-card-checksum/" class="read-more-link">Read more..</a>
+    </div>
+  </div>
+</article>
+
     <article class="post">
   <header class="post-header">
     <h1 class="post-title"><a class="post-link" href="/post/install-nixos-on-ovh-vps/">Install NixOS on OVH VPS</a></h1>
@@ -198,27 +222,6 @@ Likely you won&rsquo;t have enough disk space in rescue mode so use ramfs.
     </div>
     <div class="read-more">
       <a href="/post/upgrade-my-hackintosh/" class="read-more-link">Read more..</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/retrieve-smart-meter-readings/">读取 Smart Meter 数据</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2021-02-20 </span>
-      <div class="post-category">
-          <a href="/categories/tech/"> Tech </a>
-          </div>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      背景 近日安装了 Smart Meter。 安装完毕后师傅发放了一部小屏幕，可远程观看读数。该设备开设了「当前读数」、「今日耗电」、「今日费用」、「每小时耗
-    </div>
-    <div class="read-more">
-      <a href="/post/retrieve-smart-meter-readings/" class="read-more-link">Read more..</a>
     </div>
   </div>
 </article>
