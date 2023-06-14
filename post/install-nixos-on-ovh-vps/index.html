@@ -17,19 +17,21 @@
 
 
 <meta name="author" content="SEIAROTg" /><meta name="description" content="Backup your data.
- Reboot into rescue mode with the control panel.
- Connect to KVM with the control panel.
+Reboot into rescue mode with the control panel.
+Connect to KVM with the control panel.
 You can also SSH into the host with login credentials from KVM.
- Download NixOS image.
+Download NixOS image.
 Likely you won&amp;rsquo;t have enough disk space in rescue mode so use ramfs.
-1 2 3 4  mkdir /mnt/ramdisk mount -t ramfs ramfs /mnt/ramdisk cd /mnt/ramdisk wget https://channels.nixos.org/nixos-21.11/latest-nixos-minimal-x86_64-linux.iso   Load image with qemu." />
+1 2 3 4 mkdir /mnt/ramdisk mount -t ramfs ramfs /mnt/ramdisk cd /mnt/ramdisk wget https://channels.nixos.org/nixos-21.11/latest-nixos-minimal-x86_64-linux.iso Load image with qemu.
+https://community.ovh.com/en/t/installing-operating-system-from-custom-image-on-ovh-vps-centos-8-tutorial/3561
+1 2 apt install qemu-kvm qemu-system-x86_64 -netdev type=user,id=mynet0 -device virtio-net-pci,netdev=mynet0 -m 2048 -enable-kvm -drive index=0,media=disk,if=virtio,file=/dev/sdb -cdrom latest-nixos-minimal-x86_64-linux." />
 
 
 
 
 
 
-<meta name="generator" content="Hugo 0.56.0 with even 4.0.0" />
+<meta name="generator" content="Hugo 0.113.0 with theme even" />
 
 
 <link rel="canonical" href="https://seiarotg.me/post/install-nixos-on-ovh-vps/" />
@@ -40,48 +42,48 @@ Likely you won&amp;rsquo;t have enough disk space in rescue mode so use ramfs.
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 
 
-<link href="/dist/even.c2a46f00.min.css" rel="stylesheet">
+
+<link href="/sass/main.min.7d4e25b944cdea452d847bbea22aa779718d0fa25c09c91b22601aa109bfab1b.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
 <meta property="og:title" content="Install NixOS on OVH VPS" />
 <meta property="og:description" content="Backup your data.
- Reboot into rescue mode with the control panel.
- Connect to KVM with the control panel.
+Reboot into rescue mode with the control panel.
+Connect to KVM with the control panel.
 You can also SSH into the host with login credentials from KVM.
- Download NixOS image.
+Download NixOS image.
 Likely you won&rsquo;t have enough disk space in rescue mode so use ramfs.
-1 2 3 4  mkdir /mnt/ramdisk mount -t ramfs ramfs /mnt/ramdisk cd /mnt/ramdisk wget https://channels.nixos.org/nixos-21.11/latest-nixos-minimal-x86_64-linux.iso   Load image with qemu." />
+1 2 3 4 mkdir /mnt/ramdisk mount -t ramfs ramfs /mnt/ramdisk cd /mnt/ramdisk wget https://channels.nixos.org/nixos-21.11/latest-nixos-minimal-x86_64-linux.iso Load image with qemu.
+https://community.ovh.com/en/t/installing-operating-system-from-custom-image-on-ovh-vps-centos-8-tutorial/3561
+1 2 apt install qemu-kvm qemu-system-x86_64 -netdev type=user,id=mynet0 -device virtio-net-pci,netdev=mynet0 -m 2048 -enable-kvm -drive index=0,media=disk,if=virtio,file=/dev/sdb -cdrom latest-nixos-minimal-x86_64-linux." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://seiarotg.me/post/install-nixos-on-ovh-vps/" />
+<meta property="og:url" content="https://seiarotg.me/post/install-nixos-on-ovh-vps/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2022-05-02T15:06:35+01:00" />
-<meta property="article:modified_time" content="2022-05-02T15:06:35+01:00" />
+<meta property="article:modified_time" content="2022-05-02T15:25:50+01:00" />
 <meta itemprop="name" content="Install NixOS on OVH VPS">
 <meta itemprop="description" content="Backup your data.
- Reboot into rescue mode with the control panel.
- Connect to KVM with the control panel.
+Reboot into rescue mode with the control panel.
+Connect to KVM with the control panel.
 You can also SSH into the host with login credentials from KVM.
- Download NixOS image.
+Download NixOS image.
 Likely you won&rsquo;t have enough disk space in rescue mode so use ramfs.
-1 2 3 4  mkdir /mnt/ramdisk mount -t ramfs ramfs /mnt/ramdisk cd /mnt/ramdisk wget https://channels.nixos.org/nixos-21.11/latest-nixos-minimal-x86_64-linux.iso   Load image with qemu.">
-
-
-<meta itemprop="datePublished" content="2022-05-02T15:06:35&#43;01:00" />
-<meta itemprop="dateModified" content="2022-05-02T15:06:35&#43;01:00" />
+1 2 3 4 mkdir /mnt/ramdisk mount -t ramfs ramfs /mnt/ramdisk cd /mnt/ramdisk wget https://channels.nixos.org/nixos-21.11/latest-nixos-minimal-x86_64-linux.iso Load image with qemu.
+https://community.ovh.com/en/t/installing-operating-system-from-custom-image-on-ovh-vps-centos-8-tutorial/3561
+1 2 apt install qemu-kvm qemu-system-x86_64 -netdev type=user,id=mynet0 -device virtio-net-pci,netdev=mynet0 -m 2048 -enable-kvm -drive index=0,media=disk,if=virtio,file=/dev/sdb -cdrom latest-nixos-minimal-x86_64-linux."><meta itemprop="datePublished" content="2022-05-02T15:06:35+01:00" />
+<meta itemprop="dateModified" content="2022-05-02T15:25:50+01:00" />
 <meta itemprop="wordCount" content="235">
-
-
-
-<meta itemprop="keywords" content="nix," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="nix," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Install NixOS on OVH VPS"/>
 <meta name="twitter:description" content="Backup your data.
- Reboot into rescue mode with the control panel.
- Connect to KVM with the control panel.
+Reboot into rescue mode with the control panel.
+Connect to KVM with the control panel.
 You can also SSH into the host with login credentials from KVM.
- Download NixOS image.
+Download NixOS image.
 Likely you won&rsquo;t have enough disk space in rescue mode so use ramfs.
-1 2 3 4  mkdir /mnt/ramdisk mount -t ramfs ramfs /mnt/ramdisk cd /mnt/ramdisk wget https://channels.nixos.org/nixos-21.11/latest-nixos-minimal-x86_64-linux.iso   Load image with qemu."/>
+1 2 3 4 mkdir /mnt/ramdisk mount -t ramfs ramfs /mnt/ramdisk cd /mnt/ramdisk wget https://channels.nixos.org/nixos-21.11/latest-nixos-minimal-x86_64-linux.iso Load image with qemu.
+https://community.ovh.com/en/t/installing-operating-system-from-custom-image-on-ovh-vps-centos-8-tutorial/3561
+1 2 apt install qemu-kvm qemu-system-x86_64 -netdev type=user,id=mynet0 -device virtio-net-pci,netdev=mynet0 -m 2048 -enable-kvm -drive index=0,media=disk,if=virtio,file=/dev/sdb -cdrom latest-nixos-minimal-x86_64-linux."/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -107,8 +109,6 @@ Likely you won&rsquo;t have enough disk space in rescue mode so use ramfs.
 <nav id="mobile-menu" class="mobile-menu slideout-menu">
   <ul class="mobile-menu-list">
     <a href="/">
-        <li class="mobile-menu-item">Home</li>
-      </a><a href="/post/">
         <li class="mobile-menu-item">Archives</li>
       </a><a href="/tags/">
         <li class="mobile-menu-item">Tags</li>
@@ -116,19 +116,26 @@ Likely you won&rsquo;t have enough disk space in rescue mode so use ramfs.
         <li class="mobile-menu-item">Categories</li>
       </a>
   </ul>
+
+  
+
+
 </nav>
+
   <div class="container" id="mobile-panel">
     <header id="header" class="header">
         <div class="logo-wrapper">
   <a href="/" class="logo">SEIAROTg</a>
 </div>
 
+
+
+
+
 <nav class="site-navbar">
   <ul id="menu" class="menu">
     <li class="menu-item">
-        <a class="menu-item-link" href="/">Home</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/post/">Archives</a>
+        <a class="menu-item-link" href="/">Archives</a>
       </li><li class="menu-item">
         <a class="menu-item-link" href="/tags/">Tags</a>
       </li><li class="menu-item">
@@ -136,6 +143,7 @@ Likely you won&rsquo;t have enough disk space in rescue mode so use ramfs.
       </li>
   </ul>
 </nav>
+
     </header>
 
     <main id="main" class="main">
@@ -158,70 +166,72 @@ Likely you won&rsquo;t have enough disk space in rescue mode so use ramfs.
     <div class="post-toc" id="post-toc">
   <h2 class="post-toc-title">Contents</h2>
   <div class="post-toc-content always-active">
-    
+    <nav id="TableOfContents"></nav>
   </div>
 </div>
     <div class="post-content">
       <ol>
-<li><p>Backup your data.</p></li>
-
-<li><p>Reboot into rescue mode with the control panel.</p></li>
-
-<li><p>Connect to KVM with the control panel.</p>
-
-<p>You can also SSH into the host with login credentials from KVM.</p></li>
-
-<li><p>Download NixOS image.</p>
-
+<li>
+<p>Backup your data.</p>
+</li>
+<li>
+<p>Reboot into rescue mode with the control panel.</p>
+</li>
+<li>
+<p>Connect to KVM with the control panel.</p>
+<p>You can also SSH into the host with login credentials from KVM.</p>
+</li>
+<li>
+<p>Download NixOS image.</p>
 <p>Likely you won&rsquo;t have enough disk space in rescue mode so use ramfs.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell">mkdir /mnt/ramdisk
-mount -t ramfs ramfs /mnt/ramdisk
-<span class="nb">cd</span> /mnt/ramdisk
-wget https://channels.nixos.org/nixos-21.11/latest-nixos-minimal-x86_64-linux.iso</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">mkdir /mnt/ramdisk
+</span></span><span class="line"><span class="cl">mount -t ramfs ramfs /mnt/ramdisk
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> /mnt/ramdisk
+</span></span><span class="line"><span class="cl">wget https://channels.nixos.org/nixos-21.11/latest-nixos-minimal-x86_64-linux.iso
+</span></span></code></pre></td></tr></table>
 </div>
 </div></li>
-
-<li><p>Load image with qemu.</p>
-
+<li>
+<p>Load image with qemu.</p>
 <p><a href="https://community.ovh.com/en/t/installing-operating-system-from-custom-image-on-ovh-vps-centos-8-tutorial/3561">https://community.ovh.com/en/t/installing-operating-system-from-custom-image-on-ovh-vps-centos-8-tutorial/3561</a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell">apt install qemu-kvm
-qemu-system-x86_64 -netdev <span class="nv">type</span><span class="o">=</span>user,id<span class="o">=</span>mynet0 -device virtio-net-pci,netdev<span class="o">=</span>mynet0 -m <span class="m">2048</span> -enable-kvm -drive <span class="nv">index</span><span class="o">=</span><span class="m">0</span>,media<span class="o">=</span>disk,if<span class="o">=</span>virtio,file<span class="o">=</span>/dev/sdb -cdrom latest-nixos-minimal-x86_64-linux.iso -boot d</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">apt install qemu-kvm
+</span></span><span class="line"><span class="cl">qemu-system-x86_64 -netdev <span class="nv">type</span><span class="o">=</span>user,id<span class="o">=</span>mynet0 -device virtio-net-pci,netdev<span class="o">=</span>mynet0 -m <span class="m">2048</span> -enable-kvm -drive <span class="nv">index</span><span class="o">=</span>0,media<span class="o">=</span>disk,if<span class="o">=</span>virtio,file<span class="o">=</span>/dev/sdb -cdrom latest-nixos-minimal-x86_64-linux.iso -boot d
+</span></span></code></pre></td></tr></table>
 </div>
 </div></li>
-
-<li><p>Connect to the installer inside QEMU guest.</p>
-
+<li>
+<p>Connect to the installer inside QEMU guest.</p>
 <p>On your local machine, forward the VNC port locally.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell">ssh -o <span class="s2">&#34;UserKnownHostsFile=/dev/null&#34;</span> -NL <span class="m">5900</span>:localhost:5900 root@<span class="si">${</span><span class="nv">YOUR_HOST</span><span class="si">}</span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">ssh -o <span class="s2">&#34;UserKnownHostsFile=/dev/null&#34;</span> -NL 5900:localhost:5900 root@<span class="si">${</span><span class="nv">YOUR_HOST</span><span class="si">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
-</div>
-<p>Then connect to <code>vnc://localhost</code> with your VNC client. &ldquo;Screen Sharing.app&rdquo; on macOS somehow didn&rsquo;t work for me.</p></li>
-
-<li><p>Install as usual inside VNC.</p>
-
+</div><p>Then connect to <code>vnc://localhost</code> with your VNC client. &ldquo;Screen Sharing.app&rdquo; on macOS somehow didn&rsquo;t work for me.</p>
+</li>
+<li>
+<p>Install as usual inside VNC.</p>
 <p>Follow instructions in <a href="https://nixos.org/manual/nixos/stable/index.html#sec-installation">https://nixos.org/manual/nixos/stable/index.html#sec-installation</a>. Use <code>vda</code> whenever <code>sda</code> is referenced.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -235,44 +245,49 @@ qemu-system-x86_64 -netdev <span class="nv">type</span><span class="o">=</span>u
 </span><span class="lnt">12
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell">sudo -i
-parted /dev/vda -- mklabel msdos
-parted /dev/vda -- mkpart primary 1MiB -8GiB
-parted /dev/vda -- mkpart primary linux-swap -8GiB <span class="m">100</span>%
-mkfs.ext4 -L nixos /dev/sda1
-mkswap -L swap /dev/sda2
-mount /dev/disk/by-label/nixos /mnt
-swapon /dev/vda2
-nixos-generate-config --root /mnt
-vi /mnt/etc/nixos/configuration.nix
-<span class="c1"># uncomment boot.loader.grub.device and set it to &#34;/dev/vda&#34;</span>
-nixos-install</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo -i
+</span></span><span class="line"><span class="cl">parted /dev/vda -- mklabel msdos
+</span></span><span class="line"><span class="cl">parted /dev/vda -- mkpart primary 1MiB -8GiB
+</span></span><span class="line"><span class="cl">parted /dev/vda -- mkpart primary linux-swap -8GiB 100%
+</span></span><span class="line"><span class="cl">mkfs.ext4 -L nixos /dev/sda1
+</span></span><span class="line"><span class="cl">mkswap -L swap /dev/sda2
+</span></span><span class="line"><span class="cl">mount /dev/disk/by-label/nixos /mnt
+</span></span><span class="line"><span class="cl">swapon /dev/vda2
+</span></span><span class="line"><span class="cl">nixos-generate-config --root /mnt
+</span></span><span class="line"><span class="cl">vi /mnt/etc/nixos/configuration.nix
+</span></span><span class="line"><span class="cl"><span class="c1"># uncomment boot.loader.grub.device and set it to &#34;/dev/vda&#34;</span>
+</span></span><span class="line"><span class="cl">nixos-install
+</span></span></code></pre></td></tr></table>
 </div>
 </div></li>
-
-<li><p>Shutdown the qemu guest.</p>
+<li>
+<p>Shutdown the qemu guest.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell">shutdown -h now</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">shutdown -h now
+</span></span></code></pre></td></tr></table>
 </div>
 </div></li>
-
-<li><p>Reboot <strong>with the control panel</strong> into non-rescue mode.</p></li>
-
-<li><p>Now that we are no longer in rescue mode, change <code>/dev/vda</code> back to <code>/dev/sda</code>.</p>
+<li>
+<p>Reboot <strong>with the control panel</strong> into non-rescue mode.</p>
+</li>
+<li>
+<p>Now that we are no longer in rescue mode, change <code>/dev/vda</code> back to <code>/dev/sda</code>.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell">vi /etc/nixos/configuration.nix</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">vi /etc/nixos/configuration.nix
+</span></span></code></pre></td></tr></table>
 </div>
 </div></li>
-
-<li><p>Done.</p></li>
+<li>
+<p>Done.</p>
+</li>
 </ol>
 
     </div>
@@ -286,7 +301,6 @@ nixos-install</code></pre></td></tr></table>
     <span class="item-title">LastMod</span>
     <span class="item-content">
         2022-05-02
-        
     </span>
   </p>
   
@@ -312,7 +326,7 @@ nixos-install</code></pre></td></tr></table>
   </article>
         </div>
         
-  
+
   
 
   
@@ -331,7 +345,7 @@ nixos-install</code></pre></td></tr></table>
     <footer id="footer" class="footer">
       <div class="social-links">
       <a href="https://github.com/SEIAROTg" class="iconfont icon-github" title="github"></a>
-  <a href="https://seiarotg.me/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+  
 </div>
 
 <div class="copyright">
@@ -349,13 +363,10 @@ nixos-install</code></pre></td></tr></table>
   <span class="copyright-year">
     &copy; 
     2019 - 
-    2023
-    <span class="heart">
-      <i class="iconfont icon-heart"></i>
-    </span>
-    <span class="author">SEIAROTg</span>
+    2023<span class="heart"><i class="iconfont icon-heart"></i></span><span>SEIAROTg</span>
   </span>
 </div>
+
     </footer>
 
     <div class="back-to-top" id="back-to-top">
@@ -366,7 +377,10 @@ nixos-install</code></pre></td></tr></table>
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
-<script type="text/javascript" src="/dist/even.26188efa.min.js"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
 
 
 <script type="application/javascript">

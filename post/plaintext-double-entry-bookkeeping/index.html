@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.56.0 with even 4.0.0" />
+<meta name="generator" content="Hugo 0.113.0 with theme even" />
 
 
 <link rel="canonical" href="https://seiarotg.me/post/plaintext-double-entry-bookkeeping/" />
@@ -34,28 +34,22 @@
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 
 
-<link href="/dist/even.c2a46f00.min.css" rel="stylesheet">
+
+<link href="/sass/main.min.7d4e25b944cdea452d847bbea22aa779718d0fa25c09c91b22601aa109bfab1b.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
 <meta property="og:title" content="我对纯文本复式簿记的理解" />
 <meta property="og:description" content="背景 用 beancount 一年多了，总结一下我作为无财会基础人士对于纯文本记账、复式簿记和 beancount 的一些理解。本文尽可能地避免出现财会术语或某种记账工具特有的概念，" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://seiarotg.me/post/plaintext-double-entry-bookkeeping/" />
+<meta property="og:url" content="https://seiarotg.me/post/plaintext-double-entry-bookkeeping/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2020-10-29T00:05:48+00:00" />
-<meta property="article:modified_time" content="2020-10-29T00:05:48+00:00" />
+<meta property="article:modified_time" content="2020-11-02T22:14:50+00:00" />
 <meta itemprop="name" content="我对纯文本复式簿记的理解">
-<meta itemprop="description" content="背景 用 beancount 一年多了，总结一下我作为无财会基础人士对于纯文本记账、复式簿记和 beancount 的一些理解。本文尽可能地避免出现财会术语或某种记账工具特有的概念，">
-
-
-<meta itemprop="datePublished" content="2020-10-29T00:05:48&#43;00:00" />
-<meta itemprop="dateModified" content="2020-10-29T00:05:48&#43;00:00" />
-<meta itemprop="wordCount" content="6266">
-
-
-
-<meta itemprop="keywords" content="money,accounting,beancount," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="description" content="背景 用 beancount 一年多了，总结一下我作为无财会基础人士对于纯文本记账、复式簿记和 beancount 的一些理解。本文尽可能地避免出现财会术语或某种记账工具特有的概念，"><meta itemprop="datePublished" content="2020-10-29T00:05:48+00:00" />
+<meta itemprop="dateModified" content="2020-11-02T22:14:50+00:00" />
+<meta itemprop="wordCount" content="6264">
+<meta itemprop="keywords" content="money,accounting,beancount," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="我对纯文本复式簿记的理解"/>
 <meta name="twitter:description" content="背景 用 beancount 一年多了，总结一下我作为无财会基础人士对于纯文本记账、复式簿记和 beancount 的一些理解。本文尽可能地避免出现财会术语或某种记账工具特有的概念，"/>
 
@@ -83,8 +77,6 @@
 <nav id="mobile-menu" class="mobile-menu slideout-menu">
   <ul class="mobile-menu-list">
     <a href="/">
-        <li class="mobile-menu-item">Home</li>
-      </a><a href="/post/">
         <li class="mobile-menu-item">Archives</li>
       </a><a href="/tags/">
         <li class="mobile-menu-item">Tags</li>
@@ -92,19 +84,26 @@
         <li class="mobile-menu-item">Categories</li>
       </a>
   </ul>
+
+  
+
+
 </nav>
+
   <div class="container" id="mobile-panel">
     <header id="header" class="header">
         <div class="logo-wrapper">
   <a href="/" class="logo">SEIAROTg</a>
 </div>
 
+
+
+
+
 <nav class="site-navbar">
   <ul id="menu" class="menu">
     <li class="menu-item">
-        <a class="menu-item-link" href="/">Home</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/post/">Archives</a>
+        <a class="menu-item-link" href="/">Archives</a>
       </li><li class="menu-item">
         <a class="menu-item-link" href="/tags/">Tags</a>
       </li><li class="menu-item">
@@ -112,6 +111,7 @@
       </li>
   </ul>
 </nav>
+
     </header>
 
     <main id="main" class="main">
@@ -135,45 +135,29 @@
   <h2 class="post-toc-title">Contents</h2>
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
-<ul>
-<li><a href="#背景">背景</a></li>
-<li><a href="#纯文本记账">纯文本记账</a></li>
-<li><a href="#复式簿记">复式簿记</a>
-<ul>
-<li><a href="#场景">场景</a></li>
-<li><a href="#账户的意义">账户的意义</a></li>
-<li><a href="#账目的整理">账目的整理</a></li>
-<li><a href="#总结">总结</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#场景">场景</a></li>
+    <li><a href="#账户的意义">账户的意义</a></li>
+    <li><a href="#账目的整理">账目的整理</a></li>
+    <li><a href="#总结">总结</a></li>
+  </ul>
 </nav>
   </div>
 </div>
     <div class="post-content">
-      
-
-<h1 id="背景">背景</h1>
-
+      <h1 id="背景">背景</h1>
 <p>用 <a href="http://furius.ca/beancount/">beancount</a> 一年多了，总结一下我作为无财会基础人士对于纯文本记账、复式簿记和 beancount 的一些理解。本文尽可能地避免出现财会术语或某种记账工具特有的概念，适合对纯文本记账和复式簿记完全不了解或仅有初步了解的人士。</p>
-
 <h1 id="纯文本记账">纯文本记账</h1>
-
 <p>什么是纯文本记账呢？<a href="https://plaintextaccounting.org/">plaintextaccounting.org</a> 的说法是：</p>
-
 <blockquote>
 <p><strong>Plain text accounting</strong> means doing accounting with plain text data formats and scriptable software, in the style of <a href="https://plaintextaccounting.org/#plain-text-accounting-apps">Ledger, hledger, beancount, and co</a>.</p>
 </blockquote>
-
 <p>咀个栗子：</p>
-
 <blockquote>
 <p>2020-01-01 12:03 支付宝余额 =(10元)=&gt; 沙县小吃 (两碗馄饨)</p>
 </blockquote>
-
 <p>在这一段文本中，我们用了一种简单的格式记录了一笔花销的日期、时间、账户、金额、去向、事由。尽管这种简单的格式表达能力有所局限，但我们可以<strong>轻松地</strong>以这种方式<strong>记录</strong>和<strong>查询</strong>日常花销，也可以轻松地编写小程序来自动化的进行一些查询、统计或批量编辑。那么这就是一种纯文本记账方式。</p>
-
 <p>我们再回过头来看定义，试分析以下场景是否属于纯文本记账：</p>
-
 <ul>
 <li>我使用上面这种格式记账，但是账本经过 AES 加密后在文件系统中的存储形式不再是文本文件。</li>
 <li>我使用 GNUCash 记账，账本保存为 sqlite 数据库文件但是我又 base64 了一下成了文本文件。</li>
@@ -182,295 +166,172 @@
 <li>我把银行提供的 csv 格式的流水存了下来。</li>
 <li>我使用自然语言清晰地将账目记录在文本文件中。</li>
 </ul>
-
 <p>经过思考，不难发现账本在文件系统中的存储形式完全不重要，只要用户以纯文本的形式编辑和查询账目，我们就可以认为这是纯文本记账。用户也可能同时使用文本和非文本的方式对账目进行编辑和查询，但只要用户能够方便地以文本形式编辑账本，就能够享受到纯文本记账的好处。</p>
-
 <p>那么好处是什么呢？</p>
-
 <p><strong>低依赖</strong></p>
-
 <p>只要有文本编辑器就可以编辑账目，无需安装特定工具（当然合适的工具依然能够提升工作效率）。如果某种工具在某些环境下（如没有网络），或在未来（如停止维护并下架）不可用，我们依然可以访问我们的账本。</p>
-
 <p><strong>现成的编辑工具</strong></p>
-
 <p>我们可以轻松地使用熟悉的文本编辑器编辑账本，并进行简单的批量操作，如正则表达式替换。</p>
-
 <p><strong>现成的版本控制</strong></p>
-
 <p>对文本文件进行比较和版本控制的工具如今随地可见且相对成熟，我们无需再针对某中特定的账本格式发明或学习专用的工具。</p>
-
 <p><strong>完整的控制</strong></p>
-
 <p>账本中的所有信息均能够被完整的反映在文本当中，因此在编辑过程中我们也能够更有自信，无需操心某款工具会如何处理某中隐藏信息。设想我们需要合并“出租车”和“打车”两种开销，只需要进行文本替换即可。相对地，如果我们使用某种神奇的记账软件，则需要进行一番确认：重命名账户是否溯及既往？重命名账户是否会产生两个同名账户？重命名账户是否可能导致其中一个账户的原有记录消失？是否必须通过专门的合并账户功能实现？合并错了还有救吗？</p>
-
 <p><strong>自动化处理</strong></p>
-
 <p>编写小程序对某种格式的数据进行自动化处理的一个常见问题是：这种格式可能很复杂，有相当多的情况需要考虑。纯文本记账采用的格式一般较为简单，且作为账本的作者，我们清楚地知道我们使用了哪些特性，在编写小程序时可以不考虑我们没使用的特性。</p>
-
 <h1 id="复式簿记">复式簿记</h1>
-
 <p>在纯文本记账的背景下我们就需要一种简洁统一的的方式来表达我们的账目。复式簿记就是这样一个很美妙的东西。</p>
-
 <p>复式簿记的核心思想是钱的守恒：</p>
-
 <blockquote>
 <p>💰不能凭空产生也不能凭空消灭，只能从一个账户流向另一个账户。</p>
 </blockquote>
-
 <p>这可能并不符合直觉：我把钱丢了不就没了吗？确实。那我们换个说法：</p>
-
 <blockquote>
 <p>在一个封闭系统中，💰的总量保持不变。</p>
 </blockquote>
-
 <p>这样丢掉的钱还在某个系统里而并没有消失。那我把钱烧了呢？那我们再换个说法：</p>
-
 <blockquote>
 <p>在一个系统中，流入系统的💰的总量等于流出系统的💰的总量和系统中增加的💰的总量之和。</p>
 </blockquote>
-
 <p>通过把烧掉的钱排除到系统外面去或者构造一个包含被烧掉的钱的系统，这种守恒依然成立。</p>
-
 <h2 id="场景">场景</h2>
-
 <p>那么我们来举几个例子。</p>
-
 <p><strong>场景：支付宝提现</strong></p>
-
 <p>从简单的情况开始，我从支付宝里提现了一百元到银行卡，显然这里有一百元从支付宝余额流向了银行卡，所以可以记为：</p>
-
 <blockquote>
 <p>我的支付宝余额 =(100元)=&gt; 我的银行卡余额</p>
 </blockquote>
-
 <p>这符合我们对守恒的第一种解释。</p>
-
 <p><strong>场景：吃饭</strong></p>
-
 <p>再来看上面提到的“我花了十块钱在沙县小吃吃了两碗馄饨”的例子，钱从我的支付宝余额流向了店主的支付宝账户，所以这笔交易可以描述为：</p>
-
 <blockquote>
 <p>我的支付宝余额 =(10元)=&gt; 沙县小吃店主的支付宝余额</p>
 </blockquote>
-
 <p>这也符合我们对守恒的第一种解释。</p>
-
 <p>但是这里有一个问题，这种记法要求我们落实店家的具体账户，而通常我们并不关心店家具体使用的收款账户。既然不关心这点，我们可以构造一个虚拟账户来概括店家的一切资产债务，以体现我们关心的部分——这些钱花在了这家店上。</p>
-
 <blockquote>
 <p>我的支付宝余额 =(10元)=&gt; 沙县小吃</p>
 </blockquote>
-
 <p>也就是说，实际记账过程中所用的“账户”是根据我们的需要选取的对资金来源或去向的一种概括，而不必对应实际存在的具体账户。类似地，如果我们毫不关心自己资产的分布，也可以把箭头左侧的“我的支付宝余额”简化为“我”。</p>
-
 <p>现在我们思考这两个账户的意义。显然，“我的支付宝余额”这一账户对应着实际存在的支付宝账户。如果我们从注册支付宝账户起认真记录每一笔账，则该账户的余额对应支付宝账户的余额，该账户的每一笔变化与支付宝账户的每一笔变化一一对应。那么”沙县小吃“这个账户呢？类似地，如果从这家店开张开始认真记录每一笔账，则该账户的余额对应这家店的资产，该账户的每一笔变化与这家店资产的每一笔变化一一对应。可是这好像就成了店家的账本？</p>
-
 <p>如果我们只记自己的账呢？此时“沙县小吃”这个账户就不再能够反映店家的资产，其实际意义就成了我在沙县小吃的支出。既然如此，我们不妨更改账户名来反映这一点：</p>
-
 <blockquote>
 <p>我的支付宝余额 =(10元)=&gt; 我在沙县小吃的支出</p>
 </blockquote>
-
 <p>其实在这里，我们已经改变了对系统的选取。我们不再着眼于这个囊括了我和店家的大系统而只关心我这个小系统，“我的支付宝余额”属于系统内部的资金变化，而“我在沙县小吃的支出”属于离开系统的资金。至于店家实际收到了多少，支付宝有没有向店家收取手续费，以及其他顾客消费了多少，我们并不关心。</p>
-
 <p><strong>场景：发工资</strong></p>
-
 <p>类似地，在发放工资时，钱从公司的账户来到了我的账户，但我并不关心公司是如何挣到这笔钱的，也不关心这笔钱原先存在于公司的哪个具体账户上，因而我们继续取我作为系统，将这笔账记作：</p>
-
 <blockquote>
 <p>工资收入 =(5000元)=&gt; 我的银行卡</p>
 </blockquote>
-
 <p><strong>场景：丢失财物</strong></p>
-
 <p>那么钱扔了烧了吃了找不到了怎么记呢？这其实也是钱离开了我们的口袋，也可以记作支出：</p>
-
 <blockquote>
 <p>我的现金 =(10元)=&gt; 丢失支出</p>
 </blockquote>
-
 <p><strong>场景：超市购物</strong></p>
-
 <p>我在超市话花两元买了一瓶矿泉水，十元买了一个不锈钢盆，刷了十二元的花呗，该如何记呢？</p>
-
 <blockquote>
 <p>我的花呗 =(2元)=&gt; 支出/饮料 (水)</p>
-
 <p>我的花呗 =(10元)=&gt; 支出/餐具 (不锈钢盆)</p>
 </blockquote>
-
 <p>这样的问题是，“我的花呗”的账户变动中会体现两笔支出，而实际上只发生了一笔。要解决这个问题，我们可以合起来写：</p>
-
 <blockquote>
 <p>我的花呗 -12元</p>
-
 <p>饮料支出 +2元 (水)</p>
-
 <p>餐具支出 +10元 (不锈钢盆)</p>
 </blockquote>
-
 <p>这样每一条分别都有与之对应的事实，且金额变化总和为零，完美。</p>
-
 <p><strong>场景：发工资2</strong></p>
-
 <p>按照上面这种记法，我们也可以把发工资记得更仔细一些，比如：</p>
-
 <blockquote>
 <p>工资收入 -8000元</p>
-
 <p>个税支出 +2000元</p>
-
 <p>社保支出 +1000 元</p>
-
 <p>我的银行卡 +5000 元</p>
 </blockquote>
-
-<p>注意到这里&rdquo;收入/工资&rdquo;这个账户的余额变化为负，这是因为收入账户描述的是系统外流入的资金，或者说这个账户属于公司，而在发工资的过程中公司资产确实有所减少。</p>
-
+<p>注意到这里&quot;收入/工资&quot;这个账户的余额变化为负，这是因为收入账户描述的是系统外流入的资金，或者说这个账户属于公司，而在发工资的过程中公司资产确实有所减少。</p>
 <p>那么为什么在工资这个例子中我们可以用多种方式描述同一笔交易而在超市购物的例子中却只能有一种方式呢？这又取决于我们关心什么。如果希望我的账本和我的花呗账单能够对应可以选择合起来记；如果对税前工资和个税缴纳不那么关心所以两种都可以接受。</p>
-
 <p><strong>场景：借钱坐地铁</strong></p>
-
 <p>除了日常的收入开支，借贷也常常出现在我们的财务生活中。我向小赵借了三元钱坐地铁，要怎么记呢？</p>
-
 <p>整体地来看：</p>
-
 <blockquote>
 <p>小赵 =(3元)=&gt; 我的现金</p>
 </blockquote>
-
 <p>从我的角度来看：</p>
-
 <blockquote>
 <p>借款收入 =(3元)=&gt; 我的现金</p>
 </blockquote>
-
 <p>诶，怎么和上面发工资的例子差不多？是不是也和工资一样不要还了呢？小赵说要还的，那么问题在哪里呢？</p>
-
 <p>这里我们似乎忽略了这个交易的另一个方面：表面上我和小赵交割了现金，实际上还成立了借贷合同。我在获得现金的同时领到了债务，小赵在给出现金的同时获得了债权。把这个考虑进去我们就可以这样记：</p>
-
 <blockquote>
 <p>小赵 =(3元)=&gt; 我的现金</p>
-
 <p>我的债务 =(3元)=&gt; 小赵的债权</p>
 </blockquote>
-
 <p>从我的角度来看：</p>
-
 <blockquote>
 <p>我的债务 =(3元)=&gt; 我的现金</p>
 </blockquote>
-
 <p>从小赵的角度看：</p>
-
 <blockquote>
 <p>小赵 =(3元)=&gt; 小赵的债权</p>
 </blockquote>
-
 <p>也就是说，小赵把3元的现金资产转换成了债权形式，而我把我的3元债务兑现成了现金。</p>
-
 <p>仔细思考不难发现我们在上面吃饭、发工资和购物几个例子也存在着类似的方面：我们记录了馄饨钱但没有记录馄饨和服务；我们记录了工资但没有记录劳动；我们记录了购物消费但没有记录矿泉水和不锈钢盆。不过这些东西好像通常不会出现在账本里，我们也不那么关心，那就算了。当然如果某些情况下我们关心这些东西，也可以记下来。</p>
-
 <p><strong>场景：兑换外汇</strong></p>
-
 <p>一个比起借钱稍显复杂的场景是外汇兑换。如果我们用1英镑兑换1.3美元，我们既关心英镑的流动，也关心美元的流动：</p>
-
 <blockquote>
 <p>我的现金 =(£1)=&gt; 银行</p>
-
 <p>银行 =($1.3) =&gt; 我的现金</p>
 </blockquote>
-
 <p>从我的角度看：</p>
-
 <blockquote>
 <p>我的现金 -£1</p>
-
 <p>我的现金 +$1.3</p>
 </blockquote>
-
 <p>加起来是 $1.3-£1，因为 £1 = £1.3 所以加起来等于零？好像不对。实际上的汇率是变化的，不同时间的汇率不一样，买卖的汇率不一样，不同金融机构的汇率也不一样，甚至提供给每个客户每一笔交易的汇率可能都有所区别。比如在机场的黑心商家，£1 可能只能换到 $1。因而我们不能直接规定 £1 = $1.3。类似地，我们也不能规定10元 = 1不锈钢盆。</p>
-
 <p>既然无法进行 £ 和 $ 的直接转换，我们就需要发现其他的账户变动来将变动总额平衡为零：</p>
-
 <blockquote>
 <p>我的现金 -£1</p>
-
 <p>我给银行的钱 +£1</p>
-
 <p>我的现金 +$1.3</p>
-
 <p>我给银行的钱 -$1.3</p>
 </blockquote>
-
 <p><strong>场景：退款</strong></p>
-
 <p>我发现十块钱买的不锈钢盆配不上我的气质，于是选择了退货。我们可以直接把原先的交易反过来记：</p>
-
 <blockquote>
 <p>我的花呗 +10元</p>
-
 <p>餐具支出 -10元 (不锈钢盆)</p>
 </blockquote>
-
 <p>如果这个不锈钢盆用一次就漏了，商家选择退款不退货呢？其实还是一样的。这里“餐具支出”体现的是我花在餐具上的钱，而不是不锈钢盆本身。至于盆本身，如上面借钱坐地铁场景中提到的，被我们省略了。</p>
-
 <p><strong>场景：储值卡、积分、券</strong></p>
-
 <p>券这个东西，有点像债权，有点像外汇，又很不一样。有些比如公交卡，可以退卡提钱，价值明确。有些比如超市购物卡，可以比较容易地用掉，也可以折价卖出去，有较为明确的价值。有些比如月饼券，面值一千但却只能兑换一盒月饼，价值不明但有点用。有些在指定商家消费满百元可打九折，价值和商家的定价以及实际的消费数额有关。有些生日当天购买三套以上房产赠限量款定制卫生纸一卷，没有什么卵用。情况十分复杂。</p>
-
 <p>这时候，我们就需要根据具体情况权衡记账的成本和收益了。</p>
-
 <p>支付宝余额可以理解为一种储值卡。由于账户中的资金可以与人民币轻松地一比一兑换，我们可以将其简单地记作一个资产账户。充值时从其他账户转入，提现时转出到其他账户，消费时转出到支出账户。</p>
-
 <p>公交卡也可以这么操作，但这样需要记录消费情况，即每次的坐车打卡，可能较为繁琐且收益不大。因此，我们也可以选择跳过中间步骤，在充值时直接记为支出，在提现时按照退款的方式扣减支出。</p>
-
 <p>积分也是类似的。我们以转入或外汇兑换的方式记录积分的取得，以转出或外汇兑换的方式记录积分的消耗。如果不在意积分，也可以忽略积分的取得或记作支出，以扣减支出的方式记录积分的消耗。</p>
-
 <p><strong>场景：开始记账前的资产</strong></p>
-
 <p>我们之前提到，资产账户的意义是建立在我们完整地记录了每一笔交易的前提下。那么一个现实的问题就是，如何处理开始记账前就已经存在的账户呢？</p>
-
 <p>如果我们从某时刻开始记账，则账本中每一笔交易对应着自开始记账以来的每一笔实际交易，而账本中余额的意义对应着账户自开始记账以来的余额变化。我们希望账本中的账户能反映所有存在的交易和实际账户的余额，但显然如果不补上所有历史交易前者是不现实的，那么后者呢？我们可以这样：</p>
-
 <blockquote>
 <p>开始记账前的支付宝余额 =(100元)=&gt; 支付宝余额</p>
 </blockquote>
-
 <p>我们可以把这个理解为用一笔交易概括开始记账前账户余额的变化，也可以将开始记账钱后的支付宝余额理解为两个独立的账户，而开始记账的第一件事就是把余额从旧账户转进新账户。</p>
-
 <p>另外我们通常不关心开始记账前的账户情况，因此可以把这些“开始记账前的XXX”简化成一个账户“开始记账前的资产”。</p>
-
 <h2 id="账户的意义">账户的意义</h2>
-
 <p>在上面的例子中，存在着两类不同的账户：资产负债账户和收入支出账户。</p>
-
 <p>资产负债账户描述系统内部的资金变化，而收入支出账户描述进入和离开系统的资金。我们通过选取合适的系统将我们关心的账户包括在内，用资产负债账户描述，不关心的账户排除在外，用收入支出账户描述。</p>
-
 <p>两者的本质区别在于，对于系统内的资产负债账户，我们需要记录与之相关的每一笔交易，而系统外的收入支出账户，我们只记录与我们关心的系统有关的部分。把公交卡记作资产需要记录充值提现和乘车记录，记为支出则只需要记录充值提现记录，因为乘车发生在公交卡和公交公司之间，而不是公交卡和其他我们关心的系统之间。</p>
-
 <p>余额是账户中所有变动的总和。由于我们记录的交易有所不同，两类账户的余额意义也有所不同。对于资产负债账户，我们会记录所有交易且通过上面开始记账钱的资产场景中的方法初始化账户余额，因此余额反映的是实际的资产负债数额。而收入支出账户不记录只涉及其他人的交易通常也不初始化余额，因而只能反映一段时间内我的收入支出情况。</p>
-
 <p>那么资产和负债账户之间，收入和支出账户之间有什么区别呢？没区别。负债可以理解为负资产，支出可以理解为负收入。在上面的例子中，资产与负债，收入与支出均可以互换。当然，为了与日常生活接轨，在很多情况下我们也可以把它们区分开来，如工资记为收入，用餐记为支出，借记卡记为资产，信用卡记为债务。但是这种做法会导致一些情况下资产和债务、收入和支出无法互相抵扣。比如今天我给小赵买水，明天小赵给我买水，记在一个账户里大家两清，记在两个账户里需要互相还钱。又比如退款，由于相应的支出确实被撤销了，记作支出的减少可以准确地反映实际的支出情况，而记作收入则需要我们在查询时进行扣除。</p>
-
 <p>另外，收入支出账户的符号有时会令人困惑，尤其是常常为负的收入账户。我们可以将系统之外的账户理解为别人的资产——有人给你钱，他账户里的钱就减少了；你给别人钱，他账户里的钱就增加了。</p>
-
 <h2 id="账目的整理">账目的整理</h2>
-
 <p>在上面的例子中我们用自然语言给每个账户起了个名字。而实际操作中，我们可能更关心在食物上的总支出而不是在沙县小吃的总支出，也可能想要统计工作时间内的用餐支出以便报销。此时我们就需要引入分类信息。方法有很多，可以给账户打标签，给交易打标签，给交易中具体的某一条变化打标签，在账户名上体现分类或同时使用多种方式。</p>
-
 <h2 id="总结">总结</h2>
-
 <p>在复式簿记的框架下，我们可以用账户的资金增减这一简洁统一的形式描述各种复杂的交易。这使得账目可以在通用文本编辑器中被迅速地录入。</p>
-
 <p>通过加入分类信息，我们可以轻松地进行各种查询统计。</p>
-
 <p>通过对账户概念的拓宽，对于任何一笔交易，我们总是可以找到它的多个不同方面，使得金额变化总和为零，且每个方面的金额变化均具有现实意义。描述不同方面的事实可以互相验证，提升我们记账的准确性。小票上的消费总额应当和银行系统提现的扣款数额相当。</p>
-
 <p>通过对系统的巧妙选取，我们可以将我们关心的部分囊括在内，不关心的部分排除在外。既准确地记录事实，又维持合理的记录成本。我们可以记录公交卡的充值提现，而省略每一次的刷卡扣费。</p>
-
 <p>通过选取多个不同的系统，我们还可以根据需要以不同的角度观察同一笔交易。一笔借款，既是资金的流动，又有现金和债权债务的转换。</p>
-
 <p>真好用。</p>
 
     </div>
@@ -483,8 +344,7 @@
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
     <span class="item-content">
-        2020-10-29
-        
+        2020-11-02
     </span>
   </p>
   
@@ -512,7 +372,7 @@
   </article>
         </div>
         
-  
+
   
 
   
@@ -531,7 +391,7 @@
     <footer id="footer" class="footer">
       <div class="social-links">
       <a href="https://github.com/SEIAROTg" class="iconfont icon-github" title="github"></a>
-  <a href="https://seiarotg.me/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+  
 </div>
 
 <div class="copyright">
@@ -549,13 +409,10 @@
   <span class="copyright-year">
     &copy; 
     2019 - 
-    2023
-    <span class="heart">
-      <i class="iconfont icon-heart"></i>
-    </span>
-    <span class="author">SEIAROTg</span>
+    2023<span class="heart"><i class="iconfont icon-heart"></i></span><span>SEIAROTg</span>
   </span>
 </div>
+
     </footer>
 
     <div class="back-to-top" id="back-to-top">
@@ -566,7 +423,10 @@
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
-<script type="text/javascript" src="/dist/even.26188efa.min.js"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
 
 
 <script type="application/javascript">

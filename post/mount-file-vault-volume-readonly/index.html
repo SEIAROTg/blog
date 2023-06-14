@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.56.0 with even 4.0.0" />
+<meta name="generator" content="Hugo 0.113.0 with theme even" />
 
 
 <link rel="canonical" href="https://seiarotg.me/post/mount-file-vault-volume-readonly/" />
@@ -34,28 +34,22 @@
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 
 
-<link href="/dist/even.c2a46f00.min.css" rel="stylesheet">
+
+<link href="/sass/main.min.7d4e25b944cdea452d847bbea22aa779718d0fa25c09c91b22601aa109bfab1b.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
 <meta property="og:title" content="只读挂载 FileVault 卷" />
 <meta property="og:description" content="只读挂载和锁上 FileVault 卷 背景 我有块硬盘需要定期冷备份 这块硬盘启用了 FileVault 为了避免不小心弄错备份方向损失数据，需要将源硬盘只读挂载 Disk Utility 的图形界面不能做到" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://seiarotg.me/post/mount-file-vault-volume-readonly/" />
+<meta property="og:url" content="https://seiarotg.me/post/mount-file-vault-volume-readonly/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2019-09-19T11:38:02+08:00" />
-<meta property="article:modified_time" content="2019-09-19T11:38:02+08:00" />
+<meta property="article:modified_time" content="2019-09-19T11:53:31+08:00" />
 <meta itemprop="name" content="只读挂载 FileVault 卷">
-<meta itemprop="description" content="只读挂载和锁上 FileVault 卷 背景 我有块硬盘需要定期冷备份 这块硬盘启用了 FileVault 为了避免不小心弄错备份方向损失数据，需要将源硬盘只读挂载 Disk Utility 的图形界面不能做到">
-
-
-<meta itemprop="datePublished" content="2019-09-19T11:38:02&#43;08:00" />
-<meta itemprop="dateModified" content="2019-09-19T11:38:02&#43;08:00" />
+<meta itemprop="description" content="只读挂载和锁上 FileVault 卷 背景 我有块硬盘需要定期冷备份 这块硬盘启用了 FileVault 为了避免不小心弄错备份方向损失数据，需要将源硬盘只读挂载 Disk Utility 的图形界面不能做到"><meta itemprop="datePublished" content="2019-09-19T11:38:02+08:00" />
+<meta itemprop="dateModified" content="2019-09-19T11:53:31+08:00" />
 <meta itemprop="wordCount" content="191">
-
-
-
-<meta itemprop="keywords" content="mac," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="mac," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="只读挂载 FileVault 卷"/>
 <meta name="twitter:description" content="只读挂载和锁上 FileVault 卷 背景 我有块硬盘需要定期冷备份 这块硬盘启用了 FileVault 为了避免不小心弄错备份方向损失数据，需要将源硬盘只读挂载 Disk Utility 的图形界面不能做到"/>
 
@@ -83,8 +77,6 @@
 <nav id="mobile-menu" class="mobile-menu slideout-menu">
   <ul class="mobile-menu-list">
     <a href="/">
-        <li class="mobile-menu-item">Home</li>
-      </a><a href="/post/">
         <li class="mobile-menu-item">Archives</li>
       </a><a href="/tags/">
         <li class="mobile-menu-item">Tags</li>
@@ -92,19 +84,26 @@
         <li class="mobile-menu-item">Categories</li>
       </a>
   </ul>
+
+  
+
+
 </nav>
+
   <div class="container" id="mobile-panel">
     <header id="header" class="header">
         <div class="logo-wrapper">
   <a href="/" class="logo">SEIAROTg</a>
 </div>
 
+
+
+
+
 <nav class="site-navbar">
   <ul id="menu" class="menu">
     <li class="menu-item">
-        <a class="menu-item-link" href="/">Home</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/post/">Archives</a>
+        <a class="menu-item-link" href="/">Archives</a>
       </li><li class="menu-item">
         <a class="menu-item-link" href="/tags/">Tags</a>
       </li><li class="menu-item">
@@ -112,6 +111,7 @@
       </li>
   </ul>
 </nav>
+
     </header>
 
     <main id="main" class="main">
@@ -135,35 +135,25 @@
   <h2 class="post-toc-title">Contents</h2>
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
-<ul>
-<li><a href="#只读挂载和锁上-filevault-卷">只读挂载和锁上 FileVault 卷</a>
-<ul>
-<li><a href="#背景">背景</a></li>
-<li><a href="#解法">解法</a></li>
-<li><a href="#锁定">锁定</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#背景">背景</a></li>
+    <li><a href="#解法">解法</a></li>
+    <li><a href="#锁定">锁定</a></li>
+  </ul>
 </nav>
   </div>
 </div>
     <div class="post-content">
-      
-
-<h1 id="只读挂载和锁上-filevault-卷">只读挂载和锁上 FileVault 卷</h1>
-
+      <h1 id="只读挂载和锁上-filevault-卷">只读挂载和锁上 FileVault 卷</h1>
 <h2 id="背景">背景</h2>
-
 <ul>
 <li>我有块硬盘需要定期冷备份</li>
 <li>这块硬盘启用了 FileVault</li>
 <li>为了避免不小心弄错备份方向损失数据，需要将源硬盘只读挂载</li>
 <li>Disk Utility 的图形界面不能做到这件事</li>
 </ul>
-
 <h2 id="解法">解法</h2>
-
 <p>经搜索，发现以下方法：</p>
-
 <ol>
 <li><code>diskutil coreStorage list</code></li>
 <li>找到 Logical Volume 的 UUID</li>
@@ -171,11 +161,8 @@
 <li>得到一个设备名</li>
 <li><code>diskutil mount readOnly disk1</code></li>
 </ol>
-
 <h2 id="锁定">锁定</h2>
-
 <p>操作过程中发现，在 Disk Utility 中 unmount 一个加密分区并不会将其锁上。再次 mount 时<strong>不需要</strong>输入密码，且从 <code>diskutil coreStorage list</code> 输出中可以看到它们的状态为 <code>Unlocked</code>。</p>
-
 <p>此时可以 <code>diskutil eject disk1</code> 来触发锁定。</p>
 
     </div>
@@ -189,7 +176,6 @@
     <span class="item-title">LastMod</span>
     <span class="item-content">
         2019-09-19
-        
     </span>
   </p>
   
@@ -215,7 +201,7 @@
   </article>
         </div>
         
-  
+
   
 
   
@@ -234,7 +220,7 @@
     <footer id="footer" class="footer">
       <div class="social-links">
       <a href="https://github.com/SEIAROTg" class="iconfont icon-github" title="github"></a>
-  <a href="https://seiarotg.me/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+  
 </div>
 
 <div class="copyright">
@@ -252,13 +238,10 @@
   <span class="copyright-year">
     &copy; 
     2019 - 
-    2023
-    <span class="heart">
-      <i class="iconfont icon-heart"></i>
-    </span>
-    <span class="author">SEIAROTg</span>
+    2023<span class="heart"><i class="iconfont icon-heart"></i></span><span>SEIAROTg</span>
   </span>
 </div>
+
     </footer>
 
     <div class="back-to-top" id="back-to-top">
@@ -269,7 +252,10 @@
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
-<script type="text/javascript" src="/dist/even.26188efa.min.js"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
 
 
 <script type="application/javascript">

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on SEIAROTg&#39;s blog</title>
@@ -6,11 +6,7 @@
     <description>Recent content in Posts on SEIAROTg&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 03 Jun 2023 13:44:30 +0100</lastBuildDate>
-    
-	<atom:link href="https://seiarotg.me/post/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 03 Jun 2023 13:44:30 +0100</lastBuildDate><atom:link href="https://seiarotg.me/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How many variants of Oyster cards are there?</title>
       <link>https://seiarotg.me/post/how-many-oyster-variants-are-there/</link>
@@ -31,7 +27,7 @@ Note that only Oyster cards will be covered, which does not include other cards 
       <description>Oyster card is a payment card issued by Transport for London for public transport within its network. Every Oyster card has a unique number on its back.
 The number is in the format of 10 digits, followed by a checksum of 2 digits, both of which may include leading zeros, for example, 0000000000 00.
 With some experiments, I found the checksum can be calculated with the following formula:
-1 2 3 4 5 6 7 8 9 10 11  def checksum(number: int) -&amp;gt; int: return ( + number * 0x10 + number // 0x1 * 3 - number // 0x10 * 3 + number // 0x100 * 3 - number // 0x1000 * 3 + number // 0x10000 * 3 - number // 0x100000 * 3 + number // 0x1000000 * 3 - number // 0x10000000 * 3) % 100  </description>
+1 2 3 4 5 6 7 8 9 10 11 def checksum(number: int) -&amp;gt; int: return ( + number * 0x10 + number // 0x1 * 3 - number // 0x10 * 3 + number // 0x100 * 3 - number // 0x1000 * 3 + number // 0x10000 * 3 - number // 0x100000 * 3 + number // 0x1000000 * 3 - number // 0x10000000 * 3) % 100 </description>
     </item>
     
     <item>
@@ -41,12 +37,14 @@ With some experiments, I found the checksum can be calculated with the following
       
       <guid>https://seiarotg.me/post/install-nixos-on-ovh-vps/</guid>
       <description>Backup your data.
- Reboot into rescue mode with the control panel.
- Connect to KVM with the control panel.
+Reboot into rescue mode with the control panel.
+Connect to KVM with the control panel.
 You can also SSH into the host with login credentials from KVM.
- Download NixOS image.
+Download NixOS image.
 Likely you won&amp;rsquo;t have enough disk space in rescue mode so use ramfs.
-1 2 3 4  mkdir /mnt/ramdisk mount -t ramfs ramfs /mnt/ramdisk cd /mnt/ramdisk wget https://channels.nixos.org/nixos-21.11/latest-nixos-minimal-x86_64-linux.iso   Load image with qemu.</description>
+1 2 3 4 mkdir /mnt/ramdisk mount -t ramfs ramfs /mnt/ramdisk cd /mnt/ramdisk wget https://channels.nixos.org/nixos-21.11/latest-nixos-minimal-x86_64-linux.iso Load image with qemu.
+https://community.ovh.com/en/t/installing-operating-system-from-custom-image-on-ovh-vps-centos-8-tutorial/3561
+1 2 apt install qemu-kvm qemu-system-x86_64 -netdev type=user,id=mynet0 -device virtio-net-pci,netdev=mynet0 -m 2048 -enable-kvm -drive index=0,media=disk,if=virtio,file=/dev/sdb -cdrom latest-nixos-minimal-x86_64-linux.</description>
     </item>
     
     <item>
@@ -199,7 +197,7 @@ Likely you won&amp;rsquo;t have enough disk space in rescue mode so use ramfs.
       <pubDate>Sat, 24 Aug 2019 22:18:10 +0800</pubDate>
       
       <guid>https://seiarotg.me/post/misc-20190824/</guid>
-      <description>今天遇到了几个小坑，特此记录。 npm 装啥都不行 环境：npm@6.9.0、node@12.6.0 (homebrew) 问题：无论用 npm 安装什么，是否忽略 package-</description>
+      <description>今天遇到了几个小坑，特此记录。 npm 装啥都不行 **环境：**npm@6.9.0、node@12.6.0 (homebrew) **问题：**无论用 npm 安装什么，是否忽略</description>
     </item>
     
     <item>

@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.56.0 with even 4.0.0" />
+<meta name="generator" content="Hugo 0.113.0 with theme even" />
 
 
 <link rel="canonical" href="https://seiarotg.me/post/chromeos-on-surface3/" />
@@ -34,28 +34,22 @@
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 
 
-<link href="/dist/even.c2a46f00.min.css" rel="stylesheet">
+
+<link href="/sass/main.min.7d4e25b944cdea452d847bbea22aa779718d0fa25c09c91b22601aa109bfab1b.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
 <meta property="og:title" content="给 Surface 3 安装 ChromeOS" />
 <meta property="og:description" content="今天我翻出了藏在抽屉里的一台 2015 年购入的 Surface 3（没有 Pro）打算用来看片。上面的 Windows 10 实在是卡，于是尝试安装 ChromeOS。 背景 由于桌面空间限制" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://seiarotg.me/post/chromeos-on-surface3/" />
+<meta property="og:url" content="https://seiarotg.me/post/chromeos-on-surface3/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2020-04-06T00:08:14+01:00" />
-<meta property="article:modified_time" content="2020-04-06T00:08:14+01:00" />
+<meta property="article:modified_time" content="2020-04-06T00:49:41+01:00" />
 <meta itemprop="name" content="给 Surface 3 安装 ChromeOS">
-<meta itemprop="description" content="今天我翻出了藏在抽屉里的一台 2015 年购入的 Surface 3（没有 Pro）打算用来看片。上面的 Windows 10 实在是卡，于是尝试安装 ChromeOS。 背景 由于桌面空间限制">
-
-
-<meta itemprop="datePublished" content="2020-04-06T00:08:14&#43;01:00" />
-<meta itemprop="dateModified" content="2020-04-06T00:08:14&#43;01:00" />
+<meta itemprop="description" content="今天我翻出了藏在抽屉里的一台 2015 年购入的 Surface 3（没有 Pro）打算用来看片。上面的 Windows 10 实在是卡，于是尝试安装 ChromeOS。 背景 由于桌面空间限制"><meta itemprop="datePublished" content="2020-04-06T00:08:14+01:00" />
+<meta itemprop="dateModified" content="2020-04-06T00:49:41+01:00" />
 <meta itemprop="wordCount" content="1005">
-
-
-
-<meta itemprop="keywords" content="device,chromeos," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="device,chromeos," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="给 Surface 3 安装 ChromeOS"/>
 <meta name="twitter:description" content="今天我翻出了藏在抽屉里的一台 2015 年购入的 Surface 3（没有 Pro）打算用来看片。上面的 Windows 10 实在是卡，于是尝试安装 ChromeOS。 背景 由于桌面空间限制"/>
 
@@ -83,8 +77,6 @@
 <nav id="mobile-menu" class="mobile-menu slideout-menu">
   <ul class="mobile-menu-list">
     <a href="/">
-        <li class="mobile-menu-item">Home</li>
-      </a><a href="/post/">
         <li class="mobile-menu-item">Archives</li>
       </a><a href="/tags/">
         <li class="mobile-menu-item">Tags</li>
@@ -92,19 +84,26 @@
         <li class="mobile-menu-item">Categories</li>
       </a>
   </ul>
+
+  
+
+
 </nav>
+
   <div class="container" id="mobile-panel">
     <header id="header" class="header">
         <div class="logo-wrapper">
   <a href="/" class="logo">SEIAROTg</a>
 </div>
 
+
+
+
+
 <nav class="site-navbar">
   <ul id="menu" class="menu">
     <li class="menu-item">
-        <a class="menu-item-link" href="/">Home</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/post/">Archives</a>
+        <a class="menu-item-link" href="/">Archives</a>
       </li><li class="menu-item">
         <a class="menu-item-link" href="/tags/">Tags</a>
       </li><li class="menu-item">
@@ -112,6 +111,7 @@
       </li>
   </ul>
 </nav>
+
     </header>
 
     <main id="main" class="main">
@@ -134,75 +134,45 @@
     <div class="post-toc" id="post-toc">
   <h2 class="post-toc-title">Contents</h2>
   <div class="post-toc-content always-active">
-    <nav id="TableOfContents">
-<ul>
-<li><a href="#背景">背景</a></li>
-<li><a href="#操作">操作</a></li>
-<li><a href="#小插曲">小插曲</a></li>
-<li><a href="#大大大大大坑">大大大大大坑</a></li>
-</ul>
-</nav>
+    <nav id="TableOfContents"></nav>
   </div>
 </div>
     <div class="post-content">
-      
-
-<p>今天我翻出了藏在抽屉里的一台 2015 年购入的 Surface 3（没有 Pro）打算用来看片。上面的 Windows 10 实在是卡，于是尝试安装 ChromeOS。</p>
-
+      <p>今天我翻出了藏在抽屉里的一台 2015 年购入的 Surface 3（没有 Pro）打算用来看片。上面的 Windows 10 实在是卡，于是尝试安装 ChromeOS。</p>
 <h1 id="背景">背景</h1>
-
 <p>由于桌面空间限制，我的两台显示器必须竖起来一台。</p>
-
 <p>由于最近在家办公，需要给工作电脑插显示器，自然选择横着的那个。</p>
-
 <p>于是自己的电脑就只能使用竖着的屏幕，不便看片。</p>
-
 <p>为什么不切换横屏的数据源呢？因为 H310 或是黑果或是线材或是显示器的某种问题，在两台电脑之间切换显示器非常困难，须要休眠唤醒方能认出且整个过程长达数分钟之久，非常不方便。</p>
-
 <h1 id="操作">操作</h1>
-
 <p>意想不到的简单。</p>
-
 <ol>
-<li><p>准备安装介质</p>
-
-<p>在<a href="https://www.neverware.com/freedownload">这儿</a>下载 Cloudready 提供的镜像，从 Chrome 商店中安装 <a href="https://chrome.google.com/webstore/detail/chromebook-recovery-utili/jndclpdbaamdhonoechobihbbiimdgai/related">Chromebook Recovery Utility</a> 并用其刷录到 U 盘中。</p></li>
-
-<li><p>安装</p>
-
-<p>将 U 盘插到 Surface 3 上，按住音量减，点击电源键，松开音量减即可从 U 盘启动。根据提示连接网络登录 Google 账号并选择安装即可。约十分钟后装好自动关机。</p></li>
-
-<li><p>开机</p>
-
-<p>再次联网登录 Google 账号即可使用。</p></li>
+<li>
+<p>准备安装介质</p>
+<p>在<a href="https://www.neverware.com/freedownload">这儿</a>下载 Cloudready 提供的镜像，从 Chrome 商店中安装 <a href="https://chrome.google.com/webstore/detail/chromebook-recovery-utili/jndclpdbaamdhonoechobihbbiimdgai/related">Chromebook Recovery Utility</a> 并用其刷录到 U 盘中。</p>
+</li>
+<li>
+<p>安装</p>
+<p>将 U 盘插到 Surface 3 上，按住音量减，点击电源键，松开音量减即可从 U 盘启动。根据提示连接网络登录 Google 账号并选择安装即可。约十分钟后装好自动关机。</p>
+</li>
+<li>
+<p>开机</p>
+<p>再次联网登录 Google 账号即可使用。</p>
+</li>
 </ol>
-
-<p><img src="../../2020/04/chromeos-on-surface3.png" alt="装好的样子" /></p>
-
+<p><img src="../../2020/04/chromeos-on-surface3.png" alt="装好的样子"></p>
 <h1 id="小插曲">小插曲</h1>
-
 <p>我本以为需要使用某种组合键才能实现从 U 盘启动，于是将外接键盘插到了 Surface 上并很快发现只有一个 USB 口无法再插 U 盘了。我没有正规 USB Hub，键盘上自带的 Hub 供电捉鸡，于是动用显示器作为 Hub，顺便把插在上面的 Soundbar 也搭过去了。</p>
-
 <p>这带来了一个问题，在登录 Google 账号的那步，我需要先从电脑上的密码管理器里获取我的密码，而键盘挪到了 Surface 上，无法登录密码管理器。此时又不能把键盘挪回来，因为把键盘从显示器背后拔出来比较困难，而把整个 Hub 从 Surface 上拔出来会导致正在使用的 U 盘掉线。</p>
-
 <p>于是我打开了虚拟键盘。macOS 的虚拟键盘做的真是好，和真键盘一样一样的，修饰健也必须按住才管用。而我只有一个鼠标指针，遂失败。（用手机）搜索一番后有人提出可用粘滞键解决，尝试后依然未果。</p>
-
 <p>不得不又掏出另一台陈年老笔记本，充上电，打开密码管理器获取密码。先后经历了 Surface 断网和笔记本莫名黑屏后终于获得了我的 Google 账号的密码并成功登录和安装。</p>
-
 <h1 id="大大大大大坑">大大大大大坑</h1>
-
 <p>试了一下发现 Surface Pen 可用，但有显著的延迟。同时在 Chrome 里编辑 PDF 体验不佳。</p>
-
 <p>尝试打开 bilibili，报错。在系统设置中安装解码器后修复。</p>
-
-<p><img src="../../2020/04/bilibili-error-on-chromeos.png" alt="报错的 bilibili" /></p>
-
+<p><img src="../../2020/04/bilibili-error-on-chromeos.png" alt="报错的 bilibili"></p>
 <p>但是没有声音，没有声音，没有声音！干啥都没有声音！包括插耳机。<a href="https://neverware.zendesk.com/hc/en-us/community/posts/360034800753-Sound-problem-">这里</a>说 Atom 系列 CPU 的声音问题怎么都搞不好，建议使用 USB 或蓝牙音频输出设备。</p>
-
 <p>我尝试了一番 alsamixer 命令并没有获得什么进展，还遇上了另一个坑。这个命令需要配合一些 F 键使用，而我按了总是有奇怪的反应。后来经<a href="https://neverware.zendesk.com/hc/en-us/community/posts/207464377-Audio-doesn-t-work-at-all">这里</a>提醒，需要在系统设置中启用 treat top row of keyboard as function keys 才能正确使用 F 键们……</p>
-
 <p>另外还看不到电池状况，看不到电池状况，看不到电池状况！哪都看不到！</p>
-
 <p>弃坑。</p>
 
     </div>
@@ -216,7 +186,6 @@
     <span class="item-title">LastMod</span>
     <span class="item-content">
         2020-04-06
-        
     </span>
   </p>
   
@@ -243,7 +212,7 @@
   </article>
         </div>
         
-  
+
   
 
   
@@ -262,7 +231,7 @@
     <footer id="footer" class="footer">
       <div class="social-links">
       <a href="https://github.com/SEIAROTg" class="iconfont icon-github" title="github"></a>
-  <a href="https://seiarotg.me/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+  
 </div>
 
 <div class="copyright">
@@ -280,13 +249,10 @@
   <span class="copyright-year">
     &copy; 
     2019 - 
-    2023
-    <span class="heart">
-      <i class="iconfont icon-heart"></i>
-    </span>
-    <span class="author">SEIAROTg</span>
+    2023<span class="heart"><i class="iconfont icon-heart"></i></span><span>SEIAROTg</span>
   </span>
 </div>
+
     </footer>
 
     <div class="back-to-top" id="back-to-top">
@@ -297,7 +263,10 @@
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
-<script type="text/javascript" src="/dist/even.26188efa.min.js"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
 
 
 <script type="application/javascript">

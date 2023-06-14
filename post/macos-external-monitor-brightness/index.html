@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.56.0 with even 4.0.0" />
+<meta name="generator" content="Hugo 0.113.0 with theme even" />
 
 
 <link rel="canonical" href="https://seiarotg.me/post/macos-external-monitor-brightness/" />
@@ -34,28 +34,22 @@
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 
 
-<link href="/dist/even.c2a46f00.min.css" rel="stylesheet">
+
+<link href="/sass/main.min.7d4e25b944cdea452d847bbea22aa779718d0fa25c09c91b22601aa109bfab1b.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
 <meta property="og:title" content="macOS 软件调节外接显示器亮度" />
 <meta property="og:description" content="如果您也和我一样在显示器附近安装了窗户，您可能需要经常调节显示器的亮度。用爪子靠近显示器设置开关非常不方便，也非常慢。 经过一番搜索后我发现了" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://seiarotg.me/post/macos-external-monitor-brightness/" />
+<meta property="og:url" content="https://seiarotg.me/post/macos-external-monitor-brightness/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2019-08-03T12:03:18+08:00" />
-<meta property="article:modified_time" content="2019-08-03T12:03:18+08:00" />
+<meta property="article:modified_time" content="2019-08-03T14:17:20+08:00" />
 <meta itemprop="name" content="macOS 软件调节外接显示器亮度">
-<meta itemprop="description" content="如果您也和我一样在显示器附近安装了窗户，您可能需要经常调节显示器的亮度。用爪子靠近显示器设置开关非常不方便，也非常慢。 经过一番搜索后我发现了">
-
-
-<meta itemprop="datePublished" content="2019-08-03T12:03:18&#43;08:00" />
-<meta itemprop="dateModified" content="2019-08-03T12:03:18&#43;08:00" />
+<meta itemprop="description" content="如果您也和我一样在显示器附近安装了窗户，您可能需要经常调节显示器的亮度。用爪子靠近显示器设置开关非常不方便，也非常慢。 经过一番搜索后我发现了"><meta itemprop="datePublished" content="2019-08-03T12:03:18+08:00" />
+<meta itemprop="dateModified" content="2019-08-03T14:17:20+08:00" />
 <meta itemprop="wordCount" content="479">
-
-
-
-<meta itemprop="keywords" content="mac," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="mac," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="macOS 软件调节外接显示器亮度"/>
 <meta name="twitter:description" content="如果您也和我一样在显示器附近安装了窗户，您可能需要经常调节显示器的亮度。用爪子靠近显示器设置开关非常不方便，也非常慢。 经过一番搜索后我发现了"/>
 
@@ -83,8 +77,6 @@
 <nav id="mobile-menu" class="mobile-menu slideout-menu">
   <ul class="mobile-menu-list">
     <a href="/">
-        <li class="mobile-menu-item">Home</li>
-      </a><a href="/post/">
         <li class="mobile-menu-item">Archives</li>
       </a><a href="/tags/">
         <li class="mobile-menu-item">Tags</li>
@@ -92,19 +84,26 @@
         <li class="mobile-menu-item">Categories</li>
       </a>
   </ul>
+
+  
+
+
 </nav>
+
   <div class="container" id="mobile-panel">
     <header id="header" class="header">
         <div class="logo-wrapper">
   <a href="/" class="logo">SEIAROTg</a>
 </div>
 
+
+
+
+
 <nav class="site-navbar">
   <ul id="menu" class="menu">
     <li class="menu-item">
-        <a class="menu-item-link" href="/">Home</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/post/">Archives</a>
+        <a class="menu-item-link" href="/">Archives</a>
       </li><li class="menu-item">
         <a class="menu-item-link" href="/tags/">Tags</a>
       </li><li class="menu-item">
@@ -112,6 +111,7 @@
       </li>
   </ul>
 </nav>
+
     </header>
 
     <main id="main" class="main">
@@ -135,73 +135,54 @@
   <h2 class="post-toc-title">Contents</h2>
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
-<ul>
-<li><a href="#示例">示例</a>
-<ul>
-<li><a href="#基本操作">基本操作</a></li>
-<li><a href="#高级操作">高级操作</a></li>
-<li><a href="#其他操作">其他操作</a></li>
-</ul></li>
-<li><a href="#实际使用">实际使用</a></li>
-</ul>
+  <ul>
+    <li><a href="#基本操作">基本操作</a></li>
+    <li><a href="#高级操作">高级操作</a></li>
+    <li><a href="#其他操作">其他操作</a></li>
+  </ul>
 </nav>
   </div>
 </div>
     <div class="post-content">
-      
-
-<p>如果您也和我一样在显示器附近安装了窗户，您可能需要经常调节显示器的亮度。用爪子靠近显示器设置开关非常不方便，也非常慢。</p>
-
+      <p>如果您也和我一样在显示器附近安装了窗户，您可能需要经常调节显示器的亮度。用爪子靠近显示器设置开关非常不方便，也非常慢。</p>
 <p>经过一番搜索后我发现了<a href="https://github.com/kfix/ddcctl">这个叫 ddcctl 的项目</a>。它提供了一个命令行小工具来控制外接显示器的亮度、对比度等参数。</p>
-
 <h1 id="示例">示例</h1>
-
 <h2 id="基本操作">基本操作</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-sh" data-lang="sh"><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-sh" data-lang="sh">ddcctl -d <span class="m">1</span> -b <span class="m">100</span> <span class="c1"># 将 1 号显示器的亮度调整到 100</span>
-ddcctl -d <span class="m">1</span> -c <span class="m">50</span>  <span class="c1"># 将 1 号显示器的对比度调整到 50</span>
-ddcctl -d <span class="m">1</span> -rbc   <span class="c1"># 重置 1 号显示器的亮度和对比度</span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">ddcctl -d <span class="m">1</span> -b <span class="m">100</span> <span class="c1"># 将 1 号显示器的亮度调整到 100</span>
+</span></span><span class="line"><span class="cl">ddcctl -d <span class="m">1</span> -c <span class="m">50</span>  <span class="c1"># 将 1 号显示器的对比度调整到 50</span>
+</span></span><span class="line"><span class="cl">ddcctl -d <span class="m">1</span> -rbc   <span class="c1"># 重置 1 号显示器的亮度和对比度</span>
+</span></span></code></pre></td></tr></table>
 </div>
-</div>
-<div class="admonition success"><p class="admonition-title">已测试</p>
-  
+</div><div class="admonition success"><p class="admonition-title">已测试</p>
 <p>这几个功能在我用 DisplayPort 线连接的 DELL P2414 / P2417 上工作良好。</p>
-
 </div>
-
 <h2 id="高级操作">高级操作</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-sh" data-lang="sh"><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-sh" data-lang="sh">ddcctl -d <span class="m">1</span> -b ?   <span class="c1"># 查看 1 号显示器当前的亮度设置</span>
-ddcctl -d <span class="m">1</span> -b <span class="m">10</span>+ <span class="c1"># 将 1 号显示器当前亮度调高 10</span>
-ddcctl -d <span class="m">1</span> -b <span class="m">10</span>- <span class="c1"># 将 1 号显示器当前亮度调低 10</span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">ddcctl -d <span class="m">1</span> -b ?   <span class="c1"># 查看 1 号显示器当前的亮度设置</span>
+</span></span><span class="line"><span class="cl">ddcctl -d <span class="m">1</span> -b 10+ <span class="c1"># 将 1 号显示器当前亮度调高 10</span>
+</span></span><span class="line"><span class="cl">ddcctl -d <span class="m">1</span> -b 10- <span class="c1"># 将 1 号显示器当前亮度调低 10</span>
+</span></span></code></pre></td></tr></table>
 </div>
-</div>
-<div class="admonition danger"><p class="admonition-title">警告</p>
-  
+</div><div class="admonition danger"><p class="admonition-title">警告</p>
 <p>这几个功能在我用 DisplayPort 线连接的 DELL P2414 / P2417 上必然导致系统卡死<u><b>不得不强制关机</b></u>。请务必在先保存好所有工作再进行测试。勿谓言之不预也。</p>
-
 </div>
-
 <h2 id="其他操作">其他操作</h2>
-
 <p>此外，这个工具还能控制显示器输入源、喇叭等设置。由于我的显示器只有一个输入也没有喇叭，未作测试。具体参数可键入 <code>ddcctl</code> 查看。</p>
-
 <h1 id="实际使用">实际使用</h1>
-
 <p>可以给 <code>ddcctl -d 1 -b 10+</code> 和 <code>ddcctl -d 1 -b 10-</code> 各绑定一个快捷键。</p>
-
 <p>由于用不了这俩命令，我使用了空调遥控器模式：将亮度设置存放在一个文件中，需要变更时修改文件并用 <code>ddcctl -d 1 -b $(cat ~/.brightness)</code> 向显示器同步。</p>
 
     </div>
@@ -215,7 +196,6 @@ ddcctl -d <span class="m">1</span> -b <span class="m">10</span>- <span class="c1
     <span class="item-title">LastMod</span>
     <span class="item-content">
         2019-08-03
-        
     </span>
   </p>
   
@@ -241,7 +221,7 @@ ddcctl -d <span class="m">1</span> -b <span class="m">10</span>- <span class="c1
   </article>
         </div>
         
-  
+
   
 
   
@@ -260,7 +240,7 @@ ddcctl -d <span class="m">1</span> -b <span class="m">10</span>- <span class="c1
     <footer id="footer" class="footer">
       <div class="social-links">
       <a href="https://github.com/SEIAROTg" class="iconfont icon-github" title="github"></a>
-  <a href="https://seiarotg.me/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+  
 </div>
 
 <div class="copyright">
@@ -278,13 +258,10 @@ ddcctl -d <span class="m">1</span> -b <span class="m">10</span>- <span class="c1
   <span class="copyright-year">
     &copy; 
     2019 - 
-    2023
-    <span class="heart">
-      <i class="iconfont icon-heart"></i>
-    </span>
-    <span class="author">SEIAROTg</span>
+    2023<span class="heart"><i class="iconfont icon-heart"></i></span><span>SEIAROTg</span>
   </span>
 </div>
+
     </footer>
 
     <div class="back-to-top" id="back-to-top">
@@ -295,7 +272,10 @@ ddcctl -d <span class="m">1</span> -b <span class="m">10</span>- <span class="c1
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
-<script type="text/javascript" src="/dist/even.26188efa.min.js"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
 
 
 <script type="application/javascript">

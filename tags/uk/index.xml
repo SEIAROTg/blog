@@ -1,16 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>uk on SEIAROTg&#39;s blog</title>
+    <title>UK on SEIAROTg&#39;s blog</title>
     <link>https://seiarotg.me/tags/uk/</link>
-    <description>Recent content in uk on SEIAROTg&#39;s blog</description>
+    <description>Recent content in UK on SEIAROTg&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 03 Jun 2023 13:44:30 +0100</lastBuildDate>
-    
-	<atom:link href="https://seiarotg.me/tags/uk/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 03 Jun 2023 13:44:30 +0100</lastBuildDate><atom:link href="https://seiarotg.me/tags/uk/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How many variants of Oyster cards are there?</title>
       <link>https://seiarotg.me/post/how-many-oyster-variants-are-there/</link>
@@ -31,7 +27,7 @@ Note that only Oyster cards will be covered, which does not include other cards 
       <description>Oyster card is a payment card issued by Transport for London for public transport within its network. Every Oyster card has a unique number on its back.
 The number is in the format of 10 digits, followed by a checksum of 2 digits, both of which may include leading zeros, for example, 0000000000 00.
 With some experiments, I found the checksum can be calculated with the following formula:
-1 2 3 4 5 6 7 8 9 10 11  def checksum(number: int) -&amp;gt; int: return ( + number * 0x10 + number // 0x1 * 3 - number // 0x10 * 3 + number // 0x100 * 3 - number // 0x1000 * 3 + number // 0x10000 * 3 - number // 0x100000 * 3 + number // 0x1000000 * 3 - number // 0x10000000 * 3) % 100  </description>
+1 2 3 4 5 6 7 8 9 10 11 def checksum(number: int) -&amp;gt; int: return ( + number * 0x10 + number // 0x1 * 3 - number // 0x10 * 3 + number // 0x100 * 3 - number // 0x1000 * 3 + number // 0x10000 * 3 - number // 0x100000 * 3 + number // 0x1000000 * 3 - number // 0x10000000 * 3) % 100 </description>
     </item>
     
     <item>
