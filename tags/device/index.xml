@@ -6,60 +6,49 @@
     <description>Recent content in device on SEIAROTg&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 09 Jan 2022 17:09:58 +0800</lastBuildDate><atom:link href="https://seiarotg.me/tags/device/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 09 Jan 2022 20:39:50 +0000</lastBuildDate>
+    <atom:link href="https://seiarotg.me/tags/device/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>在 macOS 下科学地使用 Brother DS-720D 便携式扫描仪</title>
       <link>https://seiarotg.me/post/ds720-under-macos/</link>
       <pubDate>Sun, 09 Jan 2022 17:09:58 +0800</pubDate>
-      
       <guid>https://seiarotg.me/post/ds720-under-macos/</guid>
       <description>背景 本文开坑于 2019 年 8 月。🐦了两年半。 2018 年年底，因为特别心水能自动把纸吃进去的结构，在 ebay 上以低廉的价钱拍了一台二手 Brother DS-620D。收到货一看</description>
     </item>
-    
     <item>
       <title>重做我的黑果</title>
       <link>https://seiarotg.me/post/upgrade-my-hackintosh/</link>
       <pubDate>Sun, 28 Feb 2021 20:14:31 +0000</pubDate>
-      
       <guid>https://seiarotg.me/post/upgrade-my-hackintosh/</guid>
       <description>背景 一年半前我装了一台迷你黑苹果使用至今，由于拿的现成 EFI 不敢随便升级一直卡在 Mojave。现计划升级到 Big Sur，顺便解决一下偶尔毫无征兆地重</description>
     </item>
-    
     <item>
       <title>读取 Smart Meter 数据</title>
       <link>https://seiarotg.me/post/retrieve-smart-meter-readings/</link>
       <pubDate>Sat, 20 Feb 2021 15:24:31 +0000</pubDate>
-      
       <guid>https://seiarotg.me/post/retrieve-smart-meter-readings/</guid>
       <description>背景 近日安装了 Smart Meter。 安装完毕后师傅发放了一部小屏幕，可远程观看读数。该设备开设了「当前读数」、「今日耗电」、「今日费用」、「每小时耗</description>
     </item>
-    
     <item>
       <title>玩耍 Intel®️ AMT</title>
       <link>https://seiarotg.me/post/play-with-intel-amt/</link>
       <pubDate>Mon, 11 Jan 2021 21:20:13 +0000</pubDate>
-      
       <guid>https://seiarotg.me/post/play-with-intel-amt/</guid>
       <description>背景 去年捡了一台便宜服务器。由于便宜啥都没有，没有 DRAC、iLO 什么的，甚至没有 IPMI。但是作为一台正规的 Intel 平台服务器，CPU 自带了 Active Management</description>
     </item>
-    
     <item>
       <title>给 Surface 3 安装 ChromeOS</title>
       <link>https://seiarotg.me/post/chromeos-on-surface3/</link>
       <pubDate>Mon, 06 Apr 2020 00:08:14 +0100</pubDate>
-      
       <guid>https://seiarotg.me/post/chromeos-on-surface3/</guid>
       <description>今天我翻出了藏在抽屉里的一台 2015 年购入的 Surface 3（没有 Pro）打算用来看片。上面的 Windows 10 实在是卡，于是尝试安装 ChromeOS。 背景 由于桌面空间限制</description>
     </item>
-    
     <item>
       <title>装一台迷你黑苹果</title>
       <link>https://seiarotg.me/post/build-hackintosh/</link>
       <pubDate>Thu, 01 Aug 2019 14:04:11 +0800</pubDate>
-      
       <guid>https://seiarotg.me/post/build-hackintosh/</guid>
       <description>我的 MacBook Air 使用至今已有五年之久，最近还出现了“删除文件后可用空间不增加”的故障。于是趁 618 之际我买了一堆配件，组了个 Hackintosh。 [2021-01] 我重</description>
     </item>
-    
   </channel>
 </rss>

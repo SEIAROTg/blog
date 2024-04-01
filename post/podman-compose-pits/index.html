@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.113.0 with theme even" />
+<meta name="generator" content="Hugo 0.122.0 with theme even" />
 
 
 <link rel="canonical" href="https://seiarotg.me/post/podman-compose-pits/" />
@@ -45,12 +45,12 @@
 <meta property="og:url" content="https://seiarotg.me/post/podman-compose-pits/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2021-12-28T21:27:06+00:00" />
 <meta property="article:modified_time" content="2021-12-29T03:18:37+00:00" />
+
 <meta itemprop="name" content="podman-compose 折腾记">
 <meta itemprop="description" content="背景 我有一个非常简单的需求：在一个容器里起一个 wireguard client，并将其直接接入上游网络（不要 NAT）。 不想看过程可以直接看总结。 折腾 在容器里起"><meta itemprop="datePublished" content="2021-12-28T21:27:06+00:00" />
 <meta itemprop="dateModified" content="2021-12-29T03:18:37+00:00" />
 <meta itemprop="wordCount" content="1838">
-<meta itemprop="keywords" content="docker,podman,wireguard," /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="podman-compose 折腾记"/>
+<meta itemprop="keywords" content="docker,podman,wireguard," /><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="podman-compose 折腾记"/>
 <meta name="twitter:description" content="背景 我有一个非常简单的需求：在一个容器里起一个 wireguard client，并将其直接接入上游网络（不要 NAT）。 不想看过程可以直接看总结。 折腾 在容器里起"/>
 
 <!--[if lte IE 9]>
@@ -136,13 +136,18 @@
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#在容器里起-wireguard">在容器里起 wireguard</a></li>
-    <li><a href="#podman-composecap_add-不好使">podman-compose：<code>cap_add</code> 不好使</a></li>
-    <li><a href="#podman-composepodman-network-exists-不存在">podman-compose：<code>podman network exists</code> 不存在</a></li>
-    <li><a href="#podman-compose-不支持-macvlan">podman-compose 不支持 macvlan</a></li>
-    <li><a href="#network-create-only-supports-the-bridge-driver">network create only supports the bridge driver</a></li>
-    <li><a href="#cannot-set-network-aliases-for-network--because-dns-is-disabled-invalid-argument">cannot set network aliases for network &ldquo;&hellip;&rdquo; because dns is disabled: invalid argument</a></li>
-    <li><a href="#总结">总结</a></li>
+    <li><a href="#背景">背景</a></li>
+    <li><a href="#折腾">折腾</a>
+      <ul>
+        <li><a href="#在容器里起-wireguard">在容器里起 wireguard</a></li>
+        <li><a href="#podman-composecap_add-不好使">podman-compose：<code>cap_add</code> 不好使</a></li>
+        <li><a href="#podman-composepodman-network-exists-不存在">podman-compose：<code>podman network exists</code> 不存在</a></li>
+        <li><a href="#podman-compose-不支持-macvlan">podman-compose 不支持 macvlan</a></li>
+        <li><a href="#network-create-only-supports-the-bridge-driver">network create only supports the bridge driver</a></li>
+        <li><a href="#cannot-set-network-aliases-for-network--because-dns-is-disabled-invalid-argument">cannot set network aliases for network &ldquo;&hellip;&rdquo; because dns is disabled: invalid argument</a></li>
+        <li><a href="#总结">总结</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
   </div>
@@ -322,7 +327,7 @@
   <span class="copyright-year">
     &copy; 
     2019 - 
-    2023<span class="heart"><i class="iconfont icon-heart"></i></span><span>SEIAROTg</span>
+    2024<span class="heart"><i class="iconfont icon-heart"></i></span><span>SEIAROTg</span>
   </span>
 </div>
 
@@ -342,7 +347,7 @@
 <script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
 
 
-<script type="application/javascript">
+<script>
 var doNotTrack = false;
 if (!doNotTrack) {
 	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;

@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.113.0 with theme even" />
+<meta name="generator" content="Hugo 0.122.0 with theme even" />
 
 
 <link rel="canonical" href="https://seiarotg.me/post/mount-file-vault-volume-readonly/" />
@@ -45,12 +45,12 @@
 <meta property="og:url" content="https://seiarotg.me/post/mount-file-vault-volume-readonly/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2019-09-19T11:38:02+08:00" />
 <meta property="article:modified_time" content="2019-09-19T11:53:31+08:00" />
+
 <meta itemprop="name" content="只读挂载 FileVault 卷">
 <meta itemprop="description" content="只读挂载和锁上 FileVault 卷 背景 我有块硬盘需要定期冷备份 这块硬盘启用了 FileVault 为了避免不小心弄错备份方向损失数据，需要将源硬盘只读挂载 Disk Utility 的图形界面不能做到"><meta itemprop="datePublished" content="2019-09-19T11:38:02+08:00" />
 <meta itemprop="dateModified" content="2019-09-19T11:53:31+08:00" />
 <meta itemprop="wordCount" content="191">
-<meta itemprop="keywords" content="mac," /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="只读挂载 FileVault 卷"/>
+<meta itemprop="keywords" content="mac," /><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="只读挂载 FileVault 卷"/>
 <meta name="twitter:description" content="只读挂载和锁上 FileVault 卷 背景 我有块硬盘需要定期冷备份 这块硬盘启用了 FileVault 为了避免不小心弄错备份方向损失数据，需要将源硬盘只读挂载 Disk Utility 的图形界面不能做到"/>
 
 <!--[if lte IE 9]>
@@ -136,9 +136,13 @@
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#背景">背景</a></li>
-    <li><a href="#解法">解法</a></li>
-    <li><a href="#锁定">锁定</a></li>
+    <li><a href="#只读挂载和锁上-filevault-卷">只读挂载和锁上 FileVault 卷</a>
+      <ul>
+        <li><a href="#背景">背景</a></li>
+        <li><a href="#解法">解法</a></li>
+        <li><a href="#锁定">锁定</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
   </div>
@@ -238,7 +242,7 @@
   <span class="copyright-year">
     &copy; 
     2019 - 
-    2023<span class="heart"><i class="iconfont icon-heart"></i></span><span>SEIAROTg</span>
+    2024<span class="heart"><i class="iconfont icon-heart"></i></span><span>SEIAROTg</span>
   </span>
 </div>
 
@@ -258,7 +262,7 @@
 <script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
 
 
-<script type="application/javascript">
+<script>
 var doNotTrack = false;
 if (!doNotTrack) {
 	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;

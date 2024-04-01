@@ -6,253 +6,196 @@
     <description>Recent content in Posts on SEIAROTg&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 03 Jun 2023 13:44:30 +0100</lastBuildDate><atom:link href="https://seiarotg.me/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 31 Mar 2024 17:28:25 +0100</lastBuildDate>
+    <atom:link href="https://seiarotg.me/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tidy Up Homelab Containers</title>
+      <link>https://seiarotg.me/post/tidy-up-homelab-containers/</link>
+      <pubDate>Tue, 22 Aug 2023 22:34:58 +0100</pubDate>
+      <guid>https://seiarotg.me/post/tidy-up-homelab-containers/</guid>
+      <description>Background There are bunch of services lying around on my homelab. Over time, the accumulated complexity, ops load, reliability risk, and security risks started to harm my mental health. I figured it&amp;rsquo;s probably the time to properly tidy up my homelab and have it actually managed. I figured my ideal setup shall be secure, reasonably reliable, at a low ops cost. More specifically, I would like to:&#xA;Have some services running Have some declarative way to manage them Have some isolation on what each services could access Have automated updates Very simple and innocent requirements, right?</description>
+    </item>
     <item>
       <title>How many variants of Oyster cards are there?</title>
       <link>https://seiarotg.me/post/how-many-oyster-variants-are-there/</link>
       <pubDate>Sat, 03 Jun 2023 13:44:30 +0100</pubDate>
-      
       <guid>https://seiarotg.me/post/how-many-oyster-variants-are-there/</guid>
-      <description>You probably have seen many different variants of Oyster cards and wondered how many of them are there in total, and this post is going to answer that by putting together list of them.
-Edit: Unfortunately, after putting together the list I still cannot give a precise answer as I am now fairly certain that this list is NOT exhaustive.
-Note that only Oyster cards will be covered, which does not include other cards acceptable by Oyster readers (e.</description>
+      <description>You probably have seen many different variants of Oyster cards and wondered how many of them are there in total, and this post is going to answer that by putting together list of them.&#xA;Edit: Unfortunately, after putting together the list I still cannot give a precise answer as I am now fairly certain that this list is NOT exhaustive.&#xA;Note that only Oyster cards will be covered, which does not include other cards acceptable by Oyster readers (e.</description>
     </item>
-    
     <item>
       <title>Oyster card checksum</title>
       <link>https://seiarotg.me/post/oyster-card-checksum/</link>
       <pubDate>Sun, 29 May 2022 13:24:16 +0100</pubDate>
-      
       <guid>https://seiarotg.me/post/oyster-card-checksum/</guid>
-      <description>Oyster card is a payment card issued by Transport for London for public transport within its network. Every Oyster card has a unique number on its back.
-The number is in the format of 10 digits, followed by a checksum of 2 digits, both of which may include leading zeros, for example, 0000000000 00.
-With some experiments, I found the checksum can be calculated with the following formula:
-1 2 3 4 5 6 7 8 9 10 11 def checksum(number: int) -&amp;gt; int: return ( + number * 0x10 + number // 0x1 * 3 - number // 0x10 * 3 + number // 0x100 * 3 - number // 0x1000 * 3 + number // 0x10000 * 3 - number // 0x100000 * 3 + number // 0x1000000 * 3 - number // 0x10000000 * 3) % 100 </description>
+      <description>Oyster card is a payment card issued by Transport for London for public transport within its network. Every Oyster card has a unique number on its back.&#xA;The number is in the format of 10 digits, followed by a checksum of 2 digits, both of which may include leading zeros, for example, 0000000000 00.&#xA;With some experiments, I found the checksum can be calculated with the following formula:&#xA;1 2 3 4 5 6 7 8 9 10 11 def checksum(number: int) -&amp;gt; int: return ( + number * 0x10 + number // 0x1 * 3 - number // 0x10 * 3 + number // 0x100 * 3 - number // 0x1000 * 3 + number // 0x10000 * 3 - number // 0x100000 * 3 + number // 0x1000000 * 3 - number // 0x10000000 * 3) % 100 </description>
     </item>
-    
     <item>
       <title>Install NixOS on OVH VPS</title>
       <link>https://seiarotg.me/post/install-nixos-on-ovh-vps/</link>
       <pubDate>Mon, 02 May 2022 15:06:35 +0100</pubDate>
-      
       <guid>https://seiarotg.me/post/install-nixos-on-ovh-vps/</guid>
-      <description>Backup your data.
-Reboot into rescue mode with the control panel.
-Connect to KVM with the control panel.
-You can also SSH into the host with login credentials from KVM.
-Download NixOS image.
-Likely you won&amp;rsquo;t have enough disk space in rescue mode so use ramfs.
-1 2 3 4 mkdir /mnt/ramdisk mount -t ramfs ramfs /mnt/ramdisk cd /mnt/ramdisk wget https://channels.nixos.org/nixos-21.11/latest-nixos-minimal-x86_64-linux.iso Load image with qemu.
-https://community.ovh.com/en/t/installing-operating-system-from-custom-image-on-ovh-vps-centos-8-tutorial/3561
-1 2 apt install qemu-kvm qemu-system-x86_64 -netdev type=user,id=mynet0 -device virtio-net-pci,netdev=mynet0 -m 2048 -enable-kvm -drive index=0,media=disk,if=virtio,file=/dev/sdb -cdrom latest-nixos-minimal-x86_64-linux.</description>
+      <description>Backup your data.&#xA;Reboot into rescue mode with the control panel.&#xA;Connect to KVM with the control panel.&#xA;You can also SSH into the host with login credentials from KVM.&#xA;Download NixOS image.&#xA;Likely you won&amp;rsquo;t have enough disk space in rescue mode so use ramfs.&#xA;1 2 3 4 mkdir /mnt/ramdisk mount -t ramfs ramfs /mnt/ramdisk cd /mnt/ramdisk wget https://channels.nixos.org/nixos-21.11/latest-nixos-minimal-x86_64-linux.iso Load image with qemu.&#xA;https://community.ovh.com/en/t/installing-operating-system-from-custom-image-on-ovh-vps-centos-8-tutorial/3561&#xA;1 2 apt install qemu-kvm qemu-system-x86_64 -netdev type=user,id=mynet0 -device virtio-net-pci,netdev=mynet0 -m 2048 -enable-kvm -drive index=0,media=disk,if=virtio,file=/dev/sdb -cdrom latest-nixos-minimal-x86_64-linux.</description>
     </item>
-    
     <item>
       <title>在 macOS 下科学地使用 Brother DS-720D 便携式扫描仪</title>
       <link>https://seiarotg.me/post/ds720-under-macos/</link>
       <pubDate>Sun, 09 Jan 2022 17:09:58 +0800</pubDate>
-      
       <guid>https://seiarotg.me/post/ds720-under-macos/</guid>
       <description>背景 本文开坑于 2019 年 8 月。🐦了两年半。 2018 年年底，因为特别心水能自动把纸吃进去的结构，在 ebay 上以低廉的价钱拍了一台二手 Brother DS-620D。收到货一看</description>
     </item>
-    
     <item>
       <title>podman-compose 折腾记</title>
       <link>https://seiarotg.me/post/podman-compose-pits/</link>
       <pubDate>Tue, 28 Dec 2021 21:27:06 +0000</pubDate>
-      
       <guid>https://seiarotg.me/post/podman-compose-pits/</guid>
       <description>背景 我有一个非常简单的需求：在一个容器里起一个 wireguard client，并将其直接接入上游网络（不要 NAT）。 不想看过程可以直接看总结。 折腾 在容器里起</description>
     </item>
-    
     <item>
       <title>重做我的黑果</title>
       <link>https://seiarotg.me/post/upgrade-my-hackintosh/</link>
       <pubDate>Sun, 28 Feb 2021 20:14:31 +0000</pubDate>
-      
       <guid>https://seiarotg.me/post/upgrade-my-hackintosh/</guid>
       <description>背景 一年半前我装了一台迷你黑苹果使用至今，由于拿的现成 EFI 不敢随便升级一直卡在 Mojave。现计划升级到 Big Sur，顺便解决一下偶尔毫无征兆地重</description>
     </item>
-    
     <item>
       <title>读取 Smart Meter 数据</title>
       <link>https://seiarotg.me/post/retrieve-smart-meter-readings/</link>
       <pubDate>Sat, 20 Feb 2021 15:24:31 +0000</pubDate>
-      
       <guid>https://seiarotg.me/post/retrieve-smart-meter-readings/</guid>
       <description>背景 近日安装了 Smart Meter。 安装完毕后师傅发放了一部小屏幕，可远程观看读数。该设备开设了「当前读数」、「今日耗电」、「今日费用」、「每小时耗</description>
     </item>
-    
     <item>
       <title>玩耍 Intel®️ AMT</title>
       <link>https://seiarotg.me/post/play-with-intel-amt/</link>
       <pubDate>Mon, 11 Jan 2021 21:20:13 +0000</pubDate>
-      
       <guid>https://seiarotg.me/post/play-with-intel-amt/</guid>
       <description>背景 去年捡了一台便宜服务器。由于便宜啥都没有，没有 DRAC、iLO 什么的，甚至没有 IPMI。但是作为一台正规的 Intel 平台服务器，CPU 自带了 Active Management</description>
     </item>
-    
     <item>
       <title>我对纯文本复式簿记的理解</title>
       <link>https://seiarotg.me/post/plaintext-double-entry-bookkeeping/</link>
       <pubDate>Thu, 29 Oct 2020 00:05:48 +0000</pubDate>
-      
       <guid>https://seiarotg.me/post/plaintext-double-entry-bookkeeping/</guid>
       <description>背景 用 beancount 一年多了，总结一下我作为无财会基础人士对于纯文本记账、复式簿记和 beancount 的一些理解。本文尽可能地避免出现财会术语或某种记账工具特有的概念，</description>
     </item>
-    
     <item>
       <title>macOS 指定 BSSID</title>
       <link>https://seiarotg.me/post/macos-lock-bssid/</link>
       <pubDate>Sun, 04 Oct 2020 14:40:34 +0100</pubDate>
-      
       <guid>https://seiarotg.me/post/macos-lock-bssid/</guid>
       <description>搬家到了一处便宜的地方以至于没有网络供应需要仰仗 BTWi-fi。而居民区中的 BTWi-fi 主要来自于邻居门家中品牌各异的无线路由器。这些热点的 ESSID 都叫“B</description>
     </item>
-    
     <item>
       <title>Royal Mail 的时效</title>
       <link>https://seiarotg.me/post/royal-mail-slo/</link>
       <pubDate>Mon, 28 Sep 2020 21:43:19 +0100</pubDate>
-      
       <guid>https://seiarotg.me/post/royal-mail-slo/</guid>
       <description>最近一家有钱的大厂给我寄了一封 second class 并告诉我大约三四个工作日送达，然而实际花费八个工作日（含周六不含周日，含投递日不含寄出日）。这么慢是应该的</description>
     </item>
-    
     <item>
       <title>准确计算英国 PAYE 每月扣税数额</title>
       <link>https://seiarotg.me/post/uk-paye-calculation/</link>
       <pubDate>Wed, 01 Jul 2020 00:25:39 +0100</pubDate>
-      
       <guid>https://seiarotg.me/post/uk-paye-calculation/</guid>
       <description>背景 您可能会发现虽然每月的税前收入完全一致，扣除的 Income Tax 却有一些偏差。您可能遇到更换工作、工资调整、奖金发放、股票交付等，每月实际发放工资数额</description>
     </item>
-    
     <item>
       <title>给 Surface 3 安装 ChromeOS</title>
       <link>https://seiarotg.me/post/chromeos-on-surface3/</link>
       <pubDate>Mon, 06 Apr 2020 00:08:14 +0100</pubDate>
-      
       <guid>https://seiarotg.me/post/chromeos-on-surface3/</guid>
       <description>今天我翻出了藏在抽屉里的一台 2015 年购入的 Surface 3（没有 Pro）打算用来看片。上面的 Windows 10 实在是卡，于是尝试安装 ChromeOS。 背景 由于桌面空间限制</description>
     </item>
-    
     <item>
       <title>给暖气充压</title>
       <link>https://seiarotg.me/post/top-up-heating-pressure/</link>
       <pubDate>Fri, 21 Feb 2020 22:55:30 +0000</pubDate>
-      
       <guid>https://seiarotg.me/post/top-up-heating-pressure/</guid>
       <description>前情提要 搬进现在这个屋子的时候暖气是坏的。傻逼中介在收到报告后用了近两个月时间才派人上门维修。首次维修解决了压力不足的问题，但是效果依然不尽</description>
     </item>
-    
     <item>
       <title>TfL API 折腾记</title>
       <link>https://seiarotg.me/post/tfl-api-experience/</link>
       <pubDate>Sun, 26 Jan 2020 00:00:06 +0000</pubDate>
-      
       <guid>https://seiarotg.me/post/tfl-api-experience/</guid>
       <description>近日折腾了 TfL API，特将经验总结如下。 没有卵用的 API Key 文档称调用 API 需要提供 Key，然而实际上并不需要。只是如果您不提供 Key 就会出现 Throttl</description>
     </item>
-    
     <item>
       <title>十一月总结</title>
       <link>https://seiarotg.me/post/201911-summary/</link>
       <pubDate>Sun, 01 Dec 2019 20:04:40 +0000</pubDate>
-      
       <guid>https://seiarotg.me/post/201911-summary/</guid>
       <description>新知识 有一种叫 Premium Bonds 的投资产品 养老金账户里的钱可以进行一些投资 部分养老金可以不等老了直接转到 ISA 中并提现 不同银行的 PINsentry 读卡器可以通用 MSE 搞了个 Credit Club 可</description>
     </item>
-    
     <item>
       <title>Stratford 与 King&#39;s Cross St. Pancras 间的通勤交通</title>
       <link>https://seiarotg.me/post/commute-sra-kgx/</link>
       <pubDate>Sat, 16 Nov 2019 21:53:16 +0000</pubDate>
-      
       <guid>https://seiarotg.me/post/commute-sra-kgx/</guid>
       <description>背景 几天前看到了 Geoff Marshall 的视频 Which Is Faster? High Speed 1 vs The Tube，比较了多条 Stratford 与 King&amp;rsquo;s Cross St. Pancras 之间的交通线路。但是如果您在这两地之间通勤，由于视频中的比赛在非高</description>
     </item>
-    
     <item>
       <title>十月总结</title>
       <link>https://seiarotg.me/post/201910-summary/</link>
       <pubDate>Tue, 05 Nov 2019 23:25:51 +0000</pubDate>
-      
       <guid>https://seiarotg.me/post/201910-summary/</guid>
       <description>新知识 从英国前往爱尔兰有边检，从爱尔兰前往英国没有 Poundland 在爱尔兰叫 Dealz PRIMARK 在爱尔兰叫 PENNEYS RBS 在爱尔兰叫 Ulster Bank 伦敦有绿色的公交车 英国火车票能玩弃程 Dublin 很贵 Metropolitan 的</description>
     </item>
-    
     <item>
       <title>只读挂载 FileVault 卷</title>
       <link>https://seiarotg.me/post/mount-file-vault-volume-readonly/</link>
       <pubDate>Thu, 19 Sep 2019 11:38:02 +0800</pubDate>
-      
       <guid>https://seiarotg.me/post/mount-file-vault-volume-readonly/</guid>
       <description>只读挂载和锁上 FileVault 卷 背景 我有块硬盘需要定期冷备份 这块硬盘启用了 FileVault 为了避免不小心弄错备份方向损失数据，需要将源硬盘只读挂载 Disk Utility 的图形界面不能做到</description>
     </item>
-    
     <item>
       <title>今日坑 20190824</title>
       <link>https://seiarotg.me/post/misc-20190824/</link>
       <pubDate>Sat, 24 Aug 2019 22:18:10 +0800</pubDate>
-      
       <guid>https://seiarotg.me/post/misc-20190824/</guid>
       <description>今天遇到了几个小坑，特此记录。 npm 装啥都不行 **环境：**npm@6.9.0、node@12.6.0 (homebrew) **问题：**无论用 npm 安装什么，是否忽略</description>
     </item>
-    
     <item>
       <title>英国手机运营商选择</title>
       <link>https://seiarotg.me/post/uk-mobile-service-providers/</link>
       <pubDate>Wed, 21 Aug 2019 14:51:07 +0800</pubDate>
-      
       <guid>https://seiarotg.me/post/uk-mobile-service-providers/</guid>
       <description>付费模式 合约机 缴纳几十 £ 领取一部手机，然后每个月缴纳几十 £ 话费，直至一两年的合同结束。看着像贷款买手机，且这个价钱并不那么划算，尤其是如果您</description>
     </item>
-    
     <item>
       <title>在 Linux 下使用佳博（GPrinter）热敏标签打印机</title>
       <link>https://seiarotg.me/post/gprinter-under-linux/</link>
       <pubDate>Sun, 11 Aug 2019 21:05:10 +0800</pubDate>
-      
       <guid>https://seiarotg.me/post/gprinter-under-linux/</guid>
       <description>背景 我在高中时期曾购入一台佳博 GP-L80160I 热敏票据打印机，用来在学校从事一些轻便的打印活动，以免去抄写之苦。 最近想打印标签玩，可是卖标签纸的店家告诉我</description>
     </item>
-    
     <item>
       <title>macOS 软件调节外接显示器亮度</title>
       <link>https://seiarotg.me/post/macos-external-monitor-brightness/</link>
       <pubDate>Sat, 03 Aug 2019 12:03:18 +0800</pubDate>
-      
       <guid>https://seiarotg.me/post/macos-external-monitor-brightness/</guid>
       <description>如果您也和我一样在显示器附近安装了窗户，您可能需要经常调节显示器的亮度。用爪子靠近显示器设置开关非常不方便，也非常慢。 经过一番搜索后我发现了</description>
     </item>
-    
     <item>
       <title>装一台迷你黑苹果</title>
       <link>https://seiarotg.me/post/build-hackintosh/</link>
       <pubDate>Thu, 01 Aug 2019 14:04:11 +0800</pubDate>
-      
       <guid>https://seiarotg.me/post/build-hackintosh/</guid>
       <description>我的 MacBook Air 使用至今已有五年之久，最近还出现了“删除文件后可用空间不增加”的故障。于是趁 618 之际我买了一堆配件，组了个 Hackintosh。 [2021-01] 我重</description>
     </item>
-    
     <item>
       <title>记一次从 Stratford (London) 前往宁波的旅程</title>
       <link>https://seiarotg.me/post/a-rush-journey-from-stratford-to-ningbo/</link>
       <pubDate>Tue, 30 Jul 2019 17:25:14 +0800</pubDate>
-      
       <guid>https://seiarotg.me/post/a-rush-journey-from-stratford-to-ningbo/</guid>
       <description>购买机票 根据英国 Immigration Rules 中的 34K，在申请签证过程中离境则申请自动作废。由于出签时间又依赖诸多不确定因素，此次出行无法像往常一样，提前数月甚至大</description>
     </item>
-    
     <item>
       <title>UK Tier 2 Visa Application</title>
       <link>https://seiarotg.me/post/uk-tier2-visa-application/</link>
       <pubDate>Sun, 28 Jul 2019 11:54:12 +0800</pubDate>
-      
       <guid>https://seiarotg.me/post/uk-tier2-visa-application/</guid>
       <description>最近成功获得了英国 Tier 2 签证，特将经历记录如下。 这不是一篇教程，比如我不会告诉你需要提交什么材料。 流程 我的申请路线是 Switch from Tier 4, in-countr</description>
     </item>
-    
   </channel>
 </rss>

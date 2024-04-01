@@ -6,24 +6,21 @@
     <description>Recent content in gadgets on SEIAROTg&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 09 Jan 2022 17:09:58 +0800</lastBuildDate><atom:link href="https://seiarotg.me/tags/gadgets/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 09 Jan 2022 20:39:50 +0000</lastBuildDate>
+    <atom:link href="https://seiarotg.me/tags/gadgets/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>在 macOS 下科学地使用 Brother DS-720D 便携式扫描仪</title>
       <link>https://seiarotg.me/post/ds720-under-macos/</link>
       <pubDate>Sun, 09 Jan 2022 17:09:58 +0800</pubDate>
-      
       <guid>https://seiarotg.me/post/ds720-under-macos/</guid>
       <description>背景 本文开坑于 2019 年 8 月。🐦了两年半。 2018 年年底，因为特别心水能自动把纸吃进去的结构，在 ebay 上以低廉的价钱拍了一台二手 Brother DS-620D。收到货一看</description>
     </item>
-    
     <item>
       <title>在 Linux 下使用佳博（GPrinter）热敏标签打印机</title>
       <link>https://seiarotg.me/post/gprinter-under-linux/</link>
       <pubDate>Sun, 11 Aug 2019 21:05:10 +0800</pubDate>
-      
       <guid>https://seiarotg.me/post/gprinter-under-linux/</guid>
       <description>背景 我在高中时期曾购入一台佳博 GP-L80160I 热敏票据打印机，用来在学校从事一些轻便的打印活动，以免去抄写之苦。 最近想打印标签玩，可是卖标签纸的店家告诉我</description>
     </item>
-    
   </channel>
 </rss>

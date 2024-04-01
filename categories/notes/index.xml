@@ -6,38 +6,28 @@
     <description>Recent content in notes on SEIAROTg&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 03 Jun 2023 13:44:30 +0100</lastBuildDate><atom:link href="https://seiarotg.me/categories/notes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 15 Jun 2023 20:22:48 +0100</lastBuildDate>
+    <atom:link href="https://seiarotg.me/categories/notes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How many variants of Oyster cards are there?</title>
       <link>https://seiarotg.me/post/how-many-oyster-variants-are-there/</link>
       <pubDate>Sat, 03 Jun 2023 13:44:30 +0100</pubDate>
-      
       <guid>https://seiarotg.me/post/how-many-oyster-variants-are-there/</guid>
-      <description>You probably have seen many different variants of Oyster cards and wondered how many of them are there in total, and this post is going to answer that by putting together list of them.
-Edit: Unfortunately, after putting together the list I still cannot give a precise answer as I am now fairly certain that this list is NOT exhaustive.
-Note that only Oyster cards will be covered, which does not include other cards acceptable by Oyster readers (e.</description>
+      <description>You probably have seen many different variants of Oyster cards and wondered how many of them are there in total, and this post is going to answer that by putting together list of them.&#xA;Edit: Unfortunately, after putting together the list I still cannot give a precise answer as I am now fairly certain that this list is NOT exhaustive.&#xA;Note that only Oyster cards will be covered, which does not include other cards acceptable by Oyster readers (e.</description>
     </item>
-    
     <item>
       <title>Oyster card checksum</title>
       <link>https://seiarotg.me/post/oyster-card-checksum/</link>
       <pubDate>Sun, 29 May 2022 13:24:16 +0100</pubDate>
-      
       <guid>https://seiarotg.me/post/oyster-card-checksum/</guid>
-      <description>Oyster card is a payment card issued by Transport for London for public transport within its network. Every Oyster card has a unique number on its back.
-The number is in the format of 10 digits, followed by a checksum of 2 digits, both of which may include leading zeros, for example, 0000000000 00.
-With some experiments, I found the checksum can be calculated with the following formula:
-1 2 3 4 5 6 7 8 9 10 11 def checksum(number: int) -&amp;gt; int: return ( + number * 0x10 + number // 0x1 * 3 - number // 0x10 * 3 + number // 0x100 * 3 - number // 0x1000 * 3 + number // 0x10000 * 3 - number // 0x100000 * 3 + number // 0x1000000 * 3 - number // 0x10000000 * 3) % 100 </description>
+      <description>Oyster card is a payment card issued by Transport for London for public transport within its network. Every Oyster card has a unique number on its back.&#xA;The number is in the format of 10 digits, followed by a checksum of 2 digits, both of which may include leading zeros, for example, 0000000000 00.&#xA;With some experiments, I found the checksum can be calculated with the following formula:&#xA;1 2 3 4 5 6 7 8 9 10 11 def checksum(number: int) -&amp;gt; int: return ( + number * 0x10 + number // 0x1 * 3 - number // 0x10 * 3 + number // 0x100 * 3 - number // 0x1000 * 3 + number // 0x10000 * 3 - number // 0x100000 * 3 + number // 0x1000000 * 3 - number // 0x10000000 * 3) % 100 </description>
     </item>
-    
     <item>
       <title>准确计算英国 PAYE 每月扣税数额</title>
       <link>https://seiarotg.me/post/uk-paye-calculation/</link>
       <pubDate>Wed, 01 Jul 2020 00:25:39 +0100</pubDate>
-      
       <guid>https://seiarotg.me/post/uk-paye-calculation/</guid>
       <description>背景 您可能会发现虽然每月的税前收入完全一致，扣除的 Income Tax 却有一些偏差。您可能遇到更换工作、工资调整、奖金发放、股票交付等，每月实际发放工资数额</description>
     </item>
-    
   </channel>
 </rss>

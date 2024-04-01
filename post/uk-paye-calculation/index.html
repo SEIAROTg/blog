@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.113.0 with theme even" />
+<meta name="generator" content="Hugo 0.122.0 with theme even" />
 
 
 <link rel="canonical" href="https://seiarotg.me/post/uk-paye-calculation/" />
@@ -45,12 +45,12 @@
 <meta property="og:url" content="https://seiarotg.me/post/uk-paye-calculation/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2020-07-01T00:25:39+01:00" />
 <meta property="article:modified_time" content="2023-06-15T00:37:18+01:00" />
+
 <meta itemprop="name" content="准确计算英国 PAYE 每月扣税数额">
 <meta itemprop="description" content="背景 您可能会发现虽然每月的税前收入完全一致，扣除的 Income Tax 却有一些偏差。您可能遇到更换工作、工资调整、奖金发放、股票交付等，每月实际发放工资数额"><meta itemprop="datePublished" content="2020-07-01T00:25:39+01:00" />
 <meta itemprop="dateModified" content="2023-06-15T00:37:18+01:00" />
 <meta itemprop="wordCount" content="9781">
-<meta itemprop="keywords" content="uk,money,accounting," /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="准确计算英国 PAYE 每月扣税数额"/>
+<meta itemprop="keywords" content="uk,money,accounting," /><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="准确计算英国 PAYE 每月扣税数额"/>
 <meta name="twitter:description" content="背景 您可能会发现虽然每月的税前收入完全一致，扣除的 Income Tax 却有一些偏差。您可能遇到更换工作、工资调整、奖金发放、股票交付等，每月实际发放工资数额"/>
 
 <!--[if lte IE 9]>
@@ -136,11 +136,22 @@
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#微小的差别">微小的差别</a></li>
-    <li><a href="#手动计算表">手动计算表</a></li>
-    <li><a href="#好用的计算器">好用的计算器</a></li>
-    <li><a href="#重建-pay-adjustment-tables">重建 Pay Adjustment Tables</a></li>
-    <li><a href="#填坑">填坑</a></li>
+    <li><a href="#背景">背景</a></li>
+    <li><a href="#应缴-national-insurance">应缴 National Insurance</a></li>
+    <li><a href="#应缴-income-tax">应缴 Income Tax</a></li>
+    <li><a href="#实扣-income-tax">实扣 Income Tax</a>
+      <ul>
+        <li><a href="#微小的差别">微小的差别</a></li>
+        <li><a href="#手动计算表">手动计算表</a></li>
+        <li><a href="#好用的计算器">好用的计算器</a></li>
+        <li><a href="#重建-pay-adjustment-tables">重建 Pay Adjustment Tables</a></li>
+        <li><a href="#填坑">填坑</a></li>
+      </ul>
+    </li>
+    <li><a href="#实扣-national-insurance">实扣 National Insurance</a></li>
+    <li><a href="#总结与思考">总结与思考</a></li>
+    <li><a href="#习题">习题</a></li>
+    <li><a href="#参考答案">参考答案</a></li>
   </ul>
 </nav>
   </div>
@@ -823,7 +834,7 @@ MathJax.Hub.Config({
   <span class="copyright-year">
     &copy; 
     2019 - 
-    2023<span class="heart"><i class="iconfont icon-heart"></i></span><span>SEIAROTg</span>
+    2024<span class="heart"><i class="iconfont icon-heart"></i></span><span>SEIAROTg</span>
   </span>
 </div>
 
@@ -843,7 +854,7 @@ MathJax.Hub.Config({
 <script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
 
 
-<script type="application/javascript">
+<script>
 var doNotTrack = false;
 if (!doNotTrack) {
 	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;

@@ -3,7 +3,63 @@
   
   <url>
     <loc>https://seiarotg.me/categories/</loc>
-    <lastmod>2023-06-15T20:22:48+01:00</lastmod>
+    <lastmod>2024-03-31T17:28:25+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://seiarotg.me/tags/k8s/</loc>
+    <lastmod>2024-03-31T17:28:25+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://seiarotg.me/tags/nix/</loc>
+    <lastmod>2024-03-31T17:28:25+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://seiarotg.me/tags/podman/</loc>
+    <lastmod>2024-03-31T17:28:25+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://seiarotg.me/post/</loc>
+    <lastmod>2024-03-31T17:28:25+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://seiarotg.me/</loc>
+    <lastmod>2024-03-31T17:28:25+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://seiarotg.me/tags/</loc>
+    <lastmod>2024-03-31T17:28:25+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://seiarotg.me/categories/tech/</loc>
+    <lastmod>2024-03-31T17:28:25+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://seiarotg.me/post/tidy-up-homelab-containers/</loc>
+    <lastmod>2024-03-31T17:28:25+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -24,27 +80,6 @@
   
   <url>
     <loc>https://seiarotg.me/categories/notes/</loc>
-    <lastmod>2023-06-15T20:22:48+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://seiarotg.me/post/</loc>
-    <lastmod>2023-06-15T20:22:48+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://seiarotg.me/</loc>
-    <lastmod>2023-06-15T20:22:48+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://seiarotg.me/tags/</loc>
     <lastmod>2023-06-15T20:22:48+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -86,20 +121,6 @@
   </url>
   
   <url>
-    <loc>https://seiarotg.me/tags/nix/</loc>
-    <lastmod>2022-05-02T15:25:50+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://seiarotg.me/categories/tech/</loc>
-    <lastmod>2022-05-02T15:25:50+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://seiarotg.me/tags/device/</loc>
     <lastmod>2022-01-09T20:39:50+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -129,13 +150,6 @@
   
   <url>
     <loc>https://seiarotg.me/tags/docker/</loc>
-    <lastmod>2021-12-29T03:18:37+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://seiarotg.me/tags/podman/</loc>
     <lastmod>2021-12-29T03:18:37+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

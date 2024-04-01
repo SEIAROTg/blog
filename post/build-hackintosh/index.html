@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.113.0 with theme even" />
+<meta name="generator" content="Hugo 0.122.0 with theme even" />
 
 
 <link rel="canonical" href="https://seiarotg.me/post/build-hackintosh/" />
@@ -45,12 +45,12 @@
 <meta property="og:url" content="https://seiarotg.me/post/build-hackintosh/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2019-08-01T14:04:11+08:00" />
 <meta property="article:modified_time" content="2021-02-28T22:54:43+00:00" />
+
 <meta itemprop="name" content="装一台迷你黑苹果">
 <meta itemprop="description" content="我的 MacBook Air 使用至今已有五年之久，最近还出现了“删除文件后可用空间不增加”的故障。于是趁 618 之际我买了一堆配件，组了个 Hackintosh。 [2021-01] 我重"><meta itemprop="datePublished" content="2019-08-01T14:04:11+08:00" />
 <meta itemprop="dateModified" content="2021-02-28T22:54:43+00:00" />
 <meta itemprop="wordCount" content="1229">
-<meta itemprop="keywords" content="hackintosh,mac,device,shopping," /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="装一台迷你黑苹果"/>
+<meta itemprop="keywords" content="hackintosh,mac,device,shopping," /><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="装一台迷你黑苹果"/>
 <meta name="twitter:description" content="我的 MacBook Air 使用至今已有五年之久，最近还出现了“删除文件后可用空间不增加”的故障。于是趁 618 之际我买了一堆配件，组了个 Hackintosh。 [2021-01] 我重"/>
 
 <!--[if lte IE 9]>
@@ -136,11 +136,19 @@
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#坑-1970-evo-plus">坑 1：970 EVO Plus</a></li>
-    <li><a href="#坑-2filevault">坑 2：FileVault</a></li>
-    <li><a href="#坑-3usb-扩展">坑 3：USB 扩展</a></li>
-    <li><a href="#坑-4风扇和变频">坑 4：风扇和变频</a></li>
-    <li><a href="#坑-535mm-音频口">坑 5：3.5mm 音频口</a></li>
+    <li><a href="#配置">配置</a></li>
+    <li><a href="#组装">组装</a></li>
+    <li><a href="#系统安装">系统安装</a>
+      <ul>
+        <li><a href="#坑-1970-evo-plus">坑 1：970 EVO Plus</a></li>
+        <li><a href="#坑-2filevault">坑 2：FileVault</a></li>
+        <li><a href="#坑-3usb-扩展">坑 3：USB 扩展</a></li>
+        <li><a href="#坑-4风扇和变频">坑 4：风扇和变频</a></li>
+        <li><a href="#坑-535mm-音频口">坑 5：3.5mm 音频口</a></li>
+      </ul>
+    </li>
+    <li><a href="#技术总结">技术总结</a></li>
+    <li><a href="#遗留问题">遗留问题</a></li>
   </ul>
 </nav>
   </div>
@@ -310,7 +318,7 @@
   <span class="copyright-year">
     &copy; 
     2019 - 
-    2023<span class="heart"><i class="iconfont icon-heart"></i></span><span>SEIAROTg</span>
+    2024<span class="heart"><i class="iconfont icon-heart"></i></span><span>SEIAROTg</span>
   </span>
 </div>
 
@@ -330,7 +338,7 @@
 <script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
 
 
-<script type="application/javascript">
+<script>
 var doNotTrack = false;
 if (!doNotTrack) {
 	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;

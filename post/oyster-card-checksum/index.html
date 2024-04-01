@@ -26,7 +26,7 @@ With some experiments, I found the checksum can be calculated with the following
 
 
 
-<meta name="generator" content="Hugo 0.113.0 with theme even" />
+<meta name="generator" content="Hugo 0.122.0 with theme even" />
 
 
 <link rel="canonical" href="https://seiarotg.me/post/oyster-card-checksum/" />
@@ -51,6 +51,7 @@ With some experiments, I found the checksum can be calculated with the following
 <meta property="og:url" content="https://seiarotg.me/post/oyster-card-checksum/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2022-05-29T13:24:16+01:00" />
 <meta property="article:modified_time" content="2022-05-29T13:40:57+01:00" />
+
 <meta itemprop="name" content="Oyster card checksum">
 <meta itemprop="description" content="Oyster card is a payment card issued by Transport for London for public transport within its network. Every Oyster card has a unique number on its back.
 The number is in the format of 10 digits, followed by a checksum of 2 digits, both of which may include leading zeros, for example, 0000000000 00.
@@ -58,8 +59,7 @@ With some experiments, I found the checksum can be calculated with the following
 1 2 3 4 5 6 7 8 9 10 11 def checksum(number: int) -&gt; int: return ( &#43; number * 0x10 &#43; number // 0x1 * 3 - number // 0x10 * 3 &#43; number // 0x100 * 3 - number // 0x1000 * 3 &#43; number // 0x10000 * 3 - number // 0x100000 * 3 &#43; number // 0x1000000 * 3 - number // 0x10000000 * 3) % 100 "><meta itemprop="datePublished" content="2022-05-29T13:24:16+01:00" />
 <meta itemprop="dateModified" content="2022-05-29T13:40:57+01:00" />
 <meta itemprop="wordCount" content="140">
-<meta itemprop="keywords" content="uk,london,travel,tube," /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Oyster card checksum"/>
+<meta itemprop="keywords" content="uk,london,travel,tube," /><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Oyster card checksum"/>
 <meta name="twitter:description" content="Oyster card is a payment card issued by Transport for London for public transport within its network. Every Oyster card has a unique number on its back.
 The number is in the format of 10 digits, followed by a checksum of 2 digits, both of which may include leading zeros, for example, 0000000000 00.
 With some experiments, I found the checksum can be calculated with the following formula:
@@ -259,7 +259,7 @@ With some experiments, I found the checksum can be calculated with the following
   <span class="copyright-year">
     &copy; 
     2019 - 
-    2023<span class="heart"><i class="iconfont icon-heart"></i></span><span>SEIAROTg</span>
+    2024<span class="heart"><i class="iconfont icon-heart"></i></span><span>SEIAROTg</span>
   </span>
 </div>
 
@@ -279,7 +279,7 @@ With some experiments, I found the checksum can be calculated with the following
 <script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
 
 
-<script type="application/javascript">
+<script>
 var doNotTrack = false;
 if (!doNotTrack) {
 	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;

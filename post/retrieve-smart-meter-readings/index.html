@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.113.0 with theme even" />
+<meta name="generator" content="Hugo 0.122.0 with theme even" />
 
 
 <link rel="canonical" href="https://seiarotg.me/post/retrieve-smart-meter-readings/" />
@@ -45,12 +45,12 @@
 <meta property="og:url" content="https://seiarotg.me/post/retrieve-smart-meter-readings/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2021-02-20T15:24:31+00:00" />
 <meta property="article:modified_time" content="2021-02-20T22:46:28+00:00" />
+
 <meta itemprop="name" content="读取 Smart Meter 数据">
 <meta itemprop="description" content="背景 近日安装了 Smart Meter。 安装完毕后师傅发放了一部小屏幕，可远程观看读数。该设备开设了「当前读数」、「今日耗电」、「今日费用」、「每小时耗"><meta itemprop="datePublished" content="2021-02-20T15:24:31+00:00" />
 <meta itemprop="dateModified" content="2021-02-20T22:46:28+00:00" />
 <meta itemprop="wordCount" content="2546">
-<meta itemprop="keywords" content="uk,mac,device,home," /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="读取 Smart Meter 数据"/>
+<meta itemprop="keywords" content="uk,mac,device,home," /><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="读取 Smart Meter 数据"/>
 <meta name="twitter:description" content="背景 近日安装了 Smart Meter。 安装完毕后师傅发放了一部小屏幕，可远程观看读数。该设备开设了「当前读数」、「今日耗电」、「今日费用」、「每小时耗"/>
 
 <!--[if lte IE 9]>
@@ -136,8 +136,17 @@
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#电表">电表</a></li>
-    <li><a href="#小屏幕">小屏幕</a></li>
+    <li><a href="#背景">背景</a></li>
+    <li><a href="#搜集信息">搜集信息</a>
+      <ul>
+        <li><a href="#电表">电表</a></li>
+        <li><a href="#小屏幕">小屏幕</a></li>
+      </ul>
+    </li>
+    <li><a href="#glow-api">Glow API</a></li>
+    <li><a href="#其他方案">其他方案</a></li>
+    <li><a href="#截获-cad-向-glowmarkt-上传的数据">截获 CAD 向 Glowmarkt 上传的数据</a></li>
+    <li><a href="#思考">思考</a></li>
   </ul>
 </nav>
   </div>
@@ -375,7 +384,7 @@
   <span class="copyright-year">
     &copy; 
     2019 - 
-    2023<span class="heart"><i class="iconfont icon-heart"></i></span><span>SEIAROTg</span>
+    2024<span class="heart"><i class="iconfont icon-heart"></i></span><span>SEIAROTg</span>
   </span>
 </div>
 
@@ -395,7 +404,7 @@
 <script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
 
 
-<script type="application/javascript">
+<script>
 var doNotTrack = false;
 if (!doNotTrack) {
 	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;

@@ -6,258 +6,210 @@
     <description>Recent content in Tags on SEIAROTg&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 03 Jun 2023 13:44:30 +0100</lastBuildDate><atom:link href="https://seiarotg.me/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 31 Mar 2024 17:28:25 +0100</lastBuildDate>
+    <atom:link href="https://seiarotg.me/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>k8s</title>
+      <link>https://seiarotg.me/tags/k8s/</link>
+      <pubDate>Tue, 22 Aug 2023 22:34:58 +0100</pubDate>
+      <guid>https://seiarotg.me/tags/k8s/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>nix</title>
+      <link>https://seiarotg.me/tags/nix/</link>
+      <pubDate>Tue, 22 Aug 2023 22:34:58 +0100</pubDate>
+      <guid>https://seiarotg.me/tags/nix/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>podman</title>
+      <link>https://seiarotg.me/tags/podman/</link>
+      <pubDate>Tue, 22 Aug 2023 22:34:58 +0100</pubDate>
+      <guid>https://seiarotg.me/tags/podman/</guid>
+      <description></description>
+    </item>
     <item>
       <title>London</title>
       <link>https://seiarotg.me/tags/london/</link>
       <pubDate>Sat, 03 Jun 2023 13:44:30 +0100</pubDate>
-      
       <guid>https://seiarotg.me/tags/london/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>travel</title>
       <link>https://seiarotg.me/tags/travel/</link>
       <pubDate>Sat, 03 Jun 2023 13:44:30 +0100</pubDate>
-      
       <guid>https://seiarotg.me/tags/travel/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>tube</title>
       <link>https://seiarotg.me/tags/tube/</link>
       <pubDate>Sat, 03 Jun 2023 13:44:30 +0100</pubDate>
-      
       <guid>https://seiarotg.me/tags/tube/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>UK</title>
       <link>https://seiarotg.me/tags/uk/</link>
       <pubDate>Sat, 03 Jun 2023 13:44:30 +0100</pubDate>
-      
       <guid>https://seiarotg.me/tags/uk/</guid>
       <description></description>
     </item>
-    
-    <item>
-      <title>nix</title>
-      <link>https://seiarotg.me/tags/nix/</link>
-      <pubDate>Mon, 02 May 2022 15:06:35 +0100</pubDate>
-      
-      <guid>https://seiarotg.me/tags/nix/</guid>
-      <description></description>
-    </item>
-    
     <item>
       <title>device</title>
       <link>https://seiarotg.me/tags/device/</link>
       <pubDate>Sun, 09 Jan 2022 17:09:58 +0800</pubDate>
-      
       <guid>https://seiarotg.me/tags/device/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>gadgets</title>
       <link>https://seiarotg.me/tags/gadgets/</link>
       <pubDate>Sun, 09 Jan 2022 17:09:58 +0800</pubDate>
-      
       <guid>https://seiarotg.me/tags/gadgets/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>mac</title>
       <link>https://seiarotg.me/tags/mac/</link>
       <pubDate>Sun, 09 Jan 2022 17:09:58 +0800</pubDate>
-      
       <guid>https://seiarotg.me/tags/mac/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>docker</title>
       <link>https://seiarotg.me/tags/docker/</link>
       <pubDate>Tue, 28 Dec 2021 21:27:06 +0000</pubDate>
-      
       <guid>https://seiarotg.me/tags/docker/</guid>
       <description></description>
     </item>
-    
-    <item>
-      <title>podman</title>
-      <link>https://seiarotg.me/tags/podman/</link>
-      <pubDate>Tue, 28 Dec 2021 21:27:06 +0000</pubDate>
-      
-      <guid>https://seiarotg.me/tags/podman/</guid>
-      <description></description>
-    </item>
-    
     <item>
       <title>wireguard</title>
       <link>https://seiarotg.me/tags/wireguard/</link>
       <pubDate>Tue, 28 Dec 2021 21:27:06 +0000</pubDate>
-      
       <guid>https://seiarotg.me/tags/wireguard/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>hackintosh</title>
       <link>https://seiarotg.me/tags/hackintosh/</link>
       <pubDate>Sun, 28 Feb 2021 20:14:31 +0000</pubDate>
-      
       <guid>https://seiarotg.me/tags/hackintosh/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>home</title>
       <link>https://seiarotg.me/tags/home/</link>
       <pubDate>Sat, 20 Feb 2021 15:24:31 +0000</pubDate>
-      
       <guid>https://seiarotg.me/tags/home/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>server</title>
       <link>https://seiarotg.me/tags/server/</link>
       <pubDate>Mon, 11 Jan 2021 21:20:13 +0000</pubDate>
-      
       <guid>https://seiarotg.me/tags/server/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>accounting</title>
       <link>https://seiarotg.me/tags/accounting/</link>
       <pubDate>Thu, 29 Oct 2020 00:05:48 +0000</pubDate>
-      
       <guid>https://seiarotg.me/tags/accounting/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>beancount</title>
       <link>https://seiarotg.me/tags/beancount/</link>
       <pubDate>Thu, 29 Oct 2020 00:05:48 +0000</pubDate>
-      
       <guid>https://seiarotg.me/tags/beancount/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>money</title>
       <link>https://seiarotg.me/tags/money/</link>
       <pubDate>Thu, 29 Oct 2020 00:05:48 +0000</pubDate>
-      
       <guid>https://seiarotg.me/tags/money/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>chromeos</title>
       <link>https://seiarotg.me/tags/chromeos/</link>
       <pubDate>Mon, 06 Apr 2020 00:08:14 +0100</pubDate>
-      
       <guid>https://seiarotg.me/tags/chromeos/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>summary</title>
       <link>https://seiarotg.me/tags/summary/</link>
       <pubDate>Sun, 01 Dec 2019 20:04:40 +0000</pubDate>
-      
       <guid>https://seiarotg.me/tags/summary/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>misc</title>
       <link>https://seiarotg.me/tags/misc/</link>
       <pubDate>Sat, 24 Aug 2019 22:18:10 +0800</pubDate>
-      
       <guid>https://seiarotg.me/tags/misc/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>mobile</title>
       <link>https://seiarotg.me/tags/mobile/</link>
       <pubDate>Wed, 21 Aug 2019 14:51:07 +0800</pubDate>
-      
       <guid>https://seiarotg.me/tags/mobile/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>money-saving</title>
       <link>https://seiarotg.me/tags/money-saving/</link>
       <pubDate>Wed, 21 Aug 2019 14:51:07 +0800</pubDate>
-      
       <guid>https://seiarotg.me/tags/money-saving/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>linux</title>
       <link>https://seiarotg.me/tags/linux/</link>
       <pubDate>Sun, 11 Aug 2019 21:05:10 +0800</pubDate>
-      
       <guid>https://seiarotg.me/tags/linux/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>printer</title>
       <link>https://seiarotg.me/tags/printer/</link>
       <pubDate>Sun, 11 Aug 2019 21:05:10 +0800</pubDate>
-      
       <guid>https://seiarotg.me/tags/printer/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>shopping</title>
       <link>https://seiarotg.me/tags/shopping/</link>
       <pubDate>Thu, 01 Aug 2019 14:04:11 +0800</pubDate>
-      
       <guid>https://seiarotg.me/tags/shopping/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>flight</title>
       <link>https://seiarotg.me/tags/flight/</link>
       <pubDate>Tue, 30 Jul 2019 17:25:14 +0800</pubDate>
-      
       <guid>https://seiarotg.me/tags/flight/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Ningbo</title>
       <link>https://seiarotg.me/tags/ningbo/</link>
       <pubDate>Tue, 30 Jul 2019 17:25:14 +0800</pubDate>
-      
       <guid>https://seiarotg.me/tags/ningbo/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>visa</title>
       <link>https://seiarotg.me/tags/visa/</link>
       <pubDate>Sun, 28 Jul 2019 11:54:12 +0800</pubDate>
-      
       <guid>https://seiarotg.me/tags/visa/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

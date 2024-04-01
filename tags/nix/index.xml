@@ -6,23 +6,21 @@
     <description>Recent content in nix on SEIAROTg&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 02 May 2022 15:06:35 +0100</lastBuildDate><atom:link href="https://seiarotg.me/tags/nix/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 31 Mar 2024 17:28:25 +0100</lastBuildDate>
+    <atom:link href="https://seiarotg.me/tags/nix/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tidy Up Homelab Containers</title>
+      <link>https://seiarotg.me/post/tidy-up-homelab-containers/</link>
+      <pubDate>Tue, 22 Aug 2023 22:34:58 +0100</pubDate>
+      <guid>https://seiarotg.me/post/tidy-up-homelab-containers/</guid>
+      <description>Background There are bunch of services lying around on my homelab. Over time, the accumulated complexity, ops load, reliability risk, and security risks started to harm my mental health. I figured it&amp;rsquo;s probably the time to properly tidy up my homelab and have it actually managed. I figured my ideal setup shall be secure, reasonably reliable, at a low ops cost. More specifically, I would like to:&#xA;Have some services running Have some declarative way to manage them Have some isolation on what each services could access Have automated updates Very simple and innocent requirements, right?</description>
+    </item>
     <item>
       <title>Install NixOS on OVH VPS</title>
       <link>https://seiarotg.me/post/install-nixos-on-ovh-vps/</link>
       <pubDate>Mon, 02 May 2022 15:06:35 +0100</pubDate>
-      
       <guid>https://seiarotg.me/post/install-nixos-on-ovh-vps/</guid>
-      <description>Backup your data.
-Reboot into rescue mode with the control panel.
-Connect to KVM with the control panel.
-You can also SSH into the host with login credentials from KVM.
-Download NixOS image.
-Likely you won&amp;rsquo;t have enough disk space in rescue mode so use ramfs.
-1 2 3 4 mkdir /mnt/ramdisk mount -t ramfs ramfs /mnt/ramdisk cd /mnt/ramdisk wget https://channels.nixos.org/nixos-21.11/latest-nixos-minimal-x86_64-linux.iso Load image with qemu.
-https://community.ovh.com/en/t/installing-operating-system-from-custom-image-on-ovh-vps-centos-8-tutorial/3561
-1 2 apt install qemu-kvm qemu-system-x86_64 -netdev type=user,id=mynet0 -device virtio-net-pci,netdev=mynet0 -m 2048 -enable-kvm -drive index=0,media=disk,if=virtio,file=/dev/sdb -cdrom latest-nixos-minimal-x86_64-linux.</description>
+      <description>Backup your data.&#xA;Reboot into rescue mode with the control panel.&#xA;Connect to KVM with the control panel.&#xA;You can also SSH into the host with login credentials from KVM.&#xA;Download NixOS image.&#xA;Likely you won&amp;rsquo;t have enough disk space in rescue mode so use ramfs.&#xA;1 2 3 4 mkdir /mnt/ramdisk mount -t ramfs ramfs /mnt/ramdisk cd /mnt/ramdisk wget https://channels.nixos.org/nixos-21.11/latest-nixos-minimal-x86_64-linux.iso Load image with qemu.&#xA;https://community.ovh.com/en/t/installing-operating-system-from-custom-image-on-ovh-vps-centos-8-tutorial/3561&#xA;1 2 apt install qemu-kvm qemu-system-x86_64 -netdev type=user,id=mynet0 -device virtio-net-pci,netdev=mynet0 -m 2048 -enable-kvm -drive index=0,media=disk,if=virtio,file=/dev/sdb -cdrom latest-nixos-minimal-x86_64-linux.</description>
     </item>
-    
   </channel>
 </rss>

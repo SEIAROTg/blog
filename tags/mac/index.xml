@@ -6,69 +6,56 @@
     <description>Recent content in mac on SEIAROTg&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 09 Jan 2022 17:09:58 +0800</lastBuildDate><atom:link href="https://seiarotg.me/tags/mac/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 09 Jan 2022 20:39:50 +0000</lastBuildDate>
+    <atom:link href="https://seiarotg.me/tags/mac/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>在 macOS 下科学地使用 Brother DS-720D 便携式扫描仪</title>
       <link>https://seiarotg.me/post/ds720-under-macos/</link>
       <pubDate>Sun, 09 Jan 2022 17:09:58 +0800</pubDate>
-      
       <guid>https://seiarotg.me/post/ds720-under-macos/</guid>
       <description>背景 本文开坑于 2019 年 8 月。🐦了两年半。 2018 年年底，因为特别心水能自动把纸吃进去的结构，在 ebay 上以低廉的价钱拍了一台二手 Brother DS-620D。收到货一看</description>
     </item>
-    
     <item>
       <title>重做我的黑果</title>
       <link>https://seiarotg.me/post/upgrade-my-hackintosh/</link>
       <pubDate>Sun, 28 Feb 2021 20:14:31 +0000</pubDate>
-      
       <guid>https://seiarotg.me/post/upgrade-my-hackintosh/</guid>
       <description>背景 一年半前我装了一台迷你黑苹果使用至今，由于拿的现成 EFI 不敢随便升级一直卡在 Mojave。现计划升级到 Big Sur，顺便解决一下偶尔毫无征兆地重</description>
     </item>
-    
     <item>
       <title>读取 Smart Meter 数据</title>
       <link>https://seiarotg.me/post/retrieve-smart-meter-readings/</link>
       <pubDate>Sat, 20 Feb 2021 15:24:31 +0000</pubDate>
-      
       <guid>https://seiarotg.me/post/retrieve-smart-meter-readings/</guid>
       <description>背景 近日安装了 Smart Meter。 安装完毕后师傅发放了一部小屏幕，可远程观看读数。该设备开设了「当前读数」、「今日耗电」、「今日费用」、「每小时耗</description>
     </item>
-    
     <item>
       <title>macOS 指定 BSSID</title>
       <link>https://seiarotg.me/post/macos-lock-bssid/</link>
       <pubDate>Sun, 04 Oct 2020 14:40:34 +0100</pubDate>
-      
       <guid>https://seiarotg.me/post/macos-lock-bssid/</guid>
       <description>搬家到了一处便宜的地方以至于没有网络供应需要仰仗 BTWi-fi。而居民区中的 BTWi-fi 主要来自于邻居门家中品牌各异的无线路由器。这些热点的 ESSID 都叫“B</description>
     </item>
-    
     <item>
       <title>只读挂载 FileVault 卷</title>
       <link>https://seiarotg.me/post/mount-file-vault-volume-readonly/</link>
       <pubDate>Thu, 19 Sep 2019 11:38:02 +0800</pubDate>
-      
       <guid>https://seiarotg.me/post/mount-file-vault-volume-readonly/</guid>
       <description>只读挂载和锁上 FileVault 卷 背景 我有块硬盘需要定期冷备份 这块硬盘启用了 FileVault 为了避免不小心弄错备份方向损失数据，需要将源硬盘只读挂载 Disk Utility 的图形界面不能做到</description>
     </item>
-    
     <item>
       <title>macOS 软件调节外接显示器亮度</title>
       <link>https://seiarotg.me/post/macos-external-monitor-brightness/</link>
       <pubDate>Sat, 03 Aug 2019 12:03:18 +0800</pubDate>
-      
       <guid>https://seiarotg.me/post/macos-external-monitor-brightness/</guid>
       <description>如果您也和我一样在显示器附近安装了窗户，您可能需要经常调节显示器的亮度。用爪子靠近显示器设置开关非常不方便，也非常慢。 经过一番搜索后我发现了</description>
     </item>
-    
     <item>
       <title>装一台迷你黑苹果</title>
       <link>https://seiarotg.me/post/build-hackintosh/</link>
       <pubDate>Thu, 01 Aug 2019 14:04:11 +0800</pubDate>
-      
       <guid>https://seiarotg.me/post/build-hackintosh/</guid>
       <description>我的 MacBook Air 使用至今已有五年之久，最近还出现了“删除文件后可用空间不增加”的故障。于是趁 618 之际我买了一堆配件，组了个 Hackintosh。 [2021-01] 我重</description>
     </item>
-    
   </channel>
 </rss>

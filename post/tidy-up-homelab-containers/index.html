@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Tidy Up Homelab Containers - SEIAROTg&#39;s blog</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="SEIAROTg" /><meta name="description" content="Background There are bunch of services lying around on my homelab. Over time, the accumulated complexity, ops load, reliability risk, and security risks started to harm my mental health. I figured it&amp;rsquo;s probably the time to properly tidy up my homelab and have it actually managed. I figured my ideal setup shall be secure, reasonably reliable, at a low ops cost. More specifically, I would like to:
+Have some services running Have some declarative way to manage them Have some isolation on what each services could access Have automated updates Very simple and innocent requirements, right?" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.122.0 with theme even" />
+
+
+<link rel="canonical" href="https://seiarotg.me/post/tidy-up-homelab-containers/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.7d4e25b944cdea452d847bbea22aa779718d0fa25c09c91b22601aa109bfab1b.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="Tidy Up Homelab Containers" />
+<meta property="og:description" content="Background There are bunch of services lying around on my homelab. Over time, the accumulated complexity, ops load, reliability risk, and security risks started to harm my mental health. I figured it&rsquo;s probably the time to properly tidy up my homelab and have it actually managed. I figured my ideal setup shall be secure, reasonably reliable, at a low ops cost. More specifically, I would like to:
+Have some services running Have some declarative way to manage them Have some isolation on what each services could access Have automated updates Very simple and innocent requirements, right?" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://seiarotg.me/post/tidy-up-homelab-containers/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2023-08-22T22:34:58+01:00" />
+<meta property="article:modified_time" content="2024-03-31T17:28:25+01:00" />
+
+<meta itemprop="name" content="Tidy Up Homelab Containers">
+<meta itemprop="description" content="Background There are bunch of services lying around on my homelab. Over time, the accumulated complexity, ops load, reliability risk, and security risks started to harm my mental health. I figured it&rsquo;s probably the time to properly tidy up my homelab and have it actually managed. I figured my ideal setup shall be secure, reasonably reliable, at a low ops cost. More specifically, I would like to:
+Have some services running Have some declarative way to manage them Have some isolation on what each services could access Have automated updates Very simple and innocent requirements, right?"><meta itemprop="datePublished" content="2023-08-22T22:34:58+01:00" />
+<meta itemprop="dateModified" content="2024-03-31T17:28:25+01:00" />
+<meta itemprop="wordCount" content="1694">
+<meta itemprop="keywords" content="podman,nix,k8s," /><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Tidy Up Homelab Containers"/>
+<meta name="twitter:description" content="Background There are bunch of services lying around on my homelab. Over time, the accumulated complexity, ops load, reliability risk, and security risks started to harm my mental health. I figured it&rsquo;s probably the time to properly tidy up my homelab and have it actually managed. I figured my ideal setup shall be secure, reasonably reliable, at a low ops cost. More specifically, I would like to:
+Have some services running Have some declarative way to manage them Have some isolation on what each services could access Have automated updates Very simple and innocent requirements, right?"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">SEIAROTg</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">SEIAROTg</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Tidy Up Homelab Containers</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2023-08-22 </span>
+        <div class="post-category">
+            <a href="/categories/tech/"> Tech </a>
+            </div>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#background">Background</a></li>
+    <li><a href="#options">Options</a>
+      <ul>
+        <li><a href="#nixos">NixOS</a></li>
+        <li><a href="#nixos-container">NixOS Container</a></li>
+        <li><a href="#podman">Podman</a></li>
+        <li><a href="#kubernetes">Kubernetes</a></li>
+      </ul>
+    </li>
+    <li><a href="#the-verdict">The Verdict</a></li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h1 id="background">Background</h1>
+<p>There are bunch of services lying around on my homelab. Over time, the accumulated complexity, ops load, reliability risk, and security risks started to harm my mental health. I figured it&rsquo;s probably the time to properly tidy up my homelab and have it actually managed.
+I figured my ideal setup shall be secure, reasonably reliable, at a low ops cost. More specifically, I would like to:</p>
+<ul>
+<li>Have some services running</li>
+<li>Have some declarative way to manage them</li>
+<li>Have some isolation on what each services could access</li>
+<li>Have automated updates</li>
+</ul>
+<p>Very simple and innocent requirements, right? Surely the solution ought to be simple too, doesn&rsquo;t it?</p>
+<p><strong>Disclaimer:</strong> you will see way more 👎 than 👍 below. This is not to suggest those solutions are &ldquo;bad&rdquo; but to emphasize the gaps towards my ideal state. You can assume there are full of 👍 in aspects I didn&rsquo;t mention.</p>
+<h1 id="options">Options</h1>
+<h2 id="nixos">NixOS</h2>
+<p>NixOS feels a very natural choice when it comes to declarative management of the whole system. nixpkgs also offers lots of packaged services at our choice.
+Setting up is generally convenient and straightforward, but issues do exist.</p>
+<h3 id="-auto-upgrade">👍 Auto upgrade</h3>
+<p>NixOS has builtin support for auto upgrade through <code>system.autoUpgrade</code>.</p>
+<h3 id="-package-availability">🤔 Package availability</h3>
+<p>Apparently, not everything is currently offered on nixpkgs or through flakes. We will either need to maintain the package ourself, which is lots of work, or find some alternative options.</p>
+<h3 id="-indirection">🤔 Indirection</h3>
+<p>Typically, NixOS offers its own way to configure programs, wrapping around the stock configuration interface of each package. This provides consistency in the configuration language, allows some config generation through Nix language, and usually makes simple case simple.
+However, such wrapper comes with the cost of reduced flexibility and extra layer of indirection, whose overhead may become significant as the usage become complex.
+The official documentation and community solutions don&rsquo;t directly apply on the nixpkgs-wrapped interface. One may constantly have to refer to the Nix module implementation to translate the desired configuration to Nix, which can be an ongoing cost.
+Even worse, not all possible configuration can be expressed through the nixpkgs-wrapped interface. While most services do allow raw configuration to be supplied, it may imply rewriting everything already invested on the nixpkgs-wrapped interface, and it could be a heavily degraded experience if the underlying software consumes complex configurations in multiple files (e.g. freeradius).</p>
+<h3 id="-isolation">👎 Isolation</h3>
+<p>While many nixpkgs services do come with reasonable level of isolation via systemd, nothing is systematically enforced. Usually, a service binary will have access to a large part of the file system, as well as the whole networking stack, which can be too much for some services.</p>
+<p>The service binary technically may also alter the system however they want, leaving it in an dirty state even after its uninstallation. <a href="https://nixos.wiki/wiki/Impermanence">Impermanence</a> may help to maintain a clean environment but in case some services rely on those state to behave correctly, they can be broken at reboot, leaving it difficult to roll back, or tracing down to the root cause, especially if one doesn&rsquo;t reboot often and one reboot resets a whole year worth of state.</p>
+<h3 id="-supply-chain-security">👎 Supply chain security</h3>
+<p>By using a Nix package, we are implicitly staking on it being free of tampering and up-to-date with all the security updates, which requires lots of work from package maintainers. We would have to trust our package maintainers, in additional to the original author of the software.
+This may not be a big problem for popular packages (e.g. nginx). Lots of people are staring at it and we can reasonably expect security updates to be merged timely and malicious tampering to be rejected.
+But the trust can be really hard to establish on packages which aren&rsquo;t that popular. They might be looked after by just one or two people, at a minimal degree of commitment. We don&rsquo;t know these people in person to find out how trustworthy they are. Each package may have different maintainers, and each maintainer may only do very few things, which means there isn&rsquo;t even some &ldquo;reputation&rdquo; we can track.</p>
+<h3 id="-productivity">👎 Productivity</h3>
+<p>Whenever a small change is needed, we run <code>nixos-rebuild</code>, which is slow.</p>
+<h2 id="nixos-container">NixOS Container</h2>
+<p><a href="https://nixos.wiki/wiki/NixOS_Containers">NixOS Container</a> is a feature of NixOS, allowing declarative configuration of containers running NixOS in the same way the host is configured, powered by <code>systemd-nspawn</code>.</p>
+<h3 id="-isolation-1">🤔 Isolation</h3>
+<p>While <code>systemd-nspawn</code> offers some isolation, not all isolation comes by default.
+All containers are by default privileged as user namespace isn&rsquo;t enabled by default unless <code>--private-users</code> is specified in <code>extraFlags</code>. There seems to be some complication setting up bind mounts when <code>--private-users</code> is used. I only had success with the bind directory manually chown&rsquo;ed.
+Network namespace isn&rsquo;t enabled unless <code>privateNetwork</code> is specified. To use that, one would have to manually specify IP addresses for each container and each container will receive its own veth pair. More fine-grained isolation will have to be configured through firewall separately.</p>
+<h3 id="-nixos-issues">👎 NixOS issues</h3>
+<p>Many of aforementioned issues with NixOS still remains.</p>
+<h2 id="podman">Podman</h2>
+<p>Or Docker, through NixOS, or <a href="https://docs.docker.com/compose/">Docker Compose</a>, or <a href="https://docs.hercules-ci.com/arion">Arion</a>, whatever.</p>
+<h3 id="-productivity-1">👍 Productivity</h3>
+<p>Docker compose or Arion allows us to declaratively manage the containers without having to <code>nixos-rebuild</code> every time. If we carefully structure our nix files, Arion can even work with both the cli and <code>nixos-rebuild</code>.</p>
+<h3 id="-isolation-2">👍 Isolation</h3>
+<p>Podman containers are properly isolated from the host and each other by default, which is good.</p>
+<h3 id="-audo-update">🤔 Audo update</h3>
+<p>Podman also has an <a href="https://docs.podman.io/en/latest/markdown/podman-auto-update.1.html">auto update</a> feature builtin, as well as a systemd timer unit <code>podman-auto-update.timer</code>, which can be enabled as needed.</p>
+<p>However, it <a href="https://github.com/containers/podman/issues/19688">doesn&rsquo;t work with Docker Compose</a>, or Arion which uses Docker Compose.</p>
+<h3 id="-prune">🤔 Prune</h3>
+<p>Docker compose supports <code>--remove-orphans</code>, which removes services deleted from the compose file. However, there isn&rsquo;t a good story for declaratively pruning networks, which can be annoying if you have one network per service.</p>
+<h3 id="-network-policy">👎 Network policy</h3>
+<p>Podman doesn&rsquo;t have a native solution for configurable network policy. It might be possible through CNI plugins, which, however, has been <a href="https://www.redhat.com/sysadmin/podman-new-network-stack">deprecated</a> in Podman 4.0, replaced by Netavark, which doesn&rsquo;t offer network policy at the present.</p>
+<p>Hand crafting firewall is an option, but that&rsquo;s a separate piece of config to manage. If we choose to manage that via NixOS, we are again subject to the aforementioned productivity issue.</p>
+<p>Note that even with a firewall setup, we may still be subject to ARP spoofing / IP spoofing from containers with <code>CAP_NET_RAW</code> or <code>CAP_NET_ADMIN</code> inside the same Podman network. This can be fixed with a separate podman network for each container, but that comes with some performance loss and increased management burden.</p>
+<h2 id="kubernetes">Kubernetes</h2>
+<p>Or k3s, k0s, microk8s, whatever.
+Kubernetes appears to be the standard for container orchestration today, so it must be good, and enterprise™️ class.</p>
+<h3 id="--prune">👍  Prune</h3>
+<p>Kubernetes has a good story for declarative pruning resources through <a href="https://kubernetes.io/docs/tasks/manage-kubernetes-objects/declarative-config/#alternative-kubectl-apply-f-directory-prune"><code>--prune</code></a>.</p>
+<h3 id="-network-isolation">👍 Network isolation</h3>
+<p>Kubernetes offers network policy, which allows easy and flexible configuration of connectivity between containers, so we no longer need hand-crafted firewall rules. While it may still be subject to ARP spoofing / IP spoofing if an L2 CNI plugin is used, an L3 CNI plugin like Cilium can <a href="https://cilium.io/blog/2020/06/29/cilium-kubernetes-cni-vulnerability/">mitigate that risk</a> through eBPF.</p>
+<h3 id="-complication">🤔 Complication</h3>
+<p>Kubernetes is a bit more complex to get started. Instead of just some services and networks in Docker Compose, to get started on Kubernetes, we&rsquo;ll need to have pods, services, ingresses, persistent volumes, secrets, and possibly more.</p>
+<p>Luckily, there are tools like kubenix which we could use to generate those resources from a high level configuration.</p>
+<h3 id="-devices-and-local-networks">👎 Devices and local networks</h3>
+<p>Kubernetes doesn&rsquo;t have a native alternative for <code>--device</code> in docker. The proper way to attach device to a container would be through some <a href="https://kubernetes.io/docs/concepts/extend-kubernetes/compute-storage-net/device-plugins/">device plugin</a> like <a href="https://github.com/project-akri/akri">akri</a>. Alternatively you can mount device file as a volume but that requires the container to be privileged.</p>
+<p>Connecting pods to local networks (e.g. macvlan) is also more complex than Podman. Most CNI plugin doesn&rsquo;t natively support that and something like <a href="https://github.com/k8snetworkplumbingwg/multus-cni">multus-cni</a> will be needed.</p>
+<h3 id="-security-complication">👎 Security Complication</h3>
+<p>In addition to the added complexity to get started, it can be MUCH MORE complex to use it securely if third-party resources are used. Typically vendors will offer some canned configurations that includes maybe dozens of resources, too complex to manage manually.</p>
+<p>So you use Helm, the package manager for Kubernetes.
+By default, the Helm chart could affect any resources on the whole cluster.
+One might think passing <code>--namespace</code> could restrict the Helm chart to its own <a href="https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/">namespace</a>, but the chart may create privileged pods, mount host paths, and effectively get the root of the host.</p>
+<p>One might think configuring <a href="https://kubernetes.io/docs/concepts/security/pod-security-admission/">Pod Security Admission</a> may block the chart from using privileged features, but technically the chart could remove the PSA configuration.
+It&rsquo;s possible to set up RBAC to restrict Helm from tampering PSA, but if you are using the <a href="https://github.com/k3s-io/helm-controller">k3s-io/helm-controller</a> built into k3s, Helm will be <a href="https://github.com/k3s-io/helm-controller/blob/32c2e08fa0265cbc36680d50ca766c5a73cecd85/pkg/controllers/chart/chart.go#L540">granted</a> <code>cluster-admin</code>. We will need some other solutions that supports RBAC like <a href="https://github.com/fluxcd/helm-controller">fluxcd/helm-controller</a>.</p>
+<p>Now that we&rsquo;ve reasonably locked down the access of Helm chart, are we good?
+Let&rsquo;s try to install <code>ingress-nginx</code> with <code>hostPort</code>. It&rsquo;s rejected by PSA because <code>hostPort</code> is considered somewhat privileged. Can we exempt this specific case? There is <a href="https://kubernetes.io/docs/concepts/security/pod-security-policy/">Pod Security Policy</a> but it&rsquo;s now deprecated. We&rsquo;ll need a third party admission plugin such as <a href="https://kyverno.io/">Kyverno</a>.</p>
+<h1 id="the-verdict">The Verdict</h1>
+<p>I almost put together a single-node k3s setup that meets my needs, which involves:</p>
+<ul>
+<li>NixOS: to manage the host.
+<ul>
+<li>Also to run some system services (e.g. openssh, k3s)</li>
+</ul>
+</li>
+<li>k3s: to manage containers.</li>
+<li>Kubenix: to generate Kubernetes resources.</li>
+<li>Helmfile: to fetch resources from Helm.
+<ul>
+<li>The resources are then manually inspected, versioned, and installed.</li>
+</ul>
+</li>
+<li>Cilium: to manage container networking.</li>
+<li>cert-manager: to manage certificates.</li>
+<li>ingress-nginx: to manage ingress.</li>
+<li>Pod Security Admission + Kyverno: secures resources from Helm.</li>
+<li>Akri: to connect to IoT devices.</li>
+<li>multus-cni: to connect to IoT networks.</li>
+</ul>
+<p>Wow, that&rsquo;s a lot!</p>
+<p>I find that extra complication of k8s isn&rsquo;t really worthwhile for my usage, especially considering lots of trust being required. For now, I&rsquo;ll stick to:</p>
+<ul>
+<li>NixOS: to manage the host.</li>
+<li>
+<ul>
+<li>Also to run some system softwares (e.g. openssh, podman)</li>
+</ul>
+</li>
+<li>NixOS container: to run nginx.</li>
+<li>Podman: to manage containers.
+<ul>
+<li>One podman network per container to mitigate ARP / IP spoofing.</li>
+</ul>
+</li>
+<li><a href="https://github.com/SEIAROTg/quadlet-nix">quadlet-nix</a> to declaratively configured Podman.
+<ul>
+<li>Manages both containers and networks.</li>
+<li>Supports auto-update.</li>
+</ul>
+</li>
+<li>nftables: to manage network policy.</li>
+</ul>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">SEIAROTg</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+        2024-03-31
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/podman/">podman</a>
+          <a href="/tags/nix/">nix</a>
+          <a href="/tags/k8s/">k8s</a>
+          </div>
+      <nav class="post-nav">
+        
+        <a class="next" href="/post/how-many-oyster-variants-are-there/">
+            <span class="next-text nav-default">How many variants of Oyster cards are there?</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+    <script src="https://utteranc.es/client.js"
+            repo="SEIAROTg/blog"
+            issue-term="pathname"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://github.com/utterance">comments powered by utterances.</a></noscript>
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="https://github.com/SEIAROTg" class="iconfont icon-github" title="github"></a>
+  
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2019 - 
+    2024<span class="heart"><i class="iconfont icon-heart"></i></span><span>SEIAROTg</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
+
+
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-144939789-1', 'auto');
+	ga('set', 'anonymizeIp', true);
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+
+
+
+
+</body>
+</html>
