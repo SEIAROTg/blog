@@ -3,7 +3,56 @@
   
   <url>
     <loc>https://seiarotg.me/categories/</loc>
-    <lastmod>2024-08-26T01:47:24+01:00</lastmod>
+    <lastmod>2025-05-11T18:57:08+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://seiarotg.me/categories/life/</loc>
+    <lastmod>2025-05-11T18:57:08+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://seiarotg.me/tags/money/</loc>
+    <lastmod>2025-05-11T18:57:08+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://seiarotg.me/post/</loc>
+    <lastmod>2025-05-11T18:57:08+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://seiarotg.me/</loc>
+    <lastmod>2025-05-11T18:57:08+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://seiarotg.me/tags/</loc>
+    <lastmod>2025-05-11T18:57:08+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://seiarotg.me/tags/uk/</loc>
+    <lastmod>2025-05-11T18:57:08+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://seiarotg.me/post/move-usd-in-the-uk/</loc>
+    <lastmod>2025-05-11T18:57:08+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -30,27 +79,6 @@
   </url>
   
   <url>
-    <loc>https://seiarotg.me/post/</loc>
-    <lastmod>2024-08-26T01:47:24+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://seiarotg.me/</loc>
-    <lastmod>2024-08-26T01:47:24+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://seiarotg.me/tags/</loc>
-    <lastmod>2024-08-26T01:47:24+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://seiarotg.me/categories/tech/</loc>
     <lastmod>2024-03-31T17:28:25+01:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -66,42 +94,35 @@
   
   <url>
     <loc>https://seiarotg.me/post/how-many-oyster-variants-are-there/</loc>
-    <lastmod>2024-08-26T01:47:24+01:00</lastmod>
+    <lastmod>2025-05-11T18:49:05+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://seiarotg.me/tags/london/</loc>
-    <lastmod>2024-08-26T01:47:24+01:00</lastmod>
+    <lastmod>2025-05-11T18:49:05+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://seiarotg.me/categories/notes/</loc>
-    <lastmod>2024-08-26T01:47:24+01:00</lastmod>
+    <lastmod>2025-05-11T18:49:05+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://seiarotg.me/tags/travel/</loc>
-    <lastmod>2024-08-26T01:47:24+01:00</lastmod>
+    <lastmod>2025-05-11T18:49:05+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://seiarotg.me/tags/tube/</loc>
-    <lastmod>2024-08-26T01:47:24+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://seiarotg.me/tags/uk/</loc>
-    <lastmod>2024-08-26T01:47:24+01:00</lastmod>
+    <lastmod>2025-05-11T18:49:05+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -221,20 +242,6 @@
   <url>
     <loc>https://seiarotg.me/tags/beancount/</loc>
     <lastmod>2020-11-02T22:14:50+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://seiarotg.me/categories/life/</loc>
-    <lastmod>2023-06-15T00:37:18+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://seiarotg.me/tags/money/</loc>
-    <lastmod>2023-06-15T00:37:18+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
