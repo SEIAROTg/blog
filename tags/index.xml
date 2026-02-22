@@ -2,213 +2,220 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on SEIAROTg&#39;s blog</title>
-    <link>https://seiarotg.me/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on SEIAROTg&#39;s blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 11 May 2025 18:57:08 +0100</lastBuildDate>
-    <atom:link href="https://seiarotg.me/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 22 Feb 2026 18:49:30 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>money</title>
-      <link>https://seiarotg.me/tags/money/</link>
+      <title>Archive</title>
+      <link>http://localhost:1313/tags/archive/</link>
+      <pubDate>Mon, 12 Jan 2026 22:26:55 +0000</pubDate>
+      <guid>http://localhost:1313/tags/archive/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Device</title>
+      <link>http://localhost:1313/tags/device/</link>
+      <pubDate>Mon, 12 Jan 2026 22:26:55 +0000</pubDate>
+      <guid>http://localhost:1313/tags/device/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Money</title>
+      <link>http://localhost:1313/tags/money/</link>
       <pubDate>Mon, 01 Apr 2024 22:54:07 +0000</pubDate>
-      <guid>https://seiarotg.me/tags/money/</guid>
+      <guid>http://localhost:1313/tags/money/</guid>
       <description></description>
     </item>
     <item>
       <title>UK</title>
-      <link>https://seiarotg.me/tags/uk/</link>
+      <link>http://localhost:1313/tags/uk/</link>
       <pubDate>Mon, 01 Apr 2024 22:54:07 +0000</pubDate>
-      <guid>https://seiarotg.me/tags/uk/</guid>
+      <guid>http://localhost:1313/tags/uk/</guid>
       <description></description>
     </item>
     <item>
-      <title>k8s</title>
-      <link>https://seiarotg.me/tags/k8s/</link>
+      <title>K8s</title>
+      <link>http://localhost:1313/tags/k8s/</link>
       <pubDate>Tue, 22 Aug 2023 22:34:58 +0100</pubDate>
-      <guid>https://seiarotg.me/tags/k8s/</guid>
+      <guid>http://localhost:1313/tags/k8s/</guid>
       <description></description>
     </item>
     <item>
-      <title>nix</title>
-      <link>https://seiarotg.me/tags/nix/</link>
+      <title>Nix</title>
+      <link>http://localhost:1313/tags/nix/</link>
       <pubDate>Tue, 22 Aug 2023 22:34:58 +0100</pubDate>
-      <guid>https://seiarotg.me/tags/nix/</guid>
+      <guid>http://localhost:1313/tags/nix/</guid>
       <description></description>
     </item>
     <item>
-      <title>podman</title>
-      <link>https://seiarotg.me/tags/podman/</link>
+      <title>Podman</title>
+      <link>http://localhost:1313/tags/podman/</link>
       <pubDate>Tue, 22 Aug 2023 22:34:58 +0100</pubDate>
-      <guid>https://seiarotg.me/tags/podman/</guid>
+      <guid>http://localhost:1313/tags/podman/</guid>
       <description></description>
     </item>
     <item>
       <title>London</title>
-      <link>https://seiarotg.me/tags/london/</link>
+      <link>http://localhost:1313/tags/london/</link>
       <pubDate>Sat, 03 Jun 2023 13:44:30 +0100</pubDate>
-      <guid>https://seiarotg.me/tags/london/</guid>
+      <guid>http://localhost:1313/tags/london/</guid>
       <description></description>
     </item>
     <item>
-      <title>travel</title>
-      <link>https://seiarotg.me/tags/travel/</link>
+      <title>Travel</title>
+      <link>http://localhost:1313/tags/travel/</link>
       <pubDate>Sat, 03 Jun 2023 13:44:30 +0100</pubDate>
-      <guid>https://seiarotg.me/tags/travel/</guid>
+      <guid>http://localhost:1313/tags/travel/</guid>
       <description></description>
     </item>
     <item>
-      <title>tube</title>
-      <link>https://seiarotg.me/tags/tube/</link>
+      <title>Tube</title>
+      <link>http://localhost:1313/tags/tube/</link>
       <pubDate>Sat, 03 Jun 2023 13:44:30 +0100</pubDate>
-      <guid>https://seiarotg.me/tags/tube/</guid>
+      <guid>http://localhost:1313/tags/tube/</guid>
       <description></description>
     </item>
     <item>
-      <title>device</title>
-      <link>https://seiarotg.me/tags/device/</link>
+      <title>Gadgets</title>
+      <link>http://localhost:1313/tags/gadgets/</link>
       <pubDate>Sun, 09 Jan 2022 17:09:58 +0800</pubDate>
-      <guid>https://seiarotg.me/tags/device/</guid>
+      <guid>http://localhost:1313/tags/gadgets/</guid>
       <description></description>
     </item>
     <item>
-      <title>gadgets</title>
-      <link>https://seiarotg.me/tags/gadgets/</link>
+      <title>Mac</title>
+      <link>http://localhost:1313/tags/mac/</link>
       <pubDate>Sun, 09 Jan 2022 17:09:58 +0800</pubDate>
-      <guid>https://seiarotg.me/tags/gadgets/</guid>
+      <guid>http://localhost:1313/tags/mac/</guid>
       <description></description>
     </item>
     <item>
-      <title>mac</title>
-      <link>https://seiarotg.me/tags/mac/</link>
-      <pubDate>Sun, 09 Jan 2022 17:09:58 +0800</pubDate>
-      <guid>https://seiarotg.me/tags/mac/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>docker</title>
-      <link>https://seiarotg.me/tags/docker/</link>
+      <title>Docker</title>
+      <link>http://localhost:1313/tags/docker/</link>
       <pubDate>Tue, 28 Dec 2021 21:27:06 +0000</pubDate>
-      <guid>https://seiarotg.me/tags/docker/</guid>
+      <guid>http://localhost:1313/tags/docker/</guid>
       <description></description>
     </item>
     <item>
-      <title>wireguard</title>
-      <link>https://seiarotg.me/tags/wireguard/</link>
+      <title>Wireguard</title>
+      <link>http://localhost:1313/tags/wireguard/</link>
       <pubDate>Tue, 28 Dec 2021 21:27:06 +0000</pubDate>
-      <guid>https://seiarotg.me/tags/wireguard/</guid>
+      <guid>http://localhost:1313/tags/wireguard/</guid>
       <description></description>
     </item>
     <item>
-      <title>hackintosh</title>
-      <link>https://seiarotg.me/tags/hackintosh/</link>
+      <title>Hackintosh</title>
+      <link>http://localhost:1313/tags/hackintosh/</link>
       <pubDate>Sun, 28 Feb 2021 20:14:31 +0000</pubDate>
-      <guid>https://seiarotg.me/tags/hackintosh/</guid>
+      <guid>http://localhost:1313/tags/hackintosh/</guid>
       <description></description>
     </item>
     <item>
-      <title>home</title>
-      <link>https://seiarotg.me/tags/home/</link>
+      <title>Home</title>
+      <link>http://localhost:1313/tags/home/</link>
       <pubDate>Sat, 20 Feb 2021 15:24:31 +0000</pubDate>
-      <guid>https://seiarotg.me/tags/home/</guid>
+      <guid>http://localhost:1313/tags/home/</guid>
       <description></description>
     </item>
     <item>
-      <title>server</title>
-      <link>https://seiarotg.me/tags/server/</link>
+      <title>Server</title>
+      <link>http://localhost:1313/tags/server/</link>
       <pubDate>Mon, 11 Jan 2021 21:20:13 +0000</pubDate>
-      <guid>https://seiarotg.me/tags/server/</guid>
+      <guid>http://localhost:1313/tags/server/</guid>
       <description></description>
     </item>
     <item>
-      <title>accounting</title>
-      <link>https://seiarotg.me/tags/accounting/</link>
+      <title>Accounting</title>
+      <link>http://localhost:1313/tags/accounting/</link>
       <pubDate>Thu, 29 Oct 2020 00:05:48 +0000</pubDate>
-      <guid>https://seiarotg.me/tags/accounting/</guid>
+      <guid>http://localhost:1313/tags/accounting/</guid>
       <description></description>
     </item>
     <item>
-      <title>beancount</title>
-      <link>https://seiarotg.me/tags/beancount/</link>
+      <title>Beancount</title>
+      <link>http://localhost:1313/tags/beancount/</link>
       <pubDate>Thu, 29 Oct 2020 00:05:48 +0000</pubDate>
-      <guid>https://seiarotg.me/tags/beancount/</guid>
+      <guid>http://localhost:1313/tags/beancount/</guid>
       <description></description>
     </item>
     <item>
-      <title>chromeos</title>
-      <link>https://seiarotg.me/tags/chromeos/</link>
+      <title>Chromeos</title>
+      <link>http://localhost:1313/tags/chromeos/</link>
       <pubDate>Mon, 06 Apr 2020 00:08:14 +0100</pubDate>
-      <guid>https://seiarotg.me/tags/chromeos/</guid>
+      <guid>http://localhost:1313/tags/chromeos/</guid>
       <description></description>
     </item>
     <item>
-      <title>summary</title>
-      <link>https://seiarotg.me/tags/summary/</link>
+      <title>Summary</title>
+      <link>http://localhost:1313/tags/summary/</link>
       <pubDate>Sun, 01 Dec 2019 20:04:40 +0000</pubDate>
-      <guid>https://seiarotg.me/tags/summary/</guid>
+      <guid>http://localhost:1313/tags/summary/</guid>
       <description></description>
     </item>
     <item>
-      <title>misc</title>
-      <link>https://seiarotg.me/tags/misc/</link>
+      <title>Misc</title>
+      <link>http://localhost:1313/tags/misc/</link>
       <pubDate>Sat, 24 Aug 2019 22:18:10 +0800</pubDate>
-      <guid>https://seiarotg.me/tags/misc/</guid>
+      <guid>http://localhost:1313/tags/misc/</guid>
       <description></description>
     </item>
     <item>
-      <title>mobile</title>
-      <link>https://seiarotg.me/tags/mobile/</link>
+      <title>Mobile</title>
+      <link>http://localhost:1313/tags/mobile/</link>
       <pubDate>Wed, 21 Aug 2019 14:51:07 +0800</pubDate>
-      <guid>https://seiarotg.me/tags/mobile/</guid>
+      <guid>http://localhost:1313/tags/mobile/</guid>
       <description></description>
     </item>
     <item>
-      <title>money-saving</title>
-      <link>https://seiarotg.me/tags/money-saving/</link>
+      <title>Money-Saving</title>
+      <link>http://localhost:1313/tags/money-saving/</link>
       <pubDate>Wed, 21 Aug 2019 14:51:07 +0800</pubDate>
-      <guid>https://seiarotg.me/tags/money-saving/</guid>
+      <guid>http://localhost:1313/tags/money-saving/</guid>
       <description></description>
     </item>
     <item>
-      <title>linux</title>
-      <link>https://seiarotg.me/tags/linux/</link>
+      <title>Linux</title>
+      <link>http://localhost:1313/tags/linux/</link>
       <pubDate>Sun, 11 Aug 2019 21:05:10 +0800</pubDate>
-      <guid>https://seiarotg.me/tags/linux/</guid>
+      <guid>http://localhost:1313/tags/linux/</guid>
       <description></description>
     </item>
     <item>
-      <title>printer</title>
-      <link>https://seiarotg.me/tags/printer/</link>
+      <title>Printer</title>
+      <link>http://localhost:1313/tags/printer/</link>
       <pubDate>Sun, 11 Aug 2019 21:05:10 +0800</pubDate>
-      <guid>https://seiarotg.me/tags/printer/</guid>
+      <guid>http://localhost:1313/tags/printer/</guid>
       <description></description>
     </item>
     <item>
-      <title>shopping</title>
-      <link>https://seiarotg.me/tags/shopping/</link>
+      <title>Shopping</title>
+      <link>http://localhost:1313/tags/shopping/</link>
       <pubDate>Thu, 01 Aug 2019 14:04:11 +0800</pubDate>
-      <guid>https://seiarotg.me/tags/shopping/</guid>
+      <guid>http://localhost:1313/tags/shopping/</guid>
       <description></description>
     </item>
     <item>
-      <title>flight</title>
-      <link>https://seiarotg.me/tags/flight/</link>
+      <title>Flight</title>
+      <link>http://localhost:1313/tags/flight/</link>
       <pubDate>Tue, 30 Jul 2019 17:25:14 +0800</pubDate>
-      <guid>https://seiarotg.me/tags/flight/</guid>
+      <guid>http://localhost:1313/tags/flight/</guid>
       <description></description>
     </item>
     <item>
       <title>Ningbo</title>
-      <link>https://seiarotg.me/tags/ningbo/</link>
+      <link>http://localhost:1313/tags/ningbo/</link>
       <pubDate>Tue, 30 Jul 2019 17:25:14 +0800</pubDate>
-      <guid>https://seiarotg.me/tags/ningbo/</guid>
+      <guid>http://localhost:1313/tags/ningbo/</guid>
       <description></description>
     </item>
     <item>
-      <title>visa</title>
-      <link>https://seiarotg.me/tags/visa/</link>
+      <title>Visa</title>
+      <link>http://localhost:1313/tags/visa/</link>
       <pubDate>Sun, 28 Jul 2019 11:54:12 +0800</pubDate>
-      <guid>https://seiarotg.me/tags/visa/</guid>
+      <guid>http://localhost:1313/tags/visa/</guid>
       <description></description>
     </item>
   </channel>

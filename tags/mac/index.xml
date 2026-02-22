@@ -1,61 +1,61 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>mac on SEIAROTg&#39;s blog</title>
-    <link>https://seiarotg.me/tags/mac/</link>
-    <description>Recent content in mac on SEIAROTg&#39;s blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Mac on SEIAROTg&#39;s blog</title>
+    <link>http://localhost:1313/tags/mac/</link>
+    <description>Recent content in Mac on SEIAROTg&#39;s blog</description>
+    <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sun, 09 Jan 2022 20:39:50 +0000</lastBuildDate>
-    <atom:link href="https://seiarotg.me/tags/mac/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/mac/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>在 macOS 下科学地使用 Brother DS-720D 便携式扫描仪</title>
-      <link>https://seiarotg.me/post/ds720-under-macos/</link>
+      <link>http://localhost:1313/post/ds720-under-macos/</link>
       <pubDate>Sun, 09 Jan 2022 17:09:58 +0800</pubDate>
-      <guid>https://seiarotg.me/post/ds720-under-macos/</guid>
-      <description>背景 本文开坑于 2019 年 8 月。🐦了两年半。 2018 年年底，因为特别心水能自动把纸吃进去的结构，在 ebay 上以低廉的价钱拍了一台二手 Brother DS-620D。收到货一看</description>
+      <guid>http://localhost:1313/post/ds720-under-macos/</guid>
+      <description>&lt;h1 id=&#34;背景&#34;&gt;背景&lt;/h1&gt;&#xA;&lt;p&gt;本文开坑于 2019 年 8 月。🐦了两年半。&lt;/p&gt;&#xA;&lt;p&gt;2018 年年底，因为特别心水能自动把纸吃进去的结构，在 ebay 上以低廉的价钱拍了一台二手 Brother DS-620D。收到货一看，卖的这么便宜果然有问题，货不对板啊，实际上给我寄过来的居然是一台更高级的 DS-720D。怎么办呢？当然是开心地收下了。&lt;/p&gt;</description>
     </item>
     <item>
       <title>重做我的黑果</title>
-      <link>https://seiarotg.me/post/upgrade-my-hackintosh/</link>
+      <link>http://localhost:1313/post/upgrade-my-hackintosh/</link>
       <pubDate>Sun, 28 Feb 2021 20:14:31 +0000</pubDate>
-      <guid>https://seiarotg.me/post/upgrade-my-hackintosh/</guid>
-      <description>背景 一年半前我装了一台迷你黑苹果使用至今，由于拿的现成 EFI 不敢随便升级一直卡在 Mojave。现计划升级到 Big Sur，顺便解决一下偶尔毫无征兆地重</description>
+      <guid>http://localhost:1313/post/upgrade-my-hackintosh/</guid>
+      <description>&lt;h1 id=&#34;背景&#34;&gt;背景&lt;/h1&gt;&#xA;&lt;p&gt;一年半前我&lt;a href=&#34;../build-hackintosh/&#34;&gt;装了一台迷你黑苹果&lt;/a&gt;使用至今，由于拿的现成 EFI 不敢随便升级一直卡在 Mojave。现计划升级到 Big Sur，顺便解决一下偶尔毫无征兆地重启或睡死的问题（未发现有用日志，据说是没装好）。&lt;/p&gt;</description>
     </item>
     <item>
       <title>读取 Smart Meter 数据</title>
-      <link>https://seiarotg.me/post/retrieve-smart-meter-readings/</link>
+      <link>http://localhost:1313/post/retrieve-smart-meter-readings/</link>
       <pubDate>Sat, 20 Feb 2021 15:24:31 +0000</pubDate>
-      <guid>https://seiarotg.me/post/retrieve-smart-meter-readings/</guid>
-      <description>背景 近日安装了 Smart Meter。 安装完毕后师傅发放了一部小屏幕，可远程观看读数。该设备开设了「当前读数」、「今日耗电」、「今日费用」、「每小时耗</description>
+      <guid>http://localhost:1313/post/retrieve-smart-meter-readings/</guid>
+      <description>&lt;h1 id=&#34;背景&#34;&gt;背景&lt;/h1&gt;&#xA;&lt;p&gt;近日安装了 Smart Meter。&lt;/p&gt;&#xA;&lt;p&gt;安装完毕后师傅发放了一部小屏幕，可远程观看读数。该设备开设了「当前读数」、「今日耗电」、「今日费用」、「每小时耗电柱状图」、「每日耗电柱状图」等板块，但是我们希望能够获得更长时间段的完整的历史读数并自行处理，以便更好地了解和优化家中的用电情况。&lt;/p&gt;</description>
     </item>
     <item>
       <title>macOS 指定 BSSID</title>
-      <link>https://seiarotg.me/post/macos-lock-bssid/</link>
+      <link>http://localhost:1313/post/macos-lock-bssid/</link>
       <pubDate>Sun, 04 Oct 2020 14:40:34 +0100</pubDate>
-      <guid>https://seiarotg.me/post/macos-lock-bssid/</guid>
-      <description>搬家到了一处便宜的地方以至于没有网络供应需要仰仗 BTWi-fi。而居民区中的 BTWi-fi 主要来自于邻居门家中品牌各异的无线路由器。这些热点的 ESSID 都叫“B</description>
+      <guid>http://localhost:1313/post/macos-lock-bssid/</guid>
+      <description>&lt;p&gt;搬家到了一处便宜的地方以至于没有网络供应需要仰仗 BTWi-fi。而居民区中的 BTWi-fi 主要来自于邻居门家中品牌各异的无线路由器。这些热点的 ESSID 都叫“BTWi-fi”于是一不留神就会漂到卡的要死的邻居家去，怎么办呢？&lt;/p&gt;</description>
     </item>
     <item>
       <title>只读挂载 FileVault 卷</title>
-      <link>https://seiarotg.me/post/mount-file-vault-volume-readonly/</link>
+      <link>http://localhost:1313/post/mount-file-vault-volume-readonly/</link>
       <pubDate>Thu, 19 Sep 2019 11:38:02 +0800</pubDate>
-      <guid>https://seiarotg.me/post/mount-file-vault-volume-readonly/</guid>
-      <description>只读挂载和锁上 FileVault 卷 背景 我有块硬盘需要定期冷备份 这块硬盘启用了 FileVault 为了避免不小心弄错备份方向损失数据，需要将源硬盘只读挂载 Disk Utility 的图形界面不能做到</description>
+      <guid>http://localhost:1313/post/mount-file-vault-volume-readonly/</guid>
+      <description>&lt;h1 id=&#34;只读挂载和锁上-filevault-卷&#34;&gt;只读挂载和锁上 FileVault 卷&lt;/h1&gt;&#xA;&lt;h2 id=&#34;背景&#34;&gt;背景&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;我有块硬盘需要定期冷备份&lt;/li&gt;&#xA;&lt;li&gt;这块硬盘启用了 FileVault&lt;/li&gt;&#xA;&lt;li&gt;为了避免不小心弄错备份方向损失数据，需要将源硬盘只读挂载&lt;/li&gt;&#xA;&lt;li&gt;Disk Utility 的图形界面不能做到这件事&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;解法&#34;&gt;解法&lt;/h2&gt;&#xA;&lt;p&gt;经搜索，发现以下方法：&lt;/p&gt;</description>
     </item>
     <item>
       <title>macOS 软件调节外接显示器亮度</title>
-      <link>https://seiarotg.me/post/macos-external-monitor-brightness/</link>
+      <link>http://localhost:1313/post/macos-external-monitor-brightness/</link>
       <pubDate>Sat, 03 Aug 2019 12:03:18 +0800</pubDate>
-      <guid>https://seiarotg.me/post/macos-external-monitor-brightness/</guid>
-      <description>如果您也和我一样在显示器附近安装了窗户，您可能需要经常调节显示器的亮度。用爪子靠近显示器设置开关非常不方便，也非常慢。 经过一番搜索后我发现了</description>
+      <guid>http://localhost:1313/post/macos-external-monitor-brightness/</guid>
+      <description>&lt;p&gt;如果您也和我一样在显示器附近安装了窗户，您可能需要经常调节显示器的亮度。用爪子靠近显示器设置开关非常不方便，也非常慢。&lt;/p&gt;&#xA;&lt;p&gt;经过一番搜索后我发现了&lt;a href=&#34;https://github.com/kfix/ddcctl&#34;&gt;这个叫 ddcctl 的项目&lt;/a&gt;。它提供了一个命令行小工具来控制外接显示器的亮度、对比度等参数。&lt;/p&gt;</description>
     </item>
     <item>
       <title>装一台迷你黑苹果</title>
-      <link>https://seiarotg.me/post/build-hackintosh/</link>
+      <link>http://localhost:1313/post/build-hackintosh/</link>
       <pubDate>Thu, 01 Aug 2019 14:04:11 +0800</pubDate>
-      <guid>https://seiarotg.me/post/build-hackintosh/</guid>
-      <description>我的 MacBook Air 使用至今已有五年之久，最近还出现了“删除文件后可用空间不增加”的故障。于是趁 618 之际我买了一堆配件，组了个 Hackintosh。 [2021-01] 我重</description>
+      <guid>http://localhost:1313/post/build-hackintosh/</guid>
+      <description>&lt;p&gt;我的 MacBook Air 使用至今已有五年之久，最近还出现了“删除文件后可用空间不增加”的故障。于是趁 618 之际我买了一堆配件，组了个 Hackintosh。&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;[2021-01] 我重做了 EFI 并更新到了 Big Sur，请看&lt;a href=&#34;../upgrade-my-hackintosh/&#34;&gt;这里&lt;/a&gt;。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

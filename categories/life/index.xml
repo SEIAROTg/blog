@@ -2,81 +2,88 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Life on SEIAROTg&#39;s blog</title>
-    <link>https://seiarotg.me/categories/life/</link>
+    <link>http://localhost:1313/categories/life/</link>
     <description>Recent content in Life on SEIAROTg&#39;s blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 11 May 2025 18:57:08 +0100</lastBuildDate>
-    <atom:link href="https://seiarotg.me/categories/life/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 22 Feb 2026 18:49:30 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/life/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Home Scanning in 2026</title>
+      <link>http://localhost:1313/post/home-scanning-in-2026/</link>
+      <pubDate>Mon, 12 Jan 2026 22:26:55 +0000</pubDate>
+      <guid>http://localhost:1313/post/home-scanning-in-2026/</guid>
+      <description>&lt;h1 id=&#34;tldr&#34;&gt;tl;dr&lt;/h1&gt;&#xA;&lt;p&gt;I found a wireless document scanner that natively speaks HTTP (Ricoh fi-7300NX), and hooked it to my Linux server without any driver, proprietary software, or quality limitation.&lt;/p&gt;&#xA;&lt;h1 id=&#34;background&#34;&gt;Background&lt;/h1&gt;&#xA;&lt;p&gt;7 years ago, I got myself a Brother DS-720 portable scanner have been using it day-to-day for receipt and occasionally for document as it sits right on my desk. Meanwhile, I have one or two other scanners available through my printer. They work, but not perfectly.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>在英国挪动美国钱</title>
-      <link>https://seiarotg.me/post/move-usd-in-the-uk/</link>
+      <link>http://localhost:1313/post/move-usd-in-the-uk/</link>
       <pubDate>Mon, 01 Apr 2024 22:54:07 +0000</pubDate>
-      <guid>https://seiarotg.me/post/move-usd-in-the-uk/</guid>
-      <description>日前试图增加一些以美元为本币的资产，于是折腾如下。 初始状态：搞了一些美元，汇入英区 Revolut。 计划一：在 IBKR 上购置资产 开户 IBKR。 要填好</description>
+      <guid>http://localhost:1313/post/move-usd-in-the-uk/</guid>
+      <description>&lt;p&gt;日前试图增加一些以美元为本币的资产，于是折腾如下。&lt;/p&gt;&#xA;&lt;p&gt;初始状态：搞了一些美元，汇入英区 Revolut。&lt;/p&gt;&#xA;&lt;h2 id=&#34;计划一在-ibkr-上购置资产&#34;&gt;计划一：在 IBKR 上购置资产&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;开户 IBKR。&#xA;&lt;ul&gt;&#xA;&lt;li&gt;要填好多好多东西，还要审核。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;从 Revolut 向 IBKR 汇美元，发现 Premium 非本币汇款也要按比例收费了，放弃。&lt;/li&gt;&#xA;&lt;li&gt;据说 Revolut 和 IBKR 都可以几乎无损地换汇，于是换成英镑免费汇入再换回。&lt;/li&gt;&#xA;&lt;li&gt;在等待到账的几小时中英镑暴跌，损失数百美元。&lt;/li&gt;&#xA;&lt;li&gt;试图把 IBKR 全部账户余额换成 USD，结果 GBP 余额变成负的了。&lt;/li&gt;&#xA;&lt;li&gt;IBKR 账户余额 $40 有时显示为 $30（30 为等值英镑），吓死人。&lt;/li&gt;&#xA;&lt;li&gt;试图购置美股 ETF，不让买。&#xA;&lt;a href=&#34;https://money.stackexchange.com/questions/112871/buying-an-us-etf-from-europe-using-interactive-brokers&#34;&gt;https://money.stackexchange.com/questions/112871/buying-an-us-etf-from-europe-using-interactive-brokers&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;试图购买货币基金，属于 Mutual Fund，得考试，然后申请。&#xA;&lt;ul&gt;&#xA;&lt;li&gt;考试通过后开通 Mutual Fund，还是不让买：Residency Restriction。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;计划二在-trading212-上购置资产&#34;&gt;计划二：在 Trading212 上购置资产&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Trading212 可以持有美元现金。&lt;/li&gt;&#xA;&lt;li&gt;开户 Trading212。&lt;/li&gt;&#xA;&lt;li&gt;Trading212 要求必须从个人银行账户入金，因此不能从 IBKR 直接汇。&lt;/li&gt;&#xA;&lt;li&gt;为了规避 Revolut 的费用和汇率风险，这次用 Wise。&lt;/li&gt;&#xA;&lt;li&gt;IBKR 提现到 Wise，非常方便。&#xA;&lt;ul&gt;&#xA;&lt;li&gt;需要注意 IBKR 不同货币不通提现渠道每个自然月&lt;strong&gt;总共&lt;/strong&gt;只能免费提现一次。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Wise 显示汇出美元只需 $0.xx 手续费，非常好。&lt;/li&gt;&#xA;&lt;li&gt;Trading212 开户完成后去 Wise 那里汇款&#xA;&lt;ul&gt;&#xA;&lt;li&gt;到最后一步提示对面不是美国账号，得加 $12。而且可能要通过中间行，还得加不知道多少钱。&lt;/li&gt;&#xA;&lt;li&gt;Trading212 添加 Wise 美元账户为款项来源，提示不支持来自美国的款项。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;计划三在-robinhood-上购置资产&#34;&gt;计划三：在 Robinhood 上购置资产&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;不久前 Robinhood 登录英国。想必作为美国平台一定能方便地处理美元吧。&lt;/li&gt;&#xA;&lt;li&gt;开户 Robinhood&lt;/li&gt;&#xA;&lt;li&gt;登录 app 后发现 Robinhood UK 出入金必须英镑，在账户内强制自动转换为美元。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;计划四通过-hsbc-global-money-account-向-trading212-汇款&#34;&gt;计划四：通过 HSBC Global Money Account 向 Trading212 汇款&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;HSBC Global Money Account 据称能存放各种货币，并提供便宜的兑换和汇款服务。&lt;/li&gt;&#xA;&lt;li&gt;开户。&#xA;&lt;ul&gt;&#xA;&lt;li&gt;非常丝滑，app 里点两下当场出账号卡号，几天后卡片寄到家。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;仔细阅读条款发现只能接收英镑然后兑换其他货币。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;计划五wise---ibkr---hsbc-currency---hsbc-global-money---trading212&#34;&gt;计划五：Wise -&amp;gt; IBKR -&amp;gt; HSBC Currency -&amp;gt; HSBC Global Money -&amp;gt; Trading212&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;观测到 HSBC 还有个 Currency Account 可以收外币。&lt;/li&gt;&#xA;&lt;li&gt;开户 HSBC Currency Account，也非常丝滑。&lt;/li&gt;&#xA;&lt;li&gt;由于 Wise 向非美国账号汇款的费用问题，通过 IBKR 中转。&lt;/li&gt;&#xA;&lt;li&gt;IBKR 收到钱后发现不能立即转出，得过三个工作日。&lt;/li&gt;&#xA;&lt;li&gt;手续费：Wise 汇出 $0.39，其他环节都不要钱。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;总结&#34;&gt;总结&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Revolut 没有以前好了。&#xA;&lt;ul&gt;&#xA;&lt;li&gt;汇率现在也变成了玄学的 &amp;ldquo;Revolut rate&amp;rdquo;。&lt;/li&gt;&#xA;&lt;li&gt;Premium 没意思了。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Wise 好。&lt;/li&gt;&#xA;&lt;li&gt;HSBC 意料之外地提供了一些好东西。&lt;/li&gt;&#xA;&lt;li&gt;好多坑不开户不进 app 不把钱汇进去不操作到最后一步都发现不了，坏。&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>我对纯文本复式簿记的理解</title>
-      <link>https://seiarotg.me/post/plaintext-double-entry-bookkeeping/</link>
+      <link>http://localhost:1313/post/plaintext-double-entry-bookkeeping/</link>
       <pubDate>Thu, 29 Oct 2020 00:05:48 +0000</pubDate>
-      <guid>https://seiarotg.me/post/plaintext-double-entry-bookkeeping/</guid>
-      <description>背景 用 beancount 一年多了，总结一下我作为无财会基础人士对于纯文本记账、复式簿记和 beancount 的一些理解。本文尽可能地避免出现财会术语或某种记账工具特有的概念，</description>
+      <guid>http://localhost:1313/post/plaintext-double-entry-bookkeeping/</guid>
+      <description>&lt;h1 id=&#34;背景&#34;&gt;背景&lt;/h1&gt;&#xA;&lt;p&gt;用 &lt;a href=&#34;http://furius.ca/beancount/&#34;&gt;beancount&lt;/a&gt; 一年多了，总结一下我作为无财会基础人士对于纯文本记账、复式簿记和 beancount 的一些理解。本文尽可能地避免出现财会术语或某种记账工具特有的概念，适合对纯文本记账和复式簿记完全不了解或仅有初步了解的人士。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Royal Mail 的时效</title>
-      <link>https://seiarotg.me/post/royal-mail-slo/</link>
+      <link>http://localhost:1313/post/royal-mail-slo/</link>
       <pubDate>Mon, 28 Sep 2020 21:43:19 +0100</pubDate>
-      <guid>https://seiarotg.me/post/royal-mail-slo/</guid>
-      <description>最近一家有钱的大厂给我寄了一封 second class 并告诉我大约三四个工作日送达，然而实际花费八个工作日（含周六不含周日，含投递日不含寄出日）。这么慢是应该的</description>
+      <guid>http://localhost:1313/post/royal-mail-slo/</guid>
+      <description>&lt;p&gt;最近一家有钱的大厂给我寄了一封 second class 并告诉我大约三四个工作日送达，然而实际花费八个工作日（含周六不含周日，含投递日不含寄出日）。这么慢是应该的吗？慢了能赔钱吗？&lt;/p&gt;</description>
     </item>
     <item>
       <title>给暖气充压</title>
-      <link>https://seiarotg.me/post/top-up-heating-pressure/</link>
+      <link>http://localhost:1313/post/top-up-heating-pressure/</link>
       <pubDate>Fri, 21 Feb 2020 22:55:30 +0000</pubDate>
-      <guid>https://seiarotg.me/post/top-up-heating-pressure/</guid>
-      <description>前情提要 搬进现在这个屋子的时候暖气是坏的。傻逼中介在收到报告后用了近两个月时间才派人上门维修。首次维修解决了压力不足的问题，但是效果依然不尽</description>
+      <guid>http://localhost:1313/post/top-up-heating-pressure/</guid>
+      <description>&lt;h1 id=&#34;前情提要&#34;&gt;前情提要&lt;/h1&gt;&#xA;&lt;p&gt;搬进现在这个屋子的时候暖气是坏的。傻逼中介在收到报告后用了近两个月时间才派人上门维修。首次维修解决了压力不足的问题，但是效果依然不尽人意。第二次维修时放掉了一些压，但没有得出明确结论，表示掉点压不要紧，下次来的时候会把压放光然后再充上。第三次来不知道干了什么修好了但是压力停留在了临界值附近。&lt;/p&gt;</description>
     </item>
     <item>
       <title>十一月总结</title>
-      <link>https://seiarotg.me/post/201911-summary/</link>
+      <link>http://localhost:1313/post/201911-summary/</link>
       <pubDate>Sun, 01 Dec 2019 20:04:40 +0000</pubDate>
-      <guid>https://seiarotg.me/post/201911-summary/</guid>
-      <description>新知识 有一种叫 Premium Bonds 的投资产品 养老金账户里的钱可以进行一些投资 部分养老金可以不等老了直接转到 ISA 中并提现 不同银行的 PINsentry 读卡器可以通用 MSE 搞了个 Credit Club 可</description>
+      <guid>http://localhost:1313/post/201911-summary/</guid>
+      <description>&lt;h1 id=&#34;新知识&#34;&gt;新知识&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;有一种叫 Premium Bonds 的投资产品&lt;/li&gt;&#xA;&lt;li&gt;养老金账户里的钱可以进行一些投资&lt;/li&gt;&#xA;&lt;li&gt;部分养老金可以不等老了直接转到 ISA 中并提现&lt;/li&gt;&#xA;&lt;li&gt;不同银行的 PINsentry 读卡器可以通用&lt;/li&gt;&#xA;&lt;li&gt;MSE 搞了个 &lt;a href=&#34;https://www.moneysavingexpert.com/creditclub/&#34;&gt;Credit Club&lt;/a&gt; 可以免费查 Experian 报告&lt;/li&gt;&#xA;&lt;li&gt;在英国，外带的冷食可以不收 VAT&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;好事&#34;&gt;好事&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;开通了 Help to Buy ISA&lt;/li&gt;&#xA;&lt;li&gt;收到了信用卡&lt;/li&gt;&#xA;&lt;li&gt;获得了工牌&lt;/li&gt;&#xA;&lt;li&gt;修好了暖气&lt;/li&gt;&#xA;&lt;li&gt;申领了各家 TOC 所有不需要提交照片的 Smartcard&lt;/li&gt;&#xA;&lt;li&gt;掏出了头发坨坨，疏通了管道&lt;/li&gt;&#xA;&lt;li&gt;种上了菜菜&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;坏事&#34;&gt;坏事&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Spark Energy&#xA;&lt;ul&gt;&#xA;&lt;li&gt;收到了账单，总额 £38.70&lt;/li&gt;&#xA;&lt;li&gt;£38.70 的计算方式是：开户余额 £0.00，用电 £38.71，所以需要缴纳 £38.70&lt;/li&gt;&#xA;&lt;li&gt;注册报错，提示姓名不对，可是没有地方可以输入姓名&lt;/li&gt;&#xA;&lt;li&gt;第一通电话：reference number 不对&lt;/li&gt;&#xA;&lt;li&gt;第二通电话：选择付款方式后系统崩溃自动挂机&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Simply Cook 第一周不能在线取消订阅&lt;/li&gt;&#xA;&lt;li&gt;NatWest&#xA;&lt;ul&gt;&#xA;&lt;li&gt;无法注册 MyRewards，网点表示必须打电话解决，打电话两周后才修好&lt;/li&gt;&#xA;&lt;li&gt;不能在第一次扣款前看到 Direct Debit&lt;/li&gt;&#xA;&lt;li&gt;不能在出账单之前看到自己的账单日和还款日&lt;/li&gt;&#xA;&lt;li&gt;Personal &amp;ldquo;Current Account&amp;rdquo; 和 Business &amp;ldquo;Current account&amp;rdquo; 的 Account 的 A 大小写居然不一样&lt;/li&gt;&#xA;&lt;li&gt;刚开完户就宣布&lt;a href=&#34;https://www.moneysavingexpert.com/news/2019/11/natwest-and-rbs-rewards-cashback-to-change-from-february---what-/&#34;&gt;变更返现规则&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Stratford 与 King&#39;s Cross St. Pancras 间的通勤交通</title>
-      <link>https://seiarotg.me/post/commute-sra-kgx/</link>
+      <link>http://localhost:1313/post/commute-sra-kgx/</link>
       <pubDate>Sat, 16 Nov 2019 21:53:16 +0000</pubDate>
-      <guid>https://seiarotg.me/post/commute-sra-kgx/</guid>
-      <description>背景 几天前看到了 Geoff Marshall 的视频 Which Is Faster? High Speed 1 vs The Tube，比较了多条 Stratford 与 King&amp;rsquo;s Cross St. Pancras 之间的交通线路。但是如果您在这两地之间通勤，由于视频中的比赛在非高</description>
+      <guid>http://localhost:1313/post/commute-sra-kgx/</guid>
+      <description>&lt;h1 id=&#34;背景&#34;&gt;背景&lt;/h1&gt;&#xA;&lt;p&gt;几天前看到了 Geoff Marshall 的视频 &lt;a href=&#34;https://www.youtube.com/watch?v=TKWYd9J5VfY&#34;&gt;&lt;em&gt;Which Is Faster? High Speed 1 vs The Tube&lt;/em&gt;&lt;/a&gt;，比较了多条 Stratford 与 King&amp;rsquo;s Cross St. Pancras 之间的交通线路。但是如果您在这两地之间通勤，由于视频中的比赛在非高峰时段进行，较为随意地选择了出发地和目的地，且只进行了一次，参考意义可能有限。我正巧也正在研究这两地之间的通勤方案，现将成果整理在这里。&lt;/p&gt;</description>
     </item>
     <item>
       <title>十月总结</title>
-      <link>https://seiarotg.me/post/201910-summary/</link>
+      <link>http://localhost:1313/post/201910-summary/</link>
       <pubDate>Tue, 05 Nov 2019 23:25:51 +0000</pubDate>
-      <guid>https://seiarotg.me/post/201910-summary/</guid>
-      <description>新知识 从英国前往爱尔兰有边检，从爱尔兰前往英国没有 Poundland 在爱尔兰叫 Dealz PRIMARK 在爱尔兰叫 PENNEYS RBS 在爱尔兰叫 Ulster Bank 伦敦有绿色的公交车 英国火车票能玩弃程 Dublin 很贵 Metropolitan 的</description>
+      <guid>http://localhost:1313/post/201910-summary/</guid>
+      <description>&lt;h1 id=&#34;新知识&#34;&gt;新知识&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;从英国前往爱尔兰有边检，从爱尔兰前往英国没有&lt;/li&gt;&#xA;&lt;li&gt;Poundland 在爱尔兰叫 Dealz&lt;/li&gt;&#xA;&lt;li&gt;PRIMARK 在爱尔兰叫 PENNEYS&lt;/li&gt;&#xA;&lt;li&gt;RBS 在爱尔兰叫 Ulster Bank&lt;/li&gt;&#xA;&lt;li&gt;伦敦有绿色的公交车&lt;/li&gt;&#xA;&lt;li&gt;英国火车票能玩弃程&lt;/li&gt;&#xA;&lt;li&gt;Dublin 很贵&lt;/li&gt;&#xA;&lt;li&gt;Metropolitan 的计划密度是 12 tph，等于 Hammersmith &amp;amp; City 和 Circle 加起来&lt;/li&gt;&#xA;&lt;li&gt;还有终点为 Moorgate 的地铁&lt;/li&gt;&#xA;&lt;li&gt;ISA 有自己的 sort code 和 account number&lt;/li&gt;&#xA;&lt;li&gt;Starling Bank 的 app 会显示即将入账的 Direct Deposit，可以提前看到工资数额&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;好事&#34;&gt;好事&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;公费旅游&lt;/li&gt;&#xA;&lt;li&gt;发工资&lt;/li&gt;&#xA;&lt;li&gt;公司把因为 match 养老金省下来的 employer&amp;rsquo;s NI 回馈给员工&lt;/li&gt;&#xA;&lt;li&gt;房子门卫支持代收快递&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;坏事&#34;&gt;坏事&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;房子&#xA;&lt;ul&gt;&#xA;&lt;li&gt;设施&#xA;&lt;ul&gt;&#xA;&lt;li&gt;没有微波炉&lt;/li&gt;&#xA;&lt;li&gt;没有热水壶&lt;/li&gt;&#xA;&lt;li&gt;抽屉柜不好使&lt;/li&gt;&#xA;&lt;li&gt;几个门关不上&lt;/li&gt;&#xA;&lt;li&gt;烘干机不烘干&lt;/li&gt;&#xA;&lt;li&gt;水槽浴缸堵&lt;/li&gt;&#xA;&lt;li&gt;洗澡的水汽可以触发烟雾报警器&lt;/li&gt;&#xA;&lt;li&gt;洗衣机被封住无法清洗&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;房屋中介&#xA;&lt;ul&gt;&#xA;&lt;li&gt;报修一个月了没来修&lt;/li&gt;&#xA;&lt;li&gt;声明紧急情况了也没有反应&lt;/li&gt;&#xA;&lt;li&gt;紧急电话没人接&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;水&#xA;&lt;ul&gt;&#xA;&lt;li&gt;供水商听说我搬了家以后在他们的系统里把一个同名的人搬到了我的地址并把她的账单和扣款账号转到了我头上&lt;/li&gt;&#xA;&lt;li&gt;给供水商打电话说了一大通对面说着说着就挂了，再打过去对面接起来说不好意思系统开始维护了&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;电&#xA;&lt;ul&gt;&#xA;&lt;li&gt;中介外包办理水电网的服务商效率低下贻误时机导致首月默认了较为昂贵的供电商&lt;/li&gt;&#xA;&lt;li&gt;一怒之下自己办理了迁移然后发现使用邀请链接可获取 £50&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;网&#xA;&lt;ul&gt;&#xA;&lt;li&gt;几乎所有宽带提供商的网站都拒绝为我家提供服务&lt;/li&gt;&#xA;&lt;li&gt;走访几乎所有宽带提供商后得知只有 BT 一家可选&lt;/li&gt;&#xA;&lt;li&gt;线下办理完 BT 后他们的网站修好了，网上办理有返现&lt;/li&gt;&#xA;&lt;li&gt;办理了不满意可以退款的无限流量套餐过渡，退完以后收到邮件称欠费&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;暖&#xA;&lt;ul&gt;&#xA;&lt;li&gt;房屋中介不知道房子有独立供暖商&lt;/li&gt;&#xA;&lt;li&gt;一周后用完了紧急赊账额度热水遭到掐断&lt;/li&gt;&#xA;&lt;li&gt;房子供暖商联系不上充不上钱&lt;/li&gt;&#xA;&lt;li&gt;联系上了获得了前房客的账号充不上钱&lt;/li&gt;&#xA;&lt;li&gt;好不容易获得新账号后被告知更换账号需要收费 £30&lt;/li&gt;&#xA;&lt;li&gt;充上钱了发现之前闪着坏掉灯灯的神秘设备负责供暖&lt;/li&gt;&#xA;&lt;li&gt;站立费一个月好多 £，虽然暖气用不上还得看着他扣&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;公司&#xA;&lt;ul&gt;&#xA;&lt;li&gt;第一天电脑打不开&lt;/li&gt;&#xA;&lt;li&gt;第一天不知道是哪个组的&lt;/li&gt;&#xA;&lt;li&gt;第一天桌上没有设备等我&lt;/li&gt;&#xA;&lt;li&gt;第一周赶上座位号重排，设备被送到了别人桌上&lt;/li&gt;&#xA;&lt;li&gt;入职培训安排在了第四周&lt;/li&gt;&#xA;&lt;li&gt;部分日历项目莫名不显示&lt;/li&gt;&#xA;&lt;li&gt;多套账号系统同步缓慢导致部分服务无法使用&lt;/li&gt;&#xA;&lt;li&gt;养老金开户邮箱在垃圾箱里&lt;/li&gt;&#xA;&lt;li&gt;各种没有权限&lt;/li&gt;&#xA;&lt;li&gt;某个权限问题持续到了第三周&lt;/li&gt;&#xA;&lt;li&gt;被告知正式工牌需要一两个月才能拿到&lt;/li&gt;&#xA;&lt;li&gt;临时工牌刷不进大门&lt;/li&gt;&#xA;&lt;li&gt;信用卡&#xA;&lt;ul&gt;&#xA;&lt;li&gt;在线激活信用卡密码不对卡号姓名地址生日也不对，尽管密码在管理器里，卡号姓名地址在寄过来的信里&lt;/li&gt;&#xA;&lt;li&gt;电话打过去：请输入卡号；[输入]；您的卡片现已激活&lt;/li&gt;&#xA;&lt;li&gt;电话打过去：XX轻按1，YY轻按2，其他轻按3；[3]；AA请按1；BB请按2；CC请按3。其中并没有人工服务的选项&lt;/li&gt;&#xA;&lt;li&gt;通过静默等待激活了隐藏菜单，询问了姓名生日住址单位地址工号等一大帮子信息后电话断了&lt;/li&gt;&#xA;&lt;li&gt;又重新打过去询问了一大堆问题终于重设了密码&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;旅游&#xA;&lt;ul&gt;&#xA;&lt;li&gt;被酒店安排了走廊尽头从前台走过去需要两分钟的房间&lt;/li&gt;&#xA;&lt;li&gt;房间的暖气是坏的&lt;/li&gt;&#xA;&lt;li&gt;送来的便携小暖气没有卵用&lt;/li&gt;&#xA;&lt;li&gt;房卡三天两头消磁需要走回前台处理（配合第一条有加成）&lt;/li&gt;&#xA;&lt;li&gt;某次房卡充磁充错了房间号（配合第一条有加成）&lt;/li&gt;&#xA;&lt;li&gt;更换了房间后以为会近，发现是原来的楼上，而且暖气依然是坏的&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>英国手机运营商选择</title>
-      <link>https://seiarotg.me/post/uk-mobile-service-providers/</link>
+      <link>http://localhost:1313/post/uk-mobile-service-providers/</link>
       <pubDate>Wed, 21 Aug 2019 14:51:07 +0800</pubDate>
-      <guid>https://seiarotg.me/post/uk-mobile-service-providers/</guid>
-      <description>付费模式 合约机 缴纳几十 £ 领取一部手机，然后每个月缴纳几十 £ 话费，直至一两年的合同结束。看着像贷款买手机，且这个价钱并不那么划算，尤其是如果您</description>
+      <guid>http://localhost:1313/post/uk-mobile-service-providers/</guid>
+      <description>&lt;h1 id=&#34;付费模式&#34;&gt;付费模式&lt;/h1&gt;&#xA;&lt;h2 id=&#34;合约机&#34;&gt;合约机&lt;/h2&gt;&#xA;&lt;p&gt;缴纳几十 £ 领取一部手机，然后每个月缴纳几十 £ 话费，直至一两年的合同结束。看着像贷款买手机，且这个价钱并不那么划算，尤其是如果您能从国内带手机过去的话。&lt;/p&gt;</description>
     </item>
     <item>
       <title>记一次从 Stratford (London) 前往宁波的旅程</title>
-      <link>https://seiarotg.me/post/a-rush-journey-from-stratford-to-ningbo/</link>
+      <link>http://localhost:1313/post/a-rush-journey-from-stratford-to-ningbo/</link>
       <pubDate>Tue, 30 Jul 2019 17:25:14 +0800</pubDate>
-      <guid>https://seiarotg.me/post/a-rush-journey-from-stratford-to-ningbo/</guid>
-      <description>购买机票 根据英国 Immigration Rules 中的 34K，在申请签证过程中离境则申请自动作废。由于出签时间又依赖诸多不确定因素，此次出行无法像往常一样，提前数月甚至大</description>
+      <guid>http://localhost:1313/post/a-rush-journey-from-stratford-to-ningbo/</guid>
+      <description>&lt;h1 id=&#34;购买机票&#34;&gt;购买机票&lt;/h1&gt;&#xA;&lt;p&gt;根据英国 &lt;a href=&#34;https://www.gov.uk/guidance/immigration-rules&#34;&gt;Immigration Rules&lt;/a&gt; 中的 34K，在申请签证过程中离境则申请自动作废。由于出签时间又依赖诸多不确定因素，此次出行无法像往常一样，提前数月甚至大半年订票，从而轻松获得低廉的票价。相反，由于去程（7月）属暑期旅游旺季，回程（9月）属空中校车季，预期票价将非常可观。&lt;/p&gt;</description>
     </item>
     <item>
       <title>UK Tier 2 Visa Application</title>
-      <link>https://seiarotg.me/post/uk-tier2-visa-application/</link>
+      <link>http://localhost:1313/post/uk-tier2-visa-application/</link>
       <pubDate>Sun, 28 Jul 2019 11:54:12 +0800</pubDate>
-      <guid>https://seiarotg.me/post/uk-tier2-visa-application/</guid>
-      <description>最近成功获得了英国 Tier 2 签证，特将经历记录如下。 这不是一篇教程，比如我不会告诉你需要提交什么材料。 流程 我的申请路线是 Switch from Tier 4, in-countr</description>
+      <guid>http://localhost:1313/post/uk-tier2-visa-application/</guid>
+      <description>&lt;p&gt;最近成功获得了英国 Tier 2 签证，特将经历记录如下。&lt;/p&gt;&#xA;&lt;p&gt;这&lt;strong&gt;不是&lt;/strong&gt;一篇教程，比如我不会告诉你需要提交什么材料。&lt;/p&gt;&#xA;&lt;h1 id=&#34;流程&#34;&gt;流程&lt;/h1&gt;&#xA;&lt;p&gt;我的申请路线是 Switch from Tier 4, in-country。这个路线的好处是：&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

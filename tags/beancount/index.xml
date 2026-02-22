@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>beancount on SEIAROTg&#39;s blog</title>
-    <link>https://seiarotg.me/tags/beancount/</link>
-    <description>Recent content in beancount on SEIAROTg&#39;s blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Beancount on SEIAROTg&#39;s blog</title>
+    <link>http://localhost:1313/tags/beancount/</link>
+    <description>Recent content in Beancount on SEIAROTg&#39;s blog</description>
+    <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Mon, 02 Nov 2020 22:14:50 +0000</lastBuildDate>
-    <atom:link href="https://seiarotg.me/tags/beancount/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/beancount/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>我对纯文本复式簿记的理解</title>
-      <link>https://seiarotg.me/post/plaintext-double-entry-bookkeeping/</link>
+      <link>http://localhost:1313/post/plaintext-double-entry-bookkeeping/</link>
       <pubDate>Thu, 29 Oct 2020 00:05:48 +0000</pubDate>
-      <guid>https://seiarotg.me/post/plaintext-double-entry-bookkeeping/</guid>
-      <description>背景 用 beancount 一年多了，总结一下我作为无财会基础人士对于纯文本记账、复式簿记和 beancount 的一些理解。本文尽可能地避免出现财会术语或某种记账工具特有的概念，</description>
+      <guid>http://localhost:1313/post/plaintext-double-entry-bookkeeping/</guid>
+      <description>&lt;h1 id=&#34;背景&#34;&gt;背景&lt;/h1&gt;&#xA;&lt;p&gt;用 &lt;a href=&#34;http://furius.ca/beancount/&#34;&gt;beancount&lt;/a&gt; 一年多了，总结一下我作为无财会基础人士对于纯文本记账、复式簿记和 beancount 的一些理解。本文尽可能地避免出现财会术语或某种记账工具特有的概念，适合对纯文本记账和复式簿记完全不了解或仅有初步了解的人士。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

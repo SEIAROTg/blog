@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Archive on SEIAROTg&#39;s blog</title>
+    <link>http://localhost:1313/tags/archive/</link>
+    <description>Recent content in Archive on SEIAROTg&#39;s blog</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 22 Feb 2026 18:49:30 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/archive/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Home Scanning in 2026</title>
+      <link>http://localhost:1313/post/home-scanning-in-2026/</link>
+      <pubDate>Mon, 12 Jan 2026 22:26:55 +0000</pubDate>
+      <guid>http://localhost:1313/post/home-scanning-in-2026/</guid>
+      <description>&lt;h1 id=&#34;tldr&#34;&gt;tl;dr&lt;/h1&gt;&#xA;&lt;p&gt;I found a wireless document scanner that natively speaks HTTP (Ricoh fi-7300NX), and hooked it to my Linux server without any driver, proprietary software, or quality limitation.&lt;/p&gt;&#xA;&lt;h1 id=&#34;background&#34;&gt;Background&lt;/h1&gt;&#xA;&lt;p&gt;7 years ago, I got myself a Brother DS-720 portable scanner have been using it day-to-day for receipt and occasionally for document as it sits right on my desk. Meanwhile, I have one or two other scanners available through my printer. They work, but not perfectly.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

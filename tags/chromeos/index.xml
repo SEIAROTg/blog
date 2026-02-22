@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>chromeos on SEIAROTg&#39;s blog</title>
-    <link>https://seiarotg.me/tags/chromeos/</link>
-    <description>Recent content in chromeos on SEIAROTg&#39;s blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Chromeos on SEIAROTg&#39;s blog</title>
+    <link>http://localhost:1313/tags/chromeos/</link>
+    <description>Recent content in Chromeos on SEIAROTg&#39;s blog</description>
+    <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Mon, 06 Apr 2020 00:49:41 +0100</lastBuildDate>
-    <atom:link href="https://seiarotg.me/tags/chromeos/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/chromeos/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>给 Surface 3 安装 ChromeOS</title>
-      <link>https://seiarotg.me/post/chromeos-on-surface3/</link>
+      <link>http://localhost:1313/post/chromeos-on-surface3/</link>
       <pubDate>Mon, 06 Apr 2020 00:08:14 +0100</pubDate>
-      <guid>https://seiarotg.me/post/chromeos-on-surface3/</guid>
-      <description>今天我翻出了藏在抽屉里的一台 2015 年购入的 Surface 3（没有 Pro）打算用来看片。上面的 Windows 10 实在是卡，于是尝试安装 ChromeOS。 背景 由于桌面空间限制</description>
+      <guid>http://localhost:1313/post/chromeos-on-surface3/</guid>
+      <description>&lt;p&gt;今天我翻出了藏在抽屉里的一台 2015 年购入的 Surface 3（没有 Pro）打算用来看片。上面的 Windows 10 实在是卡，于是尝试安装 ChromeOS。&lt;/p&gt;&#xA;&lt;h1 id=&#34;背景&#34;&gt;背景&lt;/h1&gt;&#xA;&lt;p&gt;由于桌面空间限制，我的两台显示器必须竖起来一台。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>misc on SEIAROTg&#39;s blog</title>
-    <link>https://seiarotg.me/tags/misc/</link>
-    <description>Recent content in misc on SEIAROTg&#39;s blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Misc on SEIAROTg&#39;s blog</title>
+    <link>http://localhost:1313/tags/misc/</link>
+    <description>Recent content in Misc on SEIAROTg&#39;s blog</description>
+    <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Tue, 27 Aug 2019 19:29:43 +0800</lastBuildDate>
-    <atom:link href="https://seiarotg.me/tags/misc/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/misc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>今日坑 20190824</title>
-      <link>https://seiarotg.me/post/misc-20190824/</link>
+      <link>http://localhost:1313/post/misc-20190824/</link>
       <pubDate>Sat, 24 Aug 2019 22:18:10 +0800</pubDate>
-      <guid>https://seiarotg.me/post/misc-20190824/</guid>
-      <description>今天遇到了几个小坑，特此记录。 npm 装啥都不行 **环境：**npm@6.9.0、node@12.6.0 (homebrew) **问题：**无论用 npm 安装什么，是否忽略</description>
+      <guid>http://localhost:1313/post/misc-20190824/</guid>
+      <description>&lt;p&gt;今天遇到了几个小坑，特此记录。&lt;/p&gt;&#xA;&lt;h1 id=&#34;npm-装啥都不行&#34;&gt;npm 装啥都不行&lt;/h1&gt;&#xA;&lt;p&gt;**环境：**&lt;a href=&#34;mailto:npm@6.9.0&#34;&gt;npm@6.9.0&lt;/a&gt;、node@12.6.0 (homebrew)&lt;/p&gt;&#xA;&lt;p&gt;**问题：**无论用 npm 安装什么，是否忽略 &lt;code&gt;package-lock&lt;/code&gt;，是否 &lt;code&gt;-g&lt;/code&gt;，安装 &lt;code&gt;package.json&lt;/code&gt; 还是指定包，都报错如下：&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

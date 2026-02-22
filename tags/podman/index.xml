@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>podman on SEIAROTg&#39;s blog</title>
-    <link>https://seiarotg.me/tags/podman/</link>
-    <description>Recent content in podman on SEIAROTg&#39;s blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Podman on SEIAROTg&#39;s blog</title>
+    <link>http://localhost:1313/tags/podman/</link>
+    <description>Recent content in Podman on SEIAROTg&#39;s blog</description>
+    <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sun, 31 Mar 2024 17:28:25 +0100</lastBuildDate>
-    <atom:link href="https://seiarotg.me/tags/podman/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/podman/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tidy Up Homelab Containers</title>
-      <link>https://seiarotg.me/post/tidy-up-homelab-containers/</link>
+      <link>http://localhost:1313/post/tidy-up-homelab-containers/</link>
       <pubDate>Tue, 22 Aug 2023 22:34:58 +0100</pubDate>
-      <guid>https://seiarotg.me/post/tidy-up-homelab-containers/</guid>
-      <description>Background There are bunch of services lying around on my homelab. Over time, the accumulated complexity, ops load, reliability risk, and security risks started to harm my mental health. I figured it&amp;rsquo;s probably the time to properly tidy up my homelab and have it actually managed. I figured my ideal setup shall be secure, reasonably reliable, at a low ops cost. More specifically, I would like to:&#xA;Have some services running Have some declarative way to manage them Have some isolation on what each services could access Have automated updates Very simple and innocent requirements, right?</description>
+      <guid>http://localhost:1313/post/tidy-up-homelab-containers/</guid>
+      <description>&lt;h1 id=&#34;background&#34;&gt;Background&lt;/h1&gt;&#xA;&lt;p&gt;There are bunch of services lying around on my homelab. Over time, the accumulated complexity, ops load, reliability risk, and security risks started to harm my mental health. I figured it&amp;rsquo;s probably the time to properly tidy up my homelab and have it actually managed.&#xA;I figured my ideal setup shall be secure, reasonably reliable, at a low ops cost. More specifically, I would like to:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Have some services running&lt;/li&gt;&#xA;&lt;li&gt;Have some declarative way to manage them&lt;/li&gt;&#xA;&lt;li&gt;Have some isolation on what each services could access&lt;/li&gt;&#xA;&lt;li&gt;Have automated updates&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Very simple and innocent requirements, right? Surely the solution ought to be simple too, doesn&amp;rsquo;t it?&lt;/p&gt;</description>
     </item>
     <item>
       <title>podman-compose 折腾记</title>
-      <link>https://seiarotg.me/post/podman-compose-pits/</link>
+      <link>http://localhost:1313/post/podman-compose-pits/</link>
       <pubDate>Tue, 28 Dec 2021 21:27:06 +0000</pubDate>
-      <guid>https://seiarotg.me/post/podman-compose-pits/</guid>
-      <description>背景 我有一个非常简单的需求：在一个容器里起一个 wireguard client，并将其直接接入上游网络（不要 NAT）。 不想看过程可以直接看总结。 折腾 在容器里起</description>
+      <guid>http://localhost:1313/post/podman-compose-pits/</guid>
+      <description>&lt;h1 id=&#34;背景&#34;&gt;背景&lt;/h1&gt;&#xA;&lt;p&gt;我有一个非常简单的需求：在一个容器里起一个 wireguard client，并将其直接接入上游网络（不要 NAT）。&lt;/p&gt;&#xA;&lt;p&gt;不想看过程可以直接看&lt;a href=&#34;#%E6%80%BB%E7%BB%93&#34;&gt;总结&lt;/a&gt;。&lt;/p&gt;&#xA;&lt;h1 id=&#34;折腾&#34;&gt;折腾&lt;/h1&gt;&#xA;&lt;h2 id=&#34;在容器里起-wireguard&#34;&gt;在容器里起 wireguard&lt;/h2&gt;&#xA;&lt;p&gt;首先搜索 prior art，发现 &lt;a href=&#34;https://hub.docker.com/r/linuxserver/wireguard&#34;&gt;https://hub.docker.com/r/linuxserver/wireguard&lt;/a&gt;。试了一下发现不好：&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

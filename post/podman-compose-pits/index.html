@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>podman-compose 折腾记 - SEIAROTg&#39;s blog</title>
@@ -16,17 +16,20 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="SEIAROTg" /><meta name="description" content="背景 我有一个非常简单的需求：在一个容器里起一个 wireguard client，并将其直接接入上游网络（不要 NAT）。 不想看过程可以直接看总结。 折腾 在容器里起" />
+<meta name="author" content="" /><meta name="description" content="背景 我有一个非常简单的需求：在一个容器里起一个 wireguard client，并将其直接接入上游网络（不要 NAT）。
+不想看过程可以直接看总结。
+折腾 在容器里起 wireguard 首先搜索 prior art，发现 https://hub.docker.com/r/linuxserver/wireguard。试了一下发现不好：
+" />
 
 
 
 
 
 
-<meta name="generator" content="Hugo 0.122.0 with theme even" />
+<meta name="generator" content="Hugo 0.152.2 with theme even" />
 
 
-<link rel="canonical" href="https://seiarotg.me/post/podman-compose-pits/" />
+<link rel="canonical" href="http://localhost:1313/post/podman-compose-pits/" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -35,23 +38,38 @@
 
 
 
-<link href="/sass/main.min.7d4e25b944cdea452d847bbea22aa779718d0fa25c09c91b22601aa109bfab1b.css" rel="stylesheet">
+<link href="/sass/main.min.8348c59e0eacfbddc216b39cd5dda6d02bf52dc1eb2baf4f1c38f3a57f730802.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
-<meta property="og:title" content="podman-compose 折腾记" />
-<meta property="og:description" content="背景 我有一个非常简单的需求：在一个容器里起一个 wireguard client，并将其直接接入上游网络（不要 NAT）。 不想看过程可以直接看总结。 折腾 在容器里起" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://seiarotg.me/post/podman-compose-pits/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2021-12-28T21:27:06+00:00" />
-<meta property="article:modified_time" content="2021-12-29T03:18:37+00:00" />
+<meta property="og:url" content="http://localhost:1313/post/podman-compose-pits/">
+  <meta property="og:site_name" content="SEIAROTg&#39;s blog">
+  <meta property="og:title" content="podman-compose 折腾记">
+  <meta property="og:description" content="背景 我有一个非常简单的需求：在一个容器里起一个 wireguard client，并将其直接接入上游网络（不要 NAT）。
+不想看过程可以直接看总结。
+折腾 在容器里起 wireguard 首先搜索 prior art，发现 https://hub.docker.com/r/linuxserver/wireguard。试了一下发现不好：">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2021-12-28T21:27:06+00:00">
+    <meta property="article:modified_time" content="2021-12-29T03:18:37+00:00">
+    <meta property="article:tag" content="Docker">
+    <meta property="article:tag" content="Podman">
+    <meta property="article:tag" content="Wireguard">
 
-<meta itemprop="name" content="podman-compose 折腾记">
-<meta itemprop="description" content="背景 我有一个非常简单的需求：在一个容器里起一个 wireguard client，并将其直接接入上游网络（不要 NAT）。 不想看过程可以直接看总结。 折腾 在容器里起"><meta itemprop="datePublished" content="2021-12-28T21:27:06+00:00" />
-<meta itemprop="dateModified" content="2021-12-29T03:18:37+00:00" />
-<meta itemprop="wordCount" content="1838">
-<meta itemprop="keywords" content="docker,podman,wireguard," /><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="podman-compose 折腾记"/>
-<meta name="twitter:description" content="背景 我有一个非常简单的需求：在一个容器里起一个 wireguard client，并将其直接接入上游网络（不要 NAT）。 不想看过程可以直接看总结。 折腾 在容器里起"/>
+  <meta itemprop="name" content="podman-compose 折腾记">
+  <meta itemprop="description" content="背景 我有一个非常简单的需求：在一个容器里起一个 wireguard client，并将其直接接入上游网络（不要 NAT）。
+不想看过程可以直接看总结。
+折腾 在容器里起 wireguard 首先搜索 prior art，发现 https://hub.docker.com/r/linuxserver/wireguard。试了一下发现不好：">
+  <meta itemprop="datePublished" content="2021-12-28T21:27:06+00:00">
+  <meta itemprop="dateModified" content="2021-12-29T03:18:37+00:00">
+  <meta itemprop="wordCount" content="1838">
+  <meta itemprop="keywords" content="Docker,Podman,Wireguard">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="podman-compose 折腾记">
+  <meta name="twitter:description" content="背景 我有一个非常简单的需求：在一个容器里起一个 wireguard client，并将其直接接入上游网络（不要 NAT）。
+不想看过程可以直接看总结。
+折腾 在容器里起 wireguard 首先搜索 prior art，发现 https://hub.docker.com/r/linuxserver/wireguard。试了一下发现不好：">
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -177,7 +195,7 @@
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-dockerfile" data-lang="dockerfile"><span class="line"><span class="cl"><span class="k">FROM</span><span class="s"> alpine:3</span><span class="err">
+<pre tabindex="0" class="chroma"><code class="language-dockerfile" data-lang="dockerfile"><span class="line"><span class="cl"><span class="k">FROM</span><span class="w"> </span><span class="s">alpine:3</span><span class="err">
 </span></span></span><span class="line"><span class="cl"><span class="err">
 </span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="k">RUN</span> apk update<span class="err">
 </span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="k">RUN</span> apk add --no-cache wireguard-tools<span class="err">
@@ -306,6 +324,22 @@
       </div>
     </main>
 
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-5VHL99KSWY"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-5VHL99KSWY');
+        }
+      </script>
+
     <footer id="footer" class="footer">
       <div class="social-links">
       <a href="https://github.com/SEIAROTg" class="iconfont icon-github" title="github"></a>
@@ -327,7 +361,7 @@
   <span class="copyright-year">
     &copy; 
     2019 - 
-    2025<span class="heart"><i class="iconfont icon-heart"></i></span><span>SEIAROTg</span>
+    2026<span class="heart"><i class="iconfont icon-heart"></i></span><span></span>
   </span>
 </div>
 
@@ -346,17 +380,6 @@
 
 <script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
 
-
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-144939789-1', 'auto');
-	ga('set', 'anonymizeIp', true);
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
 
 
 

@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>accounting on SEIAROTg&#39;s blog</title>
-    <link>https://seiarotg.me/tags/accounting/</link>
-    <description>Recent content in accounting on SEIAROTg&#39;s blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Accounting on SEIAROTg&#39;s blog</title>
+    <link>http://localhost:1313/tags/accounting/</link>
+    <description>Recent content in Accounting on SEIAROTg&#39;s blog</description>
+    <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Thu, 15 Jun 2023 00:37:18 +0100</lastBuildDate>
-    <atom:link href="https://seiarotg.me/tags/accounting/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/accounting/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>我对纯文本复式簿记的理解</title>
-      <link>https://seiarotg.me/post/plaintext-double-entry-bookkeeping/</link>
+      <link>http://localhost:1313/post/plaintext-double-entry-bookkeeping/</link>
       <pubDate>Thu, 29 Oct 2020 00:05:48 +0000</pubDate>
-      <guid>https://seiarotg.me/post/plaintext-double-entry-bookkeeping/</guid>
-      <description>背景 用 beancount 一年多了，总结一下我作为无财会基础人士对于纯文本记账、复式簿记和 beancount 的一些理解。本文尽可能地避免出现财会术语或某种记账工具特有的概念，</description>
+      <guid>http://localhost:1313/post/plaintext-double-entry-bookkeeping/</guid>
+      <description>&lt;h1 id=&#34;背景&#34;&gt;背景&lt;/h1&gt;&#xA;&lt;p&gt;用 &lt;a href=&#34;http://furius.ca/beancount/&#34;&gt;beancount&lt;/a&gt; 一年多了，总结一下我作为无财会基础人士对于纯文本记账、复式簿记和 beancount 的一些理解。本文尽可能地避免出现财会术语或某种记账工具特有的概念，适合对纯文本记账和复式簿记完全不了解或仅有初步了解的人士。&lt;/p&gt;</description>
     </item>
     <item>
       <title>准确计算英国 PAYE 每月扣税数额</title>
-      <link>https://seiarotg.me/post/uk-paye-calculation/</link>
+      <link>http://localhost:1313/post/uk-paye-calculation/</link>
       <pubDate>Wed, 01 Jul 2020 00:25:39 +0100</pubDate>
-      <guid>https://seiarotg.me/post/uk-paye-calculation/</guid>
-      <description>背景 您可能会发现虽然每月的税前收入完全一致，扣除的 Income Tax 却有一些偏差。您可能遇到更换工作、工资调整、奖金发放、股票交付等，每月实际发放工资数额</description>
+      <guid>http://localhost:1313/post/uk-paye-calculation/</guid>
+      <description>&lt;h1 id=&#34;背景&#34;&gt;背景&lt;/h1&gt;&#xA;&lt;p&gt;您可能会发现虽然每月的税前收入完全一致，扣除的 Income Tax 却有一些偏差。您可能遇到更换工作、工资调整、奖金发放、股票交付等，每月实际发放工资数额变化多端，不明如何验证工资条上的扣除，不知下月税后收入几何。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

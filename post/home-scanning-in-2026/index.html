@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Home Scanning in 2026 - SEIAROTg&#39;s blog</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="" /><meta name="description" content="tl;dr I found a wireless document scanner that natively speaks HTTP (Ricoh fi-7300NX), and hooked it to my Linux server without any driver, proprietary software, or quality limitation.
+Background 7 years ago, I got myself a Brother DS-720 portable scanner have been using it day-to-day for receipt and occasionally for document as it sits right on my desk. Meanwhile, I have one or two other scanners available through my printer. They work, but not perfectly.
+" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.152.2 with theme even" />
+
+
+<link rel="canonical" href="http://localhost:1313/post/home-scanning-in-2026/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.8348c59e0eacfbddc216b39cd5dda6d02bf52dc1eb2baf4f1c38f3a57f730802.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:url" content="http://localhost:1313/post/home-scanning-in-2026/">
+  <meta property="og:site_name" content="SEIAROTg&#39;s blog">
+  <meta property="og:title" content="Home Scanning in 2026">
+  <meta property="og:description" content="tl;dr I found a wireless document scanner that natively speaks HTTP (Ricoh fi-7300NX), and hooked it to my Linux server without any driver, proprietary software, or quality limitation.
+Background 7 years ago, I got myself a Brother DS-720 portable scanner have been using it day-to-day for receipt and occasionally for document as it sits right on my desk. Meanwhile, I have one or two other scanners available through my printer. They work, but not perfectly.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2026-01-12T22:26:55+00:00">
+    <meta property="article:modified_time" content="2026-02-22T18:49:30+00:00">
+    <meta property="article:tag" content="Device">
+    <meta property="article:tag" content="Archive">
+
+  <meta itemprop="name" content="Home Scanning in 2026">
+  <meta itemprop="description" content="tl;dr I found a wireless document scanner that natively speaks HTTP (Ricoh fi-7300NX), and hooked it to my Linux server without any driver, proprietary software, or quality limitation.
+Background 7 years ago, I got myself a Brother DS-720 portable scanner have been using it day-to-day for receipt and occasionally for document as it sits right on my desk. Meanwhile, I have one or two other scanners available through my printer. They work, but not perfectly.">
+  <meta itemprop="datePublished" content="2026-01-12T22:26:55+00:00">
+  <meta itemprop="dateModified" content="2026-02-22T18:49:30+00:00">
+  <meta itemprop="wordCount" content="1439">
+  <meta itemprop="keywords" content="Device,Archive">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Home Scanning in 2026">
+  <meta name="twitter:description" content="tl;dr I found a wireless document scanner that natively speaks HTTP (Ricoh fi-7300NX), and hooked it to my Linux server without any driver, proprietary software, or quality limitation.
+Background 7 years ago, I got myself a Brother DS-720 portable scanner have been using it day-to-day for receipt and occasionally for document as it sits right on my desk. Meanwhile, I have one or two other scanners available through my printer. They work, but not perfectly.">
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">SEIAROTg</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">SEIAROTg</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Home Scanning in 2026</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2026-01-12 </span>
+        <div class="post-category">
+            <a href="/categories/tech/"> Tech </a>
+            <a href="/categories/life/"> Life </a>
+            </div>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#tldr">tl;dr</a></li>
+    <li><a href="#background">Background</a></li>
+    <li><a href="#objective">Objective</a></li>
+    <li><a href="#market-overview">Market overview</a></li>
+    <li><a href="#options">Options</a></li>
+    <li><a href="#compromise">Compromise</a></li>
+    <li><a href="#uncompromise">Uncompromise</a></li>
+    <li><a href="#deshitification">Deshitification</a></li>
+    <li><a href="#productionization">Productionization</a></li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h1 id="tldr">tl;dr</h1>
+<p>I found a wireless document scanner that natively speaks HTTP (Ricoh fi-7300NX), and hooked it to my Linux server without any driver, proprietary software, or quality limitation.</p>
+<h1 id="background">Background</h1>
+<p>7 years ago, I got myself a Brother DS-720 portable scanner have been using it day-to-day for receipt and occasionally for document as it sits right on my desk. Meanwhile, I have one or two other scanners available through my printer. They work, but not perfectly.</p>
+<p>The rollers in DS-720 are worn out a bit. It idles on very smooth papers, meaning distortion, extra work, and sometimes damages. It requires manual feeding, which is a bit tedious, especially when I got a huge backlog of receipts. The work can only take place on my desk with cables plugged in, workstation on, drivers installed, and special software running.</p>
+<h1 id="objective">Objective</h1>
+<p>It&rsquo;s 2026. Surely things should be much better. There must be lots of options that operates standalone and wirelessly, just like those big scanners in enterprise environments &ndash; I feed it with a stack of paper, maybe press one or two buttons, and work done. No wired connection. No proximity to a computer. No human interaction with another device.</p>
+<p>You might think, &ldquo;Ah, I know many scanners that have that.&rdquo; But the story turns out to be a bit more complex.</p>
+<h1 id="market-overview">Market overview</h1>
+<p>So what are the big players on the market? A quick search reveals Brother, Canon, Epson and PFU (Ricoh, Fujitsu).</p>
+<p>The common form factors are flatbed, ADF, portable, and special for passport, large format, cheque, etc.</p>
+<p>My primary objective here is productivity, so I need an ADF.</p>
+<p>Some random observations from fine prints:</p>
+<ul>
+<li>Pretty much all ADF scanners scan up to 600dpi regardless of price range. Those &ldquo;1200dpi&rdquo; is typically interpolated.</li>
+<li>The advertised speed is usually measured at 200dpi or 300dpi, while 600dpi job can easily take over 3x time.</li>
+<li>Max quality and paper size of network scanners are commonly only available under USB connection.</li>
+<li>Some seemingly compact model may actually be quite heavy and big.</li>
+<li>Most ADF scanners have CIS sensors while a few got CCD. CCD allegedly has a better color accuracy but also bigger, heavier, and more power-starving.</li>
+</ul>
+<p>Some potentially useful features:</p>
+<ul>
+<li>Paper guide</li>
+<li>Ultrasonic multifeed sensor</li>
+<li>Automatic paper separation</li>
+<li>Automatic skew correction</li>
+<li>Long receipt support</li>
+<li>Plastic card support</li>
+</ul>
+<h1 id="options">Options</h1>
+<p>As a penny-pincher, all of them seem expensive, so I&rsquo;ll be focusing primarily on the second-hand market.</p>
+<p>However, thanks to the shining economy of the United Kingdom, there aren&rsquo;t a lot of bankrupt business desperately trying to getting rid of their scanners. Damn.</p>
+<p>Those easiest to get are SnapScan iX500 and fi-6130, plus couple of other options:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Model</th>
+          <th>Released in</th>
+          <th>Price</th>
+          <th>Speed @300dpi</th>
+          <th>Speed @600dpi</th>
+          <th>Long page</th>
+          <th>Connectivity</th>
+          <th>Linux Driver</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>SnapScan iX500</td>
+          <td>2013</td>
+          <td>£100-£150</td>
+          <td>25ppm</td>
+          <td>7ppm</td>
+          <td>863mm</td>
+          <td>USB, 802.11b/g/n</td>
+          <td>sane (no Wi-Fi)</td>
+      </tr>
+      <tr>
+          <td>Fujitsu fi-6130</td>
+          <td>2008</td>
+          <td>£50-£90</td>
+          <td>30ppm</td>
+          <td></td>
+          <td>216x863mm, 210x3048mm</td>
+          <td>USB</td>
+          <td>sane</td>
+      </tr>
+      <tr>
+          <td>Fujitsu SP-11{20,25,30}{N,}</td>
+          <td>2015/2020(N-models)</td>
+          <td>£50-£150</td>
+          <td>20/25/30ppm</td>
+          <td></td>
+          <td>3048mm</td>
+          <td>USB, Ethernet (N-models only)</td>
+          <td>official</td>
+      </tr>
+      <tr>
+          <td>SnapScan iX1400/1500/1600</td>
+          <td>2021/2018/2021</td>
+          <td>£150+</td>
+          <td>40/30/40ppm</td>
+          <td>10/8/10ppm</td>
+          <td>3000mm</td>
+          <td>USB / USB, 802.11b/g/n / USB, 802.11b/g/n</td>
+          <td>sane (no Wi-Fi)</td>
+      </tr>
+      <tr>
+          <td>Brother ADS-2400N</td>
+          <td>2015</td>
+          <td>£100-£150</td>
+          <td>30ppm</td>
+          <td></td>
+          <td>5000mm</td>
+          <td>USB, Ethernet</td>
+          <td>official</td>
+      </tr>
+      <tr>
+          <td>Brother ADS-4100/4300N</td>
+          <td>2022</td>
+          <td>£150+</td>
+          <td>35/40ppm</td>
+          <td></td>
+          <td>5000mm</td>
+          <td>USB / USB, Ethernet</td>
+          <td>official</td>
+      </tr>
+      <tr>
+          <td>Epson DS-520</td>
+          <td>2014</td>
+          <td>£50-£100</td>
+          <td>30ppm</td>
+          <td>7ppm</td>
+          <td>215x914mm</td>
+          <td>USB, Ethernet (optional)</td>
+          <td>sane</td>
+      </tr>
+      <tr>
+          <td>Epson DS-530</td>
+          <td>2016</td>
+          <td>£100-£150</td>
+          <td>35ppm</td>
+          <td></td>
+          <td>215.9x6096mm</td>
+          <td>USB, Ethernet (optional)</td>
+          <td>sane</td>
+      </tr>
+      <tr>
+          <td>Epson DS-570W</td>
+          <td>2016</td>
+          <td>~£150</td>
+          <td>35ppm</td>
+          <td></td>
+          <td>215.9x6096mm</td>
+          <td>USB, Ethernet, 802.11b/g/n</td>
+          <td>sane</td>
+      </tr>
+  </tbody>
+</table>
+<p>All of above have CIS sensor, support color, duplex, up to A4 size, and up to 600dpi optical resolution, with the only exception that fi-6130 has CCD sensor.</p>
+<h1 id="compromise">Compromise</h1>
+<p>As said in the very beginning, I want it to operate standalone and wirelessly. Getting rid of power cord can be hard, and I&rsquo;m happy for that to be an exception.</p>
+<p>You might think wireless capability doesn&rsquo;t matter &ndash; we can easily bridge it with a Raspberry Pi or something similar. Then you may find yourself struggling for an ARM driver that is not for macOS <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>, and suffering from the slower cold start and reduced portability from 2 extra cables and 1 extra power adapter.</p>
+<p>Native Wi-Fi support tends to come with a decent premium, compared to how cheap it is nowadays to implement that. What&rsquo;s worse is that paying for the premium won&rsquo;t make my life better: they tend to have worse support in Linux driver, capped scanning quality, and reduced page size limit. This feels quite off-putting.</p>
+<p>Quality and long receipt are must-have for me. Shall I go back to a wired portable scanner? ADF and speed do also matter. So maybe fi-6130 with some Wi-Fi bridge? Or SP-1130N over Ethernet with driver in a VM?</p>
+<h1 id="uncompromise">Uncompromise</h1>
+<p>While I was struggling with the compromise, a fi-7300NX tagged £200 came into my attention:</p>
+<ul>
+<li>It scans up to a length of 5588mm. Ok.</li>
+<li>It supports USB, Ethernet, 802.11 a/b/g/n/ac. Good.</li>
+<li>It&rsquo;s fast (60ppm @ 300dpi). Nice.</li>
+<li>It has a touch screen. Great.</li>
+<li>It doesn&rsquo;t have a Linux driver. Hmmmm&hellip;
+<ul>
+<li>But it natively speaks HTTP(S). Wow!</li>
+</ul>
+</li>
+</ul>
+<p>This delivers exactly what I wanted: fully standalone and wireless operation, and even better, without needing a driver!</p>
+<p>This is a really unique model. It doesn&rsquo;t have a predecessor or successor in 6xxx / 8xxx series, or a sibling in 7xxx series. While many newer models in 8xxx series do also speak HTTP(S), fi-7300NX appears to be the ONLY one over the whole history of fi- series that has wireless capability.</p>
+<p><img src="../../2026/01/scanner-fi-7300nx.jpg" alt="fi-7300NX"></p>
+<h1 id="deshitification">Deshitification</h1>
+<p>While fi-7300NX speaks HTTP(S), its server PaperStream NX Manager doesn&rsquo;t support Linux. So we just need to put in this last piece of puzzle &ndash; how hard could it be to reimplement something over HTTP?</p>
+<p>Let&rsquo;s first download PaperStream NX Manager. We need to select Operating System. Let&rsquo;s choose Windows 11. What? There is no PaperStream NX Manager to download. Turns out we&rsquo;ll have to choose some Windows Server, not plain Windows. Ok, now it&rsquo;s there. Let&rsquo;s click &ldquo;Download&rdquo;. What? &ldquo;Submit the SER. NO. of the scanner to download the software.&rdquo; My scanner was still en-route but I managed to find one from some ebay listing.</p>
+<p>Now I have this 600MB installer. Let&rsquo;s run it in a Windows 11 VM, and it failed. Turns out it needs IIS etc. and really doesn&rsquo;t support plain Windows. After an hour failing to install Windows Server in UTM on Apple Silicon, I gave up and turned to Hyper-V on an old but x86 machine. This time it works and installs smoothly.</p>
+<p>The admin website is really slow, but it&rsquo;s fine as I won&rsquo;t need it very soon. I did some test scans when I got the scanner and it seems working well. There are quite some customizability on size, quality, format, batching, buttons on scanners, and more, except that, the resolution is capped at 400dpi!</p>
+<p>This is not a frontend limit that can be easily tweaked. It turns out to be an explicit limitation as documented in <a href="https://origin.pfultd.com/downloads/IMAGE/manual/nxmanager/P2WW-3940-16ENZ2.pdf">PaperStream NX Manager 2.6 User&rsquo;s Guide</a>: &ldquo;when 401 dpi or more is specified, the driver operates with 400dpi&rdquo;. That&rsquo;s not a good sign. Feels like there are some buffer issue somewhere for which they have to limit the bandwidth. Have I just bought an over-priced Wi-Fi scanner???</p>
+<p>Nonetheless, I decided to re-implement the protocol anyway as it&rsquo;s quite simple. Other than it sending json payload with &ldquo;application/x-www-form-urlencoded&rdquo;, for which I had to insert a dirty middleware to hack around FastAPI validation, everything else is straightforward.</p>
+<p>Now let&rsquo;s try raising resolution from 400dpi to 600dpi. It&rsquo;s slower, it scans, it produces a bigger image, and the image does contain more details! It works! So 400dpi is merely some nonsense artificial limitation. Maybe there is stability concern but I honestly don&rsquo;t care. So far, it&rsquo;s just 100 lines of Python, in lieu the 600MB package exclusive to Windows Server.</p>
+<h1 id="productionization">Productionization</h1>
+<p>To make it more useful in general, I added some configurability and an atomically-updated json file that can be watched by downstream process for progress. This brings the whole thing to 250 lines which is available at <a href="https://github.com/SEIAROTg/nx-boss">https://github.com/SEIAROTg/nx-boss</a>.</p>
+<p>I didn&rsquo;t bother to set up CI regular container build and instead did it in Nix. I have some separate post-processing process that watches the output, feeding them into the bookkeeping pipeline, or archival pipeline, where PDF assembly, OCR, and other actions take place.</p>
+<p>This setup delivers an overall experience that I&rsquo;m happy with.</p>
+<p>Some random notes:</p>
+<ul>
+<li>The default admin password on the scanner is <code>password</code>.</li>
+<li>In case the configured server is down, you won&rsquo;t be able to do anything on the scanner (including tweaking settings) until it gives up retrying after couple of minutes.</li>
+</ul>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>If you really ended up with this route, check out <a href="https://www.pfu-sz.com.cn">Ricoh China</a>, who appears to offer Linux driver for x86_64, aarch64, mips64, and loongarch64.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">SEIAROTg</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+        2026-02-22
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/device/">device</a>
+          <a href="/tags/archive/">archive</a>
+          </div>
+      <nav class="post-nav">
+        
+        <a class="next" href="/post/move-usd-in-the-uk/">
+            <span class="next-text nav-default">在英国挪动美国钱</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+    <script src="https://utteranc.es/client.js"
+            repo="SEIAROTg/blog"
+            issue-term="pathname"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://github.com/utterance">comments powered by utterances.</a></noscript>
+
+      </div>
+    </main>
+
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-5VHL99KSWY"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-5VHL99KSWY');
+        }
+      </script>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="https://github.com/SEIAROTg" class="iconfont icon-github" title="github"></a>
+  
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2019 - 
+    2026<span class="heart"><i class="iconfont icon-heart"></i></span><span></span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

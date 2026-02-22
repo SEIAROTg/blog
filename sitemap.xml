@@ -1,449 +1,463 @@
-<?xml-stylesheet type="text/xsl" href="https://seiarotg.me/sitemap.xsl"?>
+<?xml-stylesheet type="text/xsl" href="http://localhost:1313/sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://seiarotg.me/categories/</loc>
+    <loc>http://localhost:1313/post/</loc>
+    <lastmod>2026-02-22T18:49:30+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-02-22T18:49:30+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/archive/</loc>
+    <lastmod>2026-02-22T18:49:30+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2026-02-22T18:49:30+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/device/</loc>
+    <lastmod>2026-02-22T18:49:30+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/home-scanning-in-2026/</loc>
+    <lastmod>2026-02-22T18:49:30+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/categories/life/</loc>
+    <lastmod>2026-02-22T18:49:30+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2026-02-22T18:49:30+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/categories/tech/</loc>
+    <lastmod>2026-02-22T18:49:30+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/money/</loc>
     <lastmod>2025-05-11T18:57:08+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://seiarotg.me/categories/life/</loc>
+    <loc>http://localhost:1313/tags/uk/</loc>
     <lastmod>2025-05-11T18:57:08+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://seiarotg.me/tags/money/</loc>
+    <loc>http://localhost:1313/post/move-usd-in-the-uk/</loc>
     <lastmod>2025-05-11T18:57:08+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://seiarotg.me/post/</loc>
-    <lastmod>2025-05-11T18:57:08+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://seiarotg.me/</loc>
-    <lastmod>2025-05-11T18:57:08+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://seiarotg.me/tags/</loc>
-    <lastmod>2025-05-11T18:57:08+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://seiarotg.me/tags/uk/</loc>
-    <lastmod>2025-05-11T18:57:08+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://seiarotg.me/post/move-usd-in-the-uk/</loc>
-    <lastmod>2025-05-11T18:57:08+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://seiarotg.me/tags/k8s/</loc>
+    <loc>http://localhost:1313/tags/k8s/</loc>
     <lastmod>2024-03-31T17:28:25+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://seiarotg.me/tags/nix/</loc>
+    <loc>http://localhost:1313/tags/nix/</loc>
     <lastmod>2024-03-31T17:28:25+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://seiarotg.me/tags/podman/</loc>
+    <loc>http://localhost:1313/tags/podman/</loc>
     <lastmod>2024-03-31T17:28:25+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://seiarotg.me/categories/tech/</loc>
+    <loc>http://localhost:1313/post/tidy-up-homelab-containers/</loc>
     <lastmod>2024-03-31T17:28:25+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://seiarotg.me/post/tidy-up-homelab-containers/</loc>
-    <lastmod>2024-03-31T17:28:25+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://seiarotg.me/post/how-many-oyster-variants-are-there/</loc>
+    <loc>http://localhost:1313/post/how-many-oyster-variants-are-there/</loc>
     <lastmod>2025-05-11T18:49:05+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://seiarotg.me/tags/london/</loc>
+    <loc>http://localhost:1313/tags/london/</loc>
     <lastmod>2025-05-11T18:49:05+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://seiarotg.me/categories/notes/</loc>
+    <loc>http://localhost:1313/categories/notes/</loc>
     <lastmod>2025-05-11T18:49:05+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://seiarotg.me/tags/travel/</loc>
+    <loc>http://localhost:1313/tags/travel/</loc>
     <lastmod>2025-05-11T18:49:05+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://seiarotg.me/tags/tube/</loc>
+    <loc>http://localhost:1313/tags/tube/</loc>
     <lastmod>2025-05-11T18:49:05+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://seiarotg.me/post/oyster-card-checksum/</loc>
+    <loc>http://localhost:1313/post/oyster-card-checksum/</loc>
     <lastmod>2022-05-29T13:40:57+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://seiarotg.me/post/install-nixos-on-ovh-vps/</loc>
+    <loc>http://localhost:1313/post/install-nixos-on-ovh-vps/</loc>
     <lastmod>2022-05-02T15:25:50+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://seiarotg.me/tags/device/</loc>
+    <loc>http://localhost:1313/tags/gadgets/</loc>
     <lastmod>2022-01-09T20:39:50+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://seiarotg.me/tags/gadgets/</loc>
+    <loc>http://localhost:1313/tags/mac/</loc>
     <lastmod>2022-01-09T20:39:50+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://seiarotg.me/tags/mac/</loc>
+    <loc>http://localhost:1313/post/ds720-under-macos/</loc>
     <lastmod>2022-01-09T20:39:50+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://seiarotg.me/post/ds720-under-macos/</loc>
-    <lastmod>2022-01-09T20:39:50+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://seiarotg.me/tags/docker/</loc>
+    <loc>http://localhost:1313/tags/docker/</loc>
     <lastmod>2021-12-29T03:18:37+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://seiarotg.me/post/podman-compose-pits/</loc>
+    <loc>http://localhost:1313/post/podman-compose-pits/</loc>
     <lastmod>2021-12-29T03:18:37+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://seiarotg.me/tags/wireguard/</loc>
+    <loc>http://localhost:1313/tags/wireguard/</loc>
     <lastmod>2021-12-29T03:18:37+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://seiarotg.me/tags/hackintosh/</loc>
+    <loc>http://localhost:1313/tags/hackintosh/</loc>
     <lastmod>2021-02-28T22:54:43+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://seiarotg.me/post/upgrade-my-hackintosh/</loc>
+    <loc>http://localhost:1313/post/upgrade-my-hackintosh/</loc>
     <lastmod>2021-02-28T22:54:43+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://seiarotg.me/tags/home/</loc>
+    <loc>http://localhost:1313/tags/home/</loc>
     <lastmod>2021-02-20T22:46:28+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://seiarotg.me/post/retrieve-smart-meter-readings/</loc>
+    <loc>http://localhost:1313/post/retrieve-smart-meter-readings/</loc>
     <lastmod>2021-02-20T22:46:28+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://seiarotg.me/tags/server/</loc>
+    <loc>http://localhost:1313/tags/server/</loc>
     <lastmod>2021-02-28T22:47:32+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://seiarotg.me/post/play-with-intel-amt/</loc>
+    <loc>http://localhost:1313/post/play-with-intel-amt/</loc>
     <lastmod>2021-02-28T22:47:32+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://seiarotg.me/tags/accounting/</loc>
+    <loc>http://localhost:1313/tags/accounting/</loc>
     <lastmod>2023-06-15T00:37:18+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://seiarotg.me/tags/beancount/</loc>
+    <loc>http://localhost:1313/tags/beancount/</loc>
     <lastmod>2020-11-02T22:14:50+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://seiarotg.me/post/plaintext-double-entry-bookkeeping/</loc>
+    <loc>http://localhost:1313/post/plaintext-double-entry-bookkeeping/</loc>
     <lastmod>2020-11-02T22:14:50+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://seiarotg.me/post/macos-lock-bssid/</loc>
+    <loc>http://localhost:1313/post/macos-lock-bssid/</loc>
     <lastmod>2020-11-07T15:17:29+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://seiarotg.me/post/royal-mail-slo/</loc>
+    <loc>http://localhost:1313/post/royal-mail-slo/</loc>
     <lastmod>2020-09-30T23:10:24+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://seiarotg.me/post/uk-paye-calculation/</loc>
+    <loc>http://localhost:1313/post/uk-paye-calculation/</loc>
     <lastmod>2023-06-15T00:37:18+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://seiarotg.me/tags/chromeos/</loc>
+    <loc>http://localhost:1313/tags/chromeos/</loc>
     <lastmod>2020-04-06T00:49:41+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://seiarotg.me/post/chromeos-on-surface3/</loc>
+    <loc>http://localhost:1313/post/chromeos-on-surface3/</loc>
     <lastmod>2020-04-06T00:49:41+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://seiarotg.me/post/top-up-heating-pressure/</loc>
+    <loc>http://localhost:1313/post/top-up-heating-pressure/</loc>
     <lastmod>2020-02-21T23:59:01+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://seiarotg.me/post/tfl-api-experience/</loc>
+    <loc>http://localhost:1313/post/tfl-api-experience/</loc>
     <lastmod>2020-02-01T21:23:29+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://seiarotg.me/tags/summary/</loc>
+    <loc>http://localhost:1313/tags/summary/</loc>
     <lastmod>2019-12-11T00:02:26+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://seiarotg.me/post/201911-summary/</loc>
+    <loc>http://localhost:1313/post/201911-summary/</loc>
     <lastmod>2019-12-11T00:02:26+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://seiarotg.me/post/commute-sra-kgx/</loc>
+    <loc>http://localhost:1313/post/commute-sra-kgx/</loc>
     <lastmod>2023-06-15T00:37:18+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://seiarotg.me/post/201910-summary/</loc>
+    <loc>http://localhost:1313/post/201910-summary/</loc>
     <lastmod>2019-11-16T23:07:50+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://seiarotg.me/post/mount-file-vault-volume-readonly/</loc>
+    <loc>http://localhost:1313/post/mount-file-vault-volume-readonly/</loc>
     <lastmod>2019-09-19T11:53:31+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://seiarotg.me/tags/misc/</loc>
+    <loc>http://localhost:1313/tags/misc/</loc>
     <lastmod>2019-08-27T19:29:43+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://seiarotg.me/post/misc-20190824/</loc>
+    <loc>http://localhost:1313/post/misc-20190824/</loc>
     <lastmod>2019-08-27T19:29:43+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://seiarotg.me/tags/mobile/</loc>
+    <loc>http://localhost:1313/tags/mobile/</loc>
     <lastmod>2021-09-03T14:11:11+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://seiarotg.me/tags/money-saving/</loc>
+    <loc>http://localhost:1313/tags/money-saving/</loc>
     <lastmod>2021-09-03T14:11:11+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://seiarotg.me/post/uk-mobile-service-providers/</loc>
+    <loc>http://localhost:1313/post/uk-mobile-service-providers/</loc>
     <lastmod>2021-09-03T14:11:11+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://seiarotg.me/tags/linux/</loc>
+    <loc>http://localhost:1313/tags/linux/</loc>
     <lastmod>2019-08-17T12:10:24+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://seiarotg.me/tags/printer/</loc>
+    <loc>http://localhost:1313/tags/printer/</loc>
     <lastmod>2019-08-17T12:10:24+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://seiarotg.me/post/gprinter-under-linux/</loc>
+    <loc>http://localhost:1313/post/gprinter-under-linux/</loc>
     <lastmod>2019-08-17T12:10:24+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://seiarotg.me/post/macos-external-monitor-brightness/</loc>
+    <loc>http://localhost:1313/post/macos-external-monitor-brightness/</loc>
     <lastmod>2019-08-03T14:17:20+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://seiarotg.me/tags/shopping/</loc>
+    <loc>http://localhost:1313/tags/shopping/</loc>
     <lastmod>2021-02-28T22:54:43+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://seiarotg.me/post/build-hackintosh/</loc>
+    <loc>http://localhost:1313/post/build-hackintosh/</loc>
     <lastmod>2021-02-28T22:54:43+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://seiarotg.me/tags/flight/</loc>
+    <loc>http://localhost:1313/tags/flight/</loc>
     <lastmod>2020-07-02T21:41:38+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://seiarotg.me/tags/ningbo/</loc>
+    <loc>http://localhost:1313/tags/ningbo/</loc>
     <lastmod>2020-07-02T21:41:38+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://seiarotg.me/post/a-rush-journey-from-stratford-to-ningbo/</loc>
+    <loc>http://localhost:1313/post/a-rush-journey-from-stratford-to-ningbo/</loc>
     <lastmod>2020-07-02T21:41:38+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://seiarotg.me/post/uk-tier2-visa-application/</loc>
+    <loc>http://localhost:1313/post/uk-tier2-visa-application/</loc>
     <lastmod>2019-08-17T12:10:08+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://seiarotg.me/tags/visa/</loc>
+    <loc>http://localhost:1313/tags/visa/</loc>
     <lastmod>2019-08-17T12:10:08+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
