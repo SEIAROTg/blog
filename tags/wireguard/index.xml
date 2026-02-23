@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Wireguard on SEIAROTg&#39;s blog</title>
-    <link>http://localhost:1313/tags/wireguard/</link>
+    <link>https://seiarotg.me/tags/wireguard/</link>
     <description>Recent content in Wireguard on SEIAROTg&#39;s blog</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Wed, 29 Dec 2021 03:18:37 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/wireguard/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://seiarotg.me/tags/wireguard/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>podman-compose 折腾记</title>
-      <link>http://localhost:1313/post/podman-compose-pits/</link>
+      <link>https://seiarotg.me/post/podman-compose-pits/</link>
       <pubDate>Tue, 28 Dec 2021 21:27:06 +0000</pubDate>
-      <guid>http://localhost:1313/post/podman-compose-pits/</guid>
+      <guid>https://seiarotg.me/post/podman-compose-pits/</guid>
       <description>&lt;h1 id=&#34;背景&#34;&gt;背景&lt;/h1&gt;&#xA;&lt;p&gt;我有一个非常简单的需求：在一个容器里起一个 wireguard client，并将其直接接入上游网络（不要 NAT）。&lt;/p&gt;&#xA;&lt;p&gt;不想看过程可以直接看&lt;a href=&#34;#%E6%80%BB%E7%BB%93&#34;&gt;总结&lt;/a&gt;。&lt;/p&gt;&#xA;&lt;h1 id=&#34;折腾&#34;&gt;折腾&lt;/h1&gt;&#xA;&lt;h2 id=&#34;在容器里起-wireguard&#34;&gt;在容器里起 wireguard&lt;/h2&gt;&#xA;&lt;p&gt;首先搜索 prior art，发现 &lt;a href=&#34;https://hub.docker.com/r/linuxserver/wireguard&#34;&gt;https://hub.docker.com/r/linuxserver/wireguard&lt;/a&gt;。试了一下发现不好：&lt;/p&gt;</description>
     </item>
   </channel>

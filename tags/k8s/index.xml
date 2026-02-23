@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>K8s on SEIAROTg&#39;s blog</title>
-    <link>http://localhost:1313/tags/k8s/</link>
+    <link>https://seiarotg.me/tags/k8s/</link>
     <description>Recent content in K8s on SEIAROTg&#39;s blog</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sun, 31 Mar 2024 17:28:25 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/k8s/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://seiarotg.me/tags/k8s/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tidy Up Homelab Containers</title>
-      <link>http://localhost:1313/post/tidy-up-homelab-containers/</link>
+      <link>https://seiarotg.me/post/tidy-up-homelab-containers/</link>
       <pubDate>Tue, 22 Aug 2023 22:34:58 +0100</pubDate>
-      <guid>http://localhost:1313/post/tidy-up-homelab-containers/</guid>
+      <guid>https://seiarotg.me/post/tidy-up-homelab-containers/</guid>
       <description>&lt;h1 id=&#34;background&#34;&gt;Background&lt;/h1&gt;&#xA;&lt;p&gt;There are bunch of services lying around on my homelab. Over time, the accumulated complexity, ops load, reliability risk, and security risks started to harm my mental health. I figured it&amp;rsquo;s probably the time to properly tidy up my homelab and have it actually managed.&#xA;I figured my ideal setup shall be secure, reasonably reliable, at a low ops cost. More specifically, I would like to:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Have some services running&lt;/li&gt;&#xA;&lt;li&gt;Have some declarative way to manage them&lt;/li&gt;&#xA;&lt;li&gt;Have some isolation on what each services could access&lt;/li&gt;&#xA;&lt;li&gt;Have automated updates&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Very simple and innocent requirements, right? Surely the solution ought to be simple too, doesn&amp;rsquo;t it?&lt;/p&gt;</description>
     </item>
   </channel>

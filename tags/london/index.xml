@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>London on SEIAROTg&#39;s blog</title>
-    <link>http://localhost:1313/tags/london/</link>
+    <link>https://seiarotg.me/tags/london/</link>
     <description>Recent content in London on SEIAROTg&#39;s blog</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sun, 11 May 2025 18:49:05 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/london/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://seiarotg.me/tags/london/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How many variants of Oyster cards are there?</title>
-      <link>http://localhost:1313/post/how-many-oyster-variants-are-there/</link>
+      <link>https://seiarotg.me/post/how-many-oyster-variants-are-there/</link>
       <pubDate>Sat, 03 Jun 2023 13:44:30 +0100</pubDate>
-      <guid>http://localhost:1313/post/how-many-oyster-variants-are-there/</guid>
+      <guid>https://seiarotg.me/post/how-many-oyster-variants-are-there/</guid>
       <description>&lt;p&gt;You probably have seen many different variants of Oyster cards and wondered how many of them are there in total, and this post is going to answer that by putting together list of them.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Edit:&lt;/strong&gt; Unfortunately, after putting together the list I still cannot give a precise answer as I am now fairly certain that this list is NOT exhaustive.&lt;/p&gt;&#xA;&lt;p&gt;Note that only Oyster cards will be covered, which does not include other cards acceptable by Oyster readers (e.g. contactless card, Freedom Pass, ITSO smartcards, &amp;hellip;).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Oyster card checksum</title>
-      <link>http://localhost:1313/post/oyster-card-checksum/</link>
+      <link>https://seiarotg.me/post/oyster-card-checksum/</link>
       <pubDate>Sun, 29 May 2022 13:24:16 +0100</pubDate>
-      <guid>http://localhost:1313/post/oyster-card-checksum/</guid>
+      <guid>https://seiarotg.me/post/oyster-card-checksum/</guid>
       <description>&lt;p&gt;Oyster card is a payment card issued by Transport for London for public transport within its network. Every Oyster card has a unique number on its back.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;../../../2022/05/oyster-card-number.png&#34; alt=&#34;oyster card number&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;The number is in the format of 10 digits, followed by a checksum of 2 digits, both of which may include leading zeros, for example, &lt;code&gt;0000000000 00&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;p&gt;With some experiments, I found the checksum can be calculated with the following formula:&lt;/p&gt;</description>
     </item>
     <item>
       <title>TfL API 折腾记</title>
-      <link>http://localhost:1313/post/tfl-api-experience/</link>
+      <link>https://seiarotg.me/post/tfl-api-experience/</link>
       <pubDate>Sun, 26 Jan 2020 00:00:06 +0000</pubDate>
-      <guid>http://localhost:1313/post/tfl-api-experience/</guid>
+      <guid>https://seiarotg.me/post/tfl-api-experience/</guid>
       <description>&lt;p&gt;近日折腾了 &lt;a href=&#34;https://api.tfl.gov.uk/&#34;&gt;TfL API&lt;/a&gt;，特将经验总结如下。&lt;/p&gt;&#xA;&lt;h2 id=&#34;没有卵用的-api-key&#34;&gt;没有卵用的 API Key&lt;/h2&gt;&#xA;&lt;p&gt;文档称调用 API 需要提供 Key，然而实际上并不需要。只是如果您不提供 Key 就会出现 Throttle。可是这个 Throttle 似乎是根据 session 来的，清理 cookie 或者一开始就不要带 cookie 即可。官方 Single Fare Finder 严格遵守规定提供了 Key，但是请求是从前端发出的，大家都能看到。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Stratford 与 King&#39;s Cross St. Pancras 间的通勤交通</title>
-      <link>http://localhost:1313/post/commute-sra-kgx/</link>
+      <link>https://seiarotg.me/post/commute-sra-kgx/</link>
       <pubDate>Sat, 16 Nov 2019 21:53:16 +0000</pubDate>
-      <guid>http://localhost:1313/post/commute-sra-kgx/</guid>
+      <guid>https://seiarotg.me/post/commute-sra-kgx/</guid>
       <description>&lt;h1 id=&#34;背景&#34;&gt;背景&lt;/h1&gt;&#xA;&lt;p&gt;几天前看到了 Geoff Marshall 的视频 &lt;a href=&#34;https://www.youtube.com/watch?v=TKWYd9J5VfY&#34;&gt;&lt;em&gt;Which Is Faster? High Speed 1 vs The Tube&lt;/em&gt;&lt;/a&gt;，比较了多条 Stratford 与 King&amp;rsquo;s Cross St. Pancras 之间的交通线路。但是如果您在这两地之间通勤，由于视频中的比赛在非高峰时段进行，较为随意地选择了出发地和目的地，且只进行了一次，参考意义可能有限。我正巧也正在研究这两地之间的通勤方案，现将成果整理在这里。&lt;/p&gt;</description>
     </item>
     <item>
       <title>记一次从 Stratford (London) 前往宁波的旅程</title>
-      <link>http://localhost:1313/post/a-rush-journey-from-stratford-to-ningbo/</link>
+      <link>https://seiarotg.me/post/a-rush-journey-from-stratford-to-ningbo/</link>
       <pubDate>Tue, 30 Jul 2019 17:25:14 +0800</pubDate>
-      <guid>http://localhost:1313/post/a-rush-journey-from-stratford-to-ningbo/</guid>
+      <guid>https://seiarotg.me/post/a-rush-journey-from-stratford-to-ningbo/</guid>
       <description>&lt;h1 id=&#34;购买机票&#34;&gt;购买机票&lt;/h1&gt;&#xA;&lt;p&gt;根据英国 &lt;a href=&#34;https://www.gov.uk/guidance/immigration-rules&#34;&gt;Immigration Rules&lt;/a&gt; 中的 34K，在申请签证过程中离境则申请自动作废。由于出签时间又依赖诸多不确定因素，此次出行无法像往常一样，提前数月甚至大半年订票，从而轻松获得低廉的票价。相反，由于去程（7月）属暑期旅游旺季，回程（9月）属空中校车季，预期票价将非常可观。&lt;/p&gt;</description>
     </item>
   </channel>

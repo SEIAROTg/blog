@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Notes on SEIAROTg&#39;s blog</title>
-    <link>http://localhost:1313/categories/notes/</link>
+    <link>https://seiarotg.me/categories/notes/</link>
     <description>Recent content in Notes on SEIAROTg&#39;s blog</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sun, 11 May 2025 18:49:05 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/notes/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://seiarotg.me/categories/notes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How many variants of Oyster cards are there?</title>
-      <link>http://localhost:1313/post/how-many-oyster-variants-are-there/</link>
+      <link>https://seiarotg.me/post/how-many-oyster-variants-are-there/</link>
       <pubDate>Sat, 03 Jun 2023 13:44:30 +0100</pubDate>
-      <guid>http://localhost:1313/post/how-many-oyster-variants-are-there/</guid>
+      <guid>https://seiarotg.me/post/how-many-oyster-variants-are-there/</guid>
       <description>&lt;p&gt;You probably have seen many different variants of Oyster cards and wondered how many of them are there in total, and this post is going to answer that by putting together list of them.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Edit:&lt;/strong&gt; Unfortunately, after putting together the list I still cannot give a precise answer as I am now fairly certain that this list is NOT exhaustive.&lt;/p&gt;&#xA;&lt;p&gt;Note that only Oyster cards will be covered, which does not include other cards acceptable by Oyster readers (e.g. contactless card, Freedom Pass, ITSO smartcards, &amp;hellip;).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Oyster card checksum</title>
-      <link>http://localhost:1313/post/oyster-card-checksum/</link>
+      <link>https://seiarotg.me/post/oyster-card-checksum/</link>
       <pubDate>Sun, 29 May 2022 13:24:16 +0100</pubDate>
-      <guid>http://localhost:1313/post/oyster-card-checksum/</guid>
+      <guid>https://seiarotg.me/post/oyster-card-checksum/</guid>
       <description>&lt;p&gt;Oyster card is a payment card issued by Transport for London for public transport within its network. Every Oyster card has a unique number on its back.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;../../../2022/05/oyster-card-number.png&#34; alt=&#34;oyster card number&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;The number is in the format of 10 digits, followed by a checksum of 2 digits, both of which may include leading zeros, for example, &lt;code&gt;0000000000 00&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;p&gt;With some experiments, I found the checksum can be calculated with the following formula:&lt;/p&gt;</description>
     </item>
     <item>
       <title>准确计算英国 PAYE 每月扣税数额</title>
-      <link>http://localhost:1313/post/uk-paye-calculation/</link>
+      <link>https://seiarotg.me/post/uk-paye-calculation/</link>
       <pubDate>Wed, 01 Jul 2020 00:25:39 +0100</pubDate>
-      <guid>http://localhost:1313/post/uk-paye-calculation/</guid>
+      <guid>https://seiarotg.me/post/uk-paye-calculation/</guid>
       <description>&lt;h1 id=&#34;背景&#34;&gt;背景&lt;/h1&gt;&#xA;&lt;p&gt;您可能会发现虽然每月的税前收入完全一致，扣除的 Income Tax 却有一些偏差。您可能遇到更换工作、工资调整、奖金发放、股票交付等，每月实际发放工资数额变化多端，不明如何验证工资条上的扣除，不知下月税后收入几何。&lt;/p&gt;</description>
     </item>
   </channel>

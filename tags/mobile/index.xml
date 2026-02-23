@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mobile on SEIAROTg&#39;s blog</title>
-    <link>http://localhost:1313/tags/mobile/</link>
+    <link>https://seiarotg.me/tags/mobile/</link>
     <description>Recent content in Mobile on SEIAROTg&#39;s blog</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Fri, 03 Sep 2021 14:11:11 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/mobile/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://seiarotg.me/tags/mobile/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>英国手机运营商选择</title>
-      <link>http://localhost:1313/post/uk-mobile-service-providers/</link>
+      <link>https://seiarotg.me/post/uk-mobile-service-providers/</link>
       <pubDate>Wed, 21 Aug 2019 14:51:07 +0800</pubDate>
-      <guid>http://localhost:1313/post/uk-mobile-service-providers/</guid>
+      <guid>https://seiarotg.me/post/uk-mobile-service-providers/</guid>
       <description>&lt;h1 id=&#34;付费模式&#34;&gt;付费模式&lt;/h1&gt;&#xA;&lt;h2 id=&#34;合约机&#34;&gt;合约机&lt;/h2&gt;&#xA;&lt;p&gt;缴纳几十 £ 领取一部手机，然后每个月缴纳几十 £ 话费，直至一两年的合同结束。看着像贷款买手机，且这个价钱并不那么划算，尤其是如果您能从国内带手机过去的话。&lt;/p&gt;</description>
     </item>
   </channel>

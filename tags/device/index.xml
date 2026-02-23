@@ -2,59 +2,59 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Device on SEIAROTg&#39;s blog</title>
-    <link>http://localhost:1313/tags/device/</link>
+    <link>https://seiarotg.me/tags/device/</link>
     <description>Recent content in Device on SEIAROTg&#39;s blog</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sun, 22 Feb 2026 18:49:30 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/device/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://seiarotg.me/tags/device/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Home Scanning in 2026</title>
-      <link>http://localhost:1313/post/home-scanning-in-2026/</link>
+      <link>https://seiarotg.me/post/home-scanning-in-2026/</link>
       <pubDate>Mon, 12 Jan 2026 22:26:55 +0000</pubDate>
-      <guid>http://localhost:1313/post/home-scanning-in-2026/</guid>
+      <guid>https://seiarotg.me/post/home-scanning-in-2026/</guid>
       <description>&lt;h1 id=&#34;tldr&#34;&gt;tl;dr&lt;/h1&gt;&#xA;&lt;p&gt;I found a wireless document scanner that natively speaks HTTP (Ricoh fi-7300NX), and hooked it to my Linux server without any driver, proprietary software, or quality limitation.&lt;/p&gt;&#xA;&lt;h1 id=&#34;background&#34;&gt;Background&lt;/h1&gt;&#xA;&lt;p&gt;7 years ago, I got myself a Brother DS-720 portable scanner have been using it day-to-day for receipt and occasionally for document as it sits right on my desk. Meanwhile, I have one or two other scanners available through my printer. They work, but not perfectly.&lt;/p&gt;</description>
     </item>
     <item>
       <title>在 macOS 下科学地使用 Brother DS-720D 便携式扫描仪</title>
-      <link>http://localhost:1313/post/ds720-under-macos/</link>
+      <link>https://seiarotg.me/post/ds720-under-macos/</link>
       <pubDate>Sun, 09 Jan 2022 17:09:58 +0800</pubDate>
-      <guid>http://localhost:1313/post/ds720-under-macos/</guid>
+      <guid>https://seiarotg.me/post/ds720-under-macos/</guid>
       <description>&lt;h1 id=&#34;背景&#34;&gt;背景&lt;/h1&gt;&#xA;&lt;p&gt;本文开坑于 2019 年 8 月。🐦了两年半。&lt;/p&gt;&#xA;&lt;p&gt;2018 年年底，因为特别心水能自动把纸吃进去的结构，在 ebay 上以低廉的价钱拍了一台二手 Brother DS-620D。收到货一看，卖的这么便宜果然有问题，货不对板啊，实际上给我寄过来的居然是一台更高级的 DS-720D。怎么办呢？当然是开心地收下了。&lt;/p&gt;</description>
     </item>
     <item>
       <title>重做我的黑果</title>
-      <link>http://localhost:1313/post/upgrade-my-hackintosh/</link>
+      <link>https://seiarotg.me/post/upgrade-my-hackintosh/</link>
       <pubDate>Sun, 28 Feb 2021 20:14:31 +0000</pubDate>
-      <guid>http://localhost:1313/post/upgrade-my-hackintosh/</guid>
+      <guid>https://seiarotg.me/post/upgrade-my-hackintosh/</guid>
       <description>&lt;h1 id=&#34;背景&#34;&gt;背景&lt;/h1&gt;&#xA;&lt;p&gt;一年半前我&lt;a href=&#34;../build-hackintosh/&#34;&gt;装了一台迷你黑苹果&lt;/a&gt;使用至今，由于拿的现成 EFI 不敢随便升级一直卡在 Mojave。现计划升级到 Big Sur，顺便解决一下偶尔毫无征兆地重启或睡死的问题（未发现有用日志，据说是没装好）。&lt;/p&gt;</description>
     </item>
     <item>
       <title>读取 Smart Meter 数据</title>
-      <link>http://localhost:1313/post/retrieve-smart-meter-readings/</link>
+      <link>https://seiarotg.me/post/retrieve-smart-meter-readings/</link>
       <pubDate>Sat, 20 Feb 2021 15:24:31 +0000</pubDate>
-      <guid>http://localhost:1313/post/retrieve-smart-meter-readings/</guid>
+      <guid>https://seiarotg.me/post/retrieve-smart-meter-readings/</guid>
       <description>&lt;h1 id=&#34;背景&#34;&gt;背景&lt;/h1&gt;&#xA;&lt;p&gt;近日安装了 Smart Meter。&lt;/p&gt;&#xA;&lt;p&gt;安装完毕后师傅发放了一部小屏幕，可远程观看读数。该设备开设了「当前读数」、「今日耗电」、「今日费用」、「每小时耗电柱状图」、「每日耗电柱状图」等板块，但是我们希望能够获得更长时间段的完整的历史读数并自行处理，以便更好地了解和优化家中的用电情况。&lt;/p&gt;</description>
     </item>
     <item>
       <title>玩耍 Intel®️ AMT</title>
-      <link>http://localhost:1313/post/play-with-intel-amt/</link>
+      <link>https://seiarotg.me/post/play-with-intel-amt/</link>
       <pubDate>Mon, 11 Jan 2021 21:20:13 +0000</pubDate>
-      <guid>http://localhost:1313/post/play-with-intel-amt/</guid>
+      <guid>https://seiarotg.me/post/play-with-intel-amt/</guid>
       <description>&lt;h1 id=&#34;背景&#34;&gt;背景&lt;/h1&gt;&#xA;&lt;p&gt;去年捡了一台便宜服务器。由于便宜啥都没有，没有 DRAC、iLO 什么的，甚至没有 IPMI。但是作为一台正规的 Intel 平台服务器，CPU 自带了 Active Management Technology 可以用。&lt;/p&gt;</description>
     </item>
     <item>
       <title>给 Surface 3 安装 ChromeOS</title>
-      <link>http://localhost:1313/post/chromeos-on-surface3/</link>
+      <link>https://seiarotg.me/post/chromeos-on-surface3/</link>
       <pubDate>Mon, 06 Apr 2020 00:08:14 +0100</pubDate>
-      <guid>http://localhost:1313/post/chromeos-on-surface3/</guid>
+      <guid>https://seiarotg.me/post/chromeos-on-surface3/</guid>
       <description>&lt;p&gt;今天我翻出了藏在抽屉里的一台 2015 年购入的 Surface 3（没有 Pro）打算用来看片。上面的 Windows 10 实在是卡，于是尝试安装 ChromeOS。&lt;/p&gt;&#xA;&lt;h1 id=&#34;背景&#34;&gt;背景&lt;/h1&gt;&#xA;&lt;p&gt;由于桌面空间限制，我的两台显示器必须竖起来一台。&lt;/p&gt;</description>
     </item>
     <item>
       <title>装一台迷你黑苹果</title>
-      <link>http://localhost:1313/post/build-hackintosh/</link>
+      <link>https://seiarotg.me/post/build-hackintosh/</link>
       <pubDate>Thu, 01 Aug 2019 14:04:11 +0800</pubDate>
-      <guid>http://localhost:1313/post/build-hackintosh/</guid>
+      <guid>https://seiarotg.me/post/build-hackintosh/</guid>
       <description>&lt;p&gt;我的 MacBook Air 使用至今已有五年之久，最近还出现了“删除文件后可用空间不增加”的故障。于是趁 618 之际我买了一堆配件，组了个 Hackintosh。&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;[2021-01] 我重做了 EFI 并更新到了 Big Sur，请看&lt;a href=&#34;../upgrade-my-hackintosh/&#34;&gt;这里&lt;/a&gt;。&lt;/p&gt;</description>
     </item>
   </channel>

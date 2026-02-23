@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Printer on SEIAROTg&#39;s blog</title>
-    <link>http://localhost:1313/tags/printer/</link>
+    <link>https://seiarotg.me/tags/printer/</link>
     <description>Recent content in Printer on SEIAROTg&#39;s blog</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sat, 17 Aug 2019 12:10:24 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/printer/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://seiarotg.me/tags/printer/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>在 Linux 下使用佳博（GPrinter）热敏标签打印机</title>
-      <link>http://localhost:1313/post/gprinter-under-linux/</link>
+      <link>https://seiarotg.me/post/gprinter-under-linux/</link>
       <pubDate>Sun, 11 Aug 2019 21:05:10 +0800</pubDate>
-      <guid>http://localhost:1313/post/gprinter-under-linux/</guid>
+      <guid>https://seiarotg.me/post/gprinter-under-linux/</guid>
       <description>&lt;h1 id=&#34;背景&#34;&gt;背景&lt;/h1&gt;&#xA;&lt;p&gt;我在高中时期曾购入一台佳博 GP-L80160I 热敏票据打印机，用来在学校从事一些轻便的打印活动，以免去抄写之苦。&lt;/p&gt;&#xA;&lt;p&gt;最近想打印标签玩，可是卖标签纸的店家告诉我这款打印机&lt;strong&gt;不能&lt;/strong&gt;打印不干胶标签。于是我斥资 ¥100.00 在闲鱼上购买了一台二手 GP-3120TU。该款打印机号称既能够打印小票纸，又能够打印不干胶，还配备了内置电源。就是圆乎乎的它比 GP-L80160I 大了好多。&lt;/p&gt;</description>
     </item>
   </channel>

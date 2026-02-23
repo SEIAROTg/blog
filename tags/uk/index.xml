@@ -2,87 +2,87 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>UK on SEIAROTg&#39;s blog</title>
-    <link>http://localhost:1313/tags/uk/</link>
+    <link>https://seiarotg.me/tags/uk/</link>
     <description>Recent content in UK on SEIAROTg&#39;s blog</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sun, 11 May 2025 18:57:08 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/uk/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://seiarotg.me/tags/uk/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>在英国挪动美国钱</title>
-      <link>http://localhost:1313/post/move-usd-in-the-uk/</link>
+      <link>https://seiarotg.me/post/move-usd-in-the-uk/</link>
       <pubDate>Mon, 01 Apr 2024 22:54:07 +0000</pubDate>
-      <guid>http://localhost:1313/post/move-usd-in-the-uk/</guid>
+      <guid>https://seiarotg.me/post/move-usd-in-the-uk/</guid>
       <description>&lt;p&gt;日前试图增加一些以美元为本币的资产，于是折腾如下。&lt;/p&gt;&#xA;&lt;p&gt;初始状态：搞了一些美元，汇入英区 Revolut。&lt;/p&gt;&#xA;&lt;h2 id=&#34;计划一在-ibkr-上购置资产&#34;&gt;计划一：在 IBKR 上购置资产&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;开户 IBKR。&#xA;&lt;ul&gt;&#xA;&lt;li&gt;要填好多好多东西，还要审核。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;从 Revolut 向 IBKR 汇美元，发现 Premium 非本币汇款也要按比例收费了，放弃。&lt;/li&gt;&#xA;&lt;li&gt;据说 Revolut 和 IBKR 都可以几乎无损地换汇，于是换成英镑免费汇入再换回。&lt;/li&gt;&#xA;&lt;li&gt;在等待到账的几小时中英镑暴跌，损失数百美元。&lt;/li&gt;&#xA;&lt;li&gt;试图把 IBKR 全部账户余额换成 USD，结果 GBP 余额变成负的了。&lt;/li&gt;&#xA;&lt;li&gt;IBKR 账户余额 $40 有时显示为 $30（30 为等值英镑），吓死人。&lt;/li&gt;&#xA;&lt;li&gt;试图购置美股 ETF，不让买。&#xA;&lt;a href=&#34;https://money.stackexchange.com/questions/112871/buying-an-us-etf-from-europe-using-interactive-brokers&#34;&gt;https://money.stackexchange.com/questions/112871/buying-an-us-etf-from-europe-using-interactive-brokers&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;试图购买货币基金，属于 Mutual Fund，得考试，然后申请。&#xA;&lt;ul&gt;&#xA;&lt;li&gt;考试通过后开通 Mutual Fund，还是不让买：Residency Restriction。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;计划二在-trading212-上购置资产&#34;&gt;计划二：在 Trading212 上购置资产&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Trading212 可以持有美元现金。&lt;/li&gt;&#xA;&lt;li&gt;开户 Trading212。&lt;/li&gt;&#xA;&lt;li&gt;Trading212 要求必须从个人银行账户入金，因此不能从 IBKR 直接汇。&lt;/li&gt;&#xA;&lt;li&gt;为了规避 Revolut 的费用和汇率风险，这次用 Wise。&lt;/li&gt;&#xA;&lt;li&gt;IBKR 提现到 Wise，非常方便。&#xA;&lt;ul&gt;&#xA;&lt;li&gt;需要注意 IBKR 不同货币不通提现渠道每个自然月&lt;strong&gt;总共&lt;/strong&gt;只能免费提现一次。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Wise 显示汇出美元只需 $0.xx 手续费，非常好。&lt;/li&gt;&#xA;&lt;li&gt;Trading212 开户完成后去 Wise 那里汇款&#xA;&lt;ul&gt;&#xA;&lt;li&gt;到最后一步提示对面不是美国账号，得加 $12。而且可能要通过中间行，还得加不知道多少钱。&lt;/li&gt;&#xA;&lt;li&gt;Trading212 添加 Wise 美元账户为款项来源，提示不支持来自美国的款项。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;计划三在-robinhood-上购置资产&#34;&gt;计划三：在 Robinhood 上购置资产&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;不久前 Robinhood 登录英国。想必作为美国平台一定能方便地处理美元吧。&lt;/li&gt;&#xA;&lt;li&gt;开户 Robinhood&lt;/li&gt;&#xA;&lt;li&gt;登录 app 后发现 Robinhood UK 出入金必须英镑，在账户内强制自动转换为美元。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;计划四通过-hsbc-global-money-account-向-trading212-汇款&#34;&gt;计划四：通过 HSBC Global Money Account 向 Trading212 汇款&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;HSBC Global Money Account 据称能存放各种货币，并提供便宜的兑换和汇款服务。&lt;/li&gt;&#xA;&lt;li&gt;开户。&#xA;&lt;ul&gt;&#xA;&lt;li&gt;非常丝滑，app 里点两下当场出账号卡号，几天后卡片寄到家。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;仔细阅读条款发现只能接收英镑然后兑换其他货币。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;计划五wise---ibkr---hsbc-currency---hsbc-global-money---trading212&#34;&gt;计划五：Wise -&amp;gt; IBKR -&amp;gt; HSBC Currency -&amp;gt; HSBC Global Money -&amp;gt; Trading212&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;观测到 HSBC 还有个 Currency Account 可以收外币。&lt;/li&gt;&#xA;&lt;li&gt;开户 HSBC Currency Account，也非常丝滑。&lt;/li&gt;&#xA;&lt;li&gt;由于 Wise 向非美国账号汇款的费用问题，通过 IBKR 中转。&lt;/li&gt;&#xA;&lt;li&gt;IBKR 收到钱后发现不能立即转出，得过三个工作日。&lt;/li&gt;&#xA;&lt;li&gt;手续费：Wise 汇出 $0.39，其他环节都不要钱。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;总结&#34;&gt;总结&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Revolut 没有以前好了。&#xA;&lt;ul&gt;&#xA;&lt;li&gt;汇率现在也变成了玄学的 &amp;ldquo;Revolut rate&amp;rdquo;。&lt;/li&gt;&#xA;&lt;li&gt;Premium 没意思了。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Wise 好。&lt;/li&gt;&#xA;&lt;li&gt;HSBC 意料之外地提供了一些好东西。&lt;/li&gt;&#xA;&lt;li&gt;好多坑不开户不进 app 不把钱汇进去不操作到最后一步都发现不了，坏。&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>How many variants of Oyster cards are there?</title>
-      <link>http://localhost:1313/post/how-many-oyster-variants-are-there/</link>
+      <link>https://seiarotg.me/post/how-many-oyster-variants-are-there/</link>
       <pubDate>Sat, 03 Jun 2023 13:44:30 +0100</pubDate>
-      <guid>http://localhost:1313/post/how-many-oyster-variants-are-there/</guid>
+      <guid>https://seiarotg.me/post/how-many-oyster-variants-are-there/</guid>
       <description>&lt;p&gt;You probably have seen many different variants of Oyster cards and wondered how many of them are there in total, and this post is going to answer that by putting together list of them.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Edit:&lt;/strong&gt; Unfortunately, after putting together the list I still cannot give a precise answer as I am now fairly certain that this list is NOT exhaustive.&lt;/p&gt;&#xA;&lt;p&gt;Note that only Oyster cards will be covered, which does not include other cards acceptable by Oyster readers (e.g. contactless card, Freedom Pass, ITSO smartcards, &amp;hellip;).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Oyster card checksum</title>
-      <link>http://localhost:1313/post/oyster-card-checksum/</link>
+      <link>https://seiarotg.me/post/oyster-card-checksum/</link>
       <pubDate>Sun, 29 May 2022 13:24:16 +0100</pubDate>
-      <guid>http://localhost:1313/post/oyster-card-checksum/</guid>
+      <guid>https://seiarotg.me/post/oyster-card-checksum/</guid>
       <description>&lt;p&gt;Oyster card is a payment card issued by Transport for London for public transport within its network. Every Oyster card has a unique number on its back.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;../../../2022/05/oyster-card-number.png&#34; alt=&#34;oyster card number&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;The number is in the format of 10 digits, followed by a checksum of 2 digits, both of which may include leading zeros, for example, &lt;code&gt;0000000000 00&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;p&gt;With some experiments, I found the checksum can be calculated with the following formula:&lt;/p&gt;</description>
     </item>
     <item>
       <title>读取 Smart Meter 数据</title>
-      <link>http://localhost:1313/post/retrieve-smart-meter-readings/</link>
+      <link>https://seiarotg.me/post/retrieve-smart-meter-readings/</link>
       <pubDate>Sat, 20 Feb 2021 15:24:31 +0000</pubDate>
-      <guid>http://localhost:1313/post/retrieve-smart-meter-readings/</guid>
+      <guid>https://seiarotg.me/post/retrieve-smart-meter-readings/</guid>
       <description>&lt;h1 id=&#34;背景&#34;&gt;背景&lt;/h1&gt;&#xA;&lt;p&gt;近日安装了 Smart Meter。&lt;/p&gt;&#xA;&lt;p&gt;安装完毕后师傅发放了一部小屏幕，可远程观看读数。该设备开设了「当前读数」、「今日耗电」、「今日费用」、「每小时耗电柱状图」、「每日耗电柱状图」等板块，但是我们希望能够获得更长时间段的完整的历史读数并自行处理，以便更好地了解和优化家中的用电情况。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Royal Mail 的时效</title>
-      <link>http://localhost:1313/post/royal-mail-slo/</link>
+      <link>https://seiarotg.me/post/royal-mail-slo/</link>
       <pubDate>Mon, 28 Sep 2020 21:43:19 +0100</pubDate>
-      <guid>http://localhost:1313/post/royal-mail-slo/</guid>
+      <guid>https://seiarotg.me/post/royal-mail-slo/</guid>
       <description>&lt;p&gt;最近一家有钱的大厂给我寄了一封 second class 并告诉我大约三四个工作日送达，然而实际花费八个工作日（含周六不含周日，含投递日不含寄出日）。这么慢是应该的吗？慢了能赔钱吗？&lt;/p&gt;</description>
     </item>
     <item>
       <title>准确计算英国 PAYE 每月扣税数额</title>
-      <link>http://localhost:1313/post/uk-paye-calculation/</link>
+      <link>https://seiarotg.me/post/uk-paye-calculation/</link>
       <pubDate>Wed, 01 Jul 2020 00:25:39 +0100</pubDate>
-      <guid>http://localhost:1313/post/uk-paye-calculation/</guid>
+      <guid>https://seiarotg.me/post/uk-paye-calculation/</guid>
       <description>&lt;h1 id=&#34;背景&#34;&gt;背景&lt;/h1&gt;&#xA;&lt;p&gt;您可能会发现虽然每月的税前收入完全一致，扣除的 Income Tax 却有一些偏差。您可能遇到更换工作、工资调整、奖金发放、股票交付等，每月实际发放工资数额变化多端，不明如何验证工资条上的扣除，不知下月税后收入几何。&lt;/p&gt;</description>
     </item>
     <item>
       <title>TfL API 折腾记</title>
-      <link>http://localhost:1313/post/tfl-api-experience/</link>
+      <link>https://seiarotg.me/post/tfl-api-experience/</link>
       <pubDate>Sun, 26 Jan 2020 00:00:06 +0000</pubDate>
-      <guid>http://localhost:1313/post/tfl-api-experience/</guid>
+      <guid>https://seiarotg.me/post/tfl-api-experience/</guid>
       <description>&lt;p&gt;近日折腾了 &lt;a href=&#34;https://api.tfl.gov.uk/&#34;&gt;TfL API&lt;/a&gt;，特将经验总结如下。&lt;/p&gt;&#xA;&lt;h2 id=&#34;没有卵用的-api-key&#34;&gt;没有卵用的 API Key&lt;/h2&gt;&#xA;&lt;p&gt;文档称调用 API 需要提供 Key，然而实际上并不需要。只是如果您不提供 Key 就会出现 Throttle。可是这个 Throttle 似乎是根据 session 来的，清理 cookie 或者一开始就不要带 cookie 即可。官方 Single Fare Finder 严格遵守规定提供了 Key，但是请求是从前端发出的，大家都能看到。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Stratford 与 King&#39;s Cross St. Pancras 间的通勤交通</title>
-      <link>http://localhost:1313/post/commute-sra-kgx/</link>
+      <link>https://seiarotg.me/post/commute-sra-kgx/</link>
       <pubDate>Sat, 16 Nov 2019 21:53:16 +0000</pubDate>
-      <guid>http://localhost:1313/post/commute-sra-kgx/</guid>
+      <guid>https://seiarotg.me/post/commute-sra-kgx/</guid>
       <description>&lt;h1 id=&#34;背景&#34;&gt;背景&lt;/h1&gt;&#xA;&lt;p&gt;几天前看到了 Geoff Marshall 的视频 &lt;a href=&#34;https://www.youtube.com/watch?v=TKWYd9J5VfY&#34;&gt;&lt;em&gt;Which Is Faster? High Speed 1 vs The Tube&lt;/em&gt;&lt;/a&gt;，比较了多条 Stratford 与 King&amp;rsquo;s Cross St. Pancras 之间的交通线路。但是如果您在这两地之间通勤，由于视频中的比赛在非高峰时段进行，较为随意地选择了出发地和目的地，且只进行了一次，参考意义可能有限。我正巧也正在研究这两地之间的通勤方案，现将成果整理在这里。&lt;/p&gt;</description>
     </item>
     <item>
       <title>英国手机运营商选择</title>
-      <link>http://localhost:1313/post/uk-mobile-service-providers/</link>
+      <link>https://seiarotg.me/post/uk-mobile-service-providers/</link>
       <pubDate>Wed, 21 Aug 2019 14:51:07 +0800</pubDate>
-      <guid>http://localhost:1313/post/uk-mobile-service-providers/</guid>
+      <guid>https://seiarotg.me/post/uk-mobile-service-providers/</guid>
       <description>&lt;h1 id=&#34;付费模式&#34;&gt;付费模式&lt;/h1&gt;&#xA;&lt;h2 id=&#34;合约机&#34;&gt;合约机&lt;/h2&gt;&#xA;&lt;p&gt;缴纳几十 £ 领取一部手机，然后每个月缴纳几十 £ 话费，直至一两年的合同结束。看着像贷款买手机，且这个价钱并不那么划算，尤其是如果您能从国内带手机过去的话。&lt;/p&gt;</description>
     </item>
     <item>
       <title>记一次从 Stratford (London) 前往宁波的旅程</title>
-      <link>http://localhost:1313/post/a-rush-journey-from-stratford-to-ningbo/</link>
+      <link>https://seiarotg.me/post/a-rush-journey-from-stratford-to-ningbo/</link>
       <pubDate>Tue, 30 Jul 2019 17:25:14 +0800</pubDate>
-      <guid>http://localhost:1313/post/a-rush-journey-from-stratford-to-ningbo/</guid>
+      <guid>https://seiarotg.me/post/a-rush-journey-from-stratford-to-ningbo/</guid>
       <description>&lt;h1 id=&#34;购买机票&#34;&gt;购买机票&lt;/h1&gt;&#xA;&lt;p&gt;根据英国 &lt;a href=&#34;https://www.gov.uk/guidance/immigration-rules&#34;&gt;Immigration Rules&lt;/a&gt; 中的 34K，在申请签证过程中离境则申请自动作废。由于出签时间又依赖诸多不确定因素，此次出行无法像往常一样，提前数月甚至大半年订票，从而轻松获得低廉的票价。相反，由于去程（7月）属暑期旅游旺季，回程（9月）属空中校车季，预期票价将非常可观。&lt;/p&gt;</description>
     </item>
     <item>
       <title>UK Tier 2 Visa Application</title>
-      <link>http://localhost:1313/post/uk-tier2-visa-application/</link>
+      <link>https://seiarotg.me/post/uk-tier2-visa-application/</link>
       <pubDate>Sun, 28 Jul 2019 11:54:12 +0800</pubDate>
-      <guid>http://localhost:1313/post/uk-tier2-visa-application/</guid>
+      <guid>https://seiarotg.me/post/uk-tier2-visa-application/</guid>
       <description>&lt;p&gt;最近成功获得了英国 Tier 2 签证，特将经历记录如下。&lt;/p&gt;&#xA;&lt;p&gt;这&lt;strong&gt;不是&lt;/strong&gt;一篇教程，比如我不会告诉你需要提交什么材料。&lt;/p&gt;&#xA;&lt;h1 id=&#34;流程&#34;&gt;流程&lt;/h1&gt;&#xA;&lt;p&gt;我的申请路线是 Switch from Tier 4, in-country。这个路线的好处是：&lt;/p&gt;</description>
     </item>
   </channel>

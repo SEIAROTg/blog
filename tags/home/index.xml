@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Home on SEIAROTg&#39;s blog</title>
-    <link>http://localhost:1313/tags/home/</link>
+    <link>https://seiarotg.me/tags/home/</link>
     <description>Recent content in Home on SEIAROTg&#39;s blog</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sat, 20 Feb 2021 22:46:28 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/home/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://seiarotg.me/tags/home/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>读取 Smart Meter 数据</title>
-      <link>http://localhost:1313/post/retrieve-smart-meter-readings/</link>
+      <link>https://seiarotg.me/post/retrieve-smart-meter-readings/</link>
       <pubDate>Sat, 20 Feb 2021 15:24:31 +0000</pubDate>
-      <guid>http://localhost:1313/post/retrieve-smart-meter-readings/</guid>
+      <guid>https://seiarotg.me/post/retrieve-smart-meter-readings/</guid>
       <description>&lt;h1 id=&#34;背景&#34;&gt;背景&lt;/h1&gt;&#xA;&lt;p&gt;近日安装了 Smart Meter。&lt;/p&gt;&#xA;&lt;p&gt;安装完毕后师傅发放了一部小屏幕，可远程观看读数。该设备开设了「当前读数」、「今日耗电」、「今日费用」、「每小时耗电柱状图」、「每日耗电柱状图」等板块，但是我们希望能够获得更长时间段的完整的历史读数并自行处理，以便更好地了解和优化家中的用电情况。&lt;/p&gt;</description>
     </item>
     <item>
       <title>给暖气充压</title>
-      <link>http://localhost:1313/post/top-up-heating-pressure/</link>
+      <link>https://seiarotg.me/post/top-up-heating-pressure/</link>
       <pubDate>Fri, 21 Feb 2020 22:55:30 +0000</pubDate>
-      <guid>http://localhost:1313/post/top-up-heating-pressure/</guid>
+      <guid>https://seiarotg.me/post/top-up-heating-pressure/</guid>
       <description>&lt;h1 id=&#34;前情提要&#34;&gt;前情提要&lt;/h1&gt;&#xA;&lt;p&gt;搬进现在这个屋子的时候暖气是坏的。傻逼中介在收到报告后用了近两个月时间才派人上门维修。首次维修解决了压力不足的问题，但是效果依然不尽人意。第二次维修时放掉了一些压，但没有得出明确结论，表示掉点压不要紧，下次来的时候会把压放光然后再充上。第三次来不知道干了什么修好了但是压力停留在了临界值附近。&lt;/p&gt;</description>
     </item>
   </channel>

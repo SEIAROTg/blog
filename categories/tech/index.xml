@@ -2,122 +2,122 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tech on SEIAROTg&#39;s blog</title>
-    <link>http://localhost:1313/categories/tech/</link>
+    <link>https://seiarotg.me/categories/tech/</link>
     <description>Recent content in Tech on SEIAROTg&#39;s blog</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sun, 22 Feb 2026 18:49:30 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/tech/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://seiarotg.me/categories/tech/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Home Scanning in 2026</title>
-      <link>http://localhost:1313/post/home-scanning-in-2026/</link>
+      <link>https://seiarotg.me/post/home-scanning-in-2026/</link>
       <pubDate>Mon, 12 Jan 2026 22:26:55 +0000</pubDate>
-      <guid>http://localhost:1313/post/home-scanning-in-2026/</guid>
+      <guid>https://seiarotg.me/post/home-scanning-in-2026/</guid>
       <description>&lt;h1 id=&#34;tldr&#34;&gt;tl;dr&lt;/h1&gt;&#xA;&lt;p&gt;I found a wireless document scanner that natively speaks HTTP (Ricoh fi-7300NX), and hooked it to my Linux server without any driver, proprietary software, or quality limitation.&lt;/p&gt;&#xA;&lt;h1 id=&#34;background&#34;&gt;Background&lt;/h1&gt;&#xA;&lt;p&gt;7 years ago, I got myself a Brother DS-720 portable scanner have been using it day-to-day for receipt and occasionally for document as it sits right on my desk. Meanwhile, I have one or two other scanners available through my printer. They work, but not perfectly.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Tidy Up Homelab Containers</title>
-      <link>http://localhost:1313/post/tidy-up-homelab-containers/</link>
+      <link>https://seiarotg.me/post/tidy-up-homelab-containers/</link>
       <pubDate>Tue, 22 Aug 2023 22:34:58 +0100</pubDate>
-      <guid>http://localhost:1313/post/tidy-up-homelab-containers/</guid>
+      <guid>https://seiarotg.me/post/tidy-up-homelab-containers/</guid>
       <description>&lt;h1 id=&#34;background&#34;&gt;Background&lt;/h1&gt;&#xA;&lt;p&gt;There are bunch of services lying around on my homelab. Over time, the accumulated complexity, ops load, reliability risk, and security risks started to harm my mental health. I figured it&amp;rsquo;s probably the time to properly tidy up my homelab and have it actually managed.&#xA;I figured my ideal setup shall be secure, reasonably reliable, at a low ops cost. More specifically, I would like to:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Have some services running&lt;/li&gt;&#xA;&lt;li&gt;Have some declarative way to manage them&lt;/li&gt;&#xA;&lt;li&gt;Have some isolation on what each services could access&lt;/li&gt;&#xA;&lt;li&gt;Have automated updates&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Very simple and innocent requirements, right? Surely the solution ought to be simple too, doesn&amp;rsquo;t it?&lt;/p&gt;</description>
     </item>
     <item>
       <title>Install NixOS on OVH VPS</title>
-      <link>http://localhost:1313/post/install-nixos-on-ovh-vps/</link>
+      <link>https://seiarotg.me/post/install-nixos-on-ovh-vps/</link>
       <pubDate>Mon, 02 May 2022 15:06:35 +0100</pubDate>
-      <guid>http://localhost:1313/post/install-nixos-on-ovh-vps/</guid>
+      <guid>https://seiarotg.me/post/install-nixos-on-ovh-vps/</guid>
       <description>&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Backup your data.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Reboot into rescue mode with the control panel.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Connect to KVM with the control panel.&lt;/p&gt;&#xA;&lt;p&gt;You can also SSH into the host with login credentials from KVM.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Download NixOS image.&lt;/p&gt;&#xA;&lt;p&gt;Likely you won&amp;rsquo;t have enough disk space in rescue mode so use ramfs.&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;&#xA;&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;&#xA;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1&#xA;&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2&#xA;&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3&#xA;&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4&#xA;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&#xA;&lt;td class=&#34;lntd&#34;&gt;&#xA;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;mkdir /mnt/ramdisk&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;mount -t ramfs ramfs /mnt/ramdisk&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; /mnt/ramdisk&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;wget https://channels.nixos.org/nixos-21.11/latest-nixos-minimal-x86_64-linux.iso&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Load image with qemu.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://community.ovh.com/en/t/installing-operating-system-from-custom-image-on-ovh-vps-centos-8-tutorial/3561&#34;&gt;https://community.ovh.com/en/t/installing-operating-system-from-custom-image-on-ovh-vps-centos-8-tutorial/3561&lt;/a&gt;&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;&#xA;&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;&#xA;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1&#xA;&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2&#xA;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&#xA;&lt;td class=&#34;lntd&#34;&gt;&#xA;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;apt install qemu-kvm&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;qemu-system-x86_64 -netdev &lt;span class=&#34;nv&#34;&gt;type&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;user,id&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;mynet0 -device virtio-net-pci,netdev&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;mynet0 -m &lt;span class=&#34;m&#34;&gt;2048&lt;/span&gt; -enable-kvm -drive &lt;span class=&#34;nv&#34;&gt;index&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;0,media&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;disk,if&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;virtio,file&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;/dev/sdb -cdrom latest-nixos-minimal-x86_64-linux.iso -boot d&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Connect to the installer inside QEMU guest.&lt;/p&gt;</description>
     </item>
     <item>
       <title>在 macOS 下科学地使用 Brother DS-720D 便携式扫描仪</title>
-      <link>http://localhost:1313/post/ds720-under-macos/</link>
+      <link>https://seiarotg.me/post/ds720-under-macos/</link>
       <pubDate>Sun, 09 Jan 2022 17:09:58 +0800</pubDate>
-      <guid>http://localhost:1313/post/ds720-under-macos/</guid>
+      <guid>https://seiarotg.me/post/ds720-under-macos/</guid>
       <description>&lt;h1 id=&#34;背景&#34;&gt;背景&lt;/h1&gt;&#xA;&lt;p&gt;本文开坑于 2019 年 8 月。🐦了两年半。&lt;/p&gt;&#xA;&lt;p&gt;2018 年年底，因为特别心水能自动把纸吃进去的结构，在 ebay 上以低廉的价钱拍了一台二手 Brother DS-620D。收到货一看，卖的这么便宜果然有问题，货不对板啊，实际上给我寄过来的居然是一台更高级的 DS-720D。怎么办呢？当然是开心地收下了。&lt;/p&gt;</description>
     </item>
     <item>
       <title>podman-compose 折腾记</title>
-      <link>http://localhost:1313/post/podman-compose-pits/</link>
+      <link>https://seiarotg.me/post/podman-compose-pits/</link>
       <pubDate>Tue, 28 Dec 2021 21:27:06 +0000</pubDate>
-      <guid>http://localhost:1313/post/podman-compose-pits/</guid>
+      <guid>https://seiarotg.me/post/podman-compose-pits/</guid>
       <description>&lt;h1 id=&#34;背景&#34;&gt;背景&lt;/h1&gt;&#xA;&lt;p&gt;我有一个非常简单的需求：在一个容器里起一个 wireguard client，并将其直接接入上游网络（不要 NAT）。&lt;/p&gt;&#xA;&lt;p&gt;不想看过程可以直接看&lt;a href=&#34;#%E6%80%BB%E7%BB%93&#34;&gt;总结&lt;/a&gt;。&lt;/p&gt;&#xA;&lt;h1 id=&#34;折腾&#34;&gt;折腾&lt;/h1&gt;&#xA;&lt;h2 id=&#34;在容器里起-wireguard&#34;&gt;在容器里起 wireguard&lt;/h2&gt;&#xA;&lt;p&gt;首先搜索 prior art，发现 &lt;a href=&#34;https://hub.docker.com/r/linuxserver/wireguard&#34;&gt;https://hub.docker.com/r/linuxserver/wireguard&lt;/a&gt;。试了一下发现不好：&lt;/p&gt;</description>
     </item>
     <item>
       <title>重做我的黑果</title>
-      <link>http://localhost:1313/post/upgrade-my-hackintosh/</link>
+      <link>https://seiarotg.me/post/upgrade-my-hackintosh/</link>
       <pubDate>Sun, 28 Feb 2021 20:14:31 +0000</pubDate>
-      <guid>http://localhost:1313/post/upgrade-my-hackintosh/</guid>
+      <guid>https://seiarotg.me/post/upgrade-my-hackintosh/</guid>
       <description>&lt;h1 id=&#34;背景&#34;&gt;背景&lt;/h1&gt;&#xA;&lt;p&gt;一年半前我&lt;a href=&#34;../build-hackintosh/&#34;&gt;装了一台迷你黑苹果&lt;/a&gt;使用至今，由于拿的现成 EFI 不敢随便升级一直卡在 Mojave。现计划升级到 Big Sur，顺便解决一下偶尔毫无征兆地重启或睡死的问题（未发现有用日志，据说是没装好）。&lt;/p&gt;</description>
     </item>
     <item>
       <title>读取 Smart Meter 数据</title>
-      <link>http://localhost:1313/post/retrieve-smart-meter-readings/</link>
+      <link>https://seiarotg.me/post/retrieve-smart-meter-readings/</link>
       <pubDate>Sat, 20 Feb 2021 15:24:31 +0000</pubDate>
-      <guid>http://localhost:1313/post/retrieve-smart-meter-readings/</guid>
+      <guid>https://seiarotg.me/post/retrieve-smart-meter-readings/</guid>
       <description>&lt;h1 id=&#34;背景&#34;&gt;背景&lt;/h1&gt;&#xA;&lt;p&gt;近日安装了 Smart Meter。&lt;/p&gt;&#xA;&lt;p&gt;安装完毕后师傅发放了一部小屏幕，可远程观看读数。该设备开设了「当前读数」、「今日耗电」、「今日费用」、「每小时耗电柱状图」、「每日耗电柱状图」等板块，但是我们希望能够获得更长时间段的完整的历史读数并自行处理，以便更好地了解和优化家中的用电情况。&lt;/p&gt;</description>
     </item>
     <item>
       <title>玩耍 Intel®️ AMT</title>
-      <link>http://localhost:1313/post/play-with-intel-amt/</link>
+      <link>https://seiarotg.me/post/play-with-intel-amt/</link>
       <pubDate>Mon, 11 Jan 2021 21:20:13 +0000</pubDate>
-      <guid>http://localhost:1313/post/play-with-intel-amt/</guid>
+      <guid>https://seiarotg.me/post/play-with-intel-amt/</guid>
       <description>&lt;h1 id=&#34;背景&#34;&gt;背景&lt;/h1&gt;&#xA;&lt;p&gt;去年捡了一台便宜服务器。由于便宜啥都没有，没有 DRAC、iLO 什么的，甚至没有 IPMI。但是作为一台正规的 Intel 平台服务器，CPU 自带了 Active Management Technology 可以用。&lt;/p&gt;</description>
     </item>
     <item>
       <title>macOS 指定 BSSID</title>
-      <link>http://localhost:1313/post/macos-lock-bssid/</link>
+      <link>https://seiarotg.me/post/macos-lock-bssid/</link>
       <pubDate>Sun, 04 Oct 2020 14:40:34 +0100</pubDate>
-      <guid>http://localhost:1313/post/macos-lock-bssid/</guid>
+      <guid>https://seiarotg.me/post/macos-lock-bssid/</guid>
       <description>&lt;p&gt;搬家到了一处便宜的地方以至于没有网络供应需要仰仗 BTWi-fi。而居民区中的 BTWi-fi 主要来自于邻居门家中品牌各异的无线路由器。这些热点的 ESSID 都叫“BTWi-fi”于是一不留神就会漂到卡的要死的邻居家去，怎么办呢？&lt;/p&gt;</description>
     </item>
     <item>
       <title>给 Surface 3 安装 ChromeOS</title>
-      <link>http://localhost:1313/post/chromeos-on-surface3/</link>
+      <link>https://seiarotg.me/post/chromeos-on-surface3/</link>
       <pubDate>Mon, 06 Apr 2020 00:08:14 +0100</pubDate>
-      <guid>http://localhost:1313/post/chromeos-on-surface3/</guid>
+      <guid>https://seiarotg.me/post/chromeos-on-surface3/</guid>
       <description>&lt;p&gt;今天我翻出了藏在抽屉里的一台 2015 年购入的 Surface 3（没有 Pro）打算用来看片。上面的 Windows 10 实在是卡，于是尝试安装 ChromeOS。&lt;/p&gt;&#xA;&lt;h1 id=&#34;背景&#34;&gt;背景&lt;/h1&gt;&#xA;&lt;p&gt;由于桌面空间限制，我的两台显示器必须竖起来一台。&lt;/p&gt;</description>
     </item>
     <item>
       <title>TfL API 折腾记</title>
-      <link>http://localhost:1313/post/tfl-api-experience/</link>
+      <link>https://seiarotg.me/post/tfl-api-experience/</link>
       <pubDate>Sun, 26 Jan 2020 00:00:06 +0000</pubDate>
-      <guid>http://localhost:1313/post/tfl-api-experience/</guid>
+      <guid>https://seiarotg.me/post/tfl-api-experience/</guid>
       <description>&lt;p&gt;近日折腾了 &lt;a href=&#34;https://api.tfl.gov.uk/&#34;&gt;TfL API&lt;/a&gt;，特将经验总结如下。&lt;/p&gt;&#xA;&lt;h2 id=&#34;没有卵用的-api-key&#34;&gt;没有卵用的 API Key&lt;/h2&gt;&#xA;&lt;p&gt;文档称调用 API 需要提供 Key，然而实际上并不需要。只是如果您不提供 Key 就会出现 Throttle。可是这个 Throttle 似乎是根据 session 来的，清理 cookie 或者一开始就不要带 cookie 即可。官方 Single Fare Finder 严格遵守规定提供了 Key，但是请求是从前端发出的，大家都能看到。&lt;/p&gt;</description>
     </item>
     <item>
       <title>只读挂载 FileVault 卷</title>
-      <link>http://localhost:1313/post/mount-file-vault-volume-readonly/</link>
+      <link>https://seiarotg.me/post/mount-file-vault-volume-readonly/</link>
       <pubDate>Thu, 19 Sep 2019 11:38:02 +0800</pubDate>
-      <guid>http://localhost:1313/post/mount-file-vault-volume-readonly/</guid>
+      <guid>https://seiarotg.me/post/mount-file-vault-volume-readonly/</guid>
       <description>&lt;h1 id=&#34;只读挂载和锁上-filevault-卷&#34;&gt;只读挂载和锁上 FileVault 卷&lt;/h1&gt;&#xA;&lt;h2 id=&#34;背景&#34;&gt;背景&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;我有块硬盘需要定期冷备份&lt;/li&gt;&#xA;&lt;li&gt;这块硬盘启用了 FileVault&lt;/li&gt;&#xA;&lt;li&gt;为了避免不小心弄错备份方向损失数据，需要将源硬盘只读挂载&lt;/li&gt;&#xA;&lt;li&gt;Disk Utility 的图形界面不能做到这件事&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;解法&#34;&gt;解法&lt;/h2&gt;&#xA;&lt;p&gt;经搜索，发现以下方法：&lt;/p&gt;</description>
     </item>
     <item>
       <title>今日坑 20190824</title>
-      <link>http://localhost:1313/post/misc-20190824/</link>
+      <link>https://seiarotg.me/post/misc-20190824/</link>
       <pubDate>Sat, 24 Aug 2019 22:18:10 +0800</pubDate>
-      <guid>http://localhost:1313/post/misc-20190824/</guid>
+      <guid>https://seiarotg.me/post/misc-20190824/</guid>
       <description>&lt;p&gt;今天遇到了几个小坑，特此记录。&lt;/p&gt;&#xA;&lt;h1 id=&#34;npm-装啥都不行&#34;&gt;npm 装啥都不行&lt;/h1&gt;&#xA;&lt;p&gt;**环境：**&lt;a href=&#34;mailto:npm@6.9.0&#34;&gt;npm@6.9.0&lt;/a&gt;、node@12.6.0 (homebrew)&lt;/p&gt;&#xA;&lt;p&gt;**问题：**无论用 npm 安装什么，是否忽略 &lt;code&gt;package-lock&lt;/code&gt;，是否 &lt;code&gt;-g&lt;/code&gt;，安装 &lt;code&gt;package.json&lt;/code&gt; 还是指定包，都报错如下：&lt;/p&gt;</description>
     </item>
     <item>
       <title>在 Linux 下使用佳博（GPrinter）热敏标签打印机</title>
-      <link>http://localhost:1313/post/gprinter-under-linux/</link>
+      <link>https://seiarotg.me/post/gprinter-under-linux/</link>
       <pubDate>Sun, 11 Aug 2019 21:05:10 +0800</pubDate>
-      <guid>http://localhost:1313/post/gprinter-under-linux/</guid>
+      <guid>https://seiarotg.me/post/gprinter-under-linux/</guid>
       <description>&lt;h1 id=&#34;背景&#34;&gt;背景&lt;/h1&gt;&#xA;&lt;p&gt;我在高中时期曾购入一台佳博 GP-L80160I 热敏票据打印机，用来在学校从事一些轻便的打印活动，以免去抄写之苦。&lt;/p&gt;&#xA;&lt;p&gt;最近想打印标签玩，可是卖标签纸的店家告诉我这款打印机&lt;strong&gt;不能&lt;/strong&gt;打印不干胶标签。于是我斥资 ¥100.00 在闲鱼上购买了一台二手 GP-3120TU。该款打印机号称既能够打印小票纸，又能够打印不干胶，还配备了内置电源。就是圆乎乎的它比 GP-L80160I 大了好多。&lt;/p&gt;</description>
     </item>
     <item>
       <title>macOS 软件调节外接显示器亮度</title>
-      <link>http://localhost:1313/post/macos-external-monitor-brightness/</link>
+      <link>https://seiarotg.me/post/macos-external-monitor-brightness/</link>
       <pubDate>Sat, 03 Aug 2019 12:03:18 +0800</pubDate>
-      <guid>http://localhost:1313/post/macos-external-monitor-brightness/</guid>
+      <guid>https://seiarotg.me/post/macos-external-monitor-brightness/</guid>
       <description>&lt;p&gt;如果您也和我一样在显示器附近安装了窗户，您可能需要经常调节显示器的亮度。用爪子靠近显示器设置开关非常不方便，也非常慢。&lt;/p&gt;&#xA;&lt;p&gt;经过一番搜索后我发现了&lt;a href=&#34;https://github.com/kfix/ddcctl&#34;&gt;这个叫 ddcctl 的项目&lt;/a&gt;。它提供了一个命令行小工具来控制外接显示器的亮度、对比度等参数。&lt;/p&gt;</description>
     </item>
     <item>
       <title>装一台迷你黑苹果</title>
-      <link>http://localhost:1313/post/build-hackintosh/</link>
+      <link>https://seiarotg.me/post/build-hackintosh/</link>
       <pubDate>Thu, 01 Aug 2019 14:04:11 +0800</pubDate>
-      <guid>http://localhost:1313/post/build-hackintosh/</guid>
+      <guid>https://seiarotg.me/post/build-hackintosh/</guid>
       <description>&lt;p&gt;我的 MacBook Air 使用至今已有五年之久，最近还出现了“删除文件后可用空间不增加”的故障。于是趁 618 之际我买了一堆配件，组了个 Hackintosh。&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;[2021-01] 我重做了 EFI 并更新到了 Big Sur，请看&lt;a href=&#34;../upgrade-my-hackintosh/&#34;&gt;这里&lt;/a&gt;。&lt;/p&gt;</description>
     </item>
   </channel>

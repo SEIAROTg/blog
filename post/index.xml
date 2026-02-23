@@ -2,213 +2,213 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on SEIAROTg&#39;s blog</title>
-    <link>http://localhost:1313/post/</link>
+    <link>https://seiarotg.me/post/</link>
     <description>Recent content in Posts on SEIAROTg&#39;s blog</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sun, 22 Feb 2026 18:49:30 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://seiarotg.me/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Home Scanning in 2026</title>
-      <link>http://localhost:1313/post/home-scanning-in-2026/</link>
+      <link>https://seiarotg.me/post/home-scanning-in-2026/</link>
       <pubDate>Mon, 12 Jan 2026 22:26:55 +0000</pubDate>
-      <guid>http://localhost:1313/post/home-scanning-in-2026/</guid>
+      <guid>https://seiarotg.me/post/home-scanning-in-2026/</guid>
       <description>&lt;h1 id=&#34;tldr&#34;&gt;tl;dr&lt;/h1&gt;&#xA;&lt;p&gt;I found a wireless document scanner that natively speaks HTTP (Ricoh fi-7300NX), and hooked it to my Linux server without any driver, proprietary software, or quality limitation.&lt;/p&gt;&#xA;&lt;h1 id=&#34;background&#34;&gt;Background&lt;/h1&gt;&#xA;&lt;p&gt;7 years ago, I got myself a Brother DS-720 portable scanner have been using it day-to-day for receipt and occasionally for document as it sits right on my desk. Meanwhile, I have one or two other scanners available through my printer. They work, but not perfectly.&lt;/p&gt;</description>
     </item>
     <item>
       <title>在英国挪动美国钱</title>
-      <link>http://localhost:1313/post/move-usd-in-the-uk/</link>
+      <link>https://seiarotg.me/post/move-usd-in-the-uk/</link>
       <pubDate>Mon, 01 Apr 2024 22:54:07 +0000</pubDate>
-      <guid>http://localhost:1313/post/move-usd-in-the-uk/</guid>
+      <guid>https://seiarotg.me/post/move-usd-in-the-uk/</guid>
       <description>&lt;p&gt;日前试图增加一些以美元为本币的资产，于是折腾如下。&lt;/p&gt;&#xA;&lt;p&gt;初始状态：搞了一些美元，汇入英区 Revolut。&lt;/p&gt;&#xA;&lt;h2 id=&#34;计划一在-ibkr-上购置资产&#34;&gt;计划一：在 IBKR 上购置资产&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;开户 IBKR。&#xA;&lt;ul&gt;&#xA;&lt;li&gt;要填好多好多东西，还要审核。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;从 Revolut 向 IBKR 汇美元，发现 Premium 非本币汇款也要按比例收费了，放弃。&lt;/li&gt;&#xA;&lt;li&gt;据说 Revolut 和 IBKR 都可以几乎无损地换汇，于是换成英镑免费汇入再换回。&lt;/li&gt;&#xA;&lt;li&gt;在等待到账的几小时中英镑暴跌，损失数百美元。&lt;/li&gt;&#xA;&lt;li&gt;试图把 IBKR 全部账户余额换成 USD，结果 GBP 余额变成负的了。&lt;/li&gt;&#xA;&lt;li&gt;IBKR 账户余额 $40 有时显示为 $30（30 为等值英镑），吓死人。&lt;/li&gt;&#xA;&lt;li&gt;试图购置美股 ETF，不让买。&#xA;&lt;a href=&#34;https://money.stackexchange.com/questions/112871/buying-an-us-etf-from-europe-using-interactive-brokers&#34;&gt;https://money.stackexchange.com/questions/112871/buying-an-us-etf-from-europe-using-interactive-brokers&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;试图购买货币基金，属于 Mutual Fund，得考试，然后申请。&#xA;&lt;ul&gt;&#xA;&lt;li&gt;考试通过后开通 Mutual Fund，还是不让买：Residency Restriction。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;计划二在-trading212-上购置资产&#34;&gt;计划二：在 Trading212 上购置资产&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Trading212 可以持有美元现金。&lt;/li&gt;&#xA;&lt;li&gt;开户 Trading212。&lt;/li&gt;&#xA;&lt;li&gt;Trading212 要求必须从个人银行账户入金，因此不能从 IBKR 直接汇。&lt;/li&gt;&#xA;&lt;li&gt;为了规避 Revolut 的费用和汇率风险，这次用 Wise。&lt;/li&gt;&#xA;&lt;li&gt;IBKR 提现到 Wise，非常方便。&#xA;&lt;ul&gt;&#xA;&lt;li&gt;需要注意 IBKR 不同货币不通提现渠道每个自然月&lt;strong&gt;总共&lt;/strong&gt;只能免费提现一次。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Wise 显示汇出美元只需 $0.xx 手续费，非常好。&lt;/li&gt;&#xA;&lt;li&gt;Trading212 开户完成后去 Wise 那里汇款&#xA;&lt;ul&gt;&#xA;&lt;li&gt;到最后一步提示对面不是美国账号，得加 $12。而且可能要通过中间行，还得加不知道多少钱。&lt;/li&gt;&#xA;&lt;li&gt;Trading212 添加 Wise 美元账户为款项来源，提示不支持来自美国的款项。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;计划三在-robinhood-上购置资产&#34;&gt;计划三：在 Robinhood 上购置资产&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;不久前 Robinhood 登录英国。想必作为美国平台一定能方便地处理美元吧。&lt;/li&gt;&#xA;&lt;li&gt;开户 Robinhood&lt;/li&gt;&#xA;&lt;li&gt;登录 app 后发现 Robinhood UK 出入金必须英镑，在账户内强制自动转换为美元。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;计划四通过-hsbc-global-money-account-向-trading212-汇款&#34;&gt;计划四：通过 HSBC Global Money Account 向 Trading212 汇款&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;HSBC Global Money Account 据称能存放各种货币，并提供便宜的兑换和汇款服务。&lt;/li&gt;&#xA;&lt;li&gt;开户。&#xA;&lt;ul&gt;&#xA;&lt;li&gt;非常丝滑，app 里点两下当场出账号卡号，几天后卡片寄到家。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;仔细阅读条款发现只能接收英镑然后兑换其他货币。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;计划五wise---ibkr---hsbc-currency---hsbc-global-money---trading212&#34;&gt;计划五：Wise -&amp;gt; IBKR -&amp;gt; HSBC Currency -&amp;gt; HSBC Global Money -&amp;gt; Trading212&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;观测到 HSBC 还有个 Currency Account 可以收外币。&lt;/li&gt;&#xA;&lt;li&gt;开户 HSBC Currency Account，也非常丝滑。&lt;/li&gt;&#xA;&lt;li&gt;由于 Wise 向非美国账号汇款的费用问题，通过 IBKR 中转。&lt;/li&gt;&#xA;&lt;li&gt;IBKR 收到钱后发现不能立即转出，得过三个工作日。&lt;/li&gt;&#xA;&lt;li&gt;手续费：Wise 汇出 $0.39，其他环节都不要钱。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;总结&#34;&gt;总结&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Revolut 没有以前好了。&#xA;&lt;ul&gt;&#xA;&lt;li&gt;汇率现在也变成了玄学的 &amp;ldquo;Revolut rate&amp;rdquo;。&lt;/li&gt;&#xA;&lt;li&gt;Premium 没意思了。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Wise 好。&lt;/li&gt;&#xA;&lt;li&gt;HSBC 意料之外地提供了一些好东西。&lt;/li&gt;&#xA;&lt;li&gt;好多坑不开户不进 app 不把钱汇进去不操作到最后一步都发现不了，坏。&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Tidy Up Homelab Containers</title>
-      <link>http://localhost:1313/post/tidy-up-homelab-containers/</link>
+      <link>https://seiarotg.me/post/tidy-up-homelab-containers/</link>
       <pubDate>Tue, 22 Aug 2023 22:34:58 +0100</pubDate>
-      <guid>http://localhost:1313/post/tidy-up-homelab-containers/</guid>
+      <guid>https://seiarotg.me/post/tidy-up-homelab-containers/</guid>
       <description>&lt;h1 id=&#34;background&#34;&gt;Background&lt;/h1&gt;&#xA;&lt;p&gt;There are bunch of services lying around on my homelab. Over time, the accumulated complexity, ops load, reliability risk, and security risks started to harm my mental health. I figured it&amp;rsquo;s probably the time to properly tidy up my homelab and have it actually managed.&#xA;I figured my ideal setup shall be secure, reasonably reliable, at a low ops cost. More specifically, I would like to:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Have some services running&lt;/li&gt;&#xA;&lt;li&gt;Have some declarative way to manage them&lt;/li&gt;&#xA;&lt;li&gt;Have some isolation on what each services could access&lt;/li&gt;&#xA;&lt;li&gt;Have automated updates&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Very simple and innocent requirements, right? Surely the solution ought to be simple too, doesn&amp;rsquo;t it?&lt;/p&gt;</description>
     </item>
     <item>
       <title>How many variants of Oyster cards are there?</title>
-      <link>http://localhost:1313/post/how-many-oyster-variants-are-there/</link>
+      <link>https://seiarotg.me/post/how-many-oyster-variants-are-there/</link>
       <pubDate>Sat, 03 Jun 2023 13:44:30 +0100</pubDate>
-      <guid>http://localhost:1313/post/how-many-oyster-variants-are-there/</guid>
+      <guid>https://seiarotg.me/post/how-many-oyster-variants-are-there/</guid>
       <description>&lt;p&gt;You probably have seen many different variants of Oyster cards and wondered how many of them are there in total, and this post is going to answer that by putting together list of them.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Edit:&lt;/strong&gt; Unfortunately, after putting together the list I still cannot give a precise answer as I am now fairly certain that this list is NOT exhaustive.&lt;/p&gt;&#xA;&lt;p&gt;Note that only Oyster cards will be covered, which does not include other cards acceptable by Oyster readers (e.g. contactless card, Freedom Pass, ITSO smartcards, &amp;hellip;).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Oyster card checksum</title>
-      <link>http://localhost:1313/post/oyster-card-checksum/</link>
+      <link>https://seiarotg.me/post/oyster-card-checksum/</link>
       <pubDate>Sun, 29 May 2022 13:24:16 +0100</pubDate>
-      <guid>http://localhost:1313/post/oyster-card-checksum/</guid>
+      <guid>https://seiarotg.me/post/oyster-card-checksum/</guid>
       <description>&lt;p&gt;Oyster card is a payment card issued by Transport for London for public transport within its network. Every Oyster card has a unique number on its back.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;../../../2022/05/oyster-card-number.png&#34; alt=&#34;oyster card number&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;The number is in the format of 10 digits, followed by a checksum of 2 digits, both of which may include leading zeros, for example, &lt;code&gt;0000000000 00&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;p&gt;With some experiments, I found the checksum can be calculated with the following formula:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Install NixOS on OVH VPS</title>
-      <link>http://localhost:1313/post/install-nixos-on-ovh-vps/</link>
+      <link>https://seiarotg.me/post/install-nixos-on-ovh-vps/</link>
       <pubDate>Mon, 02 May 2022 15:06:35 +0100</pubDate>
-      <guid>http://localhost:1313/post/install-nixos-on-ovh-vps/</guid>
+      <guid>https://seiarotg.me/post/install-nixos-on-ovh-vps/</guid>
       <description>&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Backup your data.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Reboot into rescue mode with the control panel.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Connect to KVM with the control panel.&lt;/p&gt;&#xA;&lt;p&gt;You can also SSH into the host with login credentials from KVM.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Download NixOS image.&lt;/p&gt;&#xA;&lt;p&gt;Likely you won&amp;rsquo;t have enough disk space in rescue mode so use ramfs.&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;&#xA;&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;&#xA;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1&#xA;&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2&#xA;&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3&#xA;&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4&#xA;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&#xA;&lt;td class=&#34;lntd&#34;&gt;&#xA;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;mkdir /mnt/ramdisk&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;mount -t ramfs ramfs /mnt/ramdisk&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; /mnt/ramdisk&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;wget https://channels.nixos.org/nixos-21.11/latest-nixos-minimal-x86_64-linux.iso&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Load image with qemu.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://community.ovh.com/en/t/installing-operating-system-from-custom-image-on-ovh-vps-centos-8-tutorial/3561&#34;&gt;https://community.ovh.com/en/t/installing-operating-system-from-custom-image-on-ovh-vps-centos-8-tutorial/3561&lt;/a&gt;&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;&#xA;&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;&#xA;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1&#xA;&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2&#xA;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&#xA;&lt;td class=&#34;lntd&#34;&gt;&#xA;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;apt install qemu-kvm&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;qemu-system-x86_64 -netdev &lt;span class=&#34;nv&#34;&gt;type&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;user,id&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;mynet0 -device virtio-net-pci,netdev&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;mynet0 -m &lt;span class=&#34;m&#34;&gt;2048&lt;/span&gt; -enable-kvm -drive &lt;span class=&#34;nv&#34;&gt;index&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;0,media&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;disk,if&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;virtio,file&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;/dev/sdb -cdrom latest-nixos-minimal-x86_64-linux.iso -boot d&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Connect to the installer inside QEMU guest.&lt;/p&gt;</description>
     </item>
     <item>
       <title>在 macOS 下科学地使用 Brother DS-720D 便携式扫描仪</title>
-      <link>http://localhost:1313/post/ds720-under-macos/</link>
+      <link>https://seiarotg.me/post/ds720-under-macos/</link>
       <pubDate>Sun, 09 Jan 2022 17:09:58 +0800</pubDate>
-      <guid>http://localhost:1313/post/ds720-under-macos/</guid>
+      <guid>https://seiarotg.me/post/ds720-under-macos/</guid>
       <description>&lt;h1 id=&#34;背景&#34;&gt;背景&lt;/h1&gt;&#xA;&lt;p&gt;本文开坑于 2019 年 8 月。🐦了两年半。&lt;/p&gt;&#xA;&lt;p&gt;2018 年年底，因为特别心水能自动把纸吃进去的结构，在 ebay 上以低廉的价钱拍了一台二手 Brother DS-620D。收到货一看，卖的这么便宜果然有问题，货不对板啊，实际上给我寄过来的居然是一台更高级的 DS-720D。怎么办呢？当然是开心地收下了。&lt;/p&gt;</description>
     </item>
     <item>
       <title>podman-compose 折腾记</title>
-      <link>http://localhost:1313/post/podman-compose-pits/</link>
+      <link>https://seiarotg.me/post/podman-compose-pits/</link>
       <pubDate>Tue, 28 Dec 2021 21:27:06 +0000</pubDate>
-      <guid>http://localhost:1313/post/podman-compose-pits/</guid>
+      <guid>https://seiarotg.me/post/podman-compose-pits/</guid>
       <description>&lt;h1 id=&#34;背景&#34;&gt;背景&lt;/h1&gt;&#xA;&lt;p&gt;我有一个非常简单的需求：在一个容器里起一个 wireguard client，并将其直接接入上游网络（不要 NAT）。&lt;/p&gt;&#xA;&lt;p&gt;不想看过程可以直接看&lt;a href=&#34;#%E6%80%BB%E7%BB%93&#34;&gt;总结&lt;/a&gt;。&lt;/p&gt;&#xA;&lt;h1 id=&#34;折腾&#34;&gt;折腾&lt;/h1&gt;&#xA;&lt;h2 id=&#34;在容器里起-wireguard&#34;&gt;在容器里起 wireguard&lt;/h2&gt;&#xA;&lt;p&gt;首先搜索 prior art，发现 &lt;a href=&#34;https://hub.docker.com/r/linuxserver/wireguard&#34;&gt;https://hub.docker.com/r/linuxserver/wireguard&lt;/a&gt;。试了一下发现不好：&lt;/p&gt;</description>
     </item>
     <item>
       <title>重做我的黑果</title>
-      <link>http://localhost:1313/post/upgrade-my-hackintosh/</link>
+      <link>https://seiarotg.me/post/upgrade-my-hackintosh/</link>
       <pubDate>Sun, 28 Feb 2021 20:14:31 +0000</pubDate>
-      <guid>http://localhost:1313/post/upgrade-my-hackintosh/</guid>
+      <guid>https://seiarotg.me/post/upgrade-my-hackintosh/</guid>
       <description>&lt;h1 id=&#34;背景&#34;&gt;背景&lt;/h1&gt;&#xA;&lt;p&gt;一年半前我&lt;a href=&#34;../build-hackintosh/&#34;&gt;装了一台迷你黑苹果&lt;/a&gt;使用至今，由于拿的现成 EFI 不敢随便升级一直卡在 Mojave。现计划升级到 Big Sur，顺便解决一下偶尔毫无征兆地重启或睡死的问题（未发现有用日志，据说是没装好）。&lt;/p&gt;</description>
     </item>
     <item>
       <title>读取 Smart Meter 数据</title>
-      <link>http://localhost:1313/post/retrieve-smart-meter-readings/</link>
+      <link>https://seiarotg.me/post/retrieve-smart-meter-readings/</link>
       <pubDate>Sat, 20 Feb 2021 15:24:31 +0000</pubDate>
-      <guid>http://localhost:1313/post/retrieve-smart-meter-readings/</guid>
+      <guid>https://seiarotg.me/post/retrieve-smart-meter-readings/</guid>
       <description>&lt;h1 id=&#34;背景&#34;&gt;背景&lt;/h1&gt;&#xA;&lt;p&gt;近日安装了 Smart Meter。&lt;/p&gt;&#xA;&lt;p&gt;安装完毕后师傅发放了一部小屏幕，可远程观看读数。该设备开设了「当前读数」、「今日耗电」、「今日费用」、「每小时耗电柱状图」、「每日耗电柱状图」等板块，但是我们希望能够获得更长时间段的完整的历史读数并自行处理，以便更好地了解和优化家中的用电情况。&lt;/p&gt;</description>
     </item>
     <item>
       <title>玩耍 Intel®️ AMT</title>
-      <link>http://localhost:1313/post/play-with-intel-amt/</link>
+      <link>https://seiarotg.me/post/play-with-intel-amt/</link>
       <pubDate>Mon, 11 Jan 2021 21:20:13 +0000</pubDate>
-      <guid>http://localhost:1313/post/play-with-intel-amt/</guid>
+      <guid>https://seiarotg.me/post/play-with-intel-amt/</guid>
       <description>&lt;h1 id=&#34;背景&#34;&gt;背景&lt;/h1&gt;&#xA;&lt;p&gt;去年捡了一台便宜服务器。由于便宜啥都没有，没有 DRAC、iLO 什么的，甚至没有 IPMI。但是作为一台正规的 Intel 平台服务器，CPU 自带了 Active Management Technology 可以用。&lt;/p&gt;</description>
     </item>
     <item>
       <title>我对纯文本复式簿记的理解</title>
-      <link>http://localhost:1313/post/plaintext-double-entry-bookkeeping/</link>
+      <link>https://seiarotg.me/post/plaintext-double-entry-bookkeeping/</link>
       <pubDate>Thu, 29 Oct 2020 00:05:48 +0000</pubDate>
-      <guid>http://localhost:1313/post/plaintext-double-entry-bookkeeping/</guid>
+      <guid>https://seiarotg.me/post/plaintext-double-entry-bookkeeping/</guid>
       <description>&lt;h1 id=&#34;背景&#34;&gt;背景&lt;/h1&gt;&#xA;&lt;p&gt;用 &lt;a href=&#34;http://furius.ca/beancount/&#34;&gt;beancount&lt;/a&gt; 一年多了，总结一下我作为无财会基础人士对于纯文本记账、复式簿记和 beancount 的一些理解。本文尽可能地避免出现财会术语或某种记账工具特有的概念，适合对纯文本记账和复式簿记完全不了解或仅有初步了解的人士。&lt;/p&gt;</description>
     </item>
     <item>
       <title>macOS 指定 BSSID</title>
-      <link>http://localhost:1313/post/macos-lock-bssid/</link>
+      <link>https://seiarotg.me/post/macos-lock-bssid/</link>
       <pubDate>Sun, 04 Oct 2020 14:40:34 +0100</pubDate>
-      <guid>http://localhost:1313/post/macos-lock-bssid/</guid>
+      <guid>https://seiarotg.me/post/macos-lock-bssid/</guid>
       <description>&lt;p&gt;搬家到了一处便宜的地方以至于没有网络供应需要仰仗 BTWi-fi。而居民区中的 BTWi-fi 主要来自于邻居门家中品牌各异的无线路由器。这些热点的 ESSID 都叫“BTWi-fi”于是一不留神就会漂到卡的要死的邻居家去，怎么办呢？&lt;/p&gt;</description>
     </item>
     <item>
       <title>Royal Mail 的时效</title>
-      <link>http://localhost:1313/post/royal-mail-slo/</link>
+      <link>https://seiarotg.me/post/royal-mail-slo/</link>
       <pubDate>Mon, 28 Sep 2020 21:43:19 +0100</pubDate>
-      <guid>http://localhost:1313/post/royal-mail-slo/</guid>
+      <guid>https://seiarotg.me/post/royal-mail-slo/</guid>
       <description>&lt;p&gt;最近一家有钱的大厂给我寄了一封 second class 并告诉我大约三四个工作日送达，然而实际花费八个工作日（含周六不含周日，含投递日不含寄出日）。这么慢是应该的吗？慢了能赔钱吗？&lt;/p&gt;</description>
     </item>
     <item>
       <title>准确计算英国 PAYE 每月扣税数额</title>
-      <link>http://localhost:1313/post/uk-paye-calculation/</link>
+      <link>https://seiarotg.me/post/uk-paye-calculation/</link>
       <pubDate>Wed, 01 Jul 2020 00:25:39 +0100</pubDate>
-      <guid>http://localhost:1313/post/uk-paye-calculation/</guid>
+      <guid>https://seiarotg.me/post/uk-paye-calculation/</guid>
       <description>&lt;h1 id=&#34;背景&#34;&gt;背景&lt;/h1&gt;&#xA;&lt;p&gt;您可能会发现虽然每月的税前收入完全一致，扣除的 Income Tax 却有一些偏差。您可能遇到更换工作、工资调整、奖金发放、股票交付等，每月实际发放工资数额变化多端，不明如何验证工资条上的扣除，不知下月税后收入几何。&lt;/p&gt;</description>
     </item>
     <item>
       <title>给 Surface 3 安装 ChromeOS</title>
-      <link>http://localhost:1313/post/chromeos-on-surface3/</link>
+      <link>https://seiarotg.me/post/chromeos-on-surface3/</link>
       <pubDate>Mon, 06 Apr 2020 00:08:14 +0100</pubDate>
-      <guid>http://localhost:1313/post/chromeos-on-surface3/</guid>
+      <guid>https://seiarotg.me/post/chromeos-on-surface3/</guid>
       <description>&lt;p&gt;今天我翻出了藏在抽屉里的一台 2015 年购入的 Surface 3（没有 Pro）打算用来看片。上面的 Windows 10 实在是卡，于是尝试安装 ChromeOS。&lt;/p&gt;&#xA;&lt;h1 id=&#34;背景&#34;&gt;背景&lt;/h1&gt;&#xA;&lt;p&gt;由于桌面空间限制，我的两台显示器必须竖起来一台。&lt;/p&gt;</description>
     </item>
     <item>
       <title>给暖气充压</title>
-      <link>http://localhost:1313/post/top-up-heating-pressure/</link>
+      <link>https://seiarotg.me/post/top-up-heating-pressure/</link>
       <pubDate>Fri, 21 Feb 2020 22:55:30 +0000</pubDate>
-      <guid>http://localhost:1313/post/top-up-heating-pressure/</guid>
+      <guid>https://seiarotg.me/post/top-up-heating-pressure/</guid>
       <description>&lt;h1 id=&#34;前情提要&#34;&gt;前情提要&lt;/h1&gt;&#xA;&lt;p&gt;搬进现在这个屋子的时候暖气是坏的。傻逼中介在收到报告后用了近两个月时间才派人上门维修。首次维修解决了压力不足的问题，但是效果依然不尽人意。第二次维修时放掉了一些压，但没有得出明确结论，表示掉点压不要紧，下次来的时候会把压放光然后再充上。第三次来不知道干了什么修好了但是压力停留在了临界值附近。&lt;/p&gt;</description>
     </item>
     <item>
       <title>TfL API 折腾记</title>
-      <link>http://localhost:1313/post/tfl-api-experience/</link>
+      <link>https://seiarotg.me/post/tfl-api-experience/</link>
       <pubDate>Sun, 26 Jan 2020 00:00:06 +0000</pubDate>
-      <guid>http://localhost:1313/post/tfl-api-experience/</guid>
+      <guid>https://seiarotg.me/post/tfl-api-experience/</guid>
       <description>&lt;p&gt;近日折腾了 &lt;a href=&#34;https://api.tfl.gov.uk/&#34;&gt;TfL API&lt;/a&gt;，特将经验总结如下。&lt;/p&gt;&#xA;&lt;h2 id=&#34;没有卵用的-api-key&#34;&gt;没有卵用的 API Key&lt;/h2&gt;&#xA;&lt;p&gt;文档称调用 API 需要提供 Key，然而实际上并不需要。只是如果您不提供 Key 就会出现 Throttle。可是这个 Throttle 似乎是根据 session 来的，清理 cookie 或者一开始就不要带 cookie 即可。官方 Single Fare Finder 严格遵守规定提供了 Key，但是请求是从前端发出的，大家都能看到。&lt;/p&gt;</description>
     </item>
     <item>
       <title>十一月总结</title>
-      <link>http://localhost:1313/post/201911-summary/</link>
+      <link>https://seiarotg.me/post/201911-summary/</link>
       <pubDate>Sun, 01 Dec 2019 20:04:40 +0000</pubDate>
-      <guid>http://localhost:1313/post/201911-summary/</guid>
+      <guid>https://seiarotg.me/post/201911-summary/</guid>
       <description>&lt;h1 id=&#34;新知识&#34;&gt;新知识&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;有一种叫 Premium Bonds 的投资产品&lt;/li&gt;&#xA;&lt;li&gt;养老金账户里的钱可以进行一些投资&lt;/li&gt;&#xA;&lt;li&gt;部分养老金可以不等老了直接转到 ISA 中并提现&lt;/li&gt;&#xA;&lt;li&gt;不同银行的 PINsentry 读卡器可以通用&lt;/li&gt;&#xA;&lt;li&gt;MSE 搞了个 &lt;a href=&#34;https://www.moneysavingexpert.com/creditclub/&#34;&gt;Credit Club&lt;/a&gt; 可以免费查 Experian 报告&lt;/li&gt;&#xA;&lt;li&gt;在英国，外带的冷食可以不收 VAT&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;好事&#34;&gt;好事&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;开通了 Help to Buy ISA&lt;/li&gt;&#xA;&lt;li&gt;收到了信用卡&lt;/li&gt;&#xA;&lt;li&gt;获得了工牌&lt;/li&gt;&#xA;&lt;li&gt;修好了暖气&lt;/li&gt;&#xA;&lt;li&gt;申领了各家 TOC 所有不需要提交照片的 Smartcard&lt;/li&gt;&#xA;&lt;li&gt;掏出了头发坨坨，疏通了管道&lt;/li&gt;&#xA;&lt;li&gt;种上了菜菜&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;坏事&#34;&gt;坏事&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Spark Energy&#xA;&lt;ul&gt;&#xA;&lt;li&gt;收到了账单，总额 £38.70&lt;/li&gt;&#xA;&lt;li&gt;£38.70 的计算方式是：开户余额 £0.00，用电 £38.71，所以需要缴纳 £38.70&lt;/li&gt;&#xA;&lt;li&gt;注册报错，提示姓名不对，可是没有地方可以输入姓名&lt;/li&gt;&#xA;&lt;li&gt;第一通电话：reference number 不对&lt;/li&gt;&#xA;&lt;li&gt;第二通电话：选择付款方式后系统崩溃自动挂机&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Simply Cook 第一周不能在线取消订阅&lt;/li&gt;&#xA;&lt;li&gt;NatWest&#xA;&lt;ul&gt;&#xA;&lt;li&gt;无法注册 MyRewards，网点表示必须打电话解决，打电话两周后才修好&lt;/li&gt;&#xA;&lt;li&gt;不能在第一次扣款前看到 Direct Debit&lt;/li&gt;&#xA;&lt;li&gt;不能在出账单之前看到自己的账单日和还款日&lt;/li&gt;&#xA;&lt;li&gt;Personal &amp;ldquo;Current Account&amp;rdquo; 和 Business &amp;ldquo;Current account&amp;rdquo; 的 Account 的 A 大小写居然不一样&lt;/li&gt;&#xA;&lt;li&gt;刚开完户就宣布&lt;a href=&#34;https://www.moneysavingexpert.com/news/2019/11/natwest-and-rbs-rewards-cashback-to-change-from-february---what-/&#34;&gt;变更返现规则&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Stratford 与 King&#39;s Cross St. Pancras 间的通勤交通</title>
-      <link>http://localhost:1313/post/commute-sra-kgx/</link>
+      <link>https://seiarotg.me/post/commute-sra-kgx/</link>
       <pubDate>Sat, 16 Nov 2019 21:53:16 +0000</pubDate>
-      <guid>http://localhost:1313/post/commute-sra-kgx/</guid>
+      <guid>https://seiarotg.me/post/commute-sra-kgx/</guid>
       <description>&lt;h1 id=&#34;背景&#34;&gt;背景&lt;/h1&gt;&#xA;&lt;p&gt;几天前看到了 Geoff Marshall 的视频 &lt;a href=&#34;https://www.youtube.com/watch?v=TKWYd9J5VfY&#34;&gt;&lt;em&gt;Which Is Faster? High Speed 1 vs The Tube&lt;/em&gt;&lt;/a&gt;，比较了多条 Stratford 与 King&amp;rsquo;s Cross St. Pancras 之间的交通线路。但是如果您在这两地之间通勤，由于视频中的比赛在非高峰时段进行，较为随意地选择了出发地和目的地，且只进行了一次，参考意义可能有限。我正巧也正在研究这两地之间的通勤方案，现将成果整理在这里。&lt;/p&gt;</description>
     </item>
     <item>
       <title>十月总结</title>
-      <link>http://localhost:1313/post/201910-summary/</link>
+      <link>https://seiarotg.me/post/201910-summary/</link>
       <pubDate>Tue, 05 Nov 2019 23:25:51 +0000</pubDate>
-      <guid>http://localhost:1313/post/201910-summary/</guid>
+      <guid>https://seiarotg.me/post/201910-summary/</guid>
       <description>&lt;h1 id=&#34;新知识&#34;&gt;新知识&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;从英国前往爱尔兰有边检，从爱尔兰前往英国没有&lt;/li&gt;&#xA;&lt;li&gt;Poundland 在爱尔兰叫 Dealz&lt;/li&gt;&#xA;&lt;li&gt;PRIMARK 在爱尔兰叫 PENNEYS&lt;/li&gt;&#xA;&lt;li&gt;RBS 在爱尔兰叫 Ulster Bank&lt;/li&gt;&#xA;&lt;li&gt;伦敦有绿色的公交车&lt;/li&gt;&#xA;&lt;li&gt;英国火车票能玩弃程&lt;/li&gt;&#xA;&lt;li&gt;Dublin 很贵&lt;/li&gt;&#xA;&lt;li&gt;Metropolitan 的计划密度是 12 tph，等于 Hammersmith &amp;amp; City 和 Circle 加起来&lt;/li&gt;&#xA;&lt;li&gt;还有终点为 Moorgate 的地铁&lt;/li&gt;&#xA;&lt;li&gt;ISA 有自己的 sort code 和 account number&lt;/li&gt;&#xA;&lt;li&gt;Starling Bank 的 app 会显示即将入账的 Direct Deposit，可以提前看到工资数额&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;好事&#34;&gt;好事&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;公费旅游&lt;/li&gt;&#xA;&lt;li&gt;发工资&lt;/li&gt;&#xA;&lt;li&gt;公司把因为 match 养老金省下来的 employer&amp;rsquo;s NI 回馈给员工&lt;/li&gt;&#xA;&lt;li&gt;房子门卫支持代收快递&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;坏事&#34;&gt;坏事&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;房子&#xA;&lt;ul&gt;&#xA;&lt;li&gt;设施&#xA;&lt;ul&gt;&#xA;&lt;li&gt;没有微波炉&lt;/li&gt;&#xA;&lt;li&gt;没有热水壶&lt;/li&gt;&#xA;&lt;li&gt;抽屉柜不好使&lt;/li&gt;&#xA;&lt;li&gt;几个门关不上&lt;/li&gt;&#xA;&lt;li&gt;烘干机不烘干&lt;/li&gt;&#xA;&lt;li&gt;水槽浴缸堵&lt;/li&gt;&#xA;&lt;li&gt;洗澡的水汽可以触发烟雾报警器&lt;/li&gt;&#xA;&lt;li&gt;洗衣机被封住无法清洗&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;房屋中介&#xA;&lt;ul&gt;&#xA;&lt;li&gt;报修一个月了没来修&lt;/li&gt;&#xA;&lt;li&gt;声明紧急情况了也没有反应&lt;/li&gt;&#xA;&lt;li&gt;紧急电话没人接&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;水&#xA;&lt;ul&gt;&#xA;&lt;li&gt;供水商听说我搬了家以后在他们的系统里把一个同名的人搬到了我的地址并把她的账单和扣款账号转到了我头上&lt;/li&gt;&#xA;&lt;li&gt;给供水商打电话说了一大通对面说着说着就挂了，再打过去对面接起来说不好意思系统开始维护了&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;电&#xA;&lt;ul&gt;&#xA;&lt;li&gt;中介外包办理水电网的服务商效率低下贻误时机导致首月默认了较为昂贵的供电商&lt;/li&gt;&#xA;&lt;li&gt;一怒之下自己办理了迁移然后发现使用邀请链接可获取 £50&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;网&#xA;&lt;ul&gt;&#xA;&lt;li&gt;几乎所有宽带提供商的网站都拒绝为我家提供服务&lt;/li&gt;&#xA;&lt;li&gt;走访几乎所有宽带提供商后得知只有 BT 一家可选&lt;/li&gt;&#xA;&lt;li&gt;线下办理完 BT 后他们的网站修好了，网上办理有返现&lt;/li&gt;&#xA;&lt;li&gt;办理了不满意可以退款的无限流量套餐过渡，退完以后收到邮件称欠费&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;暖&#xA;&lt;ul&gt;&#xA;&lt;li&gt;房屋中介不知道房子有独立供暖商&lt;/li&gt;&#xA;&lt;li&gt;一周后用完了紧急赊账额度热水遭到掐断&lt;/li&gt;&#xA;&lt;li&gt;房子供暖商联系不上充不上钱&lt;/li&gt;&#xA;&lt;li&gt;联系上了获得了前房客的账号充不上钱&lt;/li&gt;&#xA;&lt;li&gt;好不容易获得新账号后被告知更换账号需要收费 £30&lt;/li&gt;&#xA;&lt;li&gt;充上钱了发现之前闪着坏掉灯灯的神秘设备负责供暖&lt;/li&gt;&#xA;&lt;li&gt;站立费一个月好多 £，虽然暖气用不上还得看着他扣&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;公司&#xA;&lt;ul&gt;&#xA;&lt;li&gt;第一天电脑打不开&lt;/li&gt;&#xA;&lt;li&gt;第一天不知道是哪个组的&lt;/li&gt;&#xA;&lt;li&gt;第一天桌上没有设备等我&lt;/li&gt;&#xA;&lt;li&gt;第一周赶上座位号重排，设备被送到了别人桌上&lt;/li&gt;&#xA;&lt;li&gt;入职培训安排在了第四周&lt;/li&gt;&#xA;&lt;li&gt;部分日历项目莫名不显示&lt;/li&gt;&#xA;&lt;li&gt;多套账号系统同步缓慢导致部分服务无法使用&lt;/li&gt;&#xA;&lt;li&gt;养老金开户邮箱在垃圾箱里&lt;/li&gt;&#xA;&lt;li&gt;各种没有权限&lt;/li&gt;&#xA;&lt;li&gt;某个权限问题持续到了第三周&lt;/li&gt;&#xA;&lt;li&gt;被告知正式工牌需要一两个月才能拿到&lt;/li&gt;&#xA;&lt;li&gt;临时工牌刷不进大门&lt;/li&gt;&#xA;&lt;li&gt;信用卡&#xA;&lt;ul&gt;&#xA;&lt;li&gt;在线激活信用卡密码不对卡号姓名地址生日也不对，尽管密码在管理器里，卡号姓名地址在寄过来的信里&lt;/li&gt;&#xA;&lt;li&gt;电话打过去：请输入卡号；[输入]；您的卡片现已激活&lt;/li&gt;&#xA;&lt;li&gt;电话打过去：XX轻按1，YY轻按2，其他轻按3；[3]；AA请按1；BB请按2；CC请按3。其中并没有人工服务的选项&lt;/li&gt;&#xA;&lt;li&gt;通过静默等待激活了隐藏菜单，询问了姓名生日住址单位地址工号等一大帮子信息后电话断了&lt;/li&gt;&#xA;&lt;li&gt;又重新打过去询问了一大堆问题终于重设了密码&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;旅游&#xA;&lt;ul&gt;&#xA;&lt;li&gt;被酒店安排了走廊尽头从前台走过去需要两分钟的房间&lt;/li&gt;&#xA;&lt;li&gt;房间的暖气是坏的&lt;/li&gt;&#xA;&lt;li&gt;送来的便携小暖气没有卵用&lt;/li&gt;&#xA;&lt;li&gt;房卡三天两头消磁需要走回前台处理（配合第一条有加成）&lt;/li&gt;&#xA;&lt;li&gt;某次房卡充磁充错了房间号（配合第一条有加成）&lt;/li&gt;&#xA;&lt;li&gt;更换了房间后以为会近，发现是原来的楼上，而且暖气依然是坏的&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>只读挂载 FileVault 卷</title>
-      <link>http://localhost:1313/post/mount-file-vault-volume-readonly/</link>
+      <link>https://seiarotg.me/post/mount-file-vault-volume-readonly/</link>
       <pubDate>Thu, 19 Sep 2019 11:38:02 +0800</pubDate>
-      <guid>http://localhost:1313/post/mount-file-vault-volume-readonly/</guid>
+      <guid>https://seiarotg.me/post/mount-file-vault-volume-readonly/</guid>
       <description>&lt;h1 id=&#34;只读挂载和锁上-filevault-卷&#34;&gt;只读挂载和锁上 FileVault 卷&lt;/h1&gt;&#xA;&lt;h2 id=&#34;背景&#34;&gt;背景&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;我有块硬盘需要定期冷备份&lt;/li&gt;&#xA;&lt;li&gt;这块硬盘启用了 FileVault&lt;/li&gt;&#xA;&lt;li&gt;为了避免不小心弄错备份方向损失数据，需要将源硬盘只读挂载&lt;/li&gt;&#xA;&lt;li&gt;Disk Utility 的图形界面不能做到这件事&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;解法&#34;&gt;解法&lt;/h2&gt;&#xA;&lt;p&gt;经搜索，发现以下方法：&lt;/p&gt;</description>
     </item>
     <item>
       <title>今日坑 20190824</title>
-      <link>http://localhost:1313/post/misc-20190824/</link>
+      <link>https://seiarotg.me/post/misc-20190824/</link>
       <pubDate>Sat, 24 Aug 2019 22:18:10 +0800</pubDate>
-      <guid>http://localhost:1313/post/misc-20190824/</guid>
+      <guid>https://seiarotg.me/post/misc-20190824/</guid>
       <description>&lt;p&gt;今天遇到了几个小坑，特此记录。&lt;/p&gt;&#xA;&lt;h1 id=&#34;npm-装啥都不行&#34;&gt;npm 装啥都不行&lt;/h1&gt;&#xA;&lt;p&gt;**环境：**&lt;a href=&#34;mailto:npm@6.9.0&#34;&gt;npm@6.9.0&lt;/a&gt;、node@12.6.0 (homebrew)&lt;/p&gt;&#xA;&lt;p&gt;**问题：**无论用 npm 安装什么，是否忽略 &lt;code&gt;package-lock&lt;/code&gt;，是否 &lt;code&gt;-g&lt;/code&gt;，安装 &lt;code&gt;package.json&lt;/code&gt; 还是指定包，都报错如下：&lt;/p&gt;</description>
     </item>
     <item>
       <title>英国手机运营商选择</title>
-      <link>http://localhost:1313/post/uk-mobile-service-providers/</link>
+      <link>https://seiarotg.me/post/uk-mobile-service-providers/</link>
       <pubDate>Wed, 21 Aug 2019 14:51:07 +0800</pubDate>
-      <guid>http://localhost:1313/post/uk-mobile-service-providers/</guid>
+      <guid>https://seiarotg.me/post/uk-mobile-service-providers/</guid>
       <description>&lt;h1 id=&#34;付费模式&#34;&gt;付费模式&lt;/h1&gt;&#xA;&lt;h2 id=&#34;合约机&#34;&gt;合约机&lt;/h2&gt;&#xA;&lt;p&gt;缴纳几十 £ 领取一部手机，然后每个月缴纳几十 £ 话费，直至一两年的合同结束。看着像贷款买手机，且这个价钱并不那么划算，尤其是如果您能从国内带手机过去的话。&lt;/p&gt;</description>
     </item>
     <item>
       <title>在 Linux 下使用佳博（GPrinter）热敏标签打印机</title>
-      <link>http://localhost:1313/post/gprinter-under-linux/</link>
+      <link>https://seiarotg.me/post/gprinter-under-linux/</link>
       <pubDate>Sun, 11 Aug 2019 21:05:10 +0800</pubDate>
-      <guid>http://localhost:1313/post/gprinter-under-linux/</guid>
+      <guid>https://seiarotg.me/post/gprinter-under-linux/</guid>
       <description>&lt;h1 id=&#34;背景&#34;&gt;背景&lt;/h1&gt;&#xA;&lt;p&gt;我在高中时期曾购入一台佳博 GP-L80160I 热敏票据打印机，用来在学校从事一些轻便的打印活动，以免去抄写之苦。&lt;/p&gt;&#xA;&lt;p&gt;最近想打印标签玩，可是卖标签纸的店家告诉我这款打印机&lt;strong&gt;不能&lt;/strong&gt;打印不干胶标签。于是我斥资 ¥100.00 在闲鱼上购买了一台二手 GP-3120TU。该款打印机号称既能够打印小票纸，又能够打印不干胶，还配备了内置电源。就是圆乎乎的它比 GP-L80160I 大了好多。&lt;/p&gt;</description>
     </item>
     <item>
       <title>macOS 软件调节外接显示器亮度</title>
-      <link>http://localhost:1313/post/macos-external-monitor-brightness/</link>
+      <link>https://seiarotg.me/post/macos-external-monitor-brightness/</link>
       <pubDate>Sat, 03 Aug 2019 12:03:18 +0800</pubDate>
-      <guid>http://localhost:1313/post/macos-external-monitor-brightness/</guid>
+      <guid>https://seiarotg.me/post/macos-external-monitor-brightness/</guid>
       <description>&lt;p&gt;如果您也和我一样在显示器附近安装了窗户，您可能需要经常调节显示器的亮度。用爪子靠近显示器设置开关非常不方便，也非常慢。&lt;/p&gt;&#xA;&lt;p&gt;经过一番搜索后我发现了&lt;a href=&#34;https://github.com/kfix/ddcctl&#34;&gt;这个叫 ddcctl 的项目&lt;/a&gt;。它提供了一个命令行小工具来控制外接显示器的亮度、对比度等参数。&lt;/p&gt;</description>
     </item>
     <item>
       <title>装一台迷你黑苹果</title>
-      <link>http://localhost:1313/post/build-hackintosh/</link>
+      <link>https://seiarotg.me/post/build-hackintosh/</link>
       <pubDate>Thu, 01 Aug 2019 14:04:11 +0800</pubDate>
-      <guid>http://localhost:1313/post/build-hackintosh/</guid>
+      <guid>https://seiarotg.me/post/build-hackintosh/</guid>
       <description>&lt;p&gt;我的 MacBook Air 使用至今已有五年之久，最近还出现了“删除文件后可用空间不增加”的故障。于是趁 618 之际我买了一堆配件，组了个 Hackintosh。&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;[2021-01] 我重做了 EFI 并更新到了 Big Sur，请看&lt;a href=&#34;../upgrade-my-hackintosh/&#34;&gt;这里&lt;/a&gt;。&lt;/p&gt;</description>
     </item>
     <item>
       <title>记一次从 Stratford (London) 前往宁波的旅程</title>
-      <link>http://localhost:1313/post/a-rush-journey-from-stratford-to-ningbo/</link>
+      <link>https://seiarotg.me/post/a-rush-journey-from-stratford-to-ningbo/</link>
       <pubDate>Tue, 30 Jul 2019 17:25:14 +0800</pubDate>
-      <guid>http://localhost:1313/post/a-rush-journey-from-stratford-to-ningbo/</guid>
+      <guid>https://seiarotg.me/post/a-rush-journey-from-stratford-to-ningbo/</guid>
       <description>&lt;h1 id=&#34;购买机票&#34;&gt;购买机票&lt;/h1&gt;&#xA;&lt;p&gt;根据英国 &lt;a href=&#34;https://www.gov.uk/guidance/immigration-rules&#34;&gt;Immigration Rules&lt;/a&gt; 中的 34K，在申请签证过程中离境则申请自动作废。由于出签时间又依赖诸多不确定因素，此次出行无法像往常一样，提前数月甚至大半年订票，从而轻松获得低廉的票价。相反，由于去程（7月）属暑期旅游旺季，回程（9月）属空中校车季，预期票价将非常可观。&lt;/p&gt;</description>
     </item>
     <item>
       <title>UK Tier 2 Visa Application</title>
-      <link>http://localhost:1313/post/uk-tier2-visa-application/</link>
+      <link>https://seiarotg.me/post/uk-tier2-visa-application/</link>
       <pubDate>Sun, 28 Jul 2019 11:54:12 +0800</pubDate>
-      <guid>http://localhost:1313/post/uk-tier2-visa-application/</guid>
+      <guid>https://seiarotg.me/post/uk-tier2-visa-application/</guid>
       <description>&lt;p&gt;最近成功获得了英国 Tier 2 签证，特将经历记录如下。&lt;/p&gt;&#xA;&lt;p&gt;这&lt;strong&gt;不是&lt;/strong&gt;一篇教程，比如我不会告诉你需要提交什么材料。&lt;/p&gt;&#xA;&lt;h1 id=&#34;流程&#34;&gt;流程&lt;/h1&gt;&#xA;&lt;p&gt;我的申请路线是 Switch from Tier 4, in-country。这个路线的好处是：&lt;/p&gt;</description>
     </item>
   </channel>
